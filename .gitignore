@@ -1,0 +1,36 @@
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Data (audio, transcripts, generated files — use GCS in prod)
+data/
+output/
+
+# Service account credentials
+*.json
+!package.json
+!tsconfig.json

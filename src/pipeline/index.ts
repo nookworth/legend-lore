@@ -31,7 +31,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   const campaignContext = await readFile(campaignContextPath, 'utf-8');
 
   console.log('\n═══════════════════════════════════════');
-  console.log('  Scrying Glass — Session Recap Pipeline');
+  console.log('  Legend Lore — Session Recap Pipeline');
   console.log('═══════════════════════════════════════\n');
 
   // ── Step 1: Merge audio ─────────────────────────────────────────────────────

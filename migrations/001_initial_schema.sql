@@ -1,4 +1,4 @@
--- Initial schema for Scrying Glass
+-- Initial schema for Legend Lore
 -- Port of supabase/migrations/20260131000001_initial_schema.sql
 
 CREATE TABLE IF NOT EXISTS sessions (

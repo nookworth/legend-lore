@@ -1,5 +1,4 @@
 -- Initial schema for Legend Lore
--- Port of supabase/migrations/20260131000001_initial_schema.sql
 
 CREATE TABLE IF NOT EXISTS sessions (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,

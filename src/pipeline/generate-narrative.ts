@@ -14,7 +14,7 @@ export async function generateNarrative(
 
   const genai = new GoogleGenerativeAI(config.geminiApiKey);
   const model = genai.getGenerativeModel({
-    model: 'gemini-2.0-flash-exp',
+    model: 'gemini-2.5-flash',
     // @ts-expect-error -- responseModalities not yet in SDK types
     generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
   });

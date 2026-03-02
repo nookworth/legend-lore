@@ -1,9 +1,10 @@
-import { mkdir } from 'node:fs/promises';
+import { mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { mergeAudio } from './merge-audio.js';
 import { uploadAudioFile } from './upload-audio.js';
 import { transcribe } from './transcribe.js';
 import { selectMoments } from './select-moments.js';
+import type { Utterance } from '../shared/types.js';
 import { generateNarrative } from './generate-narrative.js';
 import { generateTts } from './generate-tts.js';
 import { generateVideos } from './generate-video.js';
@@ -16,9 +17,10 @@ export interface PipelineOptions {
   outputDir: string;
   campaignContextPath: string;
   dryRun?: boolean;
-  skipUpload?: boolean;   // skip GCS upload steps (for local dev without GCP)
-  skipDeliver?: boolean;  // skip Discord delivery
-  skipDb?: boolean;       // skip Cloud SQL (for local dev)
+  skipUpload?: boolean;    // skip GCS upload steps (for local dev without GCP)
+  skipDeliver?: boolean;   // skip Discord delivery
+  skipDb?: boolean;        // skip Cloud SQL (for local dev)
+  useTranscript?: string;  // path to existing utterances.json — skips steps 1-3
 }
 
 export async function runPipeline(opts: PipelineOptions): Promise<void> {
@@ -26,35 +28,42 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
   await mkdir(outputDir, { recursive: true });
 
-  // Load campaign context
-  const { readFile } = await import('node:fs/promises');
   const campaignContext = await readFile(campaignContextPath, 'utf-8');
 
   console.log('\n═══════════════════════════════════════');
   console.log('  Legend Lore — Session Recap Pipeline');
   console.log('═══════════════════════════════════════\n');
 
-  // ── Step 1: Merge audio ─────────────────────────────────────────────────────
-  console.log('Step 1/10: Merging audio tracks...');
-  const mergedPath = path.join(outputDir, 'session_multichannel.m4a');
-  const { channelMap } = await mergeAudio(audioDir, mergedPath);
+  let utterances: Utterance[];
+  let transcriptText: string;
 
-  // ── Step 2: Upload to GCS ───────────────────────────────────────────────────
-  let audioUrl = mergedPath;
-  if (!opts.skipUpload) {
-    console.log('\nStep 2/10: Uploading audio to GCS...');
-    audioUrl = await uploadAudioFile(mergedPath);
+  if (opts.useTranscript) {
+    // ── Steps 1-3: Skipped (using existing transcript) ──────────────────────
+    console.log(`Steps 1-3/10: Using existing transcript: ${opts.useTranscript}`);
+    utterances = JSON.parse(await readFile(opts.useTranscript, 'utf-8')) as Utterance[];
+    transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
   } else {
-    console.log('\nStep 2/10: Skipping GCS upload (--skip-upload)');
-  }
+    // ── Step 1: Merge audio ─────────────────────────────────────────────────
+    console.log('Step 1/10: Merging audio tracks...');
+    const mergedPath = path.join(outputDir, 'session_multichannel.m4a');
+    const { channelMap } = await mergeAudio(audioDir, mergedPath);
 
-  // ── Step 3: Transcribe ──────────────────────────────────────────────────────
-  console.log('\nStep 3/10: Transcribing...');
-  const { utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir);
+    // ── Step 2: Upload to GCS ───────────────────────────────────────────────
+    if (!opts.skipUpload) {
+      console.log('\nStep 2/10: Uploading audio to GCS...');
+      await uploadAudioFile(mergedPath);
+    } else {
+      console.log('\nStep 2/10: Skipping GCS upload (--skip-upload)');
+    }
+
+    // ── Step 3: Transcribe ──────────────────────────────────────────────────
+    console.log('\nStep 3/10: Transcribing...');
+    ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
+  }
 
   // ── Step 4: Select moments ──────────────────────────────────────────────────
   console.log('\nStep 4/10: Selecting moments...');
-  const moments = await selectMoments(utterances, campaignContext);
+  const moments = await selectMoments(utterances, campaignContext, outputDir);
 
   if (dryRun) {
     console.log('\n[dry-run] Stopping after moment selection.');

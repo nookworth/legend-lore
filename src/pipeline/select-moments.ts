@@ -1,4 +1,6 @@
 import { GoogleGenerativeAI, SchemaType } from '@google/generative-ai';
+import { writeFile } from 'node:fs/promises';
+import path from 'node:path';
 import { config, requireConfig } from '../shared/config.js';
 import type { Utterance, MomentCandidate } from '../shared/types.js';
 
@@ -33,12 +35,13 @@ const momentSchema = {
 export async function selectMoments(
   utterances: Utterance[],
   campaignContext: string,
+  outputDir: string,
 ): Promise<MomentCandidate[]> {
   requireConfig(['geminiApiKey']);
 
   const genai = new GoogleGenerativeAI(config.geminiApiKey);
   const model = genai.getGenerativeModel({
-    model: 'gemini-2.0-flash',
+    model: 'gemini-2.5-flash',
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema: momentSchema,
@@ -66,6 +69,8 @@ Select moments that would make compelling short video clips (15-60 seconds). Pri
 
 For each moment, provide a start_time and end_time that captures enough context (at minimum 10 seconds of surrounding dialogue). Times must be in milliseconds, matching timestamps in the transcript.
 
+Keep transcript_excerpt to 1-2 sentences maximum — just the key line(s) that make the moment memorable.
+
 Return exactly ${MOMENT_COUNT} moments ranked 1 (best) to ${MOMENT_COUNT}.`;
 
   console.log(`[select-moments] Calling Gemini for moment selection (${utterances.length} utterances)...`);
@@ -77,6 +82,10 @@ Return exactly ${MOMENT_COUNT} moments ranked 1 (best) to ${MOMENT_COUNT}.`;
   json.moments.forEach((m) => {
     console.log(`  [${m.rank}] ${m.category}: ${m.summary}`);
   });
+
+  const outPath = path.join(outputDir, 'moments.json');
+  await writeFile(outPath, JSON.stringify(json.moments, null, 2));
+  console.log(`[select-moments] Saved → ${outPath}`);
 
   return json.moments;
 }

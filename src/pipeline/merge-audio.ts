@@ -7,16 +7,18 @@ const execFileAsync = promisify(execFile);
 
 const AUDIO_EXTENSIONS = new Set(['.aac', '.flac', '.mp3', '.wav', '.m4a', '.ogg']);
 
-// Channel layouts by count — used by AssemblyAI multichannel diarization
-const CHANNEL_LAYOUTS: Record<number, string> = {
-  1: 'mono',
-  2: 'stereo',
-  3: '3.0',
-  4: 'quad',
-  5: '5.0',
-  6: '5.1',
-  7: '6.1',
-  8: '7.1',
+// Channel layouts and their corresponding label sequences for the ffmpeg join
+// filter map parameter. Labels must exactly match the slots in each layout —
+// layouts without LFE (all except 7.1) must not include it.
+const CHANNEL_CONFIG: Record<number, { layout: string; labels: string[] }> = {
+  1: { layout: 'mono',   labels: ['FC'] },
+  2: { layout: 'stereo', labels: ['FL', 'FR'] },
+  3: { layout: '3.0',    labels: ['FL', 'FR', 'FC'] },
+  4: { layout: '4.0',    labels: ['FL', 'FR', 'BL', 'BR'] },
+  5: { layout: '5.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR'] },
+  6: { layout: '6.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR', 'BC'] },
+  7: { layout: '7.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR', 'SL', 'SR'] },
+  8: { layout: '7.1',    labels: ['FL', 'FR', 'FC', 'LFE', 'BL', 'BR', 'SL', 'SR'] },
 };
 
 export interface MergeAudioResult {
@@ -47,14 +49,19 @@ export async function mergeAudio(audioDir: string, outputPath: string): Promise<
     return { outputPath, channelMap };
   }
 
-  const layout = CHANNEL_LAYOUTS[audioFiles.length];
-  if (!layout) {
+  const channelConfig = CHANNEL_CONFIG[audioFiles.length];
+  if (!channelConfig) {
     throw new Error(`Unsupported channel count: ${audioFiles.length} (max 8)`);
   }
+  const { layout, labels } = channelConfig;
 
-  // Build ffmpeg args: -i file1 -i file2 ... -filter_complex "join=inputs=N:channel_layout=L" -c:a aac out.m4a
+  // Build ffmpeg args with explicit map parameter to strictly isolate each input
+  // into its own output channel. Without map=, the join filter can bleed audio
+  // across channels, causing AssemblyAI to return duplicate utterances.
   const inputs = audioFiles.flatMap((f) => ['-i', path.join(audioDir, f)]);
-  const filterComplex = `join=inputs=${audioFiles.length}:channel_layout=${layout}`;
+  const filterInputs = audioFiles.map((_, i) => `[${i}:a]`).join('');
+  const mapEntries = audioFiles.map((_, i) => `${i}.0-${labels[i]}`).join('|');
+  const filterComplex = `${filterInputs}join=inputs=${audioFiles.length}:channel_layout=${layout}:map=${mapEntries}`;
 
   const args = [
     '-y',

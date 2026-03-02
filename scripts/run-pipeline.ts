@@ -1,5 +1,5 @@
 #!/usr/bin/env tsx
-import 'dotenv/process'; // no-op if dotenv not installed; env loaded by shell
+import 'dotenv/config';
 import { parseArgs } from 'node:util';
 import path from 'node:path';
 import { runPipeline } from '../src/pipeline/index.js';
@@ -14,6 +14,7 @@ const { values, positionals } = parseArgs({
     'skip-upload': { type: 'boolean', default: false },
     'skip-deliver': { type: 'boolean', default: false },
     'skip-db': { type: 'boolean', default: false },
+    'use-transcript': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -31,6 +32,7 @@ Options:
   --skip-upload         Skip GCS upload steps (local dev without GCP)
   --skip-deliver        Skip Discord delivery
   --skip-db             Skip Cloud SQL (local dev without GCP)
+  --use-transcript <path>  Use existing utterances.json, skip steps 1-3
   --help                Show this help
 `);
   process.exit(0);
@@ -53,4 +55,5 @@ await runPipeline({
   skipUpload: values['skip-upload'],
   skipDeliver: values['skip-deliver'],
   skipDb: values['skip-db'],
+  useTranscript: values['use-transcript'],
 });

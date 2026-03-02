@@ -22,7 +22,7 @@ function buildVideoPrompt(moment: MomentCandidate): string {
   return `${style}. ${moment.summary}. Dragonlance fantasy setting. No text, no subtitles.`;
 }
 
-export async function generateVideos(moments: MomentCandidate[]): Promise<string[]> {
+export async function generateVideos(moments: MomentCandidate[], outputDir: string): Promise<string[]> {
   const provider = getProvider();
   const selected = moments.filter((_, i) => i < 3); // top 3
   const paths: string[] = [];
@@ -30,7 +30,7 @@ export async function generateVideos(moments: MomentCandidate[]): Promise<string
   for (const moment of selected) {
     const prompt = buildVideoPrompt(moment);
     console.log(`[generate-video] Clip ${moment.rank}: ${moment.category} — ${moment.summary}`);
-    const localPath = await provider.generate(prompt, {});
+    const localPath = await provider.generate(prompt, { outputDir });
     paths.push(localPath);
   }
 

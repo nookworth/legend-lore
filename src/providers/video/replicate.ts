@@ -7,7 +7,7 @@ import type { VideoOptions } from '../../shared/types.js';
 import type { VideoProvider } from './interface.js';
 
 // LTX-Video on Replicate
-const MODEL = 'lightricks/ltx-video:latest';
+const MODEL = 'lightricks/ltx-video:8c47da666861d081eeb4d1261853087de23923a268a69b63febdf5dc1dee08e4';
 
 export class ReplicateProvider implements VideoProvider {
   private client: Replicate;
@@ -31,7 +31,8 @@ export class ReplicateProvider implements VideoProvider {
 
     // output is a URL string (Replicate output URLs are temporary — download immediately)
     const videoUrl = Array.isArray(output) ? String(output[0]) : String(output);
-    const localPath = path.join('/tmp', `clip_${Date.now()}.mp4`);
+    const dir = options.outputDir ?? '/tmp';
+    const localPath = path.join(dir, `clip_${Date.now()}.mp4`);
 
     console.log(`[replicate] Downloading video from ${videoUrl}...`);
     const response = await fetch(videoUrl);

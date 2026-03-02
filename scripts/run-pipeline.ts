@@ -15,6 +15,7 @@ const { values, positionals } = parseArgs({
     'skip-deliver': { type: 'boolean', default: false },
     'skip-db': { type: 'boolean', default: false },
     'use-transcript': { type: 'string' },
+    'use-narrative': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -33,6 +34,7 @@ Options:
   --skip-deliver        Skip Discord delivery
   --skip-db             Skip Cloud SQL (local dev without GCP)
   --use-transcript <path>  Use existing utterances.json, skip steps 1-3
+  --use-narrative <dir>    Use existing narrative output dir, skip steps 4-6
   --help                Show this help
 `);
   process.exit(0);
@@ -56,4 +58,5 @@ await runPipeline({
   skipDeliver: values['skip-deliver'],
   skipDb: values['skip-db'],
   useTranscript: values['use-transcript'],
+  useNarrative: values['use-narrative'],
 });

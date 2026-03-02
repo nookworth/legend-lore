@@ -14,7 +14,7 @@ export async function generateNarrative(
 
   const genai = new GoogleGenerativeAI(config.geminiApiKey);
   const model = genai.getGenerativeModel({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3.1-flash-image-preview',
     // @ts-expect-error -- responseModalities not yet in SDK types
     generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
   });
@@ -44,40 +44,57 @@ For each segment, generate:
 
 Output the segments in order: INTRO text, INTRO image, BRIDGE 1 text, BRIDGE 1 image, BRIDGE 2 text, BRIDGE 2 image, OUTRO text, OUTRO image.`;
 
-  console.log('[generate-narrative] Calling Gemini for interleaved text+image narrative...');
+  const MAX_ATTEMPTS = 3;
+  let segments: NarrativeSegment[] = [];
 
-  const result = await model.generateContent(prompt);
-  const parts = result.response.candidates?.[0]?.content?.parts ?? [];
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    console.log(`[generate-narrative] Calling Gemini (attempt ${attempt}/${MAX_ATTEMPTS})...`);
 
-  // Parse interleaved parts into segments
-  // Pattern: text part → image part, repeating 4 times (intro, bridge1, bridge2, outro)
-  const segments: NarrativeSegment[] = [];
-  let pendingText: string | null = null;
+    const result = await model.generateContent(prompt);
+    const parts = result.response.candidates?.[0]?.content?.parts ?? [];
+    console.log(`[generate-narrative] Response: ${parts.length} parts, types: ${parts.map((p) => ('text' in p ? 'text' : 'inlineData' in p ? 'image' : 'unknown')).join(', ')}`);
 
-  for (const part of parts) {
-    if ('text' in part && part.text) {
-      pendingText = part.text.trim();
-    } else if ('inlineData' in part && part.inlineData) {
-      const imageBuffer = Buffer.from(part.inlineData.data, 'base64');
-      segments.push({
-        text: pendingText ?? '',
-        image: imageBuffer,
-      });
-      pendingText = null;
+    // Parse interleaved parts into segments
+    // Pattern: text part → image part, repeating 4 times (intro, bridge1, bridge2, outro)
+    segments = [];
+    let pendingText: string | null = null;
+
+    for (const part of parts) {
+      if ('text' in part && part.text) {
+        pendingText = part.text.trim();
+      } else if ('inlineData' in part && part.inlineData) {
+        const imageBuffer = Buffer.from(part.inlineData.data, 'base64');
+        segments.push({ text: pendingText ?? '', image: imageBuffer });
+        pendingText = null;
+      }
     }
+
+    if (segments.length >= 4) break;
+    console.log(`[generate-narrative] Got ${segments.length} segments, expected 4 — retrying...`);
   }
 
   if (segments.length < 4) {
-    throw new Error(`Expected 4 narrative segments, got ${segments.length}. Model may not support image generation.`);
+    throw new Error(`Expected 4 narrative segments, got ${segments.length} after ${MAX_ATTEMPTS} attempts.`);
   }
 
-  // Save images for inspection
+  // Save images and text for inspection
+  const labels = segments.map((_, i) =>
+    i === 0 ? 'intro' : i === segments.length - 1 ? 'outro' : `bridge_${i}`,
+  );
   for (let i = 0; i < segments.length; i++) {
-    const label = i === 0 ? 'intro' : i === segments.length - 1 ? 'outro' : `bridge_${i}`;
+    const label = labels[i]!;
     await writeFile(path.join(outputDir, `narrative_${label}.png`), segments[i]!.image);
     console.log(`[generate-narrative] Saved ${label} illustration (${segments[i]!.image.length} bytes)`);
     console.log(`[generate-narrative] ${label} text: "${segments[i]!.text.slice(0, 80)}..."`);
   }
+
+  const narrativeJson = {
+    intro: segments[0]!.text,
+    bridges: segments.slice(1, -1).map((s) => s.text),
+    outro: segments[segments.length - 1]!.text,
+  };
+  await writeFile(path.join(outputDir, 'narrative.json'), JSON.stringify(narrativeJson, null, 2));
+  console.log('[generate-narrative] Saved narrative.json');
 
   return {
     intro: segments[0]!,

@@ -4,7 +4,7 @@ import { mergeAudio } from './merge-audio.js';
 import { uploadAudioFile } from './upload-audio.js';
 import { transcribe } from './transcribe.js';
 import { selectMoments } from './select-moments.js';
-import type { Utterance } from '../shared/types.js';
+import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative } from './generate-narrative.js';
 import { generateTts } from './generate-tts.js';
 import { generateVideos } from './generate-video.js';
@@ -21,6 +21,7 @@ export interface PipelineOptions {
   skipDeliver?: boolean;   // skip Discord delivery
   skipDb?: boolean;        // skip Cloud SQL (for local dev)
   useTranscript?: string;  // path to existing utterances.json — skips steps 1-3
+  useNarrative?: string;   // path to output dir with narrative.json + PNGs — skips steps 4-6
 }
 
 export async function runPipeline(opts: PipelineOptions): Promise<void> {
@@ -37,11 +38,17 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   let utterances: Utterance[];
   let transcriptText: string;
 
-  if (opts.useTranscript) {
-    // ── Steps 1-3: Skipped (using existing transcript) ──────────────────────
-    console.log(`Steps 1-3/10: Using existing transcript: ${opts.useTranscript}`);
-    utterances = JSON.parse(await readFile(opts.useTranscript, 'utf-8')) as Utterance[];
-    transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
+  if (opts.useTranscript || opts.useNarrative) {
+    // ── Steps 1-3: Skipped ──────────────────────────────────────────────────
+    if (opts.useTranscript) {
+      console.log(`Steps 1-3/10: Using existing transcript: ${opts.useTranscript}`);
+      utterances = JSON.parse(await readFile(opts.useTranscript, 'utf-8')) as Utterance[];
+      transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
+    } else {
+      console.log('Steps 1-3/10: Skipping (--use-narrative implies no transcription needed)');
+      utterances = [];
+      transcriptText = '';
+    }
   } else {
     // ── Step 1: Merge audio ─────────────────────────────────────────────────
     console.log('Step 1/10: Merging audio tracks...');
@@ -61,26 +68,49 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
   }
 
-  // ── Step 4: Select moments ──────────────────────────────────────────────────
-  console.log('\nStep 4/10: Selecting moments...');
-  const moments = await selectMoments(utterances, campaignContext, outputDir);
+  let moments: MomentCandidate[];
+  let narrative: Narrative;
+  let narrationPaths: string[];
 
-  if (dryRun) {
-    console.log('\n[dry-run] Stopping after moment selection.');
-    return;
+  if (opts.useNarrative) {
+    // ── Steps 4-6: Skipped (using existing narrative output dir) ────────────
+    const srcDir = opts.useNarrative;
+    console.log(`Steps 4-6/10: Using existing narrative from: ${srcDir}`);
+    moments = JSON.parse(await readFile(path.join(srcDir, 'moments.json'), 'utf-8')) as MomentCandidate[];
+    const narrativeJson = JSON.parse(await readFile(path.join(srcDir, 'narrative.json'), 'utf-8')) as { intro: string; bridges: string[]; outro: string };
+    const loadSegment = async (label: string, text: string) => ({
+      text,
+      image: await readFile(path.join(srcDir, `narrative_${label}.png`)),
+    });
+    narrative = {
+      intro: await loadSegment('intro', narrativeJson.intro),
+      bridges: await Promise.all(narrativeJson.bridges.map((t, i) => loadSegment(`bridge_${i + 1}`, t))),
+      outro: await loadSegment('outro', narrativeJson.outro),
+    };
+    const labels = ['narration_intro', ...narrativeJson.bridges.map((_, i) => `narration_bridge_${i}`), 'narration_outro'];
+    narrationPaths = labels.map((l) => path.join(srcDir, `${l}.mp3`));
+  } else {
+    // ── Step 4: Select moments ───────────────────────────────────────────────
+    console.log('\nStep 4/10: Selecting moments...');
+    moments = await selectMoments(utterances!, campaignContext, outputDir);
+
+    if (dryRun) {
+      console.log('\n[dry-run] Stopping after moment selection.');
+      return;
+    }
+
+    // ── Step 5: Generate narrative ───────────────────────────────────────────
+    console.log('\nStep 5/10: Generating narrative + illustrations...');
+    narrative = await generateNarrative(transcriptText!, moments, campaignContext, outputDir);
+
+    // ── Step 6: Generate TTS ─────────────────────────────────────────────────
+    console.log('\nStep 6/10: Synthesizing narration audio...');
+    narrationPaths = await generateTts(narrative, outputDir);
   }
-
-  // ── Step 5: Generate narrative ──────────────────────────────────────────────
-  console.log('\nStep 5/10: Generating narrative + illustrations...');
-  const narrative = await generateNarrative(transcriptText, moments, campaignContext, outputDir);
-
-  // ── Step 6: Generate TTS ────────────────────────────────────────────────────
-  console.log('\nStep 6/10: Synthesizing narration audio...');
-  const narrationPaths = await generateTts(narrative, outputDir);
 
   // ── Step 7: Generate video clips ────────────────────────────────────────────
   console.log('\nStep 7/10: Generating video clips...');
-  const videoPaths = await generateVideos(moments);
+  const videoPaths = await generateVideos(moments, outputDir);
 
   // ── Step 8: Stitch final video ──────────────────────────────────────────────
   console.log('\nStep 8/10: Stitching final video...');

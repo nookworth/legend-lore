@@ -97,7 +97,7 @@ export async function stitchVideo(
 
   // Write concat list file
   const concatListPath = path.join(tmpDir, 'concat_list.txt');
-  const concatContent = allSegments.map((p) => `file '${p}'`).join('\n');
+  const concatContent = allSegments.map((p) => `file '${path.resolve(p)}'`).join('\n');
   await writeFile(concatListPath, concatContent);
 
   // Concat all segments

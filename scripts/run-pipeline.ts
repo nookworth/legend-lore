@@ -57,6 +57,6 @@ await runPipeline({
   skipUpload: values['skip-upload'],
   skipDeliver: values['skip-deliver'],
   skipDb: values['skip-db'],
-  useTranscript: values['use-transcript'],
-  useNarrative: values['use-narrative'],
+  ...(values['use-transcript'] && { useTranscript: values['use-transcript'] }),
+  ...(values['use-narrative'] && { useNarrative: values['use-narrative'] }),
 });

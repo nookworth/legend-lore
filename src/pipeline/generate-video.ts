@@ -11,15 +11,16 @@ function getProvider(): VideoProvider {
 
 function buildVideoPrompt(moment: MomentCandidate): string {
   const categoryStyles: Record<MomentCandidate['category'], string> = {
-    combat: 'Epic fantasy battle scene, dramatic lighting, motion blur, cinematic',
-    roleplay: 'Fantasy tavern or castle interior, warm atmospheric lighting, characters conversing',
-    comedy: 'Lighthearted fantasy scene, vibrant colors, expressive characters',
-    dramatic: 'Dark and moody fantasy environment, tense atmosphere, dramatic shadows',
+    combat: 'Epic fantasy battle scene, magical energy erupting, dramatic lighting, cinematic camera movement',
+    roleplay: 'Fantasy tavern or castle interior, warm atmospheric lighting, characters in conversation',
+    comedy: 'Lighthearted fantasy scene, vibrant colors, expressive characters, warm tone',
+    dramatic: 'Dark and moody fantasy environment, tense atmosphere, dramatic shadows, slow cinematic pan',
     epic: 'Grand fantasy vista, sweeping landscape, heroic composition, golden hour lighting',
   };
 
-  const style = categoryStyles[moment.category];
-  return `${style}. ${moment.summary}. Dragonlance fantasy setting. No text, no subtitles.`;
+  // Use only the visual style — do not include moment summary, which may contain
+  // combat language that triggers Veo's content filters.
+  return `${categoryStyles[moment.category]}. Dragonlance fantasy setting. No text, no subtitles.`;
 }
 
 export async function generateVideos(moments: MomentCandidate[], outputDir: string): Promise<string[]> {

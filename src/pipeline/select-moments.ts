@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI, SchemaType } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { config, requireConfig } from '../shared/config.js';
@@ -7,23 +7,23 @@ import type { Utterance, MomentCandidate } from '../shared/types.js';
 const MOMENT_COUNT = 5;
 
 const momentSchema = {
-  type: SchemaType.OBJECT,
+  type: 'object',
   properties: {
     moments: {
-      type: SchemaType.ARRAY,
+      type: 'array',
       items: {
-        type: SchemaType.OBJECT,
+        type: 'object',
         properties: {
-          rank: { type: SchemaType.INTEGER },
-          start_time: { type: SchemaType.INTEGER },
-          end_time: { type: SchemaType.INTEGER },
-          summary: { type: SchemaType.STRING },
-          transcript_excerpt: { type: SchemaType.STRING },
+          rank: { type: 'integer' },
+          start_time: { type: 'integer' },
+          end_time: { type: 'integer' },
+          summary: { type: 'string' },
+          transcript_excerpt: { type: 'string' },
           category: {
-            type: SchemaType.STRING,
+            type: 'string',
             enum: ['combat', 'roleplay', 'comedy', 'dramatic', 'epic'],
           },
-          reasoning: { type: SchemaType.STRING },
+          reasoning: { type: 'string' },
         },
         required: ['rank', 'start_time', 'end_time', 'summary', 'transcript_excerpt', 'category', 'reasoning'],
       },
@@ -39,14 +39,7 @@ export async function selectMoments(
 ): Promise<MomentCandidate[]> {
   requireConfig(['geminiApiKey']);
 
-  const genai = new GoogleGenerativeAI(config.geminiApiKey);
-  const model = genai.getGenerativeModel({
-    model: 'gemini-2.5-flash',
-    generationConfig: {
-      responseMimeType: 'application/json',
-      responseSchema: momentSchema,
-    },
-  });
+  const client = new GoogleGenAI({ apiKey: config.geminiApiKey });
 
   const transcriptText = utterances
     .map((u) => `[${formatTime(u.start)}] ${u.speaker}: ${u.text}`)
@@ -75,8 +68,15 @@ Return exactly ${MOMENT_COUNT} moments ranked 1 (best) to ${MOMENT_COUNT}.`;
 
   console.log(`[select-moments] Calling Gemini for moment selection (${utterances.length} utterances)...`);
 
-  const result = await model.generateContent(prompt);
-  const json = JSON.parse(result.response.text()) as { moments: MomentCandidate[] };
+  const result = await client.models.generateContent({
+    model: 'gemini-2.5-flash',
+    contents: prompt,
+    config: {
+      responseMimeType: 'application/json',
+      responseSchema: momentSchema,
+    },
+  });
+  const json = JSON.parse(result.text ?? '') as { moments: MomentCandidate[] };
 
   console.log(`[select-moments] Selected ${json.moments.length} moments`);
   json.moments.forEach((m) => {

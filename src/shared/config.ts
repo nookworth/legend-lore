@@ -10,6 +10,8 @@ export const config = {
   gcsBucketVideos: process.env['GCS_BUCKET_VIDEOS'] ?? '',
   videoProvider: (process.env['VIDEO_PROVIDER'] ?? 'replicate') as 'replicate' | 'veo',
   googleApplicationCredentials: process.env['GOOGLE_APPLICATION_CREDENTIALS'] ?? '',
+  gcpProject: process.env['GOOGLE_CLOUD_PROJECT'] ?? '',
+  gcpLocation: process.env['GOOGLE_CLOUD_LOCATION'] ?? 'us-central1',
 };
 
 export function requireConfig(keys: (keyof typeof config)[]): void {

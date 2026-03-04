@@ -24,8 +24,9 @@ const momentSchema = {
             enum: ['combat', 'roleplay', 'comedy', 'dramatic', 'epic'],
           },
           reasoning: { type: 'string' },
+          visual_description: { type: 'string' },
         },
-        required: ['rank', 'start_time', 'end_time', 'summary', 'transcript_excerpt', 'category', 'reasoning'],
+        required: ['rank', 'start_time', 'end_time', 'summary', 'transcript_excerpt', 'category', 'reasoning', 'visual_description'],
       },
     },
   },
@@ -63,6 +64,8 @@ Select moments that would make compelling short video clips (15-60 seconds). Pri
 For each moment, provide a start_time and end_time that captures enough context (at minimum 10 seconds of surrounding dialogue). Times must be in milliseconds, matching timestamps in the transcript.
 
 Keep transcript_excerpt to 1-2 sentences maximum — just the key line(s) that make the moment memorable.
+
+For visual_description: write a single sentence describing only what this moment looks like on screen — spell geometry, lighting, colours, environment, character poses. Focus on visual spectacle, not combat outcomes or game mechanics. This will be used as a video generation prompt, so be specific and cinematic. Example: "A towering cylinder of scarlet and shadow erupts from the earth, sixty feet high, bathing the battlefield in deep crimson light."
 
 Return exactly ${MOMENT_COUNT} moments ranked 1 (best) to ${MOMENT_COUNT}.`;
 

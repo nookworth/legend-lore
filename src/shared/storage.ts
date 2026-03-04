@@ -26,7 +26,7 @@ export async function uploadVideo(localPath: string): Promise<string> {
   const gcs = getStorage();
   const fileName = path.basename(localPath);
   const bucket = gcs.bucket(config.gcsBucketVideos);
-  await bucket.upload(localPath, { destination: fileName, predefinedAcl: 'publicRead' });
+  await bucket.upload(localPath, { destination: fileName });
   return `https://storage.googleapis.com/${config.gcsBucketVideos}/${fileName}`;
 }
 

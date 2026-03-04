@@ -18,9 +18,7 @@ function buildVideoPrompt(moment: MomentCandidate): string {
     epic: 'Grand fantasy vista, sweeping landscape, heroic composition, golden hour lighting',
   };
 
-  // Use only the visual style — do not include moment summary, which may contain
-  // combat language that triggers Veo's content filters.
-  return `${categoryStyles[moment.category]}. Dragonlance fantasy setting. No text, no subtitles.`;
+  return `${categoryStyles[moment.category]}. ${moment.visual_description}. Dragonlance fantasy setting. No text, no subtitles.`;
 }
 
 export async function generateVideos(moments: MomentCandidate[], outputDir: string): Promise<string[]> {

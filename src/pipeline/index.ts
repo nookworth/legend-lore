@@ -24,12 +24,37 @@ export interface PipelineOptions {
   useNarrative?: string;   // path to output dir with narrative.json + PNGs — skips steps 4-6
 }
 
+interface CampaignJson {
+  campaign: string;
+  characters: Array<{
+    name: string;
+    race: string;
+    classes: Array<{ name: string; subclassName?: string }>;
+    personalityTraits?: string | null;
+    spells?: string[][];
+  }>;
+}
+
+function formatCampaignContext(raw: string): string {
+  const data = JSON.parse(raw) as CampaignJson;
+  const lines: string[] = [`Campaign: ${data.campaign}`, 'Characters:'];
+  for (const c of data.characters) {
+    const classes = c.classes.map((cl) => `${cl.name}${cl.subclassName ? ` (${cl.subclassName})` : ''}`).join(' / ');
+    lines.push(`- ${c.name} (${c.race} ${classes})`);
+    const spells = c.spells?.flat().filter(Boolean) ?? [];
+    if (spells.length) lines.push(`  Spells: ${spells.join(', ')}`);
+    if (c.personalityTraits) lines.push(`  Personality: ${c.personalityTraits.split('\n')[0]}`);
+  }
+  return lines.join('\n');
+}
+
 export async function runPipeline(opts: PipelineOptions): Promise<void> {
   const { audioDir, outputDir, campaignContextPath, dryRun = false } = opts;
 
   await mkdir(outputDir, { recursive: true });
 
   const campaignContext = await readFile(campaignContextPath, 'utf-8');
+  const campaignContextFormatted = formatCampaignContext(campaignContext);
 
   console.log('\n═══════════════════════════════════════');
   console.log('  Legend Lore — Session Recap Pipeline');
@@ -101,7 +126,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
     // ── Step 5: Generate narrative ───────────────────────────────────────────
     console.log('\nStep 5/10: Generating narrative + illustrations...');
-    narrative = await generateNarrative(transcriptText!, moments, campaignContext, outputDir);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir);
 
     // ── Step 6: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 6/10: Synthesizing narration audio...');

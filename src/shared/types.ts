@@ -13,6 +13,7 @@ export interface MomentCandidate {
   transcript_excerpt: string;
   category: 'combat' | 'roleplay' | 'comedy' | 'dramatic' | 'epic';
   reasoning: string;
+  visual_description: string;
 }
 
 export interface NarrativeSegment {

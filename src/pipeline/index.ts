@@ -78,7 +78,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   let transcriptText: string;
 
   if (opts.fromNarrative) {
-    console.log('Steps 1-3/10: Skipping (--from-video)');
+    console.log('Steps 1-3/10: Skipping (--from-narrative)');
     utterances = [];
     transcriptText = '';
   } else if (opts.fromTranscript) {

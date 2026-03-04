@@ -9,7 +9,35 @@ import type {
 } from "../shared/types.js";
 
 const MODEL = "gemini-3.1-flash-image-preview";
-const MAX_ATTEMPTS = 3
+const MAX_ATTEMPTS = 3;
+
+export interface CharacterAvatar {
+  name: string;
+  avatarUrl: string;
+}
+
+type InputPart = { text: string } | { inlineData: { mimeType: string; data: string } };
+
+async function fetchAvatarParts(avatars: CharacterAvatar[]): Promise<InputPart[]> {
+  if (avatars.length === 0) return [];
+  const parts: InputPart[] = [{ text: 'Character reference portraits — use these to accurately depict the characters in the illustration:' }];
+  for (const { name, avatarUrl } of avatars) {
+    try {
+      const response = await fetch(avatarUrl);
+      if (!response.ok) {
+        console.warn(`[generate-narrative] Avatar fetch failed for ${name}: ${response.status}`);
+        continue;
+      }
+      const mimeType = response.headers.get('content-type')?.split(';')[0] ?? 'image/jpeg';
+      const data = Buffer.from(await response.arrayBuffer()).toString('base64');
+      parts.push({ text: `${name}:` }, { inlineData: { mimeType, data } });
+      console.log(`[generate-narrative] Loaded avatar for ${name}`);
+    } catch (err) {
+      console.warn(`[generate-narrative] Could not fetch avatar for ${name}: ${err}`);
+    }
+  }
+  return parts;
+}
 
 // Static system instruction — narrator persona, style rules, and CR examples.
 // Separated from per-call content so it isn't reconstructed on every segment call.
@@ -44,19 +72,22 @@ async function generateSegment(
   client: GoogleGenAI,
   spec: (typeof SEGMENT_SPECS)[number],
   context: string,
+  avatarParts: InputPart[],
 ): Promise<NarrativeSegment> {
-  const prompt = `${context}
+  const textPrompt = `${context}
 
 Generate the ${spec.instruction}.
 
 Output the narration text followed immediately by a matching fantasy illustration (painterly style, Dragonlance aesthetic, dramatic lighting).`;
+
+  const contents: InputPart[] = [...avatarParts, { text: textPrompt }];
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     console.log(`[generate-narrative] ${spec.label} — attempt ${attempt}/${MAX_ATTEMPTS}`);
 
     const result = await client.models.generateContent({
       model: MODEL,
-      contents: prompt,
+      contents,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         responseModalities: ["TEXT", "IMAGE"],
@@ -93,6 +124,7 @@ export async function generateNarrative(
   moments: MomentCandidate[],
   campaignContext: string,
   outputDir: string,
+  characterAvatars: CharacterAvatar[] = [],
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
@@ -107,9 +139,11 @@ ${campaignContext}
 Selected highlight moments (in order):
 ${selectedMoments.map((m, i) => `${i + 1}. [${m.category}] ${m.summary}\n   Excerpt: "${m.transcript_excerpt}"\n   Visual: ${m.visual_description}`).join("\n\n")}`;
 
+  const avatarParts = await fetchAvatarParts(characterAvatars);
+
   const segments: NarrativeSegment[] = [];
   for (const spec of SEGMENT_SPECS) {
-    const segment = await generateSegment(client, spec, context);
+    const segment = await generateSegment(client, spec, context, avatarParts);
     await writeFile(path.join(outputDir, `narrative_${spec.label}.png`), segment.image);
     console.log(`[generate-narrative] Saved narrative_${spec.label}.png (${segment.image.length} bytes)`);
     segments.push(segment);

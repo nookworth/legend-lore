@@ -14,8 +14,8 @@ const { values, positionals } = parseArgs({
     'skip-upload': { type: 'boolean', default: false },
     'skip-deliver': { type: 'boolean', default: false },
     'skip-db': { type: 'boolean', default: false },
-    'use-transcript': { type: 'string' },
-    'use-narrative': { type: 'string' },
+    'from-transcript': { type: 'string' },
+    'from-narrative': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -26,23 +26,24 @@ if (values['help']) {
 Usage: npm run pipeline -- --audio-dir <dir> [options]
 
 Options:
-  --audio-dir <dir>     Directory containing per-user audio tracks (required)
+  --audio-dir <dir>     Directory containing per-user audio tracks (required unless resuming)
   --output-dir <dir>    Output directory (default: ./output/<timestamp>)
   --campaign <path>     Path to campaign.json (default: ./data/campaign.json)
   --dry-run             Stop after moment selection (no video generation)
   --skip-upload         Skip GCS upload steps (local dev without GCP)
   --skip-deliver        Skip Discord delivery
   --skip-db             Skip Cloud SQL (local dev without GCP)
-  --use-transcript <path>  Use existing utterances.json, skip steps 1-3
-  --use-narrative <dir>    Use existing narrative output dir, skip steps 4-6
+  --from-transcript <path>  Resume from existing utterances.json (skip steps 1-3)
+  --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --help                Show this help
 `);
   process.exit(0);
 }
 
 const audioDir = values['audio-dir'];
-if (!audioDir) {
-  console.error('Error: --audio-dir is required');
+const isResuming = values['from-transcript'] || values['from-narrative'];
+if (!audioDir && !isResuming) {
+  console.error('Error: --audio-dir is required (or use --from-transcript / --from-narrative to resume)');
   process.exit(1);
 }
 
@@ -50,13 +51,13 @@ const outputDir = values['output-dir'] ?? path.join('output', new Date().toISOSt
 const campaignContextPath = values['campaign'] ?? path.join('data', 'campaign.json');
 
 await runPipeline({
-  audioDir,
+  audioDir: audioDir ?? '',
   outputDir,
   campaignContextPath,
   dryRun: values['dry-run'],
   skipUpload: values['skip-upload'],
   skipDeliver: values['skip-deliver'],
   skipDb: values['skip-db'],
-  ...(values['use-transcript'] && { useTranscript: values['use-transcript'] }),
-  ...(values['use-narrative'] && { useNarrative: values['use-narrative'] }),
+  ...(values['from-transcript'] && { fromTranscript: values['from-transcript'] }),
+  ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
 });

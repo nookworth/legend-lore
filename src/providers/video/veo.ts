@@ -10,27 +10,48 @@ import type { VideoProvider } from './interface.js';
 const MODEL = 'veo-3.1-fast-generate-001';
 const POLL_INTERVAL_MS = 15_000;
 
+const SANITIZE_SYSTEM_INSTRUCTION = `You rewrite video generation prompts to pass content safety filters.
+Replace any language describing violence, death, killing, harm, or sexual content with visually equivalent but safe alternatives.
+Examples: "kills enemies" → "sends enemies flying back", "death" → "defeat", "wiping out" → "scattering", "blood" → "sparks of magical energy", "seductive" → "alluring", "undressed" → "in flowing robes".
+Preserve all visual details (colours, lighting, geometry, environment). Return only the rewritten prompt, no explanation.`;
+
 export class VeoProvider implements VideoProvider {
   private client: GoogleGenAI;
+  private gemini: GoogleGenAI;
   private storage: Storage;
 
   constructor() {
-    requireConfig(['gcsBucketVideos', 'gcpProject', 'gcpLocation']);
+    requireConfig(['gcsBucketVideos', 'gcpProject', 'gcpLocation', 'geminiApiKey']);
     this.client = new GoogleGenAI({
       vertexai: true,
       project: config.gcpProject,
       location: config.gcpLocation,
     });
+    this.gemini = new GoogleGenAI({ apiKey: config.geminiApiKey });
     this.storage = new Storage();
+  }
+
+  private async sanitizePrompt(prompt: string): Promise<string> {
+    const result = await this.gemini.models.generateContent({
+      model: 'gemini-2.5-flash-lite',
+      contents: prompt,
+      config: { systemInstruction: SANITIZE_SYSTEM_INSTRUCTION },
+    });
+    const sanitized = result.text?.trim() ?? prompt;
+    if (sanitized !== prompt) {
+      console.log(`[veo] Sanitized prompt: "${sanitized.slice(0, 100)}..."`);
+    }
+    return sanitized;
   }
 
   async generate(prompt: string, options: VideoOptions = {}): Promise<string> {
     const outputGcsUri = `gs://${config.gcsBucketVideos}/veo-clips/`;
-    console.log(`[veo] Generating video: "${prompt.slice(0, 80)}..."`);
+    const sanitized = await this.sanitizePrompt(prompt);
+    console.log(`[veo] Generating video: "${sanitized.slice(0, 80)}..."`);
 
     let operation = await this.client.models.generateVideos({
       model: MODEL,
-      prompt,
+      prompt: sanitized,
       config: {
         aspectRatio: '16:9',
         outputGcsUri,

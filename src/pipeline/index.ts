@@ -1,11 +1,11 @@
-import { mkdir, readFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { mergeAudio } from './merge-audio.js';
 import { uploadAudioFile } from './upload-audio.js';
 import { transcribe } from './transcribe.js';
 import { selectMoments } from './select-moments.js';
 import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
-import { generateNarrative } from './generate-narrative.js';
+import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generateTts } from './generate-tts.js';
 import { generateVideos } from './generate-video.js';
 import { stitchVideo } from './stitch-video.js';
@@ -20,8 +20,8 @@ export interface PipelineOptions {
   skipUpload?: boolean;    // skip GCS upload steps (for local dev without GCP)
   skipDeliver?: boolean;   // skip Discord delivery
   skipDb?: boolean;        // skip Cloud SQL (for local dev)
-  useTranscript?: string;  // path to existing utterances.json — skips steps 1-3
-  useNarrative?: string;   // path to output dir with narrative.json + PNGs — skips steps 4-6
+  fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
+  fromNarrative?: string;   // path to existing output dir — resumes from step 7
 }
 
 interface CampaignJson {
@@ -32,6 +32,12 @@ interface CampaignJson {
     classes: Array<{ name: string; subclassName?: string }>;
     personalityTraits?: string | null;
     spells?: string[][];
+    avatar?: string | null;
+    hair?: string | null;
+    eyes?: string | null;
+    skin?: string | null;
+    height?: string | null;
+    gender?: string | null;
   }>;
 }
 
@@ -41,11 +47,18 @@ function formatCampaignContext(raw: string): string {
   for (const c of data.characters) {
     const classes = c.classes.map((cl) => `${cl.name}${cl.subclassName ? ` (${cl.subclassName})` : ''}`).join(' / ');
     lines.push(`- ${c.name} (${c.race} ${classes})`);
+    const appearance = [c.gender, c.height, c.hair ? `${c.hair} hair` : null, c.eyes ? `${c.eyes} eyes` : null, c.skin ? `${c.skin} skin` : null].filter(Boolean).join(', ');
+    if (appearance) lines.push(`  Appearance: ${appearance}`);
     const spells = c.spells?.flat().filter(Boolean) ?? [];
     if (spells.length) lines.push(`  Spells: ${spells.join(', ')}`);
     if (c.personalityTraits) lines.push(`  Personality: ${c.personalityTraits.split('\n')[0]}`);
   }
   return lines.join('\n');
+}
+
+function extractCharacterAvatars(raw: string): CharacterAvatar[] {
+  const data = JSON.parse(raw) as CampaignJson;
+  return data.characters.filter((c) => c.avatar).map((c) => ({ name: c.name, avatarUrl: c.avatar! }));
 }
 
 export async function runPipeline(opts: PipelineOptions): Promise<void> {
@@ -55,6 +68,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
   const campaignContext = await readFile(campaignContextPath, 'utf-8');
   const campaignContextFormatted = formatCampaignContext(campaignContext);
+  const characterAvatars = extractCharacterAvatars(campaignContext);
 
   console.log('\n═══════════════════════════════════════');
   console.log('  Legend Lore — Session Recap Pipeline');
@@ -63,17 +77,14 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   let utterances: Utterance[];
   let transcriptText: string;
 
-  if (opts.useTranscript || opts.useNarrative) {
-    // ── Steps 1-3: Skipped ──────────────────────────────────────────────────
-    if (opts.useTranscript) {
-      console.log(`Steps 1-3/10: Using existing transcript: ${opts.useTranscript}`);
-      utterances = JSON.parse(await readFile(opts.useTranscript, 'utf-8')) as Utterance[];
-      transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
-    } else {
-      console.log('Steps 1-3/10: Skipping (--use-narrative implies no transcription needed)');
-      utterances = [];
-      transcriptText = '';
-    }
+  if (opts.fromNarrative) {
+    console.log('Steps 1-3/10: Skipping (--from-video)');
+    utterances = [];
+    transcriptText = '';
+  } else if (opts.fromTranscript) {
+    console.log(`Steps 1-3/10: Resuming from transcript: ${opts.fromTranscript}`);
+    utterances = JSON.parse(await readFile(opts.fromTranscript, 'utf-8')) as Utterance[];
+    transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
   } else {
     // ── Step 1: Merge audio ─────────────────────────────────────────────────
     console.log('Step 1/10: Merging audio tracks...');
@@ -91,15 +102,22 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // ── Step 3: Transcribe ──────────────────────────────────────────────────
     console.log('\nStep 3/10: Transcribing...');
     ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
+
+    // Persist utterances to data/transcripts/ so they survive output dir cleanup
+    const transcriptsDir = path.join('data', 'transcripts');
+    await mkdir(transcriptsDir, { recursive: true });
+    const transcriptBackupPath = path.join(transcriptsDir, `${path.basename(audioDir)}_utterances.json`);
+    await writeFile(transcriptBackupPath, JSON.stringify(utterances, null, 2));
+    console.log(`[transcribe] Backed up utterances → ${transcriptBackupPath}`);
   }
 
   let moments: MomentCandidate[];
   let narrative: Narrative;
   let narrationPaths: string[];
 
-  if (opts.useNarrative) {
-    // ── Steps 4-6: Skipped (using existing narrative output dir) ────────────
-    const srcDir = opts.useNarrative;
+  if (opts.fromNarrative) {
+    // ── Steps 4-6: Skipped (resuming from video generation) ─────────────────
+    const srcDir = opts.fromNarrative;
     console.log(`Steps 4-6/10: Using existing narrative from: ${srcDir}`);
     moments = JSON.parse(await readFile(path.join(srcDir, 'moments.json'), 'utf-8')) as MomentCandidate[];
     const narrativeJson = JSON.parse(await readFile(path.join(srcDir, 'narrative.json'), 'utf-8')) as { intro: string; bridges: string[]; outro: string };
@@ -118,6 +136,10 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // ── Step 4: Select moments ───────────────────────────────────────────────
     console.log('\nStep 4/10: Selecting moments...');
     moments = await selectMoments(utterances!, campaignContext, outputDir);
+    // Rank determines which moments to include; start_time determines reel order.
+    moments.sort((a, b) => a.rank - b.rank);
+    const top3 = moments.slice(0, 3).sort((a, b) => a.start_time - b.start_time);
+    moments = [...top3, ...moments.slice(3)];
 
     if (dryRun) {
       console.log('\n[dry-run] Stopping after moment selection.');
@@ -126,7 +148,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
     // ── Step 5: Generate narrative ───────────────────────────────────────────
     console.log('\nStep 5/10: Generating narrative + illustrations...');
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars);
 
     // ── Step 6: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 6/10: Synthesizing narration audio...');

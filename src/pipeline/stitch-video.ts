@@ -6,6 +6,22 @@ import type { Narrative } from '../shared/types.js';
 
 const execFileAsync = promisify(execFile);
 
+function wrapText(text: string, maxCharsPerLine = 52): string {
+  const words = text.split(/\s+/);
+  const lines: string[] = [];
+  let current = '';
+  for (const word of words) {
+    if (current.length + (current ? 1 : 0) + word.length > maxCharsPerLine) {
+      if (current) lines.push(current);
+      current = word;
+    } else {
+      current = current ? `${current} ${word}` : word;
+    }
+  }
+  if (current) lines.push(current);
+  return lines.join('\n');
+}
+
 interface StitchInput {
   type: 'narration' | 'clip';
   videoPath?: string;    // for clips
@@ -60,7 +76,8 @@ export async function stitchVideo(
     const titleCardPath = path.join(tmpDir, `titlecard_${label}.mp4`);
 
     // Create title card: image + audio + text overlay
-    const safeText = (seg.text ?? '').replace(/'/g, "'\\''").slice(0, 200);
+    const wrappedText = wrapText(seg.text ?? '');
+    const safeText = wrappedText.replace(/'/g, "'\\''").replace(/:/g, '\\:');
     await execFileAsync('ffmpeg', [
       '-y',
       '-loop', '1', '-i', imagePath,
@@ -68,7 +85,8 @@ export async function stitchVideo(
       '-filter_complex',
       `[0:v]scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,` +
       `drawtext=text='${safeText}':fontsize=28:fontcolor=white:bordercolor=black:borderw=2:` +
-      `x=(w-text_w)/2:y=h-th-40:line_spacing=8:expansion=none[v]`,
+      `x=(w-text_w)/2:y=h-th-40:line_spacing=8:expansion=none:` +
+      `box=1:boxcolor=black@0.4:boxborderw=10[v]`,
       '-map', '[v]', '-map', '1:a',
       '-c:v', 'libx264', '-c:a', 'aac',
       '-t', String(duration),
@@ -82,12 +100,17 @@ export async function stitchVideo(
     // Interleave video clip after each non-outro narration segment
     const clipPath = videoPaths[i];
     if (clipPath && i < videoPaths.length) {
-      // Re-encode clip to consistent 1280x720 + aac for concat compatibility
+      // Re-encode clip to consistent 1280x720 + silent aac for concat compatibility
+      // (generated clips have no audio — inject anullsrc so all segments have audio streams)
       const normalizedClipPath = path.join(tmpDir, `clip_normalized_${i}.mp4`);
       await execFileAsync('ffmpeg', [
-        '-y', '-i', clipPath,
+        '-y',
+        '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo',
+        '-i', clipPath,
         '-vf', 'scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720',
         '-c:v', 'libx264', '-c:a', 'aac',
+        '-map', '1:v', '-map', '0:a',
+        '-shortest',
         '-pix_fmt', 'yuv420p',
         normalizedClipPath,
       ]);

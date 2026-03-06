@@ -22,6 +22,7 @@ export interface PipelineOptions {
   skipDb?: boolean;        // skip Cloud SQL (for local dev)
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
+  referenceImagePath?: string; // optional group portrait for Veo reference image
 }
 
 interface CampaignJson {
@@ -157,7 +158,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
   // ── Step 7: Generate video clips ────────────────────────────────────────────
   console.log('\nStep 7/10: Generating video clips...');
-  const videoPaths = await generateVideos(moments, outputDir);
+  const videoPaths = await generateVideos(moments, outputDir, opts.referenceImagePath);
 
   // ── Step 8: Stitch final video ──────────────────────────────────────────────
   console.log('\nStep 8/10: Stitching final video...');

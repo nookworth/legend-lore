@@ -16,6 +16,7 @@ const { values, positionals } = parseArgs({
     'skip-db': { type: 'boolean', default: false },
     'from-transcript': { type: 'string' },
     'from-narrative': { type: 'string' },
+    'reference-image': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -35,6 +36,7 @@ Options:
   --skip-db             Skip Cloud SQL (local dev without GCP)
   --from-transcript <path>  Resume from existing utterances.json (skip steps 1-3)
   --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
+  --reference-image <path>  Group portrait passed to Veo as a reference image
   --help                Show this help
 `);
   process.exit(0);
@@ -60,4 +62,5 @@ await runPipeline({
   skipDb: values['skip-db'],
   ...(values['from-transcript'] && { fromTranscript: values['from-transcript'] }),
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
+  ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
 });

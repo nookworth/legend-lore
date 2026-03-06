@@ -1,13 +1,14 @@
 import { GoogleGenAI } from '@google/genai';
 import { Storage } from '@google-cloud/storage';
 import { createWriteStream } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 import { pipeline } from 'node:stream/promises';
 import path from 'node:path';
 import { config, requireConfig } from '../../shared/config.js';
 import type { VideoOptions } from '../../shared/types.js';
 import type { VideoProvider } from './interface.js';
 
-const MODEL = 'veo-3.1-fast-generate-001';
+const MODEL = 'veo-3.1-fast-generate-preview';
 const POLL_INTERVAL_MS = 15_000;
 
 const SANITIZE_SYSTEM_INSTRUCTION = `You rewrite video generation prompts to pass content safety filters.
@@ -49,12 +50,22 @@ export class VeoProvider implements VideoProvider {
     const sanitized = await this.sanitizePrompt(prompt);
     console.log(`[veo] Generating video: "${sanitized.slice(0, 80)}..."`);
 
+    let referenceImages: object[] | undefined;
+    if (options.referenceImagePath) {
+      const ext = path.extname(options.referenceImagePath).toLowerCase().slice(1);
+      const mimeType = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : `image/${ext}`;
+      const imageBytes = (await readFile(options.referenceImagePath)).toString('base64');
+      referenceImages = [{ image: { imageBytes, mimeType }, referenceType: 'asset' }];
+      console.log(`[veo] Using reference image: ${options.referenceImagePath}`);
+    }
+
     let operation = await this.client.models.generateVideos({
       model: MODEL,
       prompt: sanitized,
       config: {
         aspectRatio: '16:9',
         outputGcsUri,
+        ...(referenceImages && { referenceImages }),
       },
     });
 

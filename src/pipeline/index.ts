@@ -7,7 +7,6 @@ import { selectMoments } from './select-moments.js';
 import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generateTts } from './generate-tts.js';
-import { generateVideos } from './generate-video.js';
 import { stitchVideo } from './stitch-video.js';
 import { uploadOutput } from './upload-output.js';
 import { deliver } from './deliver.js';
@@ -79,29 +78,29 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   let transcriptText: string;
 
   if (opts.fromNarrative) {
-    console.log('Steps 1-3/10: Skipping (--from-narrative)');
+    console.log('Steps 1-3/9: Skipping (--from-narrative)');
     utterances = [];
     transcriptText = '';
   } else if (opts.fromTranscript) {
-    console.log(`Steps 1-3/10: Resuming from transcript: ${opts.fromTranscript}`);
+    console.log(`Steps 1-3/9: Resuming from transcript: ${opts.fromTranscript}`);
     utterances = JSON.parse(await readFile(opts.fromTranscript, 'utf-8')) as Utterance[];
     transcriptText = utterances.map((u) => `[${u.speaker}] ${u.text}`).join('\n');
   } else {
     // ── Step 1: Merge audio ─────────────────────────────────────────────────
-    console.log('Step 1/10: Merging audio tracks...');
+    console.log('Step 1/9: Merging audio tracks...');
     const mergedPath = path.join(outputDir, 'session_multichannel.m4a');
     const { channelMap } = await mergeAudio(audioDir, mergedPath);
 
     // ── Step 2: Upload to GCS ───────────────────────────────────────────────
     if (!opts.skipUpload) {
-      console.log('\nStep 2/10: Uploading audio to GCS...');
+      console.log('\nStep 2/9: Uploading audio to GCS...');
       await uploadAudioFile(mergedPath);
     } else {
-      console.log('\nStep 2/10: Skipping GCS upload (--skip-upload)');
+      console.log('\nStep 2/9: Skipping GCS upload (--skip-upload)');
     }
 
     // ── Step 3: Transcribe ──────────────────────────────────────────────────
-    console.log('\nStep 3/10: Transcribing...');
+    console.log('\nStep 3/9: Transcribing...');
     ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
 
     // Persist utterances to data/transcripts/ so they survive output dir cleanup
@@ -119,23 +118,20 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   if (opts.fromNarrative) {
     // ── Steps 4-6: Skipped (resuming from video generation) ─────────────────
     const srcDir = opts.fromNarrative;
-    console.log(`Steps 4-6/10: Using existing narrative from: ${srcDir}`);
+    console.log(`Steps 4-6/9: Using existing narrative from: ${srcDir}`);
     moments = JSON.parse(await readFile(path.join(srcDir, 'moments.json'), 'utf-8')) as MomentCandidate[];
-    const narrativeJson = JSON.parse(await readFile(path.join(srcDir, 'narrative.json'), 'utf-8')) as { intro: string; bridges: string[]; outro: string };
-    const loadSegment = async (label: string, text: string) => ({
-      text,
-      image: await readFile(path.join(srcDir, `narrative_${label}.png`)),
-    });
-    narrative = {
-      intro: await loadSegment('intro', narrativeJson.intro),
-      bridges: await Promise.all(narrativeJson.bridges.map((t, i) => loadSegment(`bridge_${i + 1}`, t))),
-      outro: await loadSegment('outro', narrativeJson.outro),
-    };
-    const labels = ['narration_intro', ...narrativeJson.bridges.map((_, i) => `narration_bridge_${i}`), 'narration_outro'];
-    narrationPaths = labels.map((l) => path.join(srcDir, `${l}.mp3`));
+    const narrativeJson = JSON.parse(await readFile(path.join(srcDir, 'narrative.json'), 'utf-8')) as Record<string, string>;
+    narrative = await Promise.all(
+      Object.entries(narrativeJson).map(async ([label, text]) => ({
+        label,
+        text,
+        image: await readFile(path.join(srcDir, `narrative_${label}.png`)),
+      })),
+    );
+    narrationPaths = narrative.map((s) => path.join(srcDir, `narration_${s.label}.mp3`));
   } else {
     // ── Step 4: Select moments ───────────────────────────────────────────────
-    console.log('\nStep 4/10: Selecting moments...');
+    console.log('\nStep 4/9: Selecting moments...');
     moments = await selectMoments(utterances!, campaignContext, outputDir);
     // Rank determines which moments to include; start_time determines reel order.
     moments.sort((a, b) => a.rank - b.rank);
@@ -148,38 +144,34 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     }
 
     // ── Step 5: Generate narrative ───────────────────────────────────────────
-    console.log('\nStep 5/10: Generating narrative + illustrations...');
+    console.log('\nStep 5/9: Generating narrative + illustrations...');
     narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars);
 
     // ── Step 6: Generate TTS ─────────────────────────────────────────────────
-    console.log('\nStep 6/10: Synthesizing narration audio...');
+    console.log('\nStep 6/9: Synthesizing narration audio...');
     narrationPaths = await generateTts(narrative, outputDir);
   }
 
-  // ── Step 7: Generate video clips ────────────────────────────────────────────
-  console.log('\nStep 7/10: Generating video clips...');
-  const videoPaths = await generateVideos(moments, outputDir, opts.referenceImagePath);
-
-  // ── Step 8: Stitch final video ──────────────────────────────────────────────
-  console.log('\nStep 8/10: Stitching final video...');
+  // ── Step 7: Stitch final video ──────────────────────────────────────────────
+  console.log('\nStep 7/9: Stitching final video...');
   const finalPath = path.join(outputDir, 'final_recap.mp4');
-  await stitchVideo(narrative, narrationPaths, videoPaths, finalPath, outputDir);
+  await stitchVideo(narrative, narrationPaths, finalPath, outputDir);
 
-  // ── Step 9: Upload output ───────────────────────────────────────────────────
+  // ── Step 8: Upload output ───────────────────────────────────────────────────
   let finalUrl = finalPath;
   if (!opts.skipUpload) {
-    console.log('\nStep 9/10: Uploading final video to GCS...');
+    console.log('\nStep 8/9: Uploading final video to GCS...');
     finalUrl = await uploadOutput(finalPath);
   } else {
-    console.log('\nStep 9/10: Skipping GCS upload (--skip-upload)');
+    console.log('\nStep 8/9: Skipping GCS upload (--skip-upload)');
   }
 
-  // ── Step 10: Deliver to Discord ─────────────────────────────────────────────
+  // ── Step 9: Deliver to Discord ─────────────────────────────────────────────
   if (!opts.skipDeliver) {
-    console.log('\nStep 10/10: Delivering to Discord...');
+    console.log('\nStep 9/9: Delivering to Discord...');
     await deliver(finalPath);
   } else {
-    console.log('\nStep 10/10: Skipping Discord delivery (--skip-deliver)');
+    console.log('\nStep 9/9: Skipping Discord delivery (--skip-deliver)');
   }
 
   console.log('\n═══════════════════════════════════════');

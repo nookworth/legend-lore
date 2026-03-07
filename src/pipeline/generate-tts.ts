@@ -28,18 +28,10 @@ const VOICE = {
 export async function generateTts(narrative: Narrative, outputDir: string): Promise<string[]> {
   const client = new textToSpeech.TextToSpeechClient();
 
-  const segments = [narrative.intro, ...narrative.bridges, narrative.outro];
-  const labels = [
-    'narration_intro',
-    ...narrative.bridges.map((_, i) => `narration_bridge_${i}`),
-    'narration_outro',
-  ];
-
   const outputPaths: string[] = [];
 
-  for (let i = 0; i < segments.length; i++) {
-    const segment = segments[i]!;
-    const label = labels[i]!;
+  for (const segment of narrative) {
+    const label = `narration_${segment.label}`;
     const outputPath = path.join(outputDir, `${label}.mp3`);
 
     console.log(`[generate-tts] Synthesizing ${label}...`);
@@ -61,3 +53,4 @@ export async function generateTts(narrative: Narrative, outputDir: string): Prom
 
   return outputPaths;
 }
+

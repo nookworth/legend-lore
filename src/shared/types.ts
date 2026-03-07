@@ -17,15 +17,13 @@ export interface MomentCandidate {
 }
 
 export interface NarrativeSegment {
-  text: string; // narration copy → TTS
+  label: string; // e.g. 'intro', 'moment_1', 'outro'
+  text: string;  // narration copy → TTS
   image: Buffer; // generated illustration → title card background
 }
 
-export interface Narrative {
-  intro: NarrativeSegment;
-  bridges: NarrativeSegment[]; // 2 bridges for 3 clips
-  outro: NarrativeSegment;
-}
+// Flat ordered list: [intro, moment_1, moment_2, moment_3, outro]
+export type Narrative = NarrativeSegment[];
 
 export interface Session {
   id: string;

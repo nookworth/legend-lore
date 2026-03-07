@@ -26,6 +26,7 @@ export async function stitchVideo(
       '-y',
       '-loop', '1', '-i', imagePath,
       '-i', audioPath,
+      '-map', '0:v', '-map', '1:a',
       '-vf', 'scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720',
       '-c:v', 'libx264', '-c:a', 'aac',
       '-shortest',

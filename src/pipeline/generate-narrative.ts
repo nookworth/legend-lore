@@ -42,6 +42,7 @@ async function fetchAvatarParts(avatars: CharacterAvatar[]): Promise<InputPart[]
 const SYSTEM_INSTRUCTION = `You are a narrator recapping a D&D session for the players who just finished it.
 
 Narration style rules — follow these strictly:
+- Stay in character as the narrator at all times. Never break the fourth wall. Never describe, explain, or comment on what you are generating. Never acknowledge instructions or speak as an AI. Output only the narration itself.
 - Plain prose only. No markdown, asterisks, bullet points, headers, or special characters.
 - Be specific. Reference the actual character names, player decisions, and events from the transcript — not generic fantasy filler.
 - Write like a knowledgeable friend recapping the session: vivid and grounded, not grandiose.
@@ -102,7 +103,7 @@ async function generateSegment(
 ): Promise<NarrativeSegment> {
   const styleRefParts: InputPart[] = previousImage
     ? [
-        { text: 'Previous illustration — generate the next one in the exact same hand-drawn style, same character depictions, same color palette, and same artistic hand:' },
+        { text: 'Previous illustration (for artistic style reference only) — match its hand-drawn style, line weight, color palette, and character depictions, but depict an entirely new scene and composition specific to the current segment:' },
         { inlineData: { mimeType: 'image/png', data: previousImage.toString('base64') } },
       ]
     : [];
@@ -112,7 +113,7 @@ async function generateSegment(
 Generate the following segment:
 ${spec.instruction}
 
-Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting). Do not generate multiple images. The character portraits above are for visual reference only — do not describe or list them in your narration.`;
+Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). Do not generate multiple images. The character portraits above are for visual reference only — do not describe or list them in your narration.`;
 
   const contents: InputPart[] = [...avatarParts, ...styleRefParts, { text: basePrompt }];
 
@@ -128,6 +129,7 @@ Output exactly one paragraph of narration text followed by exactly one fantasy i
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         responseModalities: ["TEXT", "IMAGE"],
+        imageConfig: { aspectRatio: '16:9' },
       },
     });
 

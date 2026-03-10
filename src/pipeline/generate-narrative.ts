@@ -137,21 +137,31 @@ Text may be part of the image if it is a legitimate part of the scene, e.g. a ma
       },
     });
 
-    const parts = result.candidates?.[0]?.content?.parts ?? [];
+    const usage = result.usageMetadata;
+    if (usage) {
+      console.log(
+        `[generate-narrative] ${spec.label} — tokens: prompt=${usage.promptTokenCount}, candidates=${usage.candidatesTokenCount}, total=${usage.totalTokenCount}`,
+      );
+    }
+
+    const candidate = result.candidates?.[0];
+    const finishReason = candidate?.finishReason;
+    const parts = candidate?.content?.parts ?? [];
     const types = parts
       .map((p) =>
         "text" in p ? "text" : "inlineData" in p ? "image" : "unknown",
       )
       .join(", ");
     console.log(
-      `[generate-narrative] ${spec.label} — ${parts.length} parts: ${types}`,
+      `[generate-narrative] ${spec.label} — ${parts.length} parts: ${types}${finishReason ? ` (finishReason: ${finishReason})` : ""}`,
     );
 
     let text: string | null = null;
     let image: Buffer | null = null;
 
     for (const part of parts) {
-      if ("text" in part && part.text) {
+      // Take the first text part only — later parts are often model meta-commentary
+      if ("text" in part && part.text && !text) {
         text = part.text.trim();
       } else if ("inlineData" in part && part.inlineData?.data) {
         image = Buffer.from(part.inlineData.data, "base64");
@@ -171,6 +181,27 @@ Text may be part of the image if it is a legitimate part of the scene, e.g. a ma
     console.warn(
       `[generate-narrative] ${spec.label} — incomplete response (${types}), retrying...`,
     );
+  }
+
+  // If we have an image but no text, try a text-only fallback call
+  if (lastImage && !lastText) {
+    console.warn(
+      `[generate-narrative] ${spec.label} — image-only after ${MAX_ATTEMPTS} attempts, trying text-only fallback...`,
+    );
+    const fallback = await client.models.generateContent({
+      model: MODEL,
+      contents: [...avatarParts, { text: `${context}\n\nGenerate the following segment:\n${spec.instruction}\n\nOutput only the narration text paragraph. Do not generate an image.` }],
+      config: {
+        systemInstruction: SYSTEM_INSTRUCTION,
+        responseModalities: ["TEXT"],
+      },
+    });
+    for (const part of fallback.candidates?.[0]?.content?.parts ?? []) {
+      if ("text" in part && part.text) {
+        lastText = part.text.trim();
+        break;
+      }
+    }
   }
 
   // Accept partial output if we accumulated both text and image across separate attempts

@@ -41,6 +41,23 @@ interface CampaignJson {
   }>;
 }
 
+const WINDOW_MS = 5 * 60 * 1000;
+
+function formatTime(ms: number): string {
+  const s = Math.floor(ms / 1000);
+  const m = Math.floor(s / 60);
+  const h = Math.floor(m / 60);
+  return `${h}:${String(m % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+}
+
+function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
+  const totalDuration = utterances.at(-1)?.end ?? 0;
+  const filtered = fromEnd
+    ? utterances.filter((u) => u.start >= totalDuration - windowMs)
+    : utterances.filter((u) => u.start < windowMs);
+  return filtered.map((u) => `[${formatTime(u.start)}] ${u.speaker}: ${u.text}`).join('\n');
+}
+
 function formatCampaignContext(raw: string): string {
   const data = JSON.parse(raw) as CampaignJson;
   const lines: string[] = [`Campaign: ${data.campaign}`, 'Characters:'];
@@ -145,7 +162,10 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
     // ── Step 5: Generate narrative ───────────────────────────────────────────
     console.log('\nStep 5/9: Generating narrative + illustrations...');
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars);
+    const sessionBookends = utterances.length
+      ? { sessionStart: formatUtteranceWindow(utterances, WINDOW_MS), sessionEnd: formatUtteranceWindow(utterances, WINDOW_MS, true) }
+      : undefined;
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends);
 
     // ── Step 6: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 6/9: Synthesizing narration audio...');

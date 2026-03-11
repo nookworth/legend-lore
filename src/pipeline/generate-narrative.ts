@@ -54,10 +54,12 @@ async function fetchAvatarParts(
   return parts;
 }
 const TONE_PROMPT = await hub.pull("tone_prompt:87b8f49a");
+console.log('[generate-narrative] Tone prompt type:', typeof TONE_PROMPT, TONE_PROMPT?.constructor?.name);
+console.log('[generate-narrative] Tone prompt value:', String(TONE_PROMPT).slice(0, 300));
 const SYSTEM_INSTRUCTION = `You are an omniscient narrator with the tongue of an epic poet, the pencil of a master illustrator, and an eye for facsimile to rival Vincent van Gogh. Your job is to recap a D&D session for the players who just finished it.
 
 Narration style rules — follow these strictly:
-- Stay in character as the narrator at all times. Never break the fourth wall. Never describe, explain, or comment on what you are generating. Never acknowledge instructions or speak as an AI. Output only the narration itself.
+- Stay in character as the narrator at all times. Never break the fourth wall. Your text must be narration only — no AI commentary, no descriptions of what you are generating, no acknowledgment of instructions.
 - Plain prose only. No markdown, asterisks, bullet points, headers, or special characters.
 - Be specific. Reference the actual character names, player decisions, and events from the transcript — not generic fantasy filler.
 - Write like a knowledgeable friend recapping the session: vivid and grounded, not grandiose.
@@ -71,12 +73,22 @@ interface SegmentSpec {
   instruction: string;
 }
 
-function buildSegmentSpecs(moments: MomentCandidate[]): SegmentSpec[] {
+function buildSegmentSpecs(
+  moments: MomentCandidate[],
+  bookends?: { sessionStart?: string; sessionEnd?: string },
+): SegmentSpec[] {
+  const introInstruction = bookends?.sessionStart
+    ? `INTRO — Set the scene for tonight's session. Here is how the session opened:\n\n${bookends.sessionStart}\n\nUse this to establish where the party was and what they were doing at the start of the session. Do not narrate any of the highlight moments yet. (2-4 sentences)`
+    : "INTRO — Set the scene for tonight's session. Briefly establish the party, where they are, and what they were doing as the session began. Do not narrate any of the highlight moments yet. (2-4 sentences)";
+
+  const outroInstruction = bookends?.sessionEnd
+    ? `OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. Here is how the session closed:\n\n${bookends.sessionEnd}\n\nUse this to ground the outro in what actually happened at the end of the session. (2-3 sentences)`
+    : "OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. (2-3 sentences)";
+
   const specs: SegmentSpec[] = [
     {
       label: "intro",
-      instruction:
-        "INTRO — Set the scene for tonight's session. Briefly establish the party, where they are, and what they were doing as the session began. Do not narrate any of the highlight moments yet. (2-4 sentences)",
+      instruction: introInstruction,
     },
   ];
 
@@ -95,8 +107,7 @@ function buildSegmentSpecs(moments: MomentCandidate[]): SegmentSpec[] {
 
   specs.push({
     label: "outro",
-    instruction:
-      "OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. (2-3 sentences)",
+    instruction: outroInstruction,
   });
 
   return specs;
@@ -222,6 +233,7 @@ export async function generateNarrative(
   campaignContext: string,
   outputDir: string,
   characterAvatars: CharacterAvatar[] = [],
+  sessionBookends?: { sessionStart?: string; sessionEnd?: string },
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
@@ -245,7 +257,7 @@ Selected highlight moments (chronological order):
 ${selectedMoments.map((m, i) => `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Excerpt: "${m.transcript_excerpt}"\n  Visual: ${m.visual_description}`).join("\n\n")}`;
 
   const avatarParts = await fetchAvatarParts(characterAvatars);
-  const segmentSpecs = buildSegmentSpecs(selectedMoments);
+  const segmentSpecs = buildSegmentSpecs(selectedMoments, sessionBookends);
 
   const segments: NarrativeSegment[] = [];
   for (const spec of segmentSpecs) {

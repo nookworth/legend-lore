@@ -24,10 +24,11 @@ export async function uploadAudio(localPath: string): Promise<string> {
 export async function uploadVideo(localPath: string): Promise<string> {
   requireConfig(['gcsBucketVideos']);
   const gcs = getStorage();
-  const fileName = path.basename(localPath);
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const destination = `${timestamp}_${path.basename(localPath)}`;
   const bucket = gcs.bucket(config.gcsBucketVideos);
-  await bucket.upload(localPath, { destination: fileName });
-  return `https://storage.googleapis.com/${config.gcsBucketVideos}/${fileName}`;
+  await bucket.upload(localPath, { destination });
+  return `https://storage.googleapis.com/${config.gcsBucketVideos}/${destination}`;
 }
 
 export async function getSignedUrl(gcsUri: string): Promise<string> {

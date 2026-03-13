@@ -65,6 +65,9 @@ Narration style rules — follow these strictly:
 - Write like a knowledgeable friend recapping the session: vivid and grounded, not grandiose.
 - Avoid "LinkedIn-core" rhetoric: punchy antithesis ("Not a retreat, but a reckoning."), dramatic one-word sentences ("Courage."), and forced epiphanies ("That was the moment everything changed.").
 - Vary sentence length. Short sentences land harder.
+- Use third person throughout — he, she, they, their. Never address the party or any character as "you" or "your". This must be consistent across every segment.
+- Do not reference portraits, reference images, or the fact that character images were provided. Write as if you simply know what the characters look like.
+- If you quote a player or character directly, you must attribute the quote to the correct speaker using the Attributions provided for that moment. Never attribute a quote to the wrong person.
 
 ${TONE_PROMPT}`;
 
@@ -111,6 +114,103 @@ function buildSegmentSpecs(
   });
 
   return specs;
+}
+
+function buildCombinedPrompt(specs: SegmentSpec[], context: string): string {
+  const segmentList = specs
+    .map(
+      (s, i) =>
+        `SEGMENT ${i + 1} — ${s.label.toUpperCase()}\n${s.instruction}`,
+    )
+    .join("\n\n");
+
+  return `${context}
+
+Generate all ${specs.length} narrative segments in order:
+
+${segmentList}
+
+For each segment output exactly one paragraph of narration text immediately followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
+Text may be part of the image if it is a legitimate part of the scene, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.`;
+}
+
+async function generateNarrativeSinglePrompt(
+  client: GoogleGenAI,
+  specs: SegmentSpec[],
+  context: string,
+  avatarParts: InputPart[],
+): Promise<NarrativeSegment[] | null> {
+  const prompt = buildCombinedPrompt(specs, context);
+  const contents: InputPart[] = [...avatarParts, { text: prompt }];
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    console.log(
+      `[generate-narrative] Single-prompt — attempt ${attempt}/${MAX_ATTEMPTS}`,
+    );
+
+    const result = await client.models.generateContent({
+      model: MODEL,
+      contents,
+      config: {
+        systemInstruction: SYSTEM_INSTRUCTION,
+        responseModalities: ["TEXT", "IMAGE"],
+        imageConfig: { aspectRatio: "16:9" },
+      },
+    });
+
+    const usage = result.usageMetadata;
+    if (usage) {
+      console.log(
+        `[generate-narrative] Single-prompt — tokens: prompt=${usage.promptTokenCount}, candidates=${usage.candidatesTokenCount}, total=${usage.totalTokenCount}`,
+      );
+    }
+
+    const candidate = result.candidates?.[0];
+    const finishReason = candidate?.finishReason;
+    const parts = candidate?.content?.parts ?? [];
+    const types = parts
+      .map((p) =>
+        "text" in p ? "text" : "inlineData" in p ? "image" : "unknown",
+      )
+      .join(", ");
+    console.log(
+      `[generate-narrative] Single-prompt — ${parts.length} parts: ${types}${finishReason ? ` (finishReason: ${finishReason})` : ""}`,
+    );
+
+    const pairs: Array<{ text: string; image: Buffer }> = [];
+    const textBuffer: string[] = [];
+
+    for (const part of parts) {
+      if ("text" in part && part.text?.trim()) {
+        textBuffer.push(part.text.trim());
+      } else if ("inlineData" in part && part.inlineData?.data) {
+        if (textBuffer.length) {
+          pairs.push({
+            text: textBuffer.join(" "),
+            image: Buffer.from(part.inlineData.data, "base64"),
+          });
+          textBuffer.length = 0;
+        }
+      }
+    }
+
+    if (pairs.length === specs.length) {
+      console.log(
+        `[generate-narrative] Single-prompt: got ${pairs.length}/${specs.length} pairs`,
+      );
+      return specs.map((spec, i) => ({
+        label: spec.label,
+        text: pairs[i]!.text,
+        image: pairs[i]!.image,
+      }));
+    }
+
+    console.warn(
+      `[generate-narrative] Single-prompt — got ${pairs.length}/${specs.length} pairs, retrying...`,
+    );
+  }
+
+  return null;
 }
 
 async function generateSegment(
@@ -234,6 +334,7 @@ export async function generateNarrative(
   outputDir: string,
   characterAvatars: CharacterAvatar[] = [],
   sessionBookends?: { sessionStart?: string; sessionEnd?: string },
+  narrativeMode: 'single' | 'multi' = 'single',
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
@@ -254,22 +355,39 @@ export async function generateNarrative(
 ${campaignContext}
 
 Selected highlight moments (chronological order):
-${selectedMoments.map((m, i) => `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Excerpt: "${m.transcript_excerpt}"\n  Visual: ${m.visual_description}`).join("\n\n")}`;
+${selectedMoments.map((m, i) => {
+    const attributionLines = m.attributions?.length
+      ? `\n  Attributions:\n${m.attributions.map((a) => `    - ${a.speaker}: "${a.quote}"`).join('\n')}`
+      : '';
+    return `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Preceded by: ${m.preceding_events}\n  Excerpt: "${m.transcript_excerpt}"${attributionLines}\n  Visual: ${m.visual_description}`;
+  }).join("\n\n")}`;
 
   const avatarParts = await fetchAvatarParts(characterAvatars);
   const segmentSpecs = buildSegmentSpecs(selectedMoments, sessionBookends);
 
-  const segments: NarrativeSegment[] = [];
-  for (const spec of segmentSpecs) {
-    const segment = await generateSegment(client, spec, context, avatarParts);
+  let segments = narrativeMode === 'single'
+    ? await generateNarrativeSinglePrompt(client, segmentSpecs, context, avatarParts)
+    : null;
+  if (!segments) {
+    if (narrativeMode === 'single') {
+      console.warn('[generate-narrative] Single-prompt failed, falling back to per-segment calls');
+    } else {
+      console.log('[generate-narrative] Using per-segment calls (--narrative-mode=multi)');
+    }
+    segments = [];
+    for (const spec of segmentSpecs) {
+      segments.push(await generateSegment(client, spec, context, avatarParts));
+    }
+  }
+
+  for (const segment of segments) {
     await writeFile(
-      path.join(outputDir, `narrative_${spec.label}.png`),
+      path.join(outputDir, `narrative_${segment.label}.png`),
       segment.image,
     );
     console.log(
-      `[generate-narrative] Saved narrative_${spec.label}.png (${segment.image.length} bytes)`,
+      `[generate-narrative] Saved narrative_${segment.label}.png (${segment.image.length} bytes)`,
     );
-    segments.push(segment);
   }
 
   // Persist text for --from-narrative resume

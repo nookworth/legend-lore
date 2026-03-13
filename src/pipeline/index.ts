@@ -22,6 +22,7 @@ export interface PipelineOptions {
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
   referenceImagePath?: string; // optional group portrait for Veo reference image
+  narrativeMode?: 'single' | 'multi'; // single = one combined prompt (default), multi = per-segment
 }
 
 interface CampaignJson {
@@ -165,7 +166,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     const sessionBookends = utterances.length
       ? { sessionStart: formatUtteranceWindow(utterances, WINDOW_MS), sessionEnd: formatUtteranceWindow(utterances, WINDOW_MS, true) }
       : undefined;
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode);
 
     // ── Step 6: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 6/9: Synthesizing narration audio...');

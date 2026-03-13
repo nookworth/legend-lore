@@ -17,6 +17,7 @@ const { values, positionals } = parseArgs({
     'from-transcript': { type: 'string' },
     'from-narrative': { type: 'string' },
     'reference-image': { type: 'string' },
+    'narrative-mode': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -37,6 +38,7 @@ Options:
   --from-transcript <path>  Resume from existing utterances.json (skip steps 1-3)
   --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --reference-image <path>  Group portrait passed to Veo as a reference image
+  --narrative-mode <mode>   Narrative generation mode: single (default) or multi
   --help                Show this help
 `);
   process.exit(0);
@@ -49,7 +51,8 @@ if (!audioDir && !isResuming) {
   process.exit(1);
 }
 
-const outputDir = values['output-dir'] ?? path.join('output', new Date().toISOString().replace(/[:.]/g, '-'));
+const narrativeMode = (values['narrative-mode'] === 'multi' ? 'multi' : 'single') as 'single' | 'multi';
+const outputDir = values['output-dir'] ?? path.join('output', `${new Date().toISOString().replace(/[:.]/g, '-')}_${narrativeMode}`);
 const campaignContextPath = values['campaign'] ?? path.join('data', 'campaign.json');
 
 await runPipeline({
@@ -63,4 +66,5 @@ await runPipeline({
   ...(values['from-transcript'] && { fromTranscript: values['from-transcript'] }),
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
   ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
+  narrativeMode,
 });

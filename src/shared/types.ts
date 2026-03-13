@@ -11,6 +11,8 @@ export interface MomentCandidate {
   end_time: number; // milliseconds
   summary: string;
   transcript_excerpt: string;
+  attributions?: Array<{ quote: string; speaker: string }>; // verbatim quotes → speaker, for any directly quotable lines in this moment
+  preceding_events: string; // 1-2 sentences on what happened between the previous moment (or session start) and this one
   category: 'combat' | 'roleplay' | 'comedy' | 'dramatic' | 'epic';
   reasoning: string;
   visual_description: string;

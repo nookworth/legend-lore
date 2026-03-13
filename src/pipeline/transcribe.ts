@@ -24,6 +24,7 @@ export async function transcribe(
   const transcript = await client.transcripts.transcribe({
     audio: audioPath,
     multichannel: true,
+    speech_models: ["universal-2"]
   });
 
   if (transcript.status === 'error') {

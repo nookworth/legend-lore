@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { config, requireConfig } from "../shared/config.js";
 import type {
@@ -7,6 +7,8 @@ import type {
   Narrative,
   NarrativeSegment,
 } from "../shared/types.js";
+import * as hub from 'langchain/hub/node'
+import * as wrappers from 'langsmith/wrappers'
 
 const MODEL = "gemini-3.1-flash-image-preview";
 const MAX_ATTEMPTS = 3;
@@ -16,60 +18,84 @@ export interface CharacterAvatar {
   avatarUrl: string;
 }
 
-type InputPart = { text: string } | { inlineData: { mimeType: string; data: string } };
+type InputPart =
+  | { text: string }
+  | { inlineData: { mimeType: string; data: string } };
 
-async function fetchAvatarParts(avatars: CharacterAvatar[]): Promise<InputPart[]> {
+async function fetchAvatarParts(
+  avatars: CharacterAvatar[],
+): Promise<InputPart[]> {
   if (avatars.length === 0) return [];
-  const parts: InputPart[] = [{ text: 'Character reference portraits — use these to accurately depict the characters in all illustrations:' }];
+  const parts: InputPart[] = [
+    {
+      text: "Character reference portraits — use these to accurately depict the characters in all illustrations:",
+    },
+  ];
   for (const { name, avatarUrl } of avatars) {
     try {
-      const response = await fetch(avatarUrl);
-      if (!response.ok) {
-        console.warn(`[generate-narrative] Avatar fetch failed for ${name}: ${response.status}`);
-        continue;
+      let mimeType: string;
+      let data: string;
+      if (avatarUrl.startsWith('http://') || avatarUrl.startsWith('https://')) {
+        const response = await fetch(avatarUrl);
+        if (!response.ok) {
+          console.warn(`[generate-narrative] Avatar fetch failed for ${name}: ${response.status}`);
+          continue;
+        }
+        mimeType = response.headers.get('content-type')?.split(';')[0] ?? 'image/jpeg';
+        data = Buffer.from(await response.arrayBuffer()).toString('base64');
+      } else {
+        mimeType = 'image/png';
+        data = (await readFile(avatarUrl)).toString('base64');
       }
-      const mimeType = response.headers.get('content-type')?.split(';')[0] ?? 'image/jpeg';
-      const data = Buffer.from(await response.arrayBuffer()).toString('base64');
       parts.push({ text: `${name}:` }, { inlineData: { mimeType, data } });
       console.log(`[generate-narrative] Loaded avatar for ${name}`);
     } catch (err) {
-      console.warn(`[generate-narrative] Could not fetch avatar for ${name}: ${err}`);
+      console.warn(
+        `[generate-narrative] Could not fetch avatar for ${name}: ${err}`,
+      );
     }
   }
   return parts;
 }
-
-const SYSTEM_INSTRUCTION = `You are a narrator recapping a D&D session for the players who just finished it.
+const TONE_PROMPT = await hub.pull("tone_prompt:87b8f49a");
+console.log('[generate-narrative] Tone prompt type:', typeof TONE_PROMPT, TONE_PROMPT?.constructor?.name);
+console.log('[generate-narrative] Tone prompt value:', String(TONE_PROMPT).slice(0, 300));
+const SYSTEM_INSTRUCTION = `You are an omniscient narrator with the tongue of an epic poet, the pencil of a master illustrator, and an eye for facsimile to rival Vincent van Gogh. Your job is to recap a D&D session for the players who just finished it.
 
 Narration style rules — follow these strictly:
-- Stay in character as the narrator at all times. Never break the fourth wall. Never describe, explain, or comment on what you are generating. Never acknowledge instructions or speak as an AI. Output only the narration itself.
+- Stay in character as the narrator at all times. Never break the fourth wall. Your text must be narration only — no AI commentary, no descriptions of what you are generating, no acknowledgment of instructions.
 - Plain prose only. No markdown, asterisks, bullet points, headers, or special characters.
 - Be specific. Reference the actual character names, player decisions, and events from the transcript — not generic fantasy filler.
 - Write like a knowledgeable friend recapping the session: vivid and grounded, not grandiose.
 - Avoid "LinkedIn-core" rhetoric: punchy antithesis ("Not a retreat, but a reckoning."), dramatic one-word sentences ("Courage."), and forced epiphanies ("That was the moment everything changed.").
 - Vary sentence length. Short sentences land harder.
+- Use third person throughout — he, she, they, their. Never address the party or any character as "you" or "your". This must be consistent across every segment.
+- Do not reference portraits, reference images, or the fact that character images were provided. Write as if you simply know what the characters look like.
+- If you quote a player or character directly, you must attribute the quote to the correct speaker using the Attributions provided for that moment. Never attribute a quote to the wrong person.
 
-Use the following exerpts as models for tone and style:
-
-EXAMPLE 1:
-Welcome back. Last we left off, our group of adventurers had found their various individual fates come together here in the city of Trostenwald, where they had attended a carnival that had blown into town, had watched a horrible occurrence happen where one of the older attendees transformed into this terrifying zombie creature. Upon defeating it, you were all put under investigation as possible culprits for the reason that it occurred. In trying to wander the city to investigate and try and clear your name, you eventually found that there was a fiend hiding amongst these carnival workers. This large devil-like toad creature, which through some research you had found to actually be called a nergaliid, had killed two more of the guards, leaving you to fend with their transformed forms, and then fled deep into the center of the Ustaloch Lake.
-
-EXAMPLE 2:
-Last we left off, our slowly gathering band of adventurers had begun to have their stories intertwine in the city of Trostenwold, on the southern reaches of western Wynandir on the continent of Wildemount. Here we had Nott and Caleb who had been traveling southward coming and meeting, in the center of the tavern, the Nestled Nook Inn, with Jester, Beauregard, and Fjord. They were invited to a nearby carnival that had begun preparing for their performance later that evening, in which they met Yasha and Molly. After swapping some stories, earning and losing some gold, they began to gather at the outskirts of the Ustaloch, the lake right on the eastern edge of Trostenwold, for the first opening performance of the Fletching and Moondrop Carnival of Curiosities.
-
-EXAMPLE 3:
-And welcome back. So, last we left off, the Mighty Nein had gotten themselves involved in a number of various factions in the city of Zadash and decided to buy in to aid the Knights of Requital in their attempt to get one of the various powerful lords of the city and the High-Richter, both seemingly corrupt individuals, ousted. You had planned forgeries that you were going to place in their homes at night during an offsite gala in the Tri-Spires, not too far from where your breaking and entering was to occur. Bringing Ulog along, one of the members of the Knights of Requital, you snuck into Lord Sutan's house, managed to avoid a number of the pitfalls, traps, and contents within, going straight to the bedroom, where you battled the Rug of Smothering, knocking a couple of you out, but found within a couple of interesting items that you gathered, and the wax seal you needed to complete the forgeries to make this loop come together.`;
+${TONE_PROMPT}`;
 
 interface SegmentSpec {
   label: string;
   instruction: string;
 }
 
-function buildSegmentSpecs(moments: MomentCandidate[]): SegmentSpec[] {
+function buildSegmentSpecs(
+  moments: MomentCandidate[],
+  bookends?: { sessionStart?: string; sessionEnd?: string },
+): SegmentSpec[] {
+  const introInstruction = bookends?.sessionStart
+    ? `INTRO — Set the scene for tonight's session. Here is how the session opened:\n\n${bookends.sessionStart}\n\nUse this to establish where the party was and what they were doing at the start of the session. Do not narrate any of the highlight moments yet. (2-4 sentences)`
+    : "INTRO — Set the scene for tonight's session. Briefly establish the party, where they are, and what they were doing as the session began. Do not narrate any of the highlight moments yet. (2-4 sentences)";
+
+  const outroInstruction = bookends?.sessionEnd
+    ? `OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. Here is how the session closed:\n\n${bookends.sessionEnd}\n\nUse this to ground the outro in what actually happened at the end of the session. (2-3 sentences)`
+    : "OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. (2-3 sentences)";
+
   const specs: SegmentSpec[] = [
     {
-      label: 'intro',
-      instruction: 'INTRO — Set the scene for tonight\'s session. Briefly establish the party, where they are, and what they were doing as the session began. Do not narrate any of the highlight moments yet. (2-4 sentences)',
+      label: "intro",
+      instruction: introInstruction,
     },
   ];
 
@@ -77,8 +103,8 @@ function buildSegmentSpecs(moments: MomentCandidate[]): SegmentSpec[] {
     const m = moments[i]!;
     const isFirst = i === 0;
     const transition = isFirst
-      ? 'Begin with 1-2 sentences summarizing the events that led from the session start to this moment.'
-      : 'Begin with 1-2 sentences condensing the events that happened between the previous moment and this one — what the party did, where they went, or what changed.';
+      ? "Begin with 1-2 sentences summarizing the events that led from the session start to this moment."
+      : "Begin with 1-2 sentences condensing the events that happened between the previous moment and this one — what the party did, where they went, or what changed.";
 
     specs.push({
       label: `moment_${i + 1}`,
@@ -87,41 +113,44 @@ function buildSegmentSpecs(moments: MomentCandidate[]): SegmentSpec[] {
   }
 
   specs.push({
-    label: 'outro',
-    instruction: 'OUTRO — Close the recap with a brief reflection on how the session ended and tease what lies ahead. (2-3 sentences)',
+    label: "outro",
+    instruction: outroInstruction,
   });
 
   return specs;
 }
 
-async function generateSegment(
+function buildCombinedPrompt(specs: SegmentSpec[], context: string): string {
+  const segmentList = specs
+    .map(
+      (s, i) =>
+        `SEGMENT ${i + 1} — ${s.label.toUpperCase()}\n${s.instruction}`,
+    )
+    .join("\n\n");
+
+  return `${context}
+
+Generate all ${specs.length} narrative segments in order:
+
+${segmentList}
+
+For each segment output exactly one paragraph of narration text immediately followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
+Text may be part of the image if it is a legitimate part of the scene, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.`;
+}
+
+async function generateNarrativeSinglePrompt(
   client: GoogleGenAI,
-  spec: SegmentSpec,
+  specs: SegmentSpec[],
   context: string,
   avatarParts: InputPart[],
-  previousImage: Buffer | null,
-): Promise<NarrativeSegment> {
-  const styleRefParts: InputPart[] = previousImage
-    ? [
-        { text: 'Previous illustration (for artistic style reference only) — match its hand-drawn style, line weight, color palette, and character depictions, but depict an entirely new scene and composition specific to the current segment:' },
-        { inlineData: { mimeType: 'image/png', data: previousImage.toString('base64') } },
-      ]
-    : [];
-
-  const basePrompt = `${context}
-
-Generate the following segment:
-${spec.instruction}
-
-Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). Do not generate multiple images. The character portraits above are for visual reference only — do not describe or list them in your narration.`;
-
-  const contents: InputPart[] = [...avatarParts, ...styleRefParts, { text: basePrompt }];
-
-  let lastText: string | null = null;
-  let lastImage: Buffer | null = null;
+): Promise<NarrativeSegment[] | null> {
+  const prompt = buildCombinedPrompt(specs, context);
+  const contents: InputPart[] = [...avatarParts, { text: prompt }];
 
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    console.log(`[generate-narrative] ${spec.label} — attempt ${attempt}/${MAX_ATTEMPTS}`);
+    console.log(
+      `[generate-narrative] Single-prompt — attempt ${attempt}/${MAX_ATTEMPTS}`,
+    );
 
     const result = await client.models.generateContent({
       model: MODEL,
@@ -129,19 +158,125 @@ Output exactly one paragraph of narration text followed by exactly one fantasy i
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
         responseModalities: ["TEXT", "IMAGE"],
-        imageConfig: { aspectRatio: '16:9' },
+        imageConfig: { aspectRatio: "16:9" },
       },
     });
 
-    const parts = result.candidates?.[0]?.content?.parts ?? [];
-    const types = parts.map((p) => ("text" in p ? "text" : "inlineData" in p ? "image" : "unknown")).join(", ");
-    console.log(`[generate-narrative] ${spec.label} — ${parts.length} parts: ${types}`);
+    const usage = result.usageMetadata;
+    if (usage) {
+      console.log(
+        `[generate-narrative] Single-prompt — tokens: prompt=${usage.promptTokenCount}, candidates=${usage.candidatesTokenCount}, total=${usage.totalTokenCount}`,
+      );
+    }
+
+    const candidate = result.candidates?.[0];
+    const finishReason = candidate?.finishReason;
+    const parts = candidate?.content?.parts ?? [];
+    const types = parts
+      .map((p) =>
+        "text" in p ? "text" : "inlineData" in p ? "image" : "unknown",
+      )
+      .join(", ");
+    console.log(
+      `[generate-narrative] Single-prompt — ${parts.length} parts: ${types}${finishReason ? ` (finishReason: ${finishReason})` : ""}`,
+    );
+
+    const pairs: Array<{ text: string; image: Buffer }> = [];
+    const textBuffer: string[] = [];
+
+    for (const part of parts) {
+      if ("text" in part && part.text?.trim()) {
+        textBuffer.push(part.text.trim());
+      } else if ("inlineData" in part && part.inlineData?.data) {
+        if (textBuffer.length) {
+          pairs.push({
+            text: textBuffer.join(" "),
+            image: Buffer.from(part.inlineData.data, "base64"),
+          });
+          textBuffer.length = 0;
+        }
+      }
+    }
+
+    if (pairs.length === specs.length) {
+      console.log(
+        `[generate-narrative] Single-prompt: got ${pairs.length}/${specs.length} pairs`,
+      );
+      return specs.map((spec, i) => ({
+        label: spec.label,
+        text: pairs[i]!.text,
+        image: pairs[i]!.image,
+      }));
+    }
+
+    console.warn(
+      `[generate-narrative] Single-prompt — got ${pairs.length}/${specs.length} pairs, retrying...`,
+    );
+  }
+
+  return null;
+}
+
+async function generateSegment(
+  client: GoogleGenAI,
+  spec: SegmentSpec,
+  context: string,
+  avatarParts: InputPart[],
+): Promise<NarrativeSegment> {
+  const basePrompt = `${context}
+
+Generate the following segment:
+${spec.instruction}
+
+Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). Do not generate multiple images. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
+Text may be part of the image if it is a legitimate part of the scene, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
+`;
+
+  const contents: InputPart[] = [...avatarParts, { text: basePrompt }];
+
+  let lastText: string | null = null;
+  let lastImage: Buffer | null = null;
+
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    console.log(
+      `[generate-narrative] ${spec.label} — attempt ${attempt}/${MAX_ATTEMPTS}`,
+    );
+
+    const result = await client.models.generateContent({
+      model: MODEL,
+      contents,
+      config: {
+        systemInstruction: SYSTEM_INSTRUCTION,
+        responseModalities: ["TEXT", "IMAGE"],
+        imageConfig: { aspectRatio: "16:9" },
+      },
+    });
+
+    const usage = result.usageMetadata;
+    if (usage) {
+      console.log(
+        `[generate-narrative] ${spec.label} — tokens: prompt=${usage.promptTokenCount}, candidates=${usage.candidatesTokenCount}, total=${usage.totalTokenCount}`,
+      );
+    }
+
+    const candidate = result.candidates?.[0];
+    const finishReason = candidate?.finishReason;
+    const parts = candidate?.content?.parts ?? [];
+    const types = parts
+      .map((p) =>
+        "text" in p ? "text" : "inlineData" in p ? "image" : "unknown",
+      )
+      .join(", ");
+    console.log(
+      `[generate-narrative] ${spec.label} — ${parts.length} parts: ${types}${finishReason ? ` (finishReason: ${finishReason})` : ""}`,
+    );
 
     let text: string | null = null;
     let image: Buffer | null = null;
 
     for (const part of parts) {
-      if ("text" in part && part.text) {
+      // Take the first text part only — later parts are often model meta-commentary
+      if ("text" in part && part.text && !text) {
         text = part.text.trim();
       } else if ("inlineData" in part && part.inlineData?.data) {
         image = Buffer.from(part.inlineData.data, "base64");
@@ -152,20 +287,49 @@ Output exactly one paragraph of narration text followed by exactly one fantasy i
     if (image) lastImage = image;
 
     if (lastText && lastImage) {
-      console.log(`[generate-narrative] ${spec.label} text preview: "${lastText.slice(0, 80)}..."`);
+      console.log(
+        `[generate-narrative] ${spec.label} text preview: "${lastText.slice(0, 80)}..."`,
+      );
       return { label: spec.label, text: lastText, image: lastImage };
     }
 
-    console.warn(`[generate-narrative] ${spec.label} — incomplete response (${types}), retrying...`);
+    console.warn(
+      `[generate-narrative] ${spec.label} — incomplete response (${types}), retrying...`,
+    );
+  }
+
+  // If we have an image but no text, try a text-only fallback call
+  if (lastImage && !lastText) {
+    console.warn(
+      `[generate-narrative] ${spec.label} — image-only after ${MAX_ATTEMPTS} attempts, trying text-only fallback...`,
+    );
+    const fallback = await client.models.generateContent({
+      model: MODEL,
+      contents: [...avatarParts, { text: `${context}\n\nGenerate the following segment:\n${spec.instruction}\n\nOutput only the narration text paragraph. Do not generate an image.` }],
+      config: {
+        systemInstruction: SYSTEM_INSTRUCTION,
+        responseModalities: ["TEXT"],
+      },
+    });
+    for (const part of fallback.candidates?.[0]?.content?.parts ?? []) {
+      if ("text" in part && part.text) {
+        lastText = part.text.trim();
+        break;
+      }
+    }
   }
 
   // Accept partial output if we accumulated both text and image across separate attempts
   if (lastText && lastImage) {
-    console.warn(`[generate-narrative] ${spec.label} — accepting combined output from separate attempts`);
+    console.warn(
+      `[generate-narrative] ${spec.label} — accepting combined output from separate attempts`,
+    );
     return { label: spec.label, text: lastText, image: lastImage };
   }
 
-  throw new Error(`[generate-narrative] Failed to get text+image for ${spec.label} after ${MAX_ATTEMPTS} attempts`);
+  throw new Error(
+    `[generate-narrative] Failed to get text+image for ${spec.label} after ${MAX_ATTEMPTS} attempts`,
+  );
 }
 
 export async function generateNarrative(
@@ -173,35 +337,71 @@ export async function generateNarrative(
   campaignContext: string,
   outputDir: string,
   characterAvatars: CharacterAvatar[] = [],
+  sessionBookends?: { sessionStart?: string; sessionEnd?: string },
+  narrativeMode: 'single' | 'multi' = 'single',
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
-  const client = new GoogleGenAI({ apiKey: config.geminiApiKey });
+  const geminiClient = new GoogleGenAI({ apiKey: config.geminiApiKey });
+  const client = wrappers.wrapSDK(geminiClient, {
+    // @ts-expect-error
+    tracing_extra: {
+      tags: ['gemini', 'typescript'],
+      metadata: {
+        integration: 'google-genai'
+      },
+    },
+  })
+
   const selectedMoments = moments.filter((_, i) => i < 3);
 
   const context = `Campaign context:
 ${campaignContext}
 
 Selected highlight moments (chronological order):
-${selectedMoments.map((m, i) => `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Excerpt: "${m.transcript_excerpt}"\n  Visual: ${m.visual_description}`).join("\n\n")}`;
+${selectedMoments.map((m, i) => {
+    const attributionLines = m.attributions?.length
+      ? `\n  Attributions:\n${m.attributions.map((a) => `    - ${a.speaker}: "${a.quote}"`).join('\n')}`
+      : '';
+    return `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Preceded by: ${m.preceding_events}\n  Excerpt: "${m.transcript_excerpt}"${attributionLines}\n  Visual: ${m.visual_description}`;
+  }).join("\n\n")}`;
 
   const avatarParts = await fetchAvatarParts(characterAvatars);
-  const segmentSpecs = buildSegmentSpecs(selectedMoments);
+  const segmentSpecs = buildSegmentSpecs(selectedMoments, sessionBookends);
 
-  const segments: NarrativeSegment[] = [];
-  let previousImage: Buffer | null = null;
+  let segments = narrativeMode === 'single'
+    ? await generateNarrativeSinglePrompt(client, segmentSpecs, context, avatarParts)
+    : null;
+  if (!segments) {
+    if (narrativeMode === 'single') {
+      console.warn('[generate-narrative] Single-prompt failed, falling back to per-segment calls');
+    } else {
+      console.log('[generate-narrative] Using per-segment calls (--narrative-mode=multi)');
+    }
+    segments = [];
+    for (const spec of segmentSpecs) {
+      segments.push(await generateSegment(client, spec, context, avatarParts));
+    }
+  }
 
-  for (const spec of segmentSpecs) {
-    const segment = await generateSegment(client, spec, context, avatarParts, previousImage);
-    previousImage = segment.image;
-    await writeFile(path.join(outputDir, `narrative_${spec.label}.png`), segment.image);
-    console.log(`[generate-narrative] Saved narrative_${spec.label}.png (${segment.image.length} bytes)`);
-    segments.push(segment);
+  for (const segment of segments) {
+    await writeFile(
+      path.join(outputDir, `narrative_${segment.label}.png`),
+      segment.image,
+    );
+    console.log(
+      `[generate-narrative] Saved narrative_${segment.label}.png (${segment.image.length} bytes)`,
+    );
   }
 
   // Persist text for --from-narrative resume
-  const narrativeJson = Object.fromEntries(segments.map((s) => [s.label, s.text]));
-  await writeFile(path.join(outputDir, "narrative.json"), JSON.stringify(narrativeJson, null, 2));
+  const narrativeJson = Object.fromEntries(
+    segments.map((s) => [s.label, s.text]),
+  );
+  await writeFile(
+    path.join(outputDir, "narrative.json"),
+    JSON.stringify(narrativeJson, null, 2),
+  );
   console.log("[generate-narrative] Saved narrative.json");
 
   return segments;

@@ -58,6 +58,7 @@ export interface VideoOptions {
   height?: number;
   outputDir?: string;
   referenceImagePath?: string;
+  sessionId?: string;
 }
 
 export interface PipelineState {

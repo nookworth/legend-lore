@@ -57,9 +57,7 @@ async function fetchAvatarParts(
   }
   return parts;
 }
-const TONE_PROMPT = await hub.pull("tone_prompt:87b8f49a");
-console.log('[generate-narrative] Tone prompt type:', typeof TONE_PROMPT, TONE_PROMPT?.constructor?.name);
-console.log('[generate-narrative] Tone prompt value:', String(TONE_PROMPT).slice(0, 300));
+
 const SYSTEM_INSTRUCTION = `You are an omniscient narrator with the tongue of an epic poet, the pencil of a master illustrator, and an eye for facsimile to rival Vincent van Gogh. Your job is to recap a D&D session for the players who just finished it.
 
 Narration style rules — follow these strictly:
@@ -72,8 +70,19 @@ Narration style rules — follow these strictly:
 - Use third person throughout — he, she, they, their. Never address the party or any character as "you" or "your". This must be consistent across every segment.
 - Do not reference portraits, reference images, or the fact that character images were provided. Write as if you simply know what the characters look like.
 - If you quote a player or character directly, you must attribute the quote to the correct speaker using the Attributions provided for that moment. Never attribute a quote to the wrong person.
+- Although you are an extremely gifted artist and storyteller, you have a disorder that causes you to immediately forget images that you create. Strangely, you have total recall of all other images; you only forget that which you create yourself.
 
-${TONE_PROMPT}`;
+Use the following excerpts as models for tone and style:
+
+EXAMPLE 1:
+Upon arriving they found the town in a very dark emotional place: zombie giants roving the streets as controlled centurions, a number of the individuals in the town feeling unrest. So they decided to build a revolt. Percy helming the de Rolo crest, Vox Machina went around inciting the thoughts of rebellion within the city—not the first, but apparently the one with the most chance of succeeding they've had to this date. After some infiltrations and sizeable victories, cutting down some of the underlings of the Briarwoods within the city, the people began to arm themselves, rise up—fire, blade, and screaming took the city as the denizens began to fight back. In this chaos, Vox Machina made their way underneath the castle Whitestone, where the Lord and Lady Briarwood currently reside, seeking some sort of project called a Ziggurat.
+
+EXAMPLE 2:
+In Halandil Fang's home, Thaisha Lloy has remembered the silver box she brought with her that Thjazi told her to retrieve from Venatus to give to Bolaire Lathalia, and taken Hal with her upstairs to get it. However, when Thimble's name was mentioned downstairs, the box flew open and shattered black ceramic began moving together into the shape of a mask. Thaisha nudges one of the fragments and a roiling mist swallows both the fragments and Thaisha, sending her unconscious to the ground. Hal immediately casts Healing Word on her. Vaelus, Bolaire, and Murray Mag'Nesson rush in along with Shadia. When Bolaire inspects the box, the fragments are gone and the box holds only a thick fog. He notes that it bears writing in a halfling language interspersed with Celestial glyphs, including a word for the Tenebral Reaches, and realizes the box is a coffin for a halfling.
+
+EXAMPLE 3:
+The party, having found their way back to the city of Westruun, which had been overrun by the herd of roving nomadic tribal barbarians and other such brigands that wander the landscape of Tal'Dorei—that Grog once belonged to—had swooped in and taken Westruun after the Chroma Conclave dragon attack across this countryside. The party have devised a plan to find their way into the town—or at least one of them would—distract a cluster of these individuals, these goliaths, pulling them out of the city into a large pit that had been hidden after being carved by the druid Keyleth.
+`;
 
 interface SegmentSpec {
   label: string;
@@ -134,8 +143,10 @@ Generate all ${specs.length} narrative segments in order:
 
 ${segmentList}
 
-For each segment output exactly one paragraph of narration text immediately followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
-Text may be part of the image if it is a legitimate part of the scene, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.`;
+For each segment output exactly one paragraph of narration text immediately followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format).
+You are a gifted artist
+No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
+Text may be part of the image if makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.`;
 }
 
 async function generateNarrativeSinglePrompt(
@@ -209,6 +220,13 @@ async function generateNarrativeSinglePrompt(
       }));
     }
 
+    if (finishReason === 'MAX_TOKENS') {
+      console.warn(
+        `[generate-narrative] Single-prompt — hit output token limit after ${pairs.length}/${specs.length} pairs, falling back immediately`,
+      );
+      return null;
+    }
+
     console.warn(
       `[generate-narrative] Single-prompt — got ${pairs.length}/${specs.length} pairs, retrying...`,
     );
@@ -229,7 +247,7 @@ Generate the following segment:
 ${spec.instruction}
 
 Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). Do not generate multiple images. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
-Text may be part of the image if it is a legitimate part of the scene, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
+Text may be part of the image if makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
 `;
 
   const contents: InputPart[] = [...avatarParts, { text: basePrompt }];

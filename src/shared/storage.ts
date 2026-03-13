@@ -1,5 +1,6 @@
 import { Storage } from '@google-cloud/storage';
-import { createReadStream } from 'node:fs';
+import { createWriteStream } from 'node:fs';
+import { pipeline } from 'node:stream/promises';
 import path from 'node:path';
 import { config, requireConfig } from './config.js';
 
@@ -7,28 +8,52 @@ let storage: Storage | null = null;
 
 function getStorage(): Storage {
   if (!storage) {
-    requireConfig(['gcsBucketAudio']);
     storage = new Storage();
   }
   return storage;
 }
 
-export async function uploadAudio(localPath: string): Promise<string> {
+export async function uploadAudio(localPath: string, sessionId: string): Promise<string> {
+  requireConfig(['gcsBucketAudio']);
   const gcs = getStorage();
-  const fileName = path.basename(localPath);
+  const destination = `${config.groupId}/sessions/${sessionId}/${path.basename(localPath)}`;
   const bucket = gcs.bucket(config.gcsBucketAudio);
-  await bucket.upload(localPath, { destination: fileName });
-  return `gs://${config.gcsBucketAudio}/${fileName}`;
+  await bucket.upload(localPath, { destination });
+  return `gs://${config.gcsBucketAudio}/${destination}`;
 }
 
-export async function uploadVideo(localPath: string): Promise<string> {
+export async function uploadVideo(localPath: string, sessionId: string): Promise<string> {
   requireConfig(['gcsBucketVideos']);
   const gcs = getStorage();
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const destination = `${timestamp}_${path.basename(localPath)}`;
+  const destination = `${config.groupId}/sessions/${sessionId}/final_recap.mp4`;
   const bucket = gcs.bucket(config.gcsBucketVideos);
   await bucket.upload(localPath, { destination });
   return `https://storage.googleapis.com/${config.gcsBucketVideos}/${destination}`;
+}
+
+export async function uploadPortrait(localPath: string, slug: string): Promise<string> {
+  requireConfig(['gcsBucketAssets']);
+  const gcs = getStorage();
+  const destination = `${config.groupId}/portraits/portrait_${slug}.png`;
+  const bucket = gcs.bucket(config.gcsBucketAssets);
+  await bucket.upload(localPath, { destination });
+  return `gs://${config.gcsBucketAssets}/${destination}`;
+}
+
+export async function downloadPortrait(slug: string, localPath: string): Promise<boolean> {
+  if (!config.gcsBucketAssets) return false;
+  const gcs = getStorage();
+  const remotePath = `${config.groupId}/portraits/portrait_${slug}.png`;
+  const file = gcs.bucket(config.gcsBucketAssets).file(remotePath);
+  try {
+    const [exists] = await file.exists();
+    if (!exists) return false;
+    const readStream = file.createReadStream();
+    await pipeline(readStream, createWriteStream(localPath));
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export async function getSignedUrl(gcsUri: string): Promise<string> {

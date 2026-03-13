@@ -3,6 +3,7 @@ import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { config, requireConfig } from '../shared/config.js';
+import { uploadPortrait, downloadPortrait } from '../shared/storage.js';
 import type { CharacterAvatar } from './generate-narrative.js';
 
 const MODEL = 'gemini-3.1-flash-image-preview';
@@ -83,6 +84,17 @@ async function generatePortrait(
     return { name: character.name, avatarUrl: outputPath };
   }
 
+  // Check GCS before generating
+  if (!regenPortraits) {
+    await mkdir(PORTRAITS_CACHE_DIR, { recursive: true });
+    const downloaded = await downloadPortrait(slug, cachePath);
+    if (downloaded) {
+      console.log(`[generate-portraits] ${character.name} — downloaded from GCS`);
+      await copyFile(cachePath, outputPath);
+      return { name: character.name, avatarUrl: outputPath };
+    }
+  }
+
   console.log(`[generate-portraits] ${character.name} — fetching avatar...`);
   let avatarData: string;
   let mimeType: string;
@@ -124,6 +136,15 @@ async function generatePortrait(
     await mkdir(PORTRAITS_CACHE_DIR, { recursive: true });
     await copyFile(outputPath, cachePath);
     console.log(`[generate-portraits] ${character.name} — cached to ${cachePath}`);
+
+    if (config.gcsBucketAssets) {
+      try {
+        await uploadPortrait(cachePath, slug);
+        console.log(`[generate-portraits] ${character.name} — uploaded portrait to GCS`);
+      } catch (err) {
+        console.warn(`[generate-portraits] ${character.name} — GCS upload failed: ${err}`);
+      }
+    }
 
     return { name: character.name, avatarUrl: outputPath };
   } catch (err) {

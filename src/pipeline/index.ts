@@ -13,6 +13,7 @@ import { uploadOutput } from './upload-output.js';
 import { deliver } from './deliver.js';
 
 export interface PipelineOptions {
+  sessionId: string;
   audioDir: string;
   outputDir: string;
   campaignContextPath: string;
@@ -106,7 +107,7 @@ function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
 }
 
 export async function runPipeline(opts: PipelineOptions): Promise<void> {
-  const { audioDir, outputDir, campaignContextPath, dryRun = false } = opts;
+  const { sessionId, audioDir, outputDir, campaignContextPath, dryRun = false } = opts;
 
   await mkdir(outputDir, { recursive: true });
 
@@ -148,7 +149,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // ── Step 2: Upload to GCS ───────────────────────────────────────────────
     if (!opts.skipUpload) {
       console.log('\nStep 2/10: Uploading audio to GCS...');
-      await uploadAudioFile(mergedPath);
+      await uploadAudioFile(mergedPath, sessionId);
     } else {
       console.log('\nStep 2/10: Skipping GCS upload (--skip-upload)');
     }
@@ -157,10 +158,10 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     console.log('\nStep 3/10: Transcribing...');
     ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
 
-    // Persist utterances to data/transcripts/ so they survive output dir cleanup
-    const transcriptsDir = path.join('data', 'transcripts');
-    await mkdir(transcriptsDir, { recursive: true });
-    const transcriptBackupPath = path.join(transcriptsDir, `${path.basename(audioDir)}_utterances.json`);
+    // Persist utterances to data/sessions/<sessionId>/ so they survive output dir cleanup
+    const sessionDir = path.join('data', 'sessions', sessionId);
+    await mkdir(sessionDir, { recursive: true });
+    const transcriptBackupPath = path.join(sessionDir, 'utterances.json');
     await writeFile(transcriptBackupPath, JSON.stringify(utterances, null, 2));
     console.log(`[transcribe] Backed up utterances → ${transcriptBackupPath}`);
   }
@@ -227,7 +228,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   let finalUrl = finalPath;
   if (!opts.skipUpload) {
     console.log('\nStep 9/10: Uploading final video to GCS...');
-    finalUrl = await uploadOutput(finalPath);
+    finalUrl = await uploadOutput(finalPath, sessionId);
   } else {
     console.log('\nStep 9/10: Skipping GCS upload (--skip-upload)');
   }

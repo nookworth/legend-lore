@@ -46,7 +46,8 @@ export class VeoProvider implements VideoProvider {
   }
 
   async generate(prompt: string, options: VideoOptions = {}): Promise<string> {
-    const outputGcsUri = `gs://${config.gcsBucketVideos}/veo-clips/`;
+    const sessionId = options.sessionId ?? 'unknown';
+    const outputGcsUri = `gs://${config.gcsBucketVideos}/${config.groupId}/sessions/${sessionId}/veo-clips/`;
     const sanitized = await this.sanitizePrompt(prompt);
     console.log(`[veo] Generating video: "${sanitized.slice(0, 80)}..."`);
 

@@ -2,19 +2,19 @@
 import 'dotenv/config';
 import { parseArgs } from 'node:util';
 import path from 'node:path';
+import { existsSync } from 'node:fs';
 import { runPipeline } from '../src/pipeline/index.js';
 
-const { values, positionals } = parseArgs({
+const { values } = parseArgs({
   args: process.argv.slice(2),
   options: {
-    'audio-dir': { type: 'string' },
+    'session': { type: 'string' },
     'output-dir': { type: 'string' },
     'campaign': { type: 'string' },
     'dry-run': { type: 'boolean', default: false },
     'skip-upload': { type: 'boolean', default: false },
     'skip-deliver': { type: 'boolean', default: false },
     'skip-db': { type: 'boolean', default: false },
-    'from-transcript': { type: 'string' },
     'from-narrative': { type: 'string' },
     'reference-image': { type: 'string' },
     'narrative-mode': { type: 'string' },
@@ -22,22 +22,22 @@ const { values, positionals } = parseArgs({
     'regen-portraits': { type: 'boolean', default: false },
     'help': { type: 'boolean', default: false },
   },
-  allowPositionals: true,
 });
 
 if (values['help']) {
   console.log(`
-Usage: npm run pipeline -- --audio-dir <dir> [options]
+Usage: npm run pipeline -- --session <dir> [options]
 
 Options:
-  --audio-dir <dir>     Directory containing per-user audio tracks (required unless resuming)
+  --session <dir>       Path to session directory (e.g. data/sessions/2026-02-07)
+                        Audio is read from <dir>/audio/
+                        If <dir>/utterances.json exists, transcription is skipped
   --output-dir <dir>    Output directory (default: ./output/<timestamp>)
   --campaign <path>     Path to campaign.json (default: ./data/campaign.json)
   --dry-run             Stop after moment selection (no video generation)
   --skip-upload         Skip GCS upload steps (local dev without GCP)
   --skip-deliver        Skip Discord delivery
   --skip-db             Skip Cloud SQL (local dev without GCP)
-  --from-transcript <path>  Resume from existing utterances.json (skip steps 1-3)
   --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --reference-image <path>  Group portrait passed to Veo as a reference image
   --narrative-mode <mode>   Narrative generation mode: single (default) or multi
@@ -48,10 +48,9 @@ Options:
   process.exit(0);
 }
 
-const audioDir = values['audio-dir'];
-const isResuming = values['from-transcript'] || values['from-narrative'];
-if (!audioDir && !isResuming) {
-  console.error('Error: --audio-dir is required (or use --from-transcript / --from-narrative to resume)');
+const sessionId = values['session'];
+if (!sessionId && !values['from-narrative']) {
+  console.error('Error: --session <dir> is required (or use --from-narrative to resume from step 7)');
   process.exit(1);
 }
 
@@ -59,15 +58,25 @@ const narrativeMode = (values['narrative-mode'] === 'multi' ? 'multi' : 'single'
 const outputDir = values['output-dir'] ?? path.join('output', `${new Date().toISOString().replace(/[:.]/g, '-')}_${narrativeMode}`);
 const campaignContextPath = values['campaign'] ?? path.join('data', 'campaign.json');
 
+const sessionDir = sessionId ?? null;
+const audioDir = sessionDir ? path.join(sessionDir, 'audio') : '';
+const transcriptPath = sessionDir ? path.join(sessionDir, 'utterances.json') : null;
+const fromTranscript = transcriptPath && existsSync(transcriptPath) ? transcriptPath : undefined;
+
+if (fromTranscript) {
+  console.log(`[pipeline] Found existing transcript — skipping steps 1-3`);
+}
+
 await runPipeline({
-  audioDir: audioDir ?? '',
+  sessionId: sessionId ? path.basename(sessionId) : path.basename(outputDir),
+  audioDir,
   outputDir,
   campaignContextPath,
   dryRun: values['dry-run'],
   skipUpload: values['skip-upload'],
   skipDeliver: values['skip-deliver'],
   skipDb: values['skip-db'],
-  ...(values['from-transcript'] && { fromTranscript: values['from-transcript'] }),
+  ...(fromTranscript && { fromTranscript }),
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
   ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
   narrativeMode,

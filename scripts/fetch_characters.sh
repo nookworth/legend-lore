@@ -26,7 +26,7 @@ for CHARACTER_ID in "$@"; do
 
   CHARACTER_JSON=$(curl -sf "https://character-service.dndbeyond.com/character/v5/character/$CHARACTER_ID" \
     -H "Authorization: Bearer $DNDBEYOND_TOKEN" \
-    | jq ".data | { name, race: .race.fullName, classes: (.classes | map({ name: .definition.name, level, subclassName: .subclassDefinition.name, subclassDescription: .subclassDefinition.description })), \
+    | jq ".data | { name, username, race: .race.fullName, classes: (.classes | map({ name: .definition.name, level, subclassName: .subclassDefinition.name, subclassDescription: .subclassDefinition.description })), \
 alignmentId, background: .background.definition.name, personalityTraits: .traits.personalityTraits, ideals: .traits.ideals, bonds: .traits.bonds, flaws: .traits.flaws, backstory: .notes.backstory, \
 otherNotes: .notes.otherNotes, stats: (.stats | map({ name: ([\"STR\",\"DEX\",\"CON\",\"INT\",\"WIS\",\"CHA\"][.id - 1]), value })), feats: (.feats | map(.definition.name)), actions: (.actions.class | map(.name)), spells: (.classSpells | map(.spells | map(.definition.name))), \
 equipment: (.inventory | map(select(.equipped == true) | { name: .definition.name, type: .definition.type })), age, hair, eyes, skin, height, weight, gender, avatar: .decorations.avatarUrl, backdrop: .decorations.defaultBackdrop.backdropAvatarUrl, campaign: .campaign.name }")

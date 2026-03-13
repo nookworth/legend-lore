@@ -18,6 +18,8 @@ const { values, positionals } = parseArgs({
     'from-narrative': { type: 'string' },
     'reference-image': { type: 'string' },
     'narrative-mode': { type: 'string' },
+    'skip-portrait-gen': { type: 'boolean', default: false },
+    'regen-portraits': { type: 'boolean', default: false },
     'help': { type: 'boolean', default: false },
   },
   allowPositionals: true,
@@ -39,6 +41,8 @@ Options:
   --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --reference-image <path>  Group portrait passed to Veo as a reference image
   --narrative-mode <mode>   Narrative generation mode: single (default) or multi
+  --skip-portrait-gen       Skip portrait generation, use raw DnD Beyond avatars
+  --regen-portraits         Ignore portrait cache and regenerate all portraits
   --help                Show this help
 `);
   process.exit(0);
@@ -67,4 +71,6 @@ await runPipeline({
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
   ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
   narrativeMode,
+  skipPortraitGen: values['skip-portrait-gen'],
+  regenPortraits: values['regen-portraits'],
 });

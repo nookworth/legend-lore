@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { config, requireConfig } from "../shared/config.js";
 import type {
@@ -33,16 +33,20 @@ async function fetchAvatarParts(
   ];
   for (const { name, avatarUrl } of avatars) {
     try {
-      const response = await fetch(avatarUrl);
-      if (!response.ok) {
-        console.warn(
-          `[generate-narrative] Avatar fetch failed for ${name}: ${response.status}`,
-        );
-        continue;
+      let mimeType: string;
+      let data: string;
+      if (avatarUrl.startsWith('http://') || avatarUrl.startsWith('https://')) {
+        const response = await fetch(avatarUrl);
+        if (!response.ok) {
+          console.warn(`[generate-narrative] Avatar fetch failed for ${name}: ${response.status}`);
+          continue;
+        }
+        mimeType = response.headers.get('content-type')?.split(';')[0] ?? 'image/jpeg';
+        data = Buffer.from(await response.arrayBuffer()).toString('base64');
+      } else {
+        mimeType = 'image/png';
+        data = (await readFile(avatarUrl)).toString('base64');
       }
-      const mimeType =
-        response.headers.get("content-type")?.split(";")[0] ?? "image/jpeg";
-      const data = Buffer.from(await response.arrayBuffer()).toString("base64");
       parts.push({ text: `${name}:` }, { inlineData: { mimeType, data } });
       console.log(`[generate-narrative] Loaded avatar for ${name}`);
     } catch (err) {

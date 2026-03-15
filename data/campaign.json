@@ -1,0 +1,657 @@
+{
+  "campaign": "Dragon Lance",
+  "characters": [
+    {
+      "name": "Goibniu",
+      "race": "Dwarf",
+      "classes": [
+        {
+          "name": "Cleric",
+          "level": 6,
+          "subclassName": "Twilight Domain (TCoE)",
+          "subclassDescription": "<p>The twilit transition from light into darkness often brings calm and even joy, as the day’s labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.</p>"
+        }
+      ],
+      "alignmentId": 2,
+      "background": "Knight of Solamnia",
+      "personalityTraits": null,
+      "ideals": null,
+      "bonds": null,
+      "flaws": null,
+      "backstory": "Crest of Maurice/The Beast",
+      "otherNotes": "Xp points: 11 + 40 + 15 + 10 - 65 = 11 remaining.\n\nHybrid form is Large.\n\nWhen using blood rite, if rolling a 19 or 20 on attack, get an extra die of damage.\n\n\nWhile transformed, you can expend the following actions (= proficiency bonus per long rest): 1. give an encouraging howl to allies = pick three allies in range, including self. Those three allies gain pack tactics this turn. \n\n\nMan destroyed the world for coin, power, truth, and magic, all for nothing. (Rose spirits)",
+      "stats": [
+        {
+          "name": "STR",
+          "value": 14
+        },
+        {
+          "name": "DEX",
+          "value": 12
+        },
+        {
+          "name": "CON",
+          "value": 13
+        },
+        {
+          "name": "INT",
+          "value": 10
+        },
+        {
+          "name": "WIS",
+          "value": 15
+        },
+        {
+          "name": "CHA",
+          "value": 8
+        }
+      ],
+      "feats": [
+        "Alert",
+        "Squire of Solamnia",
+        "War Caster"
+      ],
+      "actions": [
+        "Channel Divinity",
+        "Channel Divinity: Divine Spark",
+        "Channel Divinity: Turn Undead",
+        "Eyes of Night",
+        "Vigilant Blessing",
+        "Channel Divinity: Twilight Sanctuary",
+        "Steps of Night",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Channel Divinity: Sear Undead"
+      ],
+      "spells": [
+        [
+          "Guidance",
+          "Mending",
+          "Guiding Bolt",
+          "Toll the Dead",
+          "Cure Wounds",
+          "Bless",
+          "Aid",
+          "Speak with Dead",
+          "Curse of Fastidious Pride",
+          "Holy Word",
+          "Healing Word",
+          "Spiritual Weapon",
+          "Lesser Restoration",
+          "Scarlet Dawn"
+        ]
+      ],
+      "equipment": [
+        {
+          "name": "Shield",
+          "type": "Shield"
+        },
+        {
+          "name": "Chain Shirt",
+          "type": "Medium Armor"
+        },
+        {
+          "name": "Longsword",
+          "type": "Longsword"
+        }
+      ],
+      "age": null,
+      "hair": null,
+      "eyes": null,
+      "skin": null,
+      "height": null,
+      "weight": null,
+      "gender": null,
+      "avatar": "https://www.dndbeyond.com/avatars/55286/727/1581111423-33637295.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/43993/191/638609649336541397.jpeg",
+      "campaign": "Dragon Lance"
+    },
+    {
+      "name": "Aria Mao",
+      "race": "Kender",
+      "classes": [
+        {
+          "name": "Rogue",
+          "level": 6,
+          "subclassName": "Assassin",
+          "subclassDescription": "<p><em>Practice the Grim Art of Death</em></p>\r\n<p>An Assassin’s training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency.</p>"
+        }
+      ],
+      "alignmentId": null,
+      "background": "Far Traveler",
+      "personalityTraits": "I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.\nI have different assumptions from those around me concerning personal space, blithely invading others’ space in innocence, or reacting to ignorant invasion of my own.",
+      "ideals": "Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)\nCunning. Though I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)\nSuspicious. I must be careful, for I have no way of telling friend from foe here. (Any)",
+      "bonds": "I’m fascinated by the beauty and wonder of this new land.\nMy freedom is my most precious possession. I’ll never let anyone take it from me again.",
+      "flaws": "I pretend not to understand the local language in order to avoid interactions I would rather not have.\nI have a weakness for the new intoxicants and other pleasures of this land.",
+      "backstory": null,
+      "otherNotes": null,
+      "stats": [
+        {
+          "name": "STR",
+          "value": 13
+        },
+        {
+          "name": "DEX",
+          "value": 15
+        },
+        {
+          "name": "CON",
+          "value": 14
+        },
+        {
+          "name": "INT",
+          "value": 10
+        },
+        {
+          "name": "WIS",
+          "value": 10
+        },
+        {
+          "name": "CHA",
+          "value": 10
+        }
+      ],
+      "feats": [
+        "Sharpshooter",
+        "Weapon Mastery"
+      ],
+      "actions": [
+        "Sneak Attack",
+        "Cunning Action",
+        "Steady Aim",
+        "Sneak Attack: Poison (Cost: 1d6)",
+        "Sneak Attack: Trip (Cost: 1d6)",
+        "Sneak Attack: Withdraw (Cost: 1d6)",
+        "Uncanny Dodge",
+        "Sneak Attack: Assassinate"
+      ],
+      "spells": [
+        []
+      ],
+      "equipment": [
+        {
+          "name": "Leather",
+          "type": "Light Armor"
+        },
+        {
+          "name": "Dagger",
+          "type": "Dagger"
+        },
+        {
+          "name": "Shortbow",
+          "type": "Shortbow"
+        },
+        {
+          "name": "Shortsword",
+          "type": "Shortsword"
+        },
+        {
+          "name": "Backpack",
+          "type": "Gear"
+        },
+        {
+          "name": "Quiver",
+          "type": "Gear"
+        },
+        {
+          "name": "Arrows",
+          "type": "Gear"
+        }
+      ],
+      "age": 23,
+      "hair": "Black",
+      "eyes": "Brown",
+      "skin": "Pale",
+      "height": "5'2",
+      "weight": 150,
+      "gender": "Female",
+      "avatar": "https://www.dndbeyond.com/avatars/49777/905/1581111423-147177664.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/43993/216/638609651459074281.jpeg",
+      "campaign": "Dragon Lance"
+    },
+    {
+      "name": "Lilian Brooks Esquire ",
+      "race": "Harengon",
+      "classes": [
+        {
+          "name": "Druid",
+          "level": 6,
+          "subclassName": "Circle of Wicker",
+          "subclassDescription": "<p><em>Craft Effigies of Sacrifice and Protection</em></p>\r\n<p>Cunning in their ancient art, Druids of the Circle of Wicker fashion twig dolls and effigies, binding their magic into these crude forms. These creations often resemble animals, rune shapes, natural symbols, or people.</p>\r\n<p>Protective tokens and promises of retribution against trespassers are these Druids’ stock in trade. You can weave the magic of the land through your wicker creations as boons to your friends and banes to your foes.</p>"
+        }
+      ],
+      "alignmentId": 2,
+      "background": "Scribe",
+      "personalityTraits": null,
+      "ideals": null,
+      "bonds": null,
+      "flaws": null,
+      "backstory": null,
+      "otherNotes": null,
+      "stats": [
+        {
+          "name": "STR",
+          "value": 9
+        },
+        {
+          "name": "DEX",
+          "value": 12
+        },
+        {
+          "name": "CON",
+          "value": 10
+        },
+        {
+          "name": "INT",
+          "value": 12
+        },
+        {
+          "name": "WIS",
+          "value": 15
+        },
+        {
+          "name": "CHA",
+          "value": 14
+        }
+      ],
+      "feats": [
+        "Chef",
+        "Scribe Ability Score Improvements",
+        "Skilled",
+        "Tough"
+      ],
+      "actions": [
+        "Leave Druidic Message",
+        "Wild Shape",
+        "Wild Resurgence: Regain Wild Shape",
+        "Wild Resurgence: Regain Spell Slot",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Create Wicker Token",
+        "Soothe: Bonus Action"
+      ],
+      "spells": [
+        [
+          "Guidance",
+          "Starry Wisp",
+          "Cure Wounds",
+          "Create Bonfire",
+          "Assisted Aim",
+          "Dispel Magic",
+          "Aura of Vitality",
+          "Thorn Armor",
+          "Enhance Ability",
+          "Lesser Restoration",
+          "Elemental Weapon",
+          "Protection from Energy",
+          "Bloat"
+        ]
+      ],
+      "equipment": [
+        {
+          "name": "Shield",
+          "type": "Shield"
+        },
+        {
+          "name": "Leather",
+          "type": "Light Armor"
+        },
+        {
+          "name": "Crossbow, Light",
+          "type": "Crossbow, Light"
+        },
+        {
+          "name": "Backpack",
+          "type": "Gear"
+        },
+        {
+          "name": "Warhorse",
+          "type": "Gear"
+        },
+        {
+          "name": "Staff",
+          "type": "Gear"
+        }
+      ],
+      "age": 26,
+      "hair": "White",
+      "eyes": "Hazel",
+      "skin": null,
+      "height": "5'5\"",
+      "weight": null,
+      "gender": "Female",
+      "avatar": "https://www.dndbeyond.com/avatars/49511/702/1581111423-147177611.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/43993/195/638609649680352042.jpeg",
+      "campaign": "Dragon Lance"
+    },
+    {
+      "name": "Sister Superior Alice Dominica",
+      "race": "Shadar-kai",
+      "classes": [
+        {
+          "name": "Ranger",
+          "level": 3,
+          "subclassName": "Primordial Archer",
+          "subclassDescription": "<p><em>Channel the Wrath of the Wilds</em></p>\r\n<p>In the areas of Etharis where nature still holds sway, many cling to the ancient customs of woodland hunters and witches. Marking themselves with wild plants and bone needles, theirs is a tradition of cunning, cruelty, and reprisal against all trespassers. Unlike the Druids, these wood witches twist natural magic into hexes, imbuing their weapons with nature’s fury.</p>"
+        },
+        {
+          "name": "Cleric",
+          "level": 3,
+          "subclassName": "Purification Domain",
+          "subclassDescription": "<p><em>Purge Sickness with Suffering</em></p>\r\n<p>The Purification Domain believes sickness, mutation, and other forms of bodily corruption are signs of a corresponding spiritual malady. Virtue can’t exist alongside impurity. The wickedness of humanity and other mortal, sentient creatures is a contagion that manifests plagues such as the Weeping Pox. When there’s a risk of such corruption spreading, there’s only one surefire way to contain the rot and atone for the sins that led to this point: Burn it out.</p>"
+        }
+      ],
+      "alignmentId": null,
+      "background": "Knight of Solamnia",
+      "personalityTraits": null,
+      "ideals": null,
+      "bonds": null,
+      "flaws": null,
+      "backstory": null,
+      "otherNotes": null,
+      "stats": [
+        {
+          "name": "STR",
+          "value": 10
+        },
+        {
+          "name": "DEX",
+          "value": 16
+        },
+        {
+          "name": "CON",
+          "value": 15
+        },
+        {
+          "name": "INT",
+          "value": 10
+        },
+        {
+          "name": "WIS",
+          "value": 18
+        },
+        {
+          "name": "CHA",
+          "value": 12
+        }
+      ],
+      "feats": [
+        "Squire of Solamnia",
+        "Archery",
+        "Weapon Mastery",
+        "Dark Bargain"
+      ],
+      "actions": [
+        "Channel Divinity",
+        "Channel Divinity: Divine Spark",
+        "Channel Divinity: Turn Undead",
+        "Hunter’s Mark",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Cleanse With Fire",
+        "Unclean Brand",
+        "Bonus Action: Stabilize",
+        "Elemental Arrows: Imbue Element"
+      ],
+      "spells": [
+        [
+          "Hail of Thorns",
+          "Thorn Armor",
+          "Hungering Blade",
+          "Alarm"
+        ],
+        [
+          "Guidance",
+          "Thaumaturgy",
+          "Spare the Dying",
+          "Summer Winds",
+          "Shield of Faith",
+          "Detect Magic",
+          "Bless",
+          "Hold Person",
+          "Cure Wounds"
+        ]
+      ],
+      "equipment": [
+        {
+          "name": "Smoldering Armor, Scale Mail",
+          "type": null
+        },
+        {
+          "name": "Rapier",
+          "type": "Rapier"
+        },
+        {
+          "name": "Longbow",
+          "type": "Longbow"
+        },
+        {
+          "name": "Pouch",
+          "type": "Gear"
+        },
+        {
+          "name": "Backpack",
+          "type": "Gear"
+        },
+        {
+          "name": "Arrows",
+          "type": "Gear"
+        }
+      ],
+      "age": null,
+      "hair": null,
+      "eyes": null,
+      "skin": null,
+      "height": null,
+      "weight": null,
+      "gender": null,
+      "avatar": "https://www.dndbeyond.com/avatars/51680/54/1581111423-152757358.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/43993/212/638609651055893683.jpeg",
+      "campaign": "Dragon Lance"
+    },
+    {
+      "name": "Soren",
+      "race": "Custom Lineage",
+      "classes": [
+        {
+          "name": "Barbarian",
+          "level": 6,
+          "subclassName": "Path of the Totem Warrior",
+          "subclassDescription": "<p class=\"Core-Styles_Core-Body\">The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your ba<span class=\"No-Break\">rbarian rage.</span></p>\r\n<p class=\"Core-Styles_Core-Body\">In some barbarians’ tribes, a totem animal is considered to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exce<span class=\"No-Break\">ptions exist.</span></p>"
+        }
+      ],
+      "alignmentId": 4,
+      "background": null,
+      "personalityTraits": "Initially distant and cold, but when once she considers someone her family, she's loyal and fiercely protective. Due to the harsh conditions of her homeland, she's inflexible and stuck in her ways since they were essential to survival.",
+      "ideals": "Family and loyalty. Her sense of duty to her tribe and peoples.\nGreater Good. It is each person’s responsibility to make the most happiness for the whole tribe. (Good)\nMight. The strongest are meant to rule. (Evil)",
+      "bonds": "My family, clan, or tribe is the most important thing in my life, even when they are far from me.",
+      "flaws": "Stubborn and inflexible. Prejudiced from life on the tundra.\nI am slow to trust members of other races, tribes, and societies.",
+      "backstory": null,
+      "otherNotes": "Cleave\nThe Cleave property allows you to use heavy weapons to hit multiple opponents with one massive swing. Whenever you hit a creature with a Melee Weapon Attack, you can make another Melee Attack Roll to hit a second creature you can see within 5ft of the first. On a hit, your second target takes damage equal to the weapon without any additional Ability Modifier damage (unless your modifier is negative). Ideal for crowd control situations, the cleave property is a go-to for those looking to carve through large swaths of enemies. ",
+      "stats": [
+        {
+          "name": "STR",
+          "value": 15
+        },
+        {
+          "name": "DEX",
+          "value": 14
+        },
+        {
+          "name": "CON",
+          "value": 14
+        },
+        {
+          "name": "INT",
+          "value": 8
+        },
+        {
+          "name": "WIS",
+          "value": 12
+        },
+        {
+          "name": "CHA",
+          "value": 8
+        }
+      ],
+      "feats": [
+        "Great Weapon Master",
+        "Hero's Journey Boon",
+        "Dark Bargain"
+      ],
+      "actions": [
+        "Rage"
+      ],
+      "spells": [
+        []
+      ],
+      "equipment": [
+        {
+          "name": "Scale Mail",
+          "type": "Medium Armor"
+        },
+        {
+          "name": "Javelin",
+          "type": "Javelin"
+        },
+        {
+          "name": "Greataxe",
+          "type": "Greataxe"
+        }
+      ],
+      "age": 27,
+      "hair": "Dark blue/black",
+      "eyes": "golden",
+      "skin": "",
+      "height": "6'6",
+      "weight": null,
+      "gender": "Female",
+      "avatar": "https://www.dndbeyond.com/avatars/52072/228/1581111423-153797062.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/61/471/636453122222914252.jpeg",
+      "campaign": "Dragon Lance"
+    },
+    {
+      "name": "Lazlo Duskfeather",
+      "race": "Fairy",
+      "classes": [
+        {
+          "name": "Bard",
+          "level": 6,
+          "subclassName": "College of Requiems",
+          "subclassDescription": "<p><em>Sing the Songs of the Dead</em></p>\r\n<p>Performing macabre melodies filled with grief-stricken chords and mournful refrains, the College of Requiems stirs the very bones of the dead. Requiem Bards weave necromantic magic into their funerary songs to control and empower a host of Undead minions.</p>"
+        }
+      ],
+      "alignmentId": null,
+      "background": "Fey-Blessed",
+      "personalityTraits": null,
+      "ideals": null,
+      "bonds": null,
+      "flaws": null,
+      "backstory": null,
+      "otherNotes": "",
+      "stats": [
+        {
+          "name": "STR",
+          "value": 11
+        },
+        {
+          "name": "DEX",
+          "value": 17
+        },
+        {
+          "name": "CON",
+          "value": 13
+        },
+        {
+          "name": "INT",
+          "value": 7
+        },
+        {
+          "name": "WIS",
+          "value": 10
+        },
+        {
+          "name": "CHA",
+          "value": 18
+        }
+      ],
+      "feats": [
+        "War Caster",
+        "Ability Score Improvement",
+        "Magic Initiate (Wizard)",
+        "Dark Bargain",
+        "Fey-Blessed Ability Score Increase"
+      ],
+      "actions": [
+        "Bardic Inspiration",
+        "Regain Bardic Inspiration",
+        "Bardic Inspiration",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Pluck the Heartstrings: Defense",
+        "Pluck the Heartstrings: Offense",
+        "Stir the Bones"
+      ],
+      "spells": [
+        [
+          "Vicious Mockery",
+          "Light",
+          "Healing Word",
+          "Cure Wounds",
+          "Harrowing Ballad",
+          "Invisibility",
+          "Aid",
+          "Call the Rabid Beast",
+          "Dispel Magic",
+          "Mending",
+          "Hold Person",
+          "Major Image",
+          "Hypnotic Pattern"
+        ]
+      ],
+      "equipment": [
+        {
+          "name": "Studded Leather",
+          "type": "Light Armor"
+        }
+      ],
+      "age": null,
+      "hair": null,
+      "eyes": null,
+      "skin": null,
+      "height": null,
+      "weight": null,
+      "gender": null,
+      "avatar": "https://www.dndbeyond.com/avatars/53384/414/1581111423-151272538.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "backdrop": "https://www.dndbeyond.com/avatars/43993/187/638609648655421556.jpeg",
+      "campaign": "Dragon Lance"
+    }
+  ]
+}

@@ -29,17 +29,22 @@ Thumbs.db
 logs/
 *.log
 
-# Data (audio, transcripts, generated files — use GCS in prod)
-data/
+# Data — ignore large/generated files but keep example data for reproducibility
+# (ignoring data/ as a directory would prevent negation rules from working)
+data/audio/
+data/portraits/
+data/avatars/
+data/transcripts/
+data/moments/
+data/curl/
+data/sessions/*/audio/
+data/sessions/*/portraits/
 output/
 
-# Keep campaign config committed so it can be baked into the Docker image
-!data/campaign.json
-!data/player_map.json
-
-# Service account credentials
+# Service account credential files (but not campaign data or example transcripts)
 *.json
 !package.json
 !tsconfig.json
 !data/campaign.json
 !data/player_map.json
+!data/sessions/*/utterances.json

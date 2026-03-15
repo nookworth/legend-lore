@@ -2,7 +2,7 @@
 
 Automated D&D session recap generator. Feeds raw session audio through a 10-step pipeline to produce a narrated, illustrated video recap delivered to Discord.
 
-**Hackathon category**: Creative Storyteller — uses Gemini 2.0 Flash with interleaved `TEXT` + `IMAGE` output modalities to generate narration and illustrated title cards in a single model call.
+**Hackathon category**: Creative Storyteller — uses `gemini-3.1-flash-image-preview` with interleaved `TEXT` + `IMAGE` output modalities to generate narration and illustrated title cards in a single model call.
 
 ---
 
@@ -34,7 +34,7 @@ transcript (skipping AssemblyAI transcription) or from raw audio (full pipeline)
 | `2026-02-27` | February 27, 2026 |
 
 Output is delivered to the [#session-recaps Discord channel](https://discord.gg/INVITE_LINK)
-and uploaded to `gs://legend-lore-video/1/sessions/{SESSION_ID}/final_recap.mp4`.
+and uploaded to `gs://legend-lore-video/1/sessions/{SESSION_ID}/{timestamp}_final_recap.mp4`.
 
 ---
 

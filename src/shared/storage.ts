@@ -25,7 +25,8 @@ export async function uploadAudio(localPath: string, sessionId: string): Promise
 export async function uploadVideo(localPath: string, sessionId: string): Promise<string> {
   requireConfig(['gcsBucketVideos']);
   const gcs = getStorage();
-  const destination = `${config.groupId}/sessions/${sessionId}/final_recap.mp4`;
+  const runId = new Date().toISOString().replace(/[:.]/g, '-');
+  const destination = `${config.groupId}/sessions/${sessionId}/${runId}_final_recap.mp4`;
   const bucket = gcs.bucket(config.gcsBucketVideos);
   await bucket.upload(localPath, { destination });
   return `https://storage.googleapis.com/${config.gcsBucketVideos}/${destination}`;

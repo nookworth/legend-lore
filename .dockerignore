@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.local
+.git/
+.claude/
+.vscode/
+.idea/
+output/
+logs/
+*.log
+
+# Exclude large data subdirs but keep data/campaign.json and data/player_map.json
+data/audio/
+data/sessions/
+data/avatars/
+data/portraits/
+data/transcripts/
+data/moments/
+data/curl/

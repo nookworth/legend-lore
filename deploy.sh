@@ -83,15 +83,22 @@ gcloud iam service-accounts describe "$SA_EMAIL" --project="$PROJECT_ID" &>/dev/
        --project="$PROJECT_ID"
 
 echo "Granting IAM roles to service account..."
+# Retry loop — service account propagation can take a few seconds
 for ROLE in \
   roles/storage.admin \
   roles/cloudtexttospeech.user \
   roles/aiplatform.user \
   roles/secretmanager.secretAccessor; do
-  gcloud projects add-iam-policy-binding "$PROJECT_ID" \
-    --member="serviceAccount:$SA_EMAIL" \
-    --role="$ROLE" \
-    --quiet
+  for attempt in 1 2 3 4 5; do
+    if gcloud projects add-iam-policy-binding "$PROJECT_ID" \
+      --member="serviceAccount:$SA_EMAIL" \
+      --role="$ROLE" \
+      --quiet 2>/dev/null; then
+      break
+    fi
+    echo "  Waiting for service account to propagate (attempt $attempt)..."
+    sleep 5
+  done
 done
 
 # ── Secrets ───────────────────────────────────────────────────────────────────

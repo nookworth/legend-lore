@@ -42,9 +42,15 @@ echo "  Job:     $JOB_NAME"
 echo ""
 
 # ── Load .env ─────────────────────────────────────────────────────────────────
+# Parse manually instead of `source` — avoids bash interpreting backticks/subshells
 if [ -f .env ]; then
   echo "Loading .env..."
-  set -a; source .env; set +a
+  while IFS='=' read -r key val; do
+    [[ "$key" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] || continue  # skip comments/blanks
+    val="${val%%[[:space:]]#*}"                              # strip inline comments
+    val="${val%"${val##*[![:space:]]}"}"                     # rtrim whitespace
+    export "${key}=${val}"
+  done < .env
 fi
 
 # ── Enable APIs ───────────────────────────────────────────────────────────────

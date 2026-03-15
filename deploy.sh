@@ -134,7 +134,7 @@ echo "Configuring Docker authentication..."
 gcloud auth configure-docker "$REGION-docker.pkg.dev" --quiet
 
 echo "Building Docker image..."
-docker build -t "$IMAGE" .
+docker build --platform linux/amd64 -t "$IMAGE" .
 
 echo "Pushing image to Artifact Registry..."
 docker push "$IMAGE"

@@ -42,6 +42,7 @@ data/sessions/*/portraits/
 output/
 
 # Service account credential files (but not campaign data or example transcripts)
+judge-key.json
 *.json
 !package.json
 !tsconfig.json

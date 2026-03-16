@@ -48,8 +48,7 @@ No API keys or GCP project setup required — just `gcloud` CLI.
 ```bash
 # Install gcloud CLI: https://cloud.google.com/sdk/docs/install
 
-# Download and activate the judge service account
-curl -o judge-key.json https://storage.googleapis.com/legend-lore-assets/judge-key.json
+# Download judge-key.json from the DevPost submission attachments, then:
 gcloud auth activate-service-account --key-file=judge-key.json
 gcloud config set project legend-lore
 ```

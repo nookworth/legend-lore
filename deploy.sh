@@ -127,7 +127,6 @@ create_secret() {
 create_secret "GEMINI_API_KEY"       "${GEMINI_API_KEY:-}"
 create_secret "ASSEMBLYAI_API_KEY"   "${ASSEMBLYAI_API_KEY:-}"
 create_secret "REPLICATE_API_TOKEN"  "${REPLICATE_API_TOKEN:-}"
-create_secret "DISCORD_WEBHOOK_URL"  "${DISCORD_WEBHOOK_URL:-}"
 
 # ── Build & Push ──────────────────────────────────────────────────────────────
 echo "Configuring Docker authentication..."
@@ -146,13 +145,13 @@ GCS_BUCKET_VIDEOS=${GCS_BUCKET_VIDEOS:-},\
 GCS_BUCKET_ASSETS=${GCS_BUCKET_ASSETS:-},\
 GROUP_ID=${GROUP_ID:-default},\
 GOOGLE_CLOUD_PROJECT=$PROJECT_ID,\
-GOOGLE_CLOUD_LOCATION=$REGION"
+GOOGLE_CLOUD_LOCATION=$REGION,\
+DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL:-}"
 
 SECRETS="\
 GEMINI_API_KEY=GEMINI_API_KEY:latest,\
 ASSEMBLYAI_API_KEY=ASSEMBLYAI_API_KEY:latest,\
-REPLICATE_API_TOKEN=REPLICATE_API_TOKEN:latest,\
-DISCORD_WEBHOOK_URL=DISCORD_WEBHOOK_URL:latest"
+REPLICATE_API_TOKEN=REPLICATE_API_TOKEN:latest"
 
 JOB_ARGS=(
   --image="$IMAGE"

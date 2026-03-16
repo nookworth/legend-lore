@@ -21,6 +21,8 @@ Automated D&D session recap generator. Feeds raw session audio through a 10-step
 | 9 | Upload final video to GCS |
 | 10 | Deliver to Discord |
 
+![Architecture Diagram](./architecture.png)
+
 ---
 
 ## Running the pipeline
@@ -33,8 +35,10 @@ transcript (skipping AssemblyAI transcription) or from raw audio (full pipeline)
 | `2026-02-07` | February 7, 2026 |
 | `2026-02-27` | February 27, 2026 |
 
-Output is delivered to the [#session-recaps Discord channel](https://discord.gg/INVITE_LINK)
-and uploaded to `gs://legend-lore-video/1/sessions/{SESSION_ID}/{timestamp}_final_recap.mp4`.
+Output is delivered to the **#ai-session-recaps** channel in the [Legend Lore Test Discord server](https://discord.gg/3XmPxMSt).
+Join the server before running the pipeline so you can see the video when it arrives
+([create a Discord account](https://discord.com/register) first if you don't have one).
+Videos are also uploaded to `gs://legend-lore-video/1/sessions/{SESSION_ID}/{timestamp}_final_recap.mp4`.
 
 ---
 
@@ -53,7 +57,7 @@ gcloud auth activate-service-account --key-file=judge-key.json
 gcloud config set project legend-lore
 ```
 
-Output is posted to the [#session-recaps Discord channel](https://discord.gg/INVITE_LINK). The webhook URL is pre-configured in the job — no changes needed.
+Output is posted to **#ai-session-recaps** in the [Legend Lore Test Discord server](https://discord.gg/3XmPxMSt) — join before running so you can see the result. The `DISCORD_WEBHOOK_URL` in the commands below points to this channel; no changes needed.
 
 **Run from transcript** (skips transcription — faster, no AssemblyAI cost):
 
@@ -61,12 +65,12 @@ Output is posted to the [#session-recaps Discord channel](https://discord.gg/INV
 # February 7 session
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-07,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-07/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
+  --update-env-vars='SESSION_ID=2026-02-07,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-07/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1483139039044440218/N2eYR2DtVJkA4grOtQXo4emFsAHEfenPrXdGFIX3p506ZW7xMJJYmu8nweHSr9aUuI1S'
 
 # February 27 session
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-27,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-27/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
+  --update-env-vars='SESSION_ID=2026-02-27,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-27/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1483139039044440218/N2eYR2DtVJkA4grOtQXo4emFsAHEfenPrXdGFIX3p506ZW7xMJJYmu8nweHSr9aUuI1S'
 ```
 
 **Run from raw audio** (full pipeline including transcription):
@@ -74,7 +78,7 @@ gcloud run jobs execute legend-lore-pipeline \
 ```bash
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-07,GCS_SOURCE_PREFIX=gs://legend-lore-audio/1/sessions/2026-02-07/source/,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
+  --update-env-vars='SESSION_ID=2026-02-07,GCS_SOURCE_PREFIX=gs://legend-lore-audio/1/sessions/2026-02-07/source/,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1483139039044440218/N2eYR2DtVJkA4grOtQXo4emFsAHEfenPrXdGFIX3p506ZW7xMJJYmu8nweHSr9aUuI1S'
 ```
 
 **Watch execution logs:**
@@ -96,10 +100,10 @@ cd legend-lore
 npm install
 ```
 
-Authenticate with the judge service account (same key as above):
+Authenticate with the judge service account (download `judge-key.json` from the DevPost submission attachments):
 
 ```bash
-curl -o judge-key.json https://storage.googleapis.com/legend-lore-assets/judge-key.json
+gcloud auth activate-service-account --key-file=judge-key.json
 ```
 
 Create `.env`:

@@ -7,9 +7,6 @@ import type {
   Narrative,
   NarrativeSegment,
 } from "../shared/types.js";
-import * as hub from 'langchain/hub/node'
-import * as wrappers from 'langsmith/wrappers'
-
 const MODEL = "gemini-3.1-flash-image-preview";
 const MAX_ATTEMPTS = 3;
 
@@ -360,16 +357,7 @@ export async function generateNarrative(
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
-  const geminiClient = new GoogleGenAI({ apiKey: config.geminiApiKey });
-  const client = wrappers.wrapSDK(geminiClient, {
-    // @ts-expect-error
-    tracing_extra: {
-      tags: ['gemini', 'typescript'],
-      metadata: {
-        integration: 'google-genai'
-      },
-    },
-  })
+  const client = new GoogleGenAI({ apiKey: config.geminiApiKey });
 
   const selectedMoments = moments.filter((_, i) => i < 3);
 

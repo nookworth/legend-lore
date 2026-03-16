@@ -53,18 +53,20 @@ gcloud auth activate-service-account --key-file=judge-key.json
 gcloud config set project legend-lore
 ```
 
+Output is posted to the [#session-recaps Discord channel](https://discord.gg/INVITE_LINK). The webhook URL is pre-configured in the job — no changes needed.
+
 **Run from transcript** (skips transcription — faster, no AssemblyAI cost):
 
 ```bash
 # February 7 session
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-07,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-07/utterances.json'
+  --update-env-vars='SESSION_ID=2026-02-07,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-07/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
 
 # February 27 session
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-27,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-27/utterances.json'
+  --update-env-vars='SESSION_ID=2026-02-27,GCS_UTTERANCES_URI=gs://legend-lore-audio/1/sessions/2026-02-27/utterances.json,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
 ```
 
 **Run from raw audio** (full pipeline including transcription):
@@ -72,7 +74,7 @@ gcloud run jobs execute legend-lore-pipeline \
 ```bash
 gcloud run jobs execute legend-lore-pipeline \
   --region=us-central1 \
-  --update-env-vars='SESSION_ID=2026-02-07,GCS_SOURCE_PREFIX=gs://legend-lore-audio/1/sessions/2026-02-07/source/'
+  --update-env-vars='SESSION_ID=2026-02-07,GCS_SOURCE_PREFIX=gs://legend-lore-audio/1/sessions/2026-02-07/source/,DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/1482899208905293927/si2eRWmVV5jYWevcfVrq_65Uvk8NweIS7vyHvTBXGWmxGI3wTdz5kipmUfqf2CRjXy-x'
 ```
 
 **Watch execution logs:**

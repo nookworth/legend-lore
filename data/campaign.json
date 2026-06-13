@@ -3,11 +3,12 @@
   "characters": [
     {
       "name": "Goibniu",
+      "username": "Lisztopher",
       "race": "Dwarf",
       "classes": [
         {
           "name": "Cleric",
-          "level": 6,
+          "level": 8,
           "subclassName": "Twilight Domain (TCoE)",
           "subclassDescription": "<p>The twilit transition from light into darkness often brings calm and even joy, as the day’s labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.</p>"
         }
@@ -49,16 +50,14 @@
       "feats": [
         "Alert",
         "Squire of Solamnia",
+        "Ability Score Improvement",
         "War Caster"
       ],
       "actions": [
         "Channel Divinity",
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
-        "Eyes of Night",
-        "Vigilant Blessing",
-        "Channel Divinity: Twilight Sanctuary",
-        "Steps of Night",
+        "Channel Divinity: Sear Undead",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -66,7 +65,11 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Channel Divinity: Sear Undead"
+        "Divine Strike",
+        "Eyes of Night",
+        "Vigilant Blessing",
+        "Channel Divinity: Twilight Sanctuary",
+        "Steps of Night"
       ],
       "spells": [
         [
@@ -83,17 +86,22 @@
           "Healing Word",
           "Spiritual Weapon",
           "Lesser Restoration",
-          "Scarlet Dawn"
+          "Scarlet Dawn",
+          "Aura of Desecration"
         ]
       ],
       "equipment": [
+        {
+          "name": "Dancing Longsword",
+          "type": "Longsword"
+        },
         {
           "name": "Shield",
           "type": "Shield"
         },
         {
           "name": "Chain Shirt",
-          "type": "Medium Armor"
+          "type": ""
         },
         {
           "name": "Longsword",
@@ -113,11 +121,12 @@
     },
     {
       "name": "Aria Mao",
+      "username": "Tsunau",
       "race": "Kender",
       "classes": [
         {
           "name": "Rogue",
-          "level": 6,
+          "level": 8,
           "subclassName": "Assassin",
           "subclassDescription": "<p><em>Practice the Grim Art of Death</em></p>\r\n<p>An Assassin’s training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency.</p>"
         }
@@ -210,12 +219,13 @@
       "height": "5'2",
       "weight": 150,
       "gender": "Female",
-      "avatar": "https://www.dndbeyond.com/avatars/49777/905/1581111423-147177664.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
+      "avatar": "https://www.dndbeyond.com/avatars/56106/908/1581111423-147177664.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
       "backdrop": "https://www.dndbeyond.com/avatars/43993/216/638609651459074281.jpeg",
       "campaign": "Dragon Lance"
     },
     {
       "name": "Lilian Brooks Esquire ",
+      "username": "MekJonez",
       "race": "Harengon",
       "classes": [
         {
@@ -223,6 +233,12 @@
           "level": 6,
           "subclassName": "Circle of Wicker",
           "subclassDescription": "<p><em>Craft Effigies of Sacrifice and Protection</em></p>\r\n<p>Cunning in their ancient art, Druids of the Circle of Wicker fashion twig dolls and effigies, binding their magic into these crude forms. These creations often resemble animals, rune shapes, natural symbols, or people.</p>\r\n<p>Protective tokens and promises of retribution against trespassers are these Druids’ stock in trade. You can weave the magic of the land through your wicker creations as boons to your friends and banes to your foes.</p>"
+        },
+        {
+          "name": "Sorcerer",
+          "level": 2,
+          "subclassName": null,
+          "subclassDescription": null
         }
       ],
       "alignmentId": 2,
@@ -263,13 +279,15 @@
         "Chef",
         "Scribe Ability Score Improvements",
         "Skilled",
-        "Tough"
+        "Tough",
+        "Dark Bargain"
       ],
       "actions": [
         "Leave Druidic Message",
         "Wild Shape",
         "Wild Resurgence: Regain Wild Shape",
         "Wild Resurgence: Regain Spell Slot",
+        "Create Wicker Token",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -277,7 +295,19 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Create Wicker Token",
+        "Innate Sorcery",
+        "Font of Magic: Sorcery Points",
+        "Font of Magic: Convert Spell Slots",
+        "Font of Magic: Create Spell Slot Level 1",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Metamagic: Quickened Spell",
+        "Metamagic: Distant Spell",
         "Soothe: Bonus Action"
       ],
       "spells": [
@@ -293,14 +323,28 @@
           "Enhance Ability",
           "Lesser Restoration",
           "Elemental Weapon",
-          "Protection from Energy",
-          "Bloat"
+          "Harvest Moonglow",
+          "Moonbeam"
+        ],
+        [
+          "Blood Bolt",
+          "Concealed Shot",
+          "Mysterious Presence",
+          "Conjure Cover",
+          "Silvery Barbs",
+          "Light",
+          "Ancestral Communion",
+          "Shield"
         ]
       ],
       "equipment": [
         {
+          "name": "Wand of the War Mage, +1",
+          "type": "Wand"
+        },
+        {
           "name": "Shield",
-          "type": "Shield"
+          "type": ""
         },
         {
           "name": "Leather",
@@ -336,11 +380,12 @@
     },
     {
       "name": "Sister Superior Alice Dominica",
+      "username": "Combat_Toast",
       "race": "Shadar-kai",
       "classes": [
         {
           "name": "Ranger",
-          "level": 3,
+          "level": 5,
           "subclassName": "Primordial Archer",
           "subclassDescription": "<p><em>Channel the Wrath of the Wilds</em></p>\r\n<p>In the areas of Etharis where nature still holds sway, many cling to the ancient customs of woodland hunters and witches. Marking themselves with wild plants and bone needles, theirs is a tradition of cunning, cruelty, and reprisal against all trespassers. Unlike the Druids, these wood witches twist natural magic into hexes, imbuing their weapons with nature’s fury.</p>"
         },
@@ -387,6 +432,7 @@
       ],
       "feats": [
         "Squire of Solamnia",
+        "Ability Score Improvement",
         "Archery",
         "Weapon Mastery",
         "Dark Bargain"
@@ -396,31 +442,34 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Hunter’s Mark",
-        "Initiate a Circle Spell",
-        "Circle Spell: Augment",
-        "Circle Spell: Distribute",
-        "Circle Spell: Expand",
-        "Circle Spell: Prolong",
-        "Circle Spell: Safeguard",
-        "Circle Spell: Supplant",
-        "Initiate a Circle Spell",
-        "Circle Spell: Augment",
-        "Circle Spell: Distribute",
-        "Circle Spell: Expand",
-        "Circle Spell: Prolong",
-        "Circle Spell: Safeguard",
-        "Circle Spell: Supplant",
         "Cleanse With Fire",
         "Unclean Brand",
+        "Elemental Arrows: Imbue Element",
         "Bonus Action: Stabilize",
-        "Elemental Arrows: Imbue Element"
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Elemental Arrows: Fire"
       ],
       "spells": [
         [
           "Hail of Thorns",
           "Thorn Armor",
           "Hungering Blade",
-          "Alarm"
+          "Alarm",
+          "Pass without Trace",
+          "Veil of the Reaper"
         ],
         [
           "Guidance",
@@ -473,11 +522,12 @@
     },
     {
       "name": "Soren",
+      "username": "Jeptefer",
       "race": "Custom Lineage",
       "classes": [
         {
           "name": "Barbarian",
-          "level": 6,
+          "level": 8,
           "subclassName": "Path of the Totem Warrior",
           "subclassDescription": "<p class=\"Core-Styles_Core-Body\">The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your ba<span class=\"No-Break\">rbarian rage.</span></p>\r\n<p class=\"Core-Styles_Core-Body\">In some barbarians’ tribes, a totem animal is considered to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exce<span class=\"No-Break\">ptions exist.</span></p>"
         }
@@ -522,15 +572,20 @@
         "Dark Bargain"
       ],
       "actions": [
-        "Rage"
+        "Rage",
+        "Instinctive Pounce"
       ],
       "spells": [
         []
       ],
       "equipment": [
         {
+          "name": "Cloak of Protection",
+          "type": "Wondrous item"
+        },
+        {
           "name": "Scale Mail",
-          "type": "Medium Armor"
+          "type": ""
         },
         {
           "name": "Javelin",
@@ -554,11 +609,12 @@
     },
     {
       "name": "Lazlo Duskfeather",
+      "username": "LuckyAxel",
       "race": "Fairy",
       "classes": [
         {
           "name": "Bard",
-          "level": 6,
+          "level": 8,
           "subclassName": "College of Requiems",
           "subclassDescription": "<p><em>Sing the Songs of the Dead</em></p>\r\n<p>Performing macabre melodies filled with grief-stricken chords and mournful refrains, the College of Requiems stirs the very bones of the dead. Requiem Bards weave necromantic magic into their funerary songs to control and empower a host of Undead minions.</p>"
         }
@@ -601,12 +657,14 @@
         "War Caster",
         "Ability Score Improvement",
         "Magic Initiate (Wizard)",
+        "Musician",
         "Dark Bargain",
         "Fey-Blessed Ability Score Increase"
       ],
       "actions": [
         "Bardic Inspiration",
         "Regain Bardic Inspiration",
+        "Countercharm",
         "Bardic Inspiration",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
@@ -632,8 +690,9 @@
           "Dispel Magic",
           "Mending",
           "Hold Person",
-          "Major Image",
-          "Hypnotic Pattern"
+          "Hypnotic Pattern",
+          "Polymorph",
+          "Greater Invisibility"
         ]
       ],
       "equipment": [

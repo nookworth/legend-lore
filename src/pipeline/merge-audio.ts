@@ -8,15 +8,16 @@ const execFileAsync = promisify(execFile);
 const AUDIO_EXTENSIONS = new Set(['.aac', '.flac', '.mp3', '.wav', '.m4a', '.ogg']);
 
 // Channel layouts and their corresponding label sequences for the ffmpeg join
-// filter map parameter. Labels must exactly match the slots in each layout —
-// layouts without LFE (all except 7.1) must not include it.
+// filter map parameter. Every label must be a member of its layout's
+// decomposition (see `ffmpeg -layouts`); e.g. 4.0/6.0 use BC+SL+SR rather than
+// BL+BR, so the discrete-per-speaker maps use `quad`/`hexagonal` instead.
 const CHANNEL_CONFIG: Record<number, { layout: string; labels: string[] }> = {
   1: { layout: 'mono',   labels: ['FC'] },
   2: { layout: 'stereo', labels: ['FL', 'FR'] },
   3: { layout: '3.0',    labels: ['FL', 'FR', 'FC'] },
-  4: { layout: '4.0',    labels: ['FL', 'FR', 'BL', 'BR'] },
+  4: { layout: 'quad',   labels: ['FL', 'FR', 'BL', 'BR'] },
   5: { layout: '5.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR'] },
-  6: { layout: '6.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR', 'BC'] },
+  6: { layout: 'hexagonal', labels: ['FL', 'FR', 'FC', 'BL', 'BR', 'BC'] },
   7: { layout: '7.0',    labels: ['FL', 'FR', 'FC', 'BL', 'BR', 'SL', 'SR'] },
   8: { layout: '7.1',    labels: ['FL', 'FR', 'FC', 'LFE', 'BL', 'BR', 'SL', 'SR'] },
 };

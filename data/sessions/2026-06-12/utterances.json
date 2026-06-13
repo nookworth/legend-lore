@@ -1,0 +1,434 @@
+[
+  {
+    "speaker": "2-combattoast",
+    "text": "I?",
+    "start": 640,
+    "end": 880
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Thank you. Now we have to figure out where the beginning of the map is. Okay.",
+    "start": 2480,
+    "end": 8080
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I will make sure that we actually get a. Like a. What would you call this? Like, an output from my pipeline. This time I keep doing it wrong. So, like.",
+    "start": 17120,
+    "end": 30030
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Have you just been not running the pipeline?",
+    "start": 29050,
+    "end": 30810
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, yeah, I forgot to run it one time so that the download link expired. Then last time, I think, was the time I accidentally kicked Craig from the server or. No, that was two times ago. And then the time, like, most recently, I. I guess you have to eject, like, stop the recording in a very specific way, otherwise it doesn't save or something. So, yeah, I just keep doing it wrong and then.",
+    "start": 31310,
+    "end": 56740
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Oh.",
+    "start": 57620,
+    "end": 57940
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 57700,
+    "end": 58260
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay. I just need to double check a few things here. Okay, you are at the tunnels of the Path of Memories. I'm gonna give you some stats about the shit here so that when we get into weird questions like how many feet per second do dwarves fall off a tower like we had to solve that other night, we have some context. The ceilings of both the natural tunnels and the buried chambers are 10ft high. Unless otherwise noted, characters can clearly tell the difference between natural tunnels and the worked marble of ancient Istarian structures. All chambers tilt slightly down to southwest due to the resting city of the Ingalls Eastern District. Tunnels are not illuminated. Area descriptions assume characters have a light source or other means of seeing in the dark. Are the. Oh, and one square is five feet. We good?",
+    "start": 66580,
+    "end": 137670
+  },
+  {
+    "speaker": "2-combattoast",
+    "text": "Yes.",
+    "start": 140290,
+    "end": 140610
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Yes.",
+    "start": 140690,
+    "end": 141010
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay. All right. As you pull so you're going through the tunnel right out of the the Wind's End canyon into this, into this area. And as you approach the fork in the tunnel, the walls burst flame that rushes toward you. Spectral dragon heads erupt from the flames and the quarter filled corridor fills with furious hist words. Dragon spirits haunt this area. They are illusory manifestations that cannot be attacked or damaged. In Draconic. Well, do any of you speak draconic?",
+    "start": 141750,
+    "end": 186940
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I do.",
+    "start": 187750,
+    "end": 188230
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay, in Draconic, they accuse you of trespassing, calling you desecrators and betrayers.",
+    "start": 188860,
+    "end": 196940
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Your mom's a desecrator and a betrayer.",
+    "start": 204230,
+    "end": 206630
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Can you speak draconic?",
+    "start": 207990,
+    "end": 209190
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Yeah.",
+    "start": 208400,
+    "end": 208800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah, I say that in draconic.",
+    "start": 209840,
+    "end": 212160
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay, You specifically, you need to wisdom save because you threw at them. I'm not joking.",
+    "start": 212470,
+    "end": 227270
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "I was about to say, Maddie, is there anything in the book for if you say random nonsense at them?",
+    "start": 230000,
+    "end": 234080
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 230580,
+    "end": 230820
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "No, actually there. There is something right here. I am following.",
+    "start": 234640,
+    "end": 238320
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Yes.",
+    "start": 235040,
+    "end": 235360
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "And he obviously agitated them and there is something for agitating them. So.",
+    "start": 239440,
+    "end": 247760
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "So the answer was yes.",
+    "start": 250240,
+    "end": 251440
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Yeah.",
+    "start": 252320,
+    "end": 252800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay, they get. They got triggered.",
+    "start": 252320,
+    "end": 255440
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "It doesn't specifically say if characters talk shit to dragon spirits. However, they're going on here where they want you to do something and if you do not do it, you have to make a wisdom save. Goymanu kind of it up.",
+    "start": 254160,
+    "end": 273040
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "25.",
+    "start": 273849,
+    "end": 274488
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "All right.",
+    "start": 276960,
+    "end": 277600
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "You're like half My holy order does not allow you to.",
+    "start": 280170,
+    "end": 283450
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 283940,
+    "end": 284180
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Up with me.",
+    "start": 284330,
+    "end": 285130
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay.",
+    "start": 293930,
+    "end": 294410
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Can you tell what just happened or not?",
+    "start": 295860,
+    "end": 298900
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "You didn't get. You didn't get struck down. Cool. Does anyone else want to maybe address these very unhappy spirits in a non antagonizing way who can speak draconic?",
+    "start": 299450,
+    "end": 319060
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "I'm trying to think what I say to them.",
+    "start": 327630,
+    "end": 330110
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "What did they say originally again?",
+    "start": 331390,
+    "end": 332910
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Well, they're. They're accusing you of trespassing and calling you desecrators and betrayers.",
+    "start": 331540,
+    "end": 337780
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "We are just the creators.",
+    "start": 334060,
+    "end": 335500
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, okay.",
+    "start": 338840,
+    "end": 339560
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Which makes me think maybe this is a grave site to them or something.",
+    "start": 338970,
+    "end": 341450
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh, Holy Spirit, how do we sanctify your hallowed ground that we walk upon.",
+    "start": 344220,
+    "end": 355180
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "We might pass through. I added dragonic. Also.",
+    "start": 356840,
+    "end": 362760
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay.",
+    "start": 363860,
+    "end": 364340
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "The. The hairpin speak.",
+    "start": 364870,
+    "end": 367270
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "They seem to calm down knowing that you do not have ill intentions. Except with Goyba Nu. They kind of hate that guy. Now.",
+    "start": 372580,
+    "end": 380260
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Spirit flies by glares.",
+    "start": 381710,
+    "end": 383150
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "If you had failed the wisdom save, you would have to randomly attack whoever was next to you?",
+    "start": 390910,
+    "end": 395470
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Cool.",
+    "start": 396720,
+    "end": 397040
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, I thought I was gonna get struck down.",
+    "start": 397420,
+    "end": 399580
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "No.",
+    "start": 401470,
+    "end": 401870
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "I mean, I might have been struck down by you.",
+    "start": 401640,
+    "end": 403720
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I'm not that strong. You guys don't have much to feed SA.",
+    "start": 405260,
+    "end": 411830
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay. All right. Which. Which way are you gonna go, y'? All?",
+    "start": 409950,
+    "end": 414350
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Left. And I pull a ratatouille and hug sort. And left.",
+    "start": 415770,
+    "end": 423370
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Are we still doing that? Yes.",
+    "start": 423970,
+    "end": 425810
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh, yeah. I can't blow my cover.",
+    "start": 427770,
+    "end": 429450
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Moving her through her hair.",
+    "start": 432370,
+    "end": 433810
+  },
+  {
+    "speaker": "6-jeptefer",
+    "text": "Tombs where there are no soldiers.",
+    "start": 434090,
+    "end": 435770
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Hey, you don't know that.",
+    "start": 436740,
+    "end": 437940
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Also, the. The general and, you know, the leaders are supposedly somewhere down.",
+    "start": 438770,
+    "end": 444800
+  },
+  {
+    "speaker": "6-jeptefer",
+    "text": "Sure, man. Doesn't hurt. Soren. She just like. Whatever.",
+    "start": 451210,
+    "end": 455290
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "And then I'll just attack from, you know, a position of surprise. It'll be perfect.",
+    "start": 454900,
+    "end": 459860
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "Oh, the map died.",
+    "start": 460880,
+    "end": 462800
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "They never see it coming.",
+    "start": 469580,
+    "end": 470940
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "What? They never see a comment.",
+    "start": 470070,
+    "end": 474470
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "This barbarian came over and attacked me. And suddenly this little being out of her hair came and attacked me even more.",
+    "start": 475930,
+    "end": 481930
+  },
+  {
+    "speaker": "6-jeptefer",
+    "text": "That's my familiar.",
+    "start": 483460,
+    "end": 484500
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That's going to be familiar.",
+    "start": 487290,
+    "end": 488730
+  },
+  {
+    "speaker": "1-mekjonesy",
+    "text": "You're familiar? Who has undead familiars? Basically, it.",
+    "start": 487930,
+    "end": 492520
+  },
+  {
+    "speaker": "6-jeptefer",
+    "text": "Yeah, those are my grand familiars.",
+    "start": 492750,
+    "end": 494670
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "Okay, so you've gone down into the passage. It says the chamber transitions from natural stone to wall.",
+    "start": 498400,
+    "end": 508320
+  }
+]

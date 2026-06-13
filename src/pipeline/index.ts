@@ -7,6 +7,7 @@ import { selectMoments } from './select-moments.js';
 import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generatePortraits, type CharacterForPortrait, ALIGNMENT_MAP } from './generate-portraits.js';
+import { takeRoll, audioHandles, normalizeHandle, sessionPlayerMap } from './take-roll.js';
 import { generateTts } from './generate-tts.js';
 import { stitchVideo } from './stitch-video.js';
 import { uploadOutput } from './upload-output.js';
@@ -111,10 +112,12 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
   await mkdir(outputDir, { recursive: true });
 
-  const campaignContext = await readFile(campaignContextPath, 'utf-8');
-  const campaignContextFormatted = formatCampaignContext(campaignContext);
-  const rawAvatars = extractCharacterAvatars(campaignContext);
-  const charactersForPortrait = extractCharactersForPortrait(campaignContext);
+  // Roster vars start as the full campaign and are narrowed to the session's
+  // actual attendees once roll is taken (after utterances/audio are available).
+  let campaignContext = await readFile(campaignContextPath, 'utf-8');
+  let campaignContextFormatted = formatCampaignContext(campaignContext);
+  let rawAvatars = extractCharacterAvatars(campaignContext);
+  let charactersForPortrait = extractCharactersForPortrait(campaignContext);
 
   const playerMapPath = path.join(path.dirname(campaignContextPath), 'player_map.json');
   let playerMap: Record<string, string> = {};
@@ -166,6 +169,44 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     console.log(`[transcribe] Backed up utterances → ${transcriptBackupPath}`);
   }
 
+  // ── Take roll: drop characters with no track this session ───────────────────
+  // Presence is keyed off who actually had an audio track. Prefer the audio dir
+  // (covers players who were present but silent); fall back to transcript speakers
+  // when audio is gone (e.g. resuming from a backed-up transcript).
+  let handles: string[] = [];
+  try {
+    handles = await audioHandles(audioDir);
+  } catch {
+    /* audio dir missing (resume path) — fall back to transcript speakers below */
+  }
+  if (handles.length === 0) {
+    handles = [...new Set(utterances.map((u) => u.speaker))].map(normalizeHandle);
+  }
+
+  if (handles.length > 0) {
+    const allNames = (JSON.parse(campaignContext) as CampaignJson).characters.map((c) => c.name);
+    const roll = takeRoll(handles, playerMap, allNames);
+    console.log(`[roll] Present (${roll.present.length}): ${roll.present.join(', ')}`);
+    if (roll.absent.length) console.log(`[roll] Absent — excluded from recap: ${roll.absent.join(', ')}`);
+    if (roll.nonPlayerHandles.length) console.log(`[roll] Non-player tracks: ${roll.nonPlayerHandles.join(', ')}`);
+
+    if (roll.present.length === 0) {
+      // No track resolved to a known character — keep the full roster rather than
+      // silently producing an empty recap, and surface why.
+      console.warn('[roll] No tracks matched a campaign character (check player_map.json) — keeping full roster');
+    } else {
+      // Rebuild the campaign JSON with only present characters so every downstream
+      // consumer (moment selection, portraits, narrative) sees the same roster.
+      const present = new Set(roll.present);
+      const parsed = JSON.parse(campaignContext) as CampaignJson;
+      parsed.characters = parsed.characters.filter((c) => present.has(c.name));
+      campaignContext = JSON.stringify(parsed);
+      campaignContextFormatted = formatCampaignContext(campaignContext);
+      rawAvatars = extractCharacterAvatars(campaignContext);
+      charactersForPortrait = extractCharactersForPortrait(campaignContext);
+    }
+  }
+
   let moments: MomentCandidate[];
   let narrative: Narrative;
   let narrationPaths: string[];
@@ -187,7 +228,11 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   } else {
     // ── Step 4: Select moments ───────────────────────────────────────────────
     console.log('\nStep 4/10: Selecting moments...');
-    moments = await selectMoments(utterances!, campaignContext, outputDir, playerMap);
+    // Re-key the stable handle map onto this session's transcript labels so the
+    // label→character hint matches the speaker labels in the transcript.
+    const sessionLabels = [...new Set(utterances.map((u) => u.speaker))];
+    const sessionMap = sessionPlayerMap(sessionLabels, playerMap);
+    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap);
     // Rank determines which moments to include; start_time determines reel order.
     moments.sort((a, b) => a.rank - b.rank);
     const top3 = moments.slice(0, 3).sort((a, b) => a.start_time - b.start_time);

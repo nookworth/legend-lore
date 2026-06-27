@@ -5,6 +5,8 @@ export const config = {
   assemblyAiApiKey: process.env['ASSEMBLYAI_API_KEY'] ?? '',
   replicateApiToken: process.env['REPLICATE_API_TOKEN'] ?? '',
   discordWebhookUrl: process.env['DISCORD_WEBHOOK_URL'] ?? '',
+  discordBotToken: process.env['DISCORD_BOT_TOKEN'] ?? '',
+  discordTextChannelIds: process.env['DISCORD_TEXT_CHANNEL_IDS'] ?? '',
   cloudSqlConnectionName: process.env['CLOUD_SQL_CONNECTION_NAME'] ?? '',
   gcsBucketAudio: process.env['GCS_BUCKET_AUDIO'] ?? '',
   gcsBucketVideos: process.env['GCS_BUCKET_VIDEOS'] ?? '',

@@ -8,6 +8,8 @@ import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generatePortraits, type CharacterForPortrait, ALIGNMENT_MAP } from './generate-portraits.js';
 import { takeRoll, audioHandles, normalizeHandle, sessionPlayerMap } from './take-roll.js';
+import { ingestTextChat } from './ingest-text-chat.js';
+import { config } from '../shared/config.js';
 import { generateTts } from './generate-tts.js';
 import { stitchVideo } from './stitch-video.js';
 import { uploadOutput } from './upload-output.js';
@@ -22,6 +24,7 @@ export interface PipelineOptions {
   skipUpload?: boolean;    // skip GCS upload steps (for local dev without GCP)
   skipDeliver?: boolean;   // skip Discord delivery
   skipDb?: boolean;        // skip Cloud SQL (for local dev)
+  skipTextChat?: boolean;  // skip Discord text chat ingestion
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
   referenceImagePath?: string; // optional group portrait for Veo reference image
@@ -61,7 +64,7 @@ function formatTime(ms: number): string {
 }
 
 function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
-  const totalDuration = utterances.at(-1)?.end ?? 0;
+  const totalDuration = utterances.reduce((m, u) => Math.max(m, u.end ?? u.start), 0);
   const filtered = fromEnd
     ? utterances.filter((u) => u.start >= totalDuration - windowMs)
     : utterances.filter((u) => u.start < windowMs);
@@ -134,6 +137,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
 
   let utterances: Utterance[];
   let transcriptText: string;
+  let textHandles: string[] = []; // Discord text-chat author handles; populated in fresh-run path
 
   if (opts.fromNarrative) {
     console.log('Steps 1-3/10: Skipping (--from-narrative)');
@@ -161,6 +165,24 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     console.log('\nStep 3/10: Transcribing...');
     ({ utterances, transcriptText } = await transcribe(mergedPath, channelMap, outputDir));
 
+    // ── Ingest Discord text chat and merge into utterances ─────────────────────
+    if (!opts.skipTextChat) {
+      const channelIds = config.discordTextChannelIds
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+      const text = await ingestTextChat({ audioDir, playerMap, utterances, channelIds });
+      textHandles = text.handles;
+      if (text.utterances.length > 0) {
+        utterances = [...utterances, ...text.utterances].sort(
+          (a, b) => a.start - b.start || (a.end ?? a.start) - (b.end ?? b.start),
+        );
+        console.log(
+          `[text-chat] Merged ${text.utterances.length} text message(s) from ${textHandles.length} author(s)`,
+        );
+      }
+    }
+
     // Persist utterances to data/sessions/<sessionId>/ so they survive output dir cleanup
     const sessionDir = path.join('data', 'sessions', sessionId);
     await mkdir(sessionDir, { recursive: true });
@@ -170,18 +192,18 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   }
 
   // ── Take roll: drop characters with no track this session ───────────────────
-  // Presence is keyed off who actually had an audio track. Prefer the audio dir
-  // (covers players who were present but silent); fall back to transcript speakers
-  // when audio is gone (e.g. resuming from a backed-up transcript).
+  // Union audio-track handles + transcript speakers + text-chat authors so that
+  // text-only participants (no audio track) are counted present. On the resume
+  // path, textHandles is [] but text speakers are already in the persisted
+  // utterances and will be recovered via speakerHandles.
   let handles: string[] = [];
   try {
     handles = await audioHandles(audioDir);
   } catch {
-    /* audio dir missing (resume path) — fall back to transcript speakers below */
+    /* audio dir missing (resume path) — fall back to speakerHandles below */
   }
-  if (handles.length === 0) {
-    handles = [...new Set(utterances.map((u) => u.speaker))].map(normalizeHandle);
-  }
+  const speakerHandles = [...new Set(utterances.map((u) => u.speaker))].map(normalizeHandle);
+  handles = [...new Set([...handles, ...speakerHandles, ...textHandles])];
 
   if (handles.length > 0) {
     const allNames = (JSON.parse(campaignContext) as CampaignJson).characters.map((c) => c.name);

@@ -2,7 +2,7 @@ export interface Utterance {
   speaker: string; // mapped from channel number via channel_map
   text: string;
   start: number; // milliseconds
-  end: number; // milliseconds
+  end?: number;  // milliseconds; omitted for point-in-time events (e.g. Discord text messages)
 }
 
 export interface MomentCandidate {

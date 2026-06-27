@@ -15,6 +15,7 @@ const { values } = parseArgs({
     'skip-upload': { type: 'boolean', default: false },
     'skip-deliver': { type: 'boolean', default: false },
     'skip-db': { type: 'boolean', default: false },
+    'skip-text-chat': { type: 'boolean', default: false },
     'from-narrative': { type: 'string' },
     'reference-image': { type: 'string' },
     'narrative-mode': { type: 'string' },
@@ -43,6 +44,7 @@ Options:
   --narrative-mode <mode>   Narrative generation mode: single (default) or multi
   --skip-portrait-gen       Skip portrait generation, use raw DnD Beyond avatars
   --regen-portraits         Ignore portrait cache and regenerate all portraits
+  --skip-text-chat          Skip Discord text chat ingestion
   --help                Show this help
 `);
   process.exit(0);
@@ -82,4 +84,5 @@ await runPipeline({
   narrativeMode,
   skipPortraitGen: values['skip-portrait-gen'],
   regenPortraits: values['regen-portraits'],
+  skipTextChat: values['skip-text-chat'],
 });

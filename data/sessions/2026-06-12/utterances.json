@@ -108,33 +108,21 @@
     "end": 227270
   },
   {
-    "speaker": "1-mekjonesy",
-    "text": "I was about to say, Maddie, is there anything in the book for if you say random nonsense at them?",
-    "start": 230000,
-    "end": 234080
-  },
-  {
     "speaker": "5-nostromo82",
     "text": "It.",
     "start": 230580,
     "end": 230820
   },
   {
-    "speaker": "3-cutiepiy5",
-    "text": "No, actually there. There is something right here. I am following.",
-    "start": 234640,
-    "end": 238320
-  },
-  {
     "speaker": "1-mekjonesy",
-    "text": "Yes.",
-    "start": 235040,
+    "text": "I was about to say, Maddie, is there anything in the book for if you say random nonsense at them? Yes.",
+    "start": 230000,
     "end": 235360
   },
   {
     "speaker": "3-cutiepiy5",
-    "text": "And he obviously agitated them and there is something for agitating them. So.",
-    "start": 239440,
+    "text": "No, actually there. There is something right here. I am following. And he obviously agitated them and there is something for agitating them. So.",
+    "start": 234640,
     "end": 247760
   },
   {
@@ -175,8 +163,8 @@
   },
   {
     "speaker": "1-mekjonesy",
-    "text": "You're like half My holy order does not allow you to.",
-    "start": 280170,
+    "text": "My holy aura does not allow you to.",
+    "start": 280890,
     "end": 283450
   },
   {
@@ -216,22 +204,28 @@
     "end": 330110
   },
   {
+    "speaker": "3-cutiepiy5",
+    "text": "Well.",
+    "start": 331540,
+    "end": 331940
+  },
+  {
     "speaker": "4-lisztopher",
     "text": "What did they say originally again?",
     "start": 331390,
     "end": 332910
   },
   {
-    "speaker": "3-cutiepiy5",
-    "text": "Well, they're. They're accusing you of trespassing and calling you desecrators and betrayers.",
-    "start": 331540,
-    "end": 337780
-  },
-  {
     "speaker": "5-nostromo82",
     "text": "We are just the creators.",
     "start": 334060,
     "end": 335500
+  },
+  {
+    "speaker": "3-cutiepiy5",
+    "text": "They're. They're accusing you of trespassing and calling you desecrators and betrayers.",
+    "start": 333380,
+    "end": 337780
   },
   {
     "speaker": "4-lisztopher",
@@ -241,7 +235,7 @@
   },
   {
     "speaker": "3-cutiepiy5",
-    "text": "Which makes me think maybe this is a grave site to them or something.",
+    "text": "Which makes me think maybe this is a gravesite to them or something.",
     "start": 338970,
     "end": 341450
   },
@@ -384,6 +378,12 @@
     "end": 462800
   },
   {
+    "speaker": "3-cutiepiy5",
+    "text": "What?",
+    "start": 470070,
+    "end": 470310
+  },
+  {
     "speaker": "5-nostromo82",
     "text": "They never see it coming.",
     "start": 469580,
@@ -391,8 +391,8 @@
   },
   {
     "speaker": "3-cutiepiy5",
-    "text": "What? They never see a comment.",
-    "start": 470070,
+    "text": "They never see a comment.",
+    "start": 472790,
     "end": 474470
   },
   {

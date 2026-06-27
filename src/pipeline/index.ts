@@ -23,8 +23,7 @@ export interface PipelineOptions {
   dryRun?: boolean;
   skipUpload?: boolean;    // skip GCS upload steps (for local dev without GCP)
   skipDeliver?: boolean;   // skip Discord delivery
-  skipDb?: boolean;        // skip Cloud SQL (for local dev)
-  skipTextChat?: boolean;  // skip Discord text chat ingestion
+skipTextChat?: boolean;  // skip Discord text chat ingestion
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
   referenceImagePath?: string; // optional group portrait for Veo reference image

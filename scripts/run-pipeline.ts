@@ -14,8 +14,7 @@ const { values } = parseArgs({
     'dry-run': { type: 'boolean', default: false },
     'skip-upload': { type: 'boolean', default: false },
     'skip-deliver': { type: 'boolean', default: false },
-    'skip-db': { type: 'boolean', default: false },
-    'skip-text-chat': { type: 'boolean', default: false },
+'skip-text-chat': { type: 'boolean', default: false },
     'from-narrative': { type: 'string' },
     'reference-image': { type: 'string' },
     'narrative-mode': { type: 'string' },
@@ -38,8 +37,7 @@ Options:
   --dry-run             Stop after moment selection (no video generation)
   --skip-upload         Skip GCS upload steps (local dev without GCP)
   --skip-deliver        Skip Discord delivery
-  --skip-db             Skip Cloud SQL (local dev without GCP)
-  --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
+--from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --reference-image <path>  Group portrait passed to Veo as a reference image
   --narrative-mode <mode>   Narrative generation mode: single (default) or multi
   --skip-portrait-gen       Skip portrait generation, use raw DnD Beyond avatars
@@ -77,8 +75,7 @@ await runPipeline({
   dryRun: values['dry-run'],
   skipUpload: values['skip-upload'],
   skipDeliver: values['skip-deliver'],
-  skipDb: values['skip-db'],
-  ...(fromTranscript && { fromTranscript }),
+...(fromTranscript && { fromTranscript }),
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
   ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
   narrativeMode,

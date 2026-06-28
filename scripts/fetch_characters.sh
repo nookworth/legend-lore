@@ -17,6 +17,11 @@ if [ -z "${DNDBEYOND_TOKEN:-}" ]; then
   exit 1
 fi
 
+# Be forgiving if the token was copied straight from the Authorization header,
+# i.e. with a leading "Bearer " prefix and/or surrounding whitespace — we add
+# the "Bearer " ourselves below, so strip it here to avoid "Bearer Bearer ...".
+TOKEN=$(printf '%s' "$DNDBEYOND_TOKEN" | sed -E 's/^[[:space:]]*([Bb]earer[[:space:]]+)?//; s/[[:space:]]+$//')
+
 if [ ! -f "$CAMPAIGN_FILE" ]; then
   echo '{"campaign":"","characters":[]}' > "$CAMPAIGN_FILE"
 fi
@@ -30,7 +35,7 @@ for CHARACTER_ID in "$@"; do
   # status and skips this ID, rather than silently aborting the whole batch
   # (curl -f + pipefail + set -e would otherwise kill the script with no message).
   RESPONSE=$(curl -s -w '\n%{http_code}' "https://character-service.dndbeyond.com/character/v5/character/$CHARACTER_ID" \
-    -H "Authorization: Bearer $DNDBEYOND_TOKEN") || {
+    -H "Authorization: Bearer $TOKEN") || {
     echo "  ! Skipping $CHARACTER_ID (curl failed — network/connection error)" >&2
     FAILED_IDS+=("$CHARACTER_ID")
     continue

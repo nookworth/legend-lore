@@ -58,6 +58,9 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Channel Divinity: Sear Undead",
+        "Eyes of Night",
+        "Vigilant Blessing",
+        "Channel Divinity: Twilight Sanctuary",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -66,9 +69,6 @@
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
         "Divine Strike",
-        "Eyes of Night",
-        "Vigilant Blessing",
-        "Channel Divinity: Twilight Sanctuary",
         "Steps of Night"
       ],
       "spells": [
@@ -308,7 +308,7 @@
         "Circle Spell: Supplant",
         "Metamagic: Quickened Spell",
         "Metamagic: Distant Spell",
-        "Soothe: Bonus Action"
+        "Sacrifice: Reaction"
       ],
       "spells": [
         [
@@ -320,11 +320,11 @@
           "Dispel Magic",
           "Aura of Vitality",
           "Thorn Armor",
-          "Enhance Ability",
           "Lesser Restoration",
           "Elemental Weapon",
           "Harvest Moonglow",
-          "Moonbeam"
+          "Moonbeam",
+          "Purify Food and Drink"
         ],
         [
           "Blood Bolt",
@@ -344,7 +344,7 @@
         },
         {
           "name": "Shield",
-          "type": ""
+          "type": "Shield"
         },
         {
           "name": "Leather",
@@ -442,24 +442,24 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Hunter’s Mark",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
+        "Initiate a Circle Spell",
+        "Circle Spell: Augment",
+        "Circle Spell: Distribute",
+        "Circle Spell: Expand",
+        "Circle Spell: Prolong",
+        "Circle Spell: Safeguard",
+        "Circle Spell: Supplant",
         "Cleanse With Fire",
         "Unclean Brand",
-        "Elemental Arrows: Imbue Element",
         "Bonus Action: Stabilize",
-        "Initiate a Circle Spell",
-        "Circle Spell: Augment",
-        "Circle Spell: Distribute",
-        "Circle Spell: Expand",
-        "Circle Spell: Prolong",
-        "Circle Spell: Safeguard",
-        "Circle Spell: Supplant",
-        "Initiate a Circle Spell",
-        "Circle Spell: Augment",
-        "Circle Spell: Distribute",
-        "Circle Spell: Expand",
-        "Circle Spell: Prolong",
-        "Circle Spell: Safeguard",
-        "Circle Spell: Supplant",
+        "Elemental Arrows: Imbue Element",
         "Elemental Arrows: Fire"
       ],
       "spells": [
@@ -585,7 +585,7 @@
         },
         {
           "name": "Scale Mail",
-          "type": ""
+          "type": "Medium Armor"
         },
         {
           "name": "Javelin",
@@ -619,14 +619,14 @@
           "subclassDescription": "<p><em>Sing the Songs of the Dead</em></p>\r\n<p>Performing macabre melodies filled with grief-stricken chords and mournful refrains, the College of Requiems stirs the very bones of the dead. Requiem Bards weave necromantic magic into their funerary songs to control and empower a host of Undead minions.</p>"
         }
       ],
-      "alignmentId": null,
+      "alignmentId": 3,
       "background": "Fey-Blessed",
-      "personalityTraits": null,
-      "ideals": null,
-      "bonds": null,
-      "flaws": null,
-      "backstory": null,
-      "otherNotes": "",
+      "personalityTraits": "There is always hope. I will never give up or lose my sense of whimsy.",
+      "ideals": "Nature and her creatures must be protected. The creatures that have fallen to the ill will of others should have a chance to rise up and avenge themselves.",
+      "bonds": "I care for those that I bring back to life with my magical song. Though they are dead, their stories are not.",
+      "flaws": "I am short-sighted and impulsive. My luck and charisma carry me through life.",
+      "backstory": "Was born in the Feywild with a penchant for mischief and the macabre. I was drawn to the Feydark, its song resonated with me. I learned its song and found power in it. Joined the Witchlight Carnival when they visited. Traveled to the Material Plane with them and ended up near a small village in Nightlund. The village was destroyed by the dragon army. The carnival left without me in the chaos and I became stranded. I traveled far and wide to find help or a settlement, but everything for miles was smoldering ash until I found a military encampment. The commander was Bakaris the Younger. I took refuge with them, but the camp was pillaged by the dragon army and they left no survivors. I used my magic to bring Bakaris back to life as a zombie in my care and journeyed to the capital.",
+      "otherNotes": "The songs I play are dirges and requiems. When I use polymorph, my form is that of a zombified beast. ",
       "stats": [
         {
           "name": "STR",
@@ -692,22 +692,23 @@
           "Hold Person",
           "Hypnotic Pattern",
           "Polymorph",
-          "Greater Invisibility"
+          "Greater Invisibility",
+          "Silence"
         ]
       ],
       "equipment": [
         {
           "name": "Studded Leather",
-          "type": "Light Armor"
+          "type": ""
         }
       ],
-      "age": null,
-      "hair": null,
-      "eyes": null,
-      "skin": null,
-      "height": null,
-      "weight": null,
-      "gender": null,
+      "age": 50,
+      "hair": "Black",
+      "eyes": "Solid emerald ",
+      "skin": "Dark green",
+      "height": "1’0”",
+      "weight": 10,
+      "gender": "Male",
       "avatar": "https://www.dndbeyond.com/avatars/53384/414/1581111423-151272538.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp",
       "backdrop": "https://www.dndbeyond.com/avatars/43993/187/638609648655421556.jpeg",
       "campaign": "Dragon Lance"

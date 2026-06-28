@@ -80,4 +80,14 @@ describe('contract — reachable module exports', () => {
     const mod = await import('../shared/discord.js');
     expect(typeof mod.botPostMessage).toBe('function');
   });
+
+  it('filterReplies is a function', async () => {
+    const mod = await import('../feedback/collect-replies.js');
+    expect(typeof mod.filterReplies).toBe('function');
+  });
+
+  it('fetchMessagesAfter is a function', async () => {
+    const mod = await import('../feedback/collect-replies.js');
+    expect(typeof mod.fetchMessagesAfter).toBe('function');
+  });
 });

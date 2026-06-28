@@ -1,5 +1,11 @@
 import { config } from './config.js';
 
+const DISCORD_EPOCH = 1420070400000n;
+
+export function tsToSnowflake(epochMs: number): string {
+  return ((BigInt(epochMs) - DISCORD_EPOCH) << 22n).toString();
+}
+
 export interface DiscordMessage {
   id: string;
   content: string;
@@ -19,6 +25,11 @@ export interface DiscordMessage {
 export interface DiscordPostResult {
   id: string;
   channelId: string;
+}
+
+interface DiscordMessageResponse {
+  id: string;
+  channel_id: string;
 }
 
 export async function discordGet(url: string): Promise<unknown> {
@@ -70,12 +81,14 @@ export async function discordPost(
   }
 }
 
-export function botPostMessage(
+export async function botPostMessage(
   channelId: string,
   content: string,
 ): Promise<DiscordPostResult> {
-  return discordPost(
+  const res = await discordPost(
     `https://discord.com/api/v10/channels/${channelId}/messages`,
     { content },
-  ) as Promise<DiscordPostResult>;
+  );
+  const msg = res as DiscordMessageResponse;
+  return { id: msg.id, channelId: msg.channel_id };
 }

@@ -2,10 +2,9 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Utterance } from '../shared/types.js';
 import { config } from '../shared/config.js';
-import { discordGet } from '../shared/discord.js';
+import { discordGet, tsToSnowflake } from '../shared/discord.js';
 import type { DiscordMessage } from '../shared/discord.js';
 
-const DISCORD_EPOCH = 1420070400000n;
 const POST_SESSION_BUFFER_MS = 10 * 60 * 1000;
 
 // Channel types the bot should scrape (Discord API type values)
@@ -21,10 +20,6 @@ interface RecordingInfo {
   startTime: Date;
   channelId?: string;
   guildId?: string;
-}
-
-function tsToSnowflake(epochMs: number): string {
-  return ((BigInt(epochMs) - DISCORD_EPOCH) << 22n).toString();
 }
 
 export async function parseRecordingInfo(audioDir: string): Promise<RecordingInfo | null> {

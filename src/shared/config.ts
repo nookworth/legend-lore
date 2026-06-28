@@ -11,9 +11,6 @@ export const config = {
   gcsBucketVideos: process.env["GCS_BUCKET_VIDEOS"] ?? "",
   gcsBucketAssets: process.env["GCS_BUCKET_ASSETS"] ?? "",
   groupId: process.env["GROUP_ID"] ?? "default",
-  videoProvider: (process.env["VIDEO_PROVIDER"] ?? "replicate") as
-    | "replicate"
-    | "veo",
   googleApplicationCredentials:
     process.env["GOOGLE_APPLICATION_CREDENTIALS"] ?? "",
   gcpProject: process.env["GOOGLE_CLOUD_PROJECT"] ?? "",

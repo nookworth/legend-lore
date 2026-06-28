@@ -1,0 +1,3 @@
+Start time: 2024-03-15T19:00:00.000Z
+Channel: general (123456789012345678)
+Guild: My Server (987654321098765432)

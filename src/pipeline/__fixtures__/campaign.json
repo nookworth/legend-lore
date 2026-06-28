@@ -1,0 +1,29 @@
+{
+  "campaign": "Test Campaign",
+  "characters": [
+    {
+      "name": "Mek",
+      "race": "Human",
+      "classes": [{ "name": "Fighter", "subclassName": "Champion" }],
+      "avatar": "https://example.com/avatars/mek.png",
+      "alignmentId": 1,
+      "gender": "Male",
+      "age": "30",
+      "height": "6'0\"",
+      "weight": "180 lbs",
+      "hair": "Brown",
+      "eyes": "Blue",
+      "skin": "Fair",
+      "personalityTraits": "Brave and determined",
+      "spells": [["Cure Wounds"], ["Bless"]],
+      "equipment": [{ "name": "Longsword", "type": "weapon" }]
+    },
+    {
+      "name": "Sara",
+      "race": "Elf",
+      "classes": [{ "name": "Wizard", "subclassName": "Evocation" }],
+      "avatar": null,
+      "alignmentId": 2
+    }
+  ]
+}

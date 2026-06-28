@@ -27,12 +27,3 @@ export interface NarrativeSegment {
 // Flat ordered list: [intro, moment_1, moment_2, moment_3, outro]
 export type Narrative = NarrativeSegment[];
 
-export interface VideoOptions {
-  duration?: number;
-  width?: number;
-  height?: number;
-  outputDir?: string;
-  referenceImagePath?: string;
-  sessionId?: string;
-}
-

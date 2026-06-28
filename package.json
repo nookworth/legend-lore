@@ -4,6 +4,9 @@
   "description": "Automated D&D session recap video generator",
   "type": "module",
   "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
     "pipeline": "tsx scripts/run-pipeline.ts"
   },
   "dependencies": {
@@ -16,6 +19,7 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.9"
   }
 }

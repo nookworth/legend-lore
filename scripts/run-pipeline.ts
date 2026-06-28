@@ -16,10 +16,10 @@ const { values } = parseArgs({
     'skip-deliver': { type: 'boolean', default: false },
 'skip-text-chat': { type: 'boolean', default: false },
     'from-narrative': { type: 'string' },
-    'reference-image': { type: 'string' },
     'narrative-mode': { type: 'string' },
     'skip-portrait-gen': { type: 'boolean', default: false },
     'regen-portraits': { type: 'boolean', default: false },
+    'note': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
 });
@@ -37,12 +37,14 @@ Options:
   --dry-run             Stop after moment selection (no video generation)
   --skip-upload         Skip GCS upload steps (local dev without GCP)
   --skip-deliver        Skip Discord delivery
---from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
-  --reference-image <path>  Group portrait passed to Veo as a reference image
+  --from-narrative <dir>    Resume from existing narrative output dir (skip steps 1-6)
   --narrative-mode <mode>   Narrative generation mode: single (default) or multi
   --skip-portrait-gen       Skip portrait generation, use raw DnD Beyond avatars
   --regen-portraits         Ignore portrait cache and regenerate all portraits
   --skip-text-chat          Skip Discord text chat ingestion
+  --note <text>             Extra instructions injected into the moment-selection
+                            and narrative prompts for this run. For longer notes:
+                            --note "$(cat my-notes.txt)"
   --help                Show this help
 `);
   process.exit(0);
@@ -77,9 +79,9 @@ await runPipeline({
   skipDeliver: values['skip-deliver'],
 ...(fromTranscript && { fromTranscript }),
   ...(values['from-narrative'] && { fromNarrative: values['from-narrative'] }),
-  ...(values['reference-image'] && { referenceImagePath: values['reference-image'] }),
   narrativeMode,
   skipPortraitGen: values['skip-portrait-gen'],
   regenPortraits: values['regen-portraits'],
   skipTextChat: values['skip-text-chat'],
+  ...(values['note'] && { promptNote: values['note'] }),
 });

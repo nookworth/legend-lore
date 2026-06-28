@@ -7,6 +7,7 @@ import { selectMoments } from './select-moments.js';
 import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generatePortraits, type CharacterForPortrait, ALIGNMENT_MAP } from './generate-portraits.js';
+import { orderMoments } from './order-moments.js';
 import { takeRoll, audioHandles, normalizeHandle, sessionPlayerMap } from './take-roll.js';
 import { ingestTextChat } from './ingest-text-chat.js';
 import { config } from '../shared/config.js';
@@ -26,10 +27,10 @@ export interface PipelineOptions {
 skipTextChat?: boolean;  // skip Discord text chat ingestion
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
-  referenceImagePath?: string; // optional group portrait for Veo reference image
   narrativeMode?: 'single' | 'multi'; // single = one combined prompt (default), multi = per-segment
   skipPortraitGen?: boolean;   // skip portrait generation, use raw DnD Beyond avatars directly
   regenPortraits?: boolean;    // ignore cache and regenerate all portraits
+  promptNote?: string;         // operator-provided text injected into moment-selection + narrative prompts
 }
 
 interface CampaignJson {
@@ -55,14 +56,14 @@ interface CampaignJson {
 
 const WINDOW_MS = 5 * 60 * 1000;
 
-function formatTime(ms: number): string {
+export function formatTime(ms: number): string {
   const s = Math.floor(ms / 1000);
   const m = Math.floor(s / 60);
   const h = Math.floor(m / 60);
   return `${h}:${String(m % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 }
 
-function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
+export function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
   const totalDuration = utterances.reduce((m, u) => Math.max(m, u.end ?? u.start), 0);
   const filtered = fromEnd
     ? utterances.filter((u) => u.start >= totalDuration - windowMs)
@@ -70,7 +71,7 @@ function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEn
   return filtered.map((u) => `[${formatTime(u.start)}] ${u.speaker}: ${u.text}`).join('\n');
 }
 
-function formatCampaignContext(raw: string): string {
+export function formatCampaignContext(raw: string): string {
   const data = JSON.parse(raw) as CampaignJson;
   const lines: string[] = [`Campaign: ${data.campaign}`, 'Characters:'];
   for (const c of data.characters) {
@@ -85,12 +86,12 @@ function formatCampaignContext(raw: string): string {
   return lines.join('\n');
 }
 
-function extractCharacterAvatars(raw: string): CharacterAvatar[] {
+export function extractCharacterAvatars(raw: string): CharacterAvatar[] {
   const data = JSON.parse(raw) as CampaignJson;
   return data.characters.filter((c) => c.avatar).map((c) => ({ name: c.name, avatarUrl: c.avatar! }));
 }
 
-function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
+export function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
   const data = JSON.parse(raw) as CampaignJson;
   return data.characters.filter((c) => c.avatar).map((c) => ({
     name: c.name,
@@ -253,11 +254,8 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // label→character hint matches the speaker labels in the transcript.
     const sessionLabels = [...new Set(utterances.map((u) => u.speaker))];
     const sessionMap = sessionPlayerMap(sessionLabels, playerMap);
-    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap);
-    // Rank determines which moments to include; start_time determines reel order.
-    moments.sort((a, b) => a.rank - b.rank);
-    const top3 = moments.slice(0, 3).sort((a, b) => a.start_time - b.start_time);
-    moments = [...top3, ...moments.slice(3)];
+    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap, opts.promptNote);
+    moments = orderMoments(moments);
 
     if (dryRun) {
       console.log('\n[dry-run] Stopping after moment selection.');
@@ -278,7 +276,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     const sessionBookends = utterances.length
       ? { sessionStart: formatUtteranceWindow(utterances, WINDOW_MS), sessionEnd: formatUtteranceWindow(utterances, WINDOW_MS, true) }
       : undefined;
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode, opts.promptNote);
 
     // ── Step 7: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 7/10: Synthesizing narration audio...');

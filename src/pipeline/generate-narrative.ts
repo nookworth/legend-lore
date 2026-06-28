@@ -67,7 +67,6 @@ Narration style rules — follow these strictly:
 - Use third person throughout — he, she, they, their. Never address the party or any character as "you" or "your". This must be consistent across every segment.
 - Do not reference portraits, reference images, or the fact that character images were provided. Write as if you simply know what the characters look like.
 - If you quote a player or character directly, you must attribute the quote to the correct speaker using the Attributions provided for that moment. Never attribute a quote to the wrong person.
-- Although you are an extremely gifted artist and storyteller, you have a disorder that causes you to immediately forget images that you create. Strangely, you have total recall of all other images; you only forget that which you create yourself.
 
 Use the following excerpts as models for tone and style:
 
@@ -80,6 +79,17 @@ In Halandil Fang's home, Thaisha Lloy has remembered the silver box she brought 
 EXAMPLE 3:
 The party, having found their way back to the city of Westruun, which had been overrun by the herd of roving nomadic tribal barbarians and other such brigands that wander the landscape of Tal'Dorei—that Grog once belonged to—had swooped in and taken Westruun after the Chroma Conclave dragon attack across this countryside. The party have devised a plan to find their way into the town—or at least one of them would—distract a cluster of these individuals, these goliaths, pulling them out of the city into a large pit that had been hidden after being carved by the druid Keyleth.
 `;
+
+const ILLUSTRATION_STYLE =
+  "a fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format)";
+
+// Per-image rules — apply to every illustration regardless of generation mode
+// (single combined prompt or per-segment calls).
+const ILLUSTRATION_RULES = `- Text may be part of the image if it makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
+- Never show the same party member twice in a single illustration. The only exception is an in-game effect that deliberately duplicates a character (e.g. Mirror Image), where multiple copies are the point.
+- In calm "at rest" scenes — the party gathered at camp, traveling together, or deliberating — depict every party member featured in this session (the characters shown in the reference portraits), even those not individually named in this segment.
+- In action, combat, or single-character focus scenes, depict only the characters the segment actually features. The spotlight may fall on a few; the rest can be absent.
+- Do not invent named characters. Depict only the party members and any specific individuals named in this segment. Unnamed background figures — crowds, throngs, gatherings of NPCs — are fine wherever the scene calls for them.`;
 
 interface SegmentSpec {
   label: string;
@@ -140,10 +150,11 @@ Generate all ${specs.length} narrative segments in order:
 
 ${segmentList}
 
-For each segment output exactly one paragraph of narration text immediately followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format).
-You are a gifted artist
-No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
-Text may be part of the image if makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.`;
+- For each segment output exactly one paragraph of narration text immediately followed by exactly one ${ILLUSTRATION_STYLE}.
+- No labels, headers, or commentary between segments. Use the character portraits above, supplemented by the biographical details in the campaign context, to depict the player characters accurately and consistently across segments.
+${ILLUSTRATION_RULES}
+- Whenever two or more segments share the same location, give each one a distinct shot: vary the camera angle, the distance (wide establishing / medium / close-up), and the composition, so that no two illustrations of that place look alike — even when the segments are not back-to-back.
+`;
 }
 
 async function generateNarrativeSinglePrompt(
@@ -243,8 +254,8 @@ async function generateSegment(
 Generate the following segment:
 ${spec.instruction}
 
-Output exactly one paragraph of narration text followed by exactly one fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format). Do not generate multiple images. Use the character portraits above, supplemented by the biographical details in the campaign context, as reference material.
-Text may be part of the image if makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
+- Output exactly one paragraph of narration text followed by exactly one ${ILLUSTRATION_STYLE}. Do not generate multiple images. Use the character portraits above, supplemented by the biographical details in the campaign context, to depict the player characters as accurately as possible.
+${ILLUSTRATION_RULES}
 `;
 
   const contents: InputPart[] = [...avatarParts, { text: basePrompt }];
@@ -354,12 +365,17 @@ export async function generateNarrative(
   characterAvatars: CharacterAvatar[] = [],
   sessionBookends?: { sessionStart?: string; sessionEnd?: string },
   narrativeMode: 'single' | 'multi' = 'single',
+  extraInstructions?: string,
 ): Promise<Narrative> {
   requireConfig(["geminiApiKey"]);
 
   const client = new GoogleGenAI({ apiKey: config.geminiApiKey });
 
   const selectedMoments = moments.filter((_, i) => i < 3);
+
+  const extraSection = extraInstructions?.trim()
+    ? `\n\nADDITIONAL INSTRUCTIONS FOR THIS RUN (operator-provided — prioritize these over the general guidance where they conflict):\n${extraInstructions.trim()}`
+    : '';
 
   const context = `Campaign context:
 ${campaignContext}
@@ -370,7 +386,7 @@ ${selectedMoments.map((m, i) => {
       ? `\n  Attributions:\n${m.attributions.map((a) => `    - ${a.speaker}: "${a.quote}"`).join('\n')}`
       : '';
     return `Moment ${i + 1}: [${m.category}] ${m.summary}\n  Preceded by: ${m.preceding_events}\n  Excerpt: "${m.transcript_excerpt}"${attributionLines}\n  Visual: ${m.visual_description}`;
-  }).join("\n\n")}`;
+  }).join("\n\n")}${extraSection}`;
 
   const avatarParts = await fetchAvatarParts(characterAvatars);
   const segmentSpecs = buildSegmentSpecs(selectedMoments, sessionBookends);

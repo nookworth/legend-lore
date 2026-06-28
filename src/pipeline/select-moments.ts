@@ -50,6 +50,7 @@ export async function selectMoments(
   campaignContext: string,
   outputDir: string,
   playerMap: Record<string, string> = {},
+  extraInstructions?: string,
 ): Promise<MomentCandidate[]> {
   requireConfig(['geminiApiKey']);
 
@@ -62,6 +63,10 @@ export async function selectMoments(
   const playerMappingEntries = Object.entries(playerMap);
   const playerMappingSection = playerMappingEntries.length
     ? `\nPlayer to character mapping (transcript speaker label → in-game character name):\n${playerMappingEntries.map(([k, v]) => `  ${k} → ${v}`).join('\n')}\n`
+    : '';
+
+  const extraSection = extraInstructions?.trim()
+    ? `\nADDITIONAL INSTRUCTIONS FOR THIS RUN (operator-provided — prioritize these over the general guidance where they conflict):\n${extraInstructions.trim()}\n`
     : '';
 
   const prompt = `You are a highlight reel curator for a D&D campaign. Analyze this session transcript and identify the ${MOMENT_COUNT} most clip-worthy moments.
@@ -89,7 +94,7 @@ For attributions: if this moment contains any directly quotable lines, list them
 For preceding_events: write 1-2 sentences describing what the party was doing in the transcript immediately before this moment — where they were, what they were in the middle of, how they arrived at this point. Base this strictly on the transcript; do not invent events.
 
 For visual_description: write a single sentence describing only what this moment looks like on screen — spell geometry, lighting, colours, environment, character poses. Focus on visual spectacle, not combat outcomes or game mechanics. This will be used as a video generation prompt, so be specific and cinematic. Example: "A towering cylinder of scarlet and shadow erupts from the earth, sixty feet high, bathing the battlefield in deep crimson light."
-
+${extraSection}
 Return exactly ${MOMENT_COUNT} moments ranked 1 (best) to ${MOMENT_COUNT}.`;
 
   console.log(`[select-moments] Calling Gemini for moment selection (${utterances.length} utterances)...`);

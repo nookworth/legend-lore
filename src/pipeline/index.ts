@@ -7,6 +7,7 @@ import { selectMoments } from './select-moments.js';
 import type { Utterance, MomentCandidate, Narrative } from '../shared/types.js';
 import { generateNarrative, type CharacterAvatar } from './generate-narrative.js';
 import { generatePortraits, type CharacterForPortrait, ALIGNMENT_MAP } from './generate-portraits.js';
+import { orderMoments } from './order-moments.js';
 import { takeRoll, audioHandles, normalizeHandle, sessionPlayerMap } from './take-roll.js';
 import { ingestTextChat } from './ingest-text-chat.js';
 import { config } from '../shared/config.js';
@@ -255,10 +256,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     const sessionLabels = [...new Set(utterances.map((u) => u.speaker))];
     const sessionMap = sessionPlayerMap(sessionLabels, playerMap);
     moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap, opts.promptNote);
-    // Rank determines which moments to include; start_time determines reel order.
-    moments.sort((a, b) => a.rank - b.rank);
-    const top3 = moments.slice(0, 3).sort((a, b) => a.start_time - b.start_time);
-    moments = [...top3, ...moments.slice(3)];
+    moments = orderMoments(moments);
 
     if (dryRun) {
       console.log('\n[dry-run] Stopping after moment selection.');

@@ -56,10 +56,10 @@ describe('formatUtteranceWindow', () => {
 describe('formatCampaignContext', () => {
   it('formats campaign context from JSON', () => {
     const result = formatCampaignContext(campaignJson);
-    expect(result).toContain('Campaign: Test Campaign');
+    expect(result).toContain('Campaign: Dragon Lance');
     expect(result).toContain('Characters:');
-    expect(result).toContain('Mek (Human Fighter (Champion))');
-    expect(result).toContain('Sara (Elf Wizard (Evocation))');
+    expect(result).toContain('Goibniu (Dwarf Cleric (Twilight Domain (TCoE)))');
+    expect(result).toContain('Soren (Custom Lineage Barbarian (Path of the Totem Warrior))');
     expect(result).toContain('Appearance:');
     expect(result).toContain('Spells:');
     expect(result).toContain('Personality:');
@@ -68,16 +68,18 @@ describe('formatCampaignContext', () => {
   it('formats minimal campaign gracefully', () => {
     const result = formatCampaignContext(JSON.stringify({ campaign: 'Minimal', characters: [{ name: 'Test', race: 'Human', classes: [] }] }));
     expect(result).toContain('Campaign: Minimal');
-    expect(result).toContain('Campaign: Minimal');
     expect(result).toContain('- Test (Human');
   });
 });
 
 describe('extractCharacterAvatars', () => {
-  it('extracts characters with avatars', () => {
+  it('extracts all characters with avatars', () => {
     const result = extractCharacterAvatars(campaignJson);
-    expect(result).toHaveLength(1);
-    expect(result[0]!).toEqual({ name: 'Mek', avatarUrl: 'https://example.com/avatars/mek.png' });
+    expect(result).toHaveLength(6);
+    expect(result[0]!).toEqual({
+      name: 'Goibniu',
+      avatarUrl: 'https://www.dndbeyond.com/avatars/55286/727/1581111423-33637295.jpeg?width=150&height=150&fit=crop&quality=95&auto=webp',
+    });
   });
 
   it('returns empty array when no characters have avatars', () => {
@@ -92,26 +94,41 @@ describe('extractCharacterAvatars', () => {
 });
 
 describe('extractCharactersForPortrait', () => {
-  it('extracts characters with full portrait info', () => {
+  it('extracts all characters with avatars', () => {
     const result = extractCharactersForPortrait(campaignJson);
-    expect(result).toHaveLength(1);
-    expect(result[0]!.name).toBe('Mek');
-    expect(result[0]!.race).toBe('Human');
-    expect(result[0]!.classes).toBe('Fighter (Champion)');
-    expect(result[0]!.alignment).toBe('Lawful Good');
-    expect(result[0]!.gender).toBe('Male');
-    expect(result[0]!.equipment).toContain('Longsword');
+    expect(result).toHaveLength(6);
   });
 
-  it('handles missing optional fields', () => {
+  it('extracts correct portrait data for Goibniu', () => {
     const result = extractCharactersForPortrait(campaignJson);
-    expect(result).toHaveLength(1);
-    expect(result[0]!.age).toBe('30');
-    expect(result[0]!.height).toBe("6'0\"");
+    const goibniu = result.find((c) => c.name === 'Goibniu')!;
+    expect(goibniu).toBeDefined();
+    expect(goibniu.race).toBe('Dwarf');
+    expect(goibniu.classes).toBe('Cleric (Twilight Domain (TCoE))');
+    expect(goibniu.alignment).toBe('Neutral Good');
+    expect(goibniu.equipment).toContain('Longsword');
+  });
+
+  it('includes physical details when present', () => {
+    const result = extractCharactersForPortrait(campaignJson);
+    const aria = result.find((c) => c.name === 'Aria Mao')!;
+    expect(aria).toBeDefined();
+    expect(aria.age).toBe(23);
+    expect(aria.height).toBe("5'2");
+    expect(aria.hair).toBe('Black');
+    expect(aria.eyes).toBe('Brown');
   });
 
   it('excludes characters without avatar', () => {
-    const result = extractCharactersForPortrait(campaignJson);
-    expect(result.find((c) => c.name === 'Sara')).toBeUndefined();
+    const noAvatarJson = JSON.stringify({
+      campaign: 'Test',
+      characters: [
+        { name: 'WithAvatar', race: 'Human', classes: [], avatar: 'https://example.com/a.png' },
+        { name: 'NoAvatar', race: 'Elf', classes: [], avatar: null },
+      ],
+    });
+    const result = extractCharactersForPortrait(noAvatarJson);
+    expect(result.find((c) => c.name === 'NoAvatar')).toBeUndefined();
+    expect(result.find((c) => c.name === 'WithAvatar')).toBeDefined();
   });
 });

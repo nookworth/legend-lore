@@ -4,6 +4,8 @@ import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { messagesToUtterances, parseRecordingInfo } from '../pipeline/ingest-text-chat.js';
 
+const FIXTURES_DIR = join(__dirname, '__fixtures__');
+
 describe('messagesToUtterances', () => {
   const recordingStartMs = new Date('2024-03-15T19:00:00.000Z').getTime();
   const playerMap = { 'mekjonesy': 'Mek', 'saravoss': 'Sara' };
@@ -92,17 +94,12 @@ describe('messagesToUtterances', () => {
 });
 
 describe('parseRecordingInfo', () => {
-  it('parses a valid info.txt', async () => {
-    const dir = mkdtempSync(join(tmpdir(), 'll-test-'));
-    writeFileSync(join(dir, 'info.txt'), `Start time: 2024-03-15T19:00:00.000Z
-Channel: general (123456789012345678)
-Guild: My Server (987654321098765432)
-`);
-    const info = await parseRecordingInfo(dir);
+  it('parses a real Craig info.txt from the fixture', async () => {
+    const info = await parseRecordingInfo(FIXTURES_DIR);
     expect(info).not.toBeNull();
-    expect(info!.startTime.toISOString()).toBe('2024-03-15T19:00:00.000Z');
-    expect(info!.channelId).toBe('123456789012345678');
-    expect(info!.guildId).toBe('987654321098765432');
+    expect(info!.startTime.toISOString()).toBe('2026-06-20T01:55:53.382Z');
+    expect(info!.channelId).toBe('1083239745531949100');
+    expect(info!.guildId).toBe('1083239745070579712');
   });
 
   it('returns null for missing file', async () => {

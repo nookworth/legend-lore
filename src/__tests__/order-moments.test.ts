@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { orderMoments } from './order-moments.js';
+import { orderMoments } from '../pipeline/order-moments.js';
 import type { MomentCandidate } from '../shared/types.js';
 
 function makeMoment(rank: number, start_time: number): MomentCandidate {

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { formatTime, formatUtteranceWindow, formatCampaignContext, extractCharacterAvatars, extractCharactersForPortrait } from './index.js';
+import { formatTime, formatUtteranceWindow, formatCampaignContext, extractCharacterAvatars, extractCharactersForPortrait } from '../pipeline/index.js';
 import type { Utterance } from '../shared/types.js';
 
 const campaignJson = readFileSync(join(__dirname, '__fixtures__/campaign.json'), 'utf-8');

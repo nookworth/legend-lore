@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { normalizeHandle, sessionPlayerMap, takeRoll } from './take-roll.js';
+import { normalizeHandle, sessionPlayerMap, takeRoll } from '../pipeline/take-roll.js';
 
 describe('normalizeHandle', () => {
   it('strips numeric prefix', () => {

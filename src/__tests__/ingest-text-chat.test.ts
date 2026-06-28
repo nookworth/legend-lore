@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { mkdtempSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { messagesToUtterances, parseRecordingInfo } from './ingest-text-chat.js';
+import { messagesToUtterances, parseRecordingInfo } from '../pipeline/ingest-text-chat.js';
 
 describe('messagesToUtterances', () => {
   const recordingStartMs = new Date('2024-03-15T19:00:00.000Z').getTime();

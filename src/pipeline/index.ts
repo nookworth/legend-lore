@@ -56,14 +56,14 @@ interface CampaignJson {
 
 const WINDOW_MS = 5 * 60 * 1000;
 
-function formatTime(ms: number): string {
+export function formatTime(ms: number): string {
   const s = Math.floor(ms / 1000);
   const m = Math.floor(s / 60);
   const h = Math.floor(m / 60);
   return `${h}:${String(m % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 }
 
-function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
+export function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEnd = false): string {
   const totalDuration = utterances.reduce((m, u) => Math.max(m, u.end ?? u.start), 0);
   const filtered = fromEnd
     ? utterances.filter((u) => u.start >= totalDuration - windowMs)
@@ -71,7 +71,7 @@ function formatUtteranceWindow(utterances: Utterance[], windowMs: number, fromEn
   return filtered.map((u) => `[${formatTime(u.start)}] ${u.speaker}: ${u.text}`).join('\n');
 }
 
-function formatCampaignContext(raw: string): string {
+export function formatCampaignContext(raw: string): string {
   const data = JSON.parse(raw) as CampaignJson;
   const lines: string[] = [`Campaign: ${data.campaign}`, 'Characters:'];
   for (const c of data.characters) {
@@ -86,12 +86,12 @@ function formatCampaignContext(raw: string): string {
   return lines.join('\n');
 }
 
-function extractCharacterAvatars(raw: string): CharacterAvatar[] {
+export function extractCharacterAvatars(raw: string): CharacterAvatar[] {
   const data = JSON.parse(raw) as CampaignJson;
   return data.characters.filter((c) => c.avatar).map((c) => ({ name: c.name, avatarUrl: c.avatar! }));
 }
 
-function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
+export function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
   const data = JSON.parse(raw) as CampaignJson;
   return data.characters.filter((c) => c.avatar).map((c) => ({
     name: c.name,

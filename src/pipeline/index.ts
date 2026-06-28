@@ -300,7 +300,8 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   // ── Step 10: Deliver to Discord ─────────────────────────────────────────────
   if (!opts.skipDeliver) {
     console.log('\nStep 10/10: Delivering to Discord...');
-    await deliver(finalUrl);
+    const runId = path.basename(outputDir);
+    await deliver(finalUrl, { sessionId, runId });
   } else {
     console.log('\nStep 10/10: Skipping Discord delivery (--skip-deliver)');
   }

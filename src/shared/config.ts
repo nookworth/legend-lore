@@ -3,7 +3,6 @@ import "node:process";
 export const config = {
   geminiApiKey: process.env["GEMINI_API_KEY"] ?? "",
   assemblyAiApiKey: process.env["ASSEMBLYAI_API_KEY"] ?? "",
-  discordWebhookUrl: process.env["DISCORD_WEBHOOK_URL"] ?? "",
   discordBotToken: process.env["DISCORD_BOT_TOKEN"] ?? "",
   discordRecapChannelId: process.env["DISCORD_RECAP_CHANNEL_ID"] ?? "",
   discordTextChannelIds: process.env["DISCORD_TEXT_CHANNEL_IDS"] ?? "",

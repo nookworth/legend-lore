@@ -95,4 +95,14 @@ describe('contract — reachable module exports', () => {
     const mod = await import('../feedback/distill.js');
     expect(typeof mod.distillReplies).toBe('function');
   });
+
+  it('splitPreferences is a function', async () => {
+    const mod = await import('../feedback/preferences.js');
+    expect(typeof mod.splitPreferences).toBe('function');
+  });
+
+  it('appendCandidates is a function', async () => {
+    const mod = await import('../feedback/preferences.js');
+    expect(typeof mod.appendCandidates).toBe('function');
+  });
 });

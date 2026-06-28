@@ -65,4 +65,19 @@ describe('contract — reachable module exports', () => {
     const mod = await import('../pipeline/index.js');
     expect(typeof mod.runPipeline).toBe('function');
   });
+
+  it('discordGet is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.discordGet).toBe('function');
+  });
+
+  it('discordPost is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.discordPost).toBe('function');
+  });
+
+  it('botPostMessage is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.botPostMessage).toBe('function');
+  });
 });

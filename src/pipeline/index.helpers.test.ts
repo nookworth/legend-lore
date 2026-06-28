@@ -77,7 +77,7 @@ describe('extractCharacterAvatars', () => {
   it('extracts characters with avatars', () => {
     const result = extractCharacterAvatars(campaignJson);
     expect(result).toHaveLength(1);
-    expect(result[0]).toEqual({ name: 'Mek', avatarUrl: 'https://example.com/avatars/mek.png' });
+    expect(result[0]!).toEqual({ name: 'Mek', avatarUrl: 'https://example.com/avatars/mek.png' });
   });
 
   it('returns empty array when no characters have avatars', () => {
@@ -95,18 +95,19 @@ describe('extractCharactersForPortrait', () => {
   it('extracts characters with full portrait info', () => {
     const result = extractCharactersForPortrait(campaignJson);
     expect(result).toHaveLength(1);
-    expect(result[0].name).toBe('Mek');
-    expect(result[0].race).toBe('Human');
-    expect(result[0].classes).toBe('Fighter (Champion)');
-    expect(result[0].alignment).toBe('Lawful Good');
-    expect(result[0].gender).toBe('Male');
-    expect(result[0].equipment).toContain('Longsword');
+    expect(result[0]!.name).toBe('Mek');
+    expect(result[0]!.race).toBe('Human');
+    expect(result[0]!.classes).toBe('Fighter (Champion)');
+    expect(result[0]!.alignment).toBe('Lawful Good');
+    expect(result[0]!.gender).toBe('Male');
+    expect(result[0]!.equipment).toContain('Longsword');
   });
 
   it('handles missing optional fields', () => {
     const result = extractCharactersForPortrait(campaignJson);
-    expect(result[0].age).toBe('30');
-    expect(result[0].height).toBe("6'0\"");
+    expect(result).toHaveLength(1);
+    expect(result[0]!.age).toBe('30');
+    expect(result[0]!.height).toBe("6'0\"");
   });
 
   it('excludes characters without avatar', () => {

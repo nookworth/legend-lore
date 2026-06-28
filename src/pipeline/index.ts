@@ -15,6 +15,7 @@ import { generateTts } from './generate-tts.js';
 import { stitchVideo } from './stitch-video.js';
 import { uploadOutput } from './upload-output.js';
 import { deliver } from './deliver.js';
+import { readPreferences, splitPreferences } from '../feedback/preferences.js';
 
 export interface PipelineOptions {
   sessionId: string;
@@ -91,6 +92,13 @@ export function extractCharacterAvatars(raw: string): CharacterAvatar[] {
   return data.characters.filter((c) => c.avatar).map((c) => ({ name: c.name, avatarUrl: c.avatar! }));
 }
 
+export function mergeInstructions(curated: string, note?: string): string {
+  const parts: string[] = [];
+  if (curated.trim()) parts.push(curated.trim());
+  if (note?.trim()) parts.push(note.trim());
+  return parts.join('\n\n');
+}
+
 export function extractCharactersForPortrait(raw: string): CharacterForPortrait[] {
   const data = JSON.parse(raw) as CampaignJson;
   return data.characters.filter((c) => c.avatar).map((c) => ({
@@ -130,6 +138,14 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
   } catch {
     console.log('[pipeline] No player_map.json found — speaker labels will not be mapped to character names');
   }
+
+  // Load curated preferences from data/preferences.md (if present) and merge
+  // with the per-run promptNote (preferences first, then the run-specific note).
+  const preferencesMd = await readPreferences();
+  const curated = splitPreferences(preferencesMd).curated;
+  const instructions = mergeInstructions(curated, opts.promptNote);
+  if (curated) console.log('[pipeline] Loaded curated preferences from data/preferences.md');
+  if (opts.promptNote) console.log('[pipeline] Run-specific promptNote provided');
 
   console.log('\n═══════════════════════════════════════');
   console.log('  Legend Lore — Session Recap Pipeline');
@@ -254,7 +270,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // label→character hint matches the speaker labels in the transcript.
     const sessionLabels = [...new Set(utterances.map((u) => u.speaker))];
     const sessionMap = sessionPlayerMap(sessionLabels, playerMap);
-    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap, opts.promptNote);
+    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap, instructions);
     moments = orderMoments(moments);
 
     if (dryRun) {
@@ -276,7 +292,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     const sessionBookends = utterances.length
       ? { sessionStart: formatUtteranceWindow(utterances, WINDOW_MS), sessionEnd: formatUtteranceWindow(utterances, WINDOW_MS, true) }
       : undefined;
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode, opts.promptNote);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode, instructions);
 
     // ── Step 7: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 7/10: Synthesizing narration audio...');

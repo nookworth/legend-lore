@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { formatTime, formatUtteranceWindow, formatCampaignContext, extractCharacterAvatars, extractCharactersForPortrait } from '../pipeline/index.js';
+import { formatTime, formatUtteranceWindow, formatCampaignContext, extractCharacterAvatars, extractCharactersForPortrait, mergeInstructions } from '../pipeline/index.js';
 import type { Utterance } from '../shared/types.js';
 
 const campaignJson = readFileSync(join(__dirname, '__fixtures__/campaign.json'), 'utf-8');
@@ -130,5 +130,33 @@ describe('extractCharactersForPortrait', () => {
     const result = extractCharactersForPortrait(noAvatarJson);
     expect(result.find((c) => c.name === 'NoAvatar')).toBeUndefined();
     expect(result.find((c) => c.name === 'WithAvatar')).toBeDefined();
+  });
+});
+
+describe('mergeInstructions', () => {
+  it('returns curated when only curated is present', () => {
+    expect(mergeInstructions('- [tone] Keep it upbeat.', undefined)).toBe('- [tone] Keep it upbeat.');
+  });
+
+  it('returns note when only note is present', () => {
+    expect(mergeInstructions('', 'Focus on combat.'  )).toBe('Focus on combat.');
+  });
+
+  it('joins curated and note with double newline when both present', () => {
+    expect(mergeInstructions('- [tone] Keep it upbeat.', 'Focus on combat.')).toBe(
+      '- [tone] Keep it upbeat.\n\nFocus on combat.',
+    );
+  });
+
+  it('returns empty string when both are empty', () => {
+    expect(mergeInstructions('', '')).toBe('');
+  });
+
+  it('trims whitespace from curated', () => {
+    expect(mergeInstructions('  - [tone] Keep it upbeat.  ', '')).toBe('- [tone] Keep it upbeat.');
+  });
+
+  it('trims whitespace from note', () => {
+    expect(mergeInstructions('', '  Focus on combat.  ')).toBe('Focus on combat.');
   });
 });

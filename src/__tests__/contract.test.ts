@@ -90,4 +90,9 @@ describe('contract — reachable module exports', () => {
     const mod = await import('../feedback/collect-replies.js');
     expect(typeof mod.fetchMessagesAfter).toBe('function');
   });
+
+  it('distillReplies is a function', async () => {
+    const mod = await import('../feedback/distill.js');
+    expect(typeof mod.distillReplies).toBe('function');
+  });
 });

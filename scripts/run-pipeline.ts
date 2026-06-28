@@ -20,6 +20,7 @@ const { values } = parseArgs({
     'narrative-mode': { type: 'string' },
     'skip-portrait-gen': { type: 'boolean', default: false },
     'regen-portraits': { type: 'boolean', default: false },
+    'note': { type: 'string' },
     'help': { type: 'boolean', default: false },
   },
 });
@@ -43,6 +44,9 @@ Options:
   --skip-portrait-gen       Skip portrait generation, use raw DnD Beyond avatars
   --regen-portraits         Ignore portrait cache and regenerate all portraits
   --skip-text-chat          Skip Discord text chat ingestion
+  --note <text>             Extra instructions injected into the moment-selection
+                            and narrative prompts for this run. For longer notes:
+                            --note "$(cat my-notes.txt)"
   --help                Show this help
 `);
   process.exit(0);
@@ -82,4 +86,5 @@ await runPipeline({
   skipPortraitGen: values['skip-portrait-gen'],
   regenPortraits: values['regen-portraits'],
   skipTextChat: values['skip-text-chat'],
+  ...(values['note'] && { promptNote: values['note'] }),
 });

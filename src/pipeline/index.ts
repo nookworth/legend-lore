@@ -30,6 +30,7 @@ skipTextChat?: boolean;  // skip Discord text chat ingestion
   narrativeMode?: 'single' | 'multi'; // single = one combined prompt (default), multi = per-segment
   skipPortraitGen?: boolean;   // skip portrait generation, use raw DnD Beyond avatars directly
   regenPortraits?: boolean;    // ignore cache and regenerate all portraits
+  promptNote?: string;         // operator-provided text injected into moment-selection + narrative prompts
 }
 
 interface CampaignJson {
@@ -253,7 +254,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     // label→character hint matches the speaker labels in the transcript.
     const sessionLabels = [...new Set(utterances.map((u) => u.speaker))];
     const sessionMap = sessionPlayerMap(sessionLabels, playerMap);
-    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap);
+    moments = await selectMoments(utterances!, campaignContext, outputDir, sessionMap, opts.promptNote);
     // Rank determines which moments to include; start_time determines reel order.
     moments.sort((a, b) => a.rank - b.rank);
     const top3 = moments.slice(0, 3).sort((a, b) => a.start_time - b.start_time);
@@ -278,7 +279,7 @@ export async function runPipeline(opts: PipelineOptions): Promise<void> {
     const sessionBookends = utterances.length
       ? { sessionStart: formatUtteranceWindow(utterances, WINDOW_MS), sessionEnd: formatUtteranceWindow(utterances, WINDOW_MS, true) }
       : undefined;
-    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode);
+    narrative = await generateNarrative(moments, campaignContextFormatted, outputDir, characterAvatars, sessionBookends, opts.narrativeMode, opts.promptNote);
 
     // ── Step 7: Generate TTS ─────────────────────────────────────────────────
     console.log('\nStep 7/10: Synthesizing narration audio...');

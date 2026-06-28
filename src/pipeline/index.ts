@@ -27,7 +27,6 @@ export interface PipelineOptions {
 skipTextChat?: boolean;  // skip Discord text chat ingestion
   fromTranscript?: string;  // path to existing utterances.json — resumes from step 4
   fromNarrative?: string;   // path to existing output dir — resumes from step 7
-  referenceImagePath?: string; // optional group portrait for Veo reference image
   narrativeMode?: 'single' | 'multi'; // single = one combined prompt (default), multi = per-segment
   skipPortraitGen?: boolean;   // skip portrait generation, use raw DnD Beyond avatars directly
   regenPortraits?: boolean;    // ignore cache and regenerate all portraits

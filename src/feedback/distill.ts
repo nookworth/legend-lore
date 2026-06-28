@@ -30,7 +30,7 @@ export function buildDistillPrompt(
   existingCurated: string,
 ): string {
   const existingSection = existingCurated.trim()
-    ? `\nExisting curated preferences:\n${existingCurated}\n`
+    ? `\nAlready-curated preferences (do NOT re-propose these):\n${existingCurated}\n`
     : '';
 
   return `You are analyzing player feedback on D&D session recaps. Below are text replies from players reacting to the latest recap.
@@ -38,6 +38,7 @@ export function buildDistillPrompt(
 Extract durable, recurring style and content guidance that would improve future recaps. Be conservative:
 - Only extract guidance that appears in multiple replies or is stated emphatically.
 - Never invent preferences the players did not express.
+- Do not re-propose guidance that already appears in the curated preferences list above.
 - Categorize each item (e.g. "pacing", "tone", "content-focus", "structure", "voiceover", "music").
 - Write each guidance item as a concise, actionable instruction (1-2 sentences).${existingSection}
 

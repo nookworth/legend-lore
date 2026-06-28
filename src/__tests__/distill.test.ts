@@ -13,17 +13,17 @@ describe('buildDistillPrompt', () => {
     expect(prompt).toContain('bob: Less roleplay please.');
   });
 
-  it('includes existing curated preferences when present', () => {
+  it('includes existing curated preferences when present, labelled as already-curated', () => {
     const replies = [{ author: 'alice', text: 'Great recap' }];
     const prompt = buildDistillPrompt(replies, '- [tone] Keep it upbeat');
-    expect(prompt).toContain('Existing curated preferences');
+    expect(prompt).toContain('Already-curated preferences (do NOT re-propose these)');
     expect(prompt).toContain('- [tone] Keep it upbeat');
   });
 
   it('omits existing section when curated is empty', () => {
     const replies = [{ author: 'alice', text: 'Great recap' }];
     const prompt = buildDistillPrompt(replies, '');
-    expect(prompt).not.toContain('Existing curated preferences');
+    expect(prompt).not.toContain('Already-curated preferences');
   });
 
   it('handles empty replies gracefully', () => {

@@ -33,21 +33,22 @@ export async function fetchMessagesAfter(
   for (;;) {
     let page: DiscordMessage[];
     try {
+      // Discord returns messages in ascending (oldest-first) order when using
+      // the `after` parameter — the opposite of `before` pagination.
       page = (await discordGet(
         `https://discord.com/api/v10/channels/${channelId}/messages?limit=100&after=${afterSnowflake}`,
       )) as DiscordMessage[];
-    } catch {
+    } catch (err) {
+      console.log(`[collect-feedback] Failed to fetch messages from channel ${channelId}: ${(err as Error).message}`);
       return messages;
     }
 
     if (page.length === 0) break;
 
-    // Page is oldest-first with ?after= parameter — oldest is first
-    const oldest = page[0]!;
-    const oldestTs = Date.parse(oldest.timestamp);
-
     messages.push(...page);
 
+    // Advance cursor to the newest message on this page; stop when we get a
+    // partial page (no more messages available).
     if (page.length < 100) break;
     afterSnowflake = page[page.length - 1]!.id;
   }

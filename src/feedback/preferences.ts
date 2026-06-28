@@ -10,14 +10,18 @@ export interface SplitResult {
 }
 
 export function splitPreferences(md: string): SplitResult {
-  const markerIndex = md.indexOf(`\n${PENDING_MARKER}`);
-  if (markerIndex === -1) {
-    const trimmed = md.trim();
-    return { curated: trimmed, pending: '' };
+  // Match the marker whether it appears mid-file (preceded by \n) or at the
+  // very start of the file (no leading newline), so a hand-authored file that
+  // begins with ## Pending review doesn't leak pending items into curated.
+  const match = md.match(/(?:^|\n)(## Pending review)/m);
+  if (!match || match.index === undefined) {
+    return { curated: md.trim(), pending: '' };
   }
+  const markerStart = match.index === 0 ? 0 : match.index + 1; // skip the \n when not at start
+  const afterMarker = markerStart + PENDING_MARKER.length;
   return {
-    curated: md.slice(0, markerIndex).trim(),
-    pending: md.slice(markerIndex + `\n${PENDING_MARKER}`.length).trim(),
+    curated: md.slice(0, match.index).trim(),
+    pending: md.slice(afterMarker).trim(),
   };
 }
 

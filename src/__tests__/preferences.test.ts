@@ -32,6 +32,13 @@ describe('splitPreferences', () => {
     expect(result.curated).toBe('- [tone] Keep it upbeat.');
     expect(result.pending).toBe('');
   });
+
+  it('handles marker at the very start of the file (no curated content yet)', () => {
+    const md = '## Pending review\n\n- [pacing] Add more combat.';
+    const result = splitPreferences(md);
+    expect(result.curated).toBe('');
+    expect(result.pending).toBe('- [pacing] Add more combat.');
+  });
 });
 
 describe('appendCandidates', () => {

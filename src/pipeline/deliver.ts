@@ -1,22 +1,26 @@
+import path from 'node:path';
 import { config, requireConfig } from '../shared/config.js';
+import { botPostMessage } from '../shared/discord.js';
+import { writeRecapRecord } from './recap-record.js';
 
-export async function deliver(videoUrl: string): Promise<void> {
-  requireConfig(['discordWebhookUrl']);
+export async function deliver(
+  videoUrl: string,
+  opts: { sessionId: string; runId: string },
+): Promise<void> {
+  requireConfig(['discordBotToken', 'discordRecapChannelId']);
 
   console.log('[deliver] Posting recap to Discord...');
 
-  const response = await fetch(config.discordWebhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      content: `🎲 **Session Recap is ready!** Here are the highlights from tonight's adventure.\n${videoUrl}`,
-    }),
+  const content = `🎲 **Session Recap is ready!** Here are the highlights from tonight's adventure.\n${videoUrl}`;
+  const result = await botPostMessage(config.discordRecapChannelId, content);
+
+  const sessionDir = path.join('data', 'sessions', opts.sessionId);
+  await writeRecapRecord(sessionDir, opts.sessionId, {
+    runId: opts.runId,
+    messageId: result.id,
+    channelId: result.channelId,
+    postedAt: new Date().toISOString(),
   });
 
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Discord webhook failed (${response.status}): ${text}`);
-  }
-
-  console.log('[deliver] Recap posted to Discord ✓');
+  console.log(`[deliver] Recap posted to Discord ✓ (message ${result.id})`);
 }

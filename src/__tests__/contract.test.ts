@@ -65,4 +65,44 @@ describe('contract — reachable module exports', () => {
     const mod = await import('../pipeline/index.js');
     expect(typeof mod.runPipeline).toBe('function');
   });
+
+  it('discordGet is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.discordGet).toBe('function');
+  });
+
+  it('discordPost is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.discordPost).toBe('function');
+  });
+
+  it('botPostMessage is a function', async () => {
+    const mod = await import('../shared/discord.js');
+    expect(typeof mod.botPostMessage).toBe('function');
+  });
+
+  it('filterReplies is a function', async () => {
+    const mod = await import('../feedback/collect-replies.js');
+    expect(typeof mod.filterReplies).toBe('function');
+  });
+
+  it('fetchMessagesAfter is a function', async () => {
+    const mod = await import('../feedback/collect-replies.js');
+    expect(typeof mod.fetchMessagesAfter).toBe('function');
+  });
+
+  it('distillReplies is a function', async () => {
+    const mod = await import('../feedback/distill.js');
+    expect(typeof mod.distillReplies).toBe('function');
+  });
+
+  it('splitPreferences is a function', async () => {
+    const mod = await import('../feedback/preferences.js');
+    expect(typeof mod.splitPreferences).toBe('function');
+  });
+
+  it('appendCandidates is a function', async () => {
+    const mod = await import('../feedback/preferences.js');
+    expect(typeof mod.appendCandidates).toBe('function');
+  });
 });

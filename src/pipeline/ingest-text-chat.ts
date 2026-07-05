@@ -2,8 +2,9 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Utterance } from '../shared/types.js';
 import { config } from '../shared/config.js';
+import { discordGet, tsToSnowflake } from '../shared/discord.js';
+import type { DiscordMessage } from '../shared/discord.js';
 
-const DISCORD_EPOCH = 1420070400000n;
 const POST_SESSION_BUFFER_MS = 10 * 60 * 1000;
 
 // Channel types the bot should scrape (Discord API type values)
@@ -15,25 +16,10 @@ const TEXT_CHANNEL_TYPES = new Set([
   16, // GUILD_MEDIA
 ]);
 
-interface DiscordMessage {
-  id: string;
-  content: string;
-  timestamp: string; // ISO 8601
-  author: {
-    id: string;
-    username: string;
-    bot?: boolean;
-  };
-}
-
 interface RecordingInfo {
   startTime: Date;
   channelId?: string;
   guildId?: string;
-}
-
-function tsToSnowflake(epochMs: number): string {
-  return ((BigInt(epochMs) - DISCORD_EPOCH) << 22n).toString();
 }
 
 export async function parseRecordingInfo(audioDir: string): Promise<RecordingInfo | null> {
@@ -55,31 +41,11 @@ export async function parseRecordingInfo(audioDir: string): Promise<RecordingInf
   }
 }
 
-async function discordGet(url: string, botToken: string): Promise<unknown> {
-  let delay = 0;
-  for (;;) {
-    if (delay > 0) await new Promise((r) => setTimeout(r, delay));
-    const res = await fetch(url, { headers: { Authorization: `Bot ${botToken}` } });
-    if (res.status === 429) {
-      const body = (await res.json()) as { retry_after?: number };
-      delay = Math.ceil((body.retry_after ?? 1) * 1000);
-      continue;
-    }
-    if (!res.ok) {
-      const err = new Error(`Discord API ${res.status}: ${url}`);
-      (err as NodeJS.ErrnoException).code = String(res.status);
-      throw err;
-    }
-    return res.json();
-  }
-}
-
-export async function listGuildTextChannels(guildId: string, botToken: string): Promise<string[]> {
+export async function listGuildTextChannels(guildId: string): Promise<string[]> {
   const ids: string[] = [];
   try {
     const channels = (await discordGet(
       `https://discord.com/api/v10/guilds/${guildId}/channels`,
-      botToken,
     )) as Array<{ id: string; type: number }>;
     for (const ch of channels) {
       if (TEXT_CHANNEL_TYPES.has(ch.type)) ids.push(ch.id);
@@ -91,7 +57,6 @@ export async function listGuildTextChannels(guildId: string, botToken: string): 
   try {
     const threads = (await discordGet(
       `https://discord.com/api/v10/guilds/${guildId}/threads/active`,
-      botToken,
     )) as { threads: Array<{ id: string }> };
     for (const t of threads.threads) ids.push(t.id);
   } catch (err) {
@@ -103,7 +68,6 @@ export async function listGuildTextChannels(guildId: string, botToken: string): 
 
 export async function fetchChannelMessages(
   channelId: string,
-  botToken: string,
   afterMs: number,
   beforeMs: number,
 ): Promise<DiscordMessage[]> {
@@ -115,7 +79,6 @@ export async function fetchChannelMessages(
     try {
       page = (await discordGet(
         `https://discord.com/api/v10/channels/${channelId}/messages?limit=100&before=${beforeSnowflake}`,
-        botToken,
       )) as DiscordMessage[];
     } catch (err) {
       const code = (err as NodeJS.ErrnoException).code;
@@ -203,7 +166,7 @@ export async function ingestTextChat(opts: {
       return empty;
     }
     console.log(`[text-chat] No channel list configured — sweeping guild ${info.guildId}`);
-    channelIds = await listGuildTextChannels(info.guildId, config.discordBotToken);
+    channelIds = await listGuildTextChannels(info.guildId);
     console.log(`[text-chat] Found ${channelIds.length} text-capable channels/threads to check`);
   }
 
@@ -214,7 +177,7 @@ export async function ingestTextChat(opts: {
   let channelsWithMessages = 0;
   await Promise.all(
     channelIds.map(async (id) => {
-      const msgs = await fetchChannelMessages(id, config.discordBotToken, recordingStartMs, windowEndMs);
+      const msgs = await fetchChannelMessages(id, recordingStartMs, windowEndMs);
       if (msgs.length > 0) {
         channelsWithMessages++;
         allMessages.push(...msgs);

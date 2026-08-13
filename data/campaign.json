@@ -58,9 +58,7 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Channel Divinity: Sear Undead",
-        "Eyes of Night",
-        "Vigilant Blessing",
-        "Channel Divinity: Twilight Sanctuary",
+        "Steps of Night",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -68,8 +66,10 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Divine Strike",
-        "Steps of Night"
+        "Eyes of Night",
+        "Vigilant Blessing",
+        "Channel Divinity: Twilight Sanctuary",
+        "Divine Strike"
       ],
       "spells": [
         [
@@ -131,10 +131,10 @@
           "subclassDescription": "<p><em>Practice the Grim Art of Death</em></p>\r\n<p>An Assassin’s training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency.</p>"
         }
       ],
-      "alignmentId": null,
+      "alignmentId": 6,
       "background": "Far Traveler",
-      "personalityTraits": "I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.\nI have different assumptions from those around me concerning personal space, blithely invading others’ space in innocence, or reacting to ignorant invasion of my own.",
-      "ideals": "Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)\nCunning. Though I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)\nSuspicious. I must be careful, for I have no way of telling friend from foe here. (Any)",
+      "personalityTraits": "I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.\nI have different assumptions from those around me concerning personal space, blithely invading others’ space in innocence, or reacting to ignorant invasion of my own.\nI have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.\nI have a strong code of honor or sense of propriety that others don’t comprehend.",
+      "ideals": "Reserved. As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)\nCunning. Though I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)\nSuspicious. I must be careful, for I have no way of telling friend from foe here. (Any)\nAdventure. I’m far from home, and everything is strange and wonderful! (Chaotic)",
       "bonds": "I’m fascinated by the beauty and wonder of this new land.\nMy freedom is my most precious possession. I’ll never let anyone take it from me again.",
       "flaws": "I pretend not to understand the local language in order to avoid interactions I would rather not have.\nI have a weakness for the new intoxicants and other pleasures of this land.",
       "backstory": null,
@@ -166,6 +166,7 @@
         }
       ],
       "feats": [
+        "Alert",
         "Sharpshooter",
         "Weapon Mastery"
       ],
@@ -277,6 +278,7 @@
       ],
       "feats": [
         "Chef",
+        "Magic Initiate (Wizard)",
         "Scribe Ability Score Improvements",
         "Skilled",
         "Tough",
@@ -317,14 +319,14 @@
           "Cure Wounds",
           "Create Bonfire",
           "Assisted Aim",
-          "Dispel Magic",
           "Aura of Vitality",
           "Thorn Armor",
           "Lesser Restoration",
           "Elemental Weapon",
           "Harvest Moonglow",
           "Moonbeam",
-          "Purify Food and Drink"
+          "Purify Food and Drink",
+          "Protection from Energy"
         ],
         [
           "Blood Bolt",
@@ -442,6 +444,8 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Hunter’s Mark",
+        "Elemental Arrows: Imbue Element",
+        "Bonus Action: Stabilize",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -458,8 +462,6 @@
         "Circle Spell: Supplant",
         "Cleanse With Fire",
         "Unclean Brand",
-        "Bonus Action: Stabilize",
-        "Elemental Arrows: Imbue Element",
         "Elemental Arrows: Fire"
       ],
       "spells": [
@@ -585,7 +587,7 @@
         },
         {
           "name": "Scale Mail",
-          "type": "Medium Armor"
+          "type": ""
         },
         {
           "name": "Javelin",
@@ -666,16 +668,16 @@
         "Regain Bardic Inspiration",
         "Countercharm",
         "Bardic Inspiration",
+        "Pluck the Heartstrings: Defense",
+        "Pluck the Heartstrings: Offense",
+        "Stir the Bones",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
         "Circle Spell: Expand",
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
-        "Circle Spell: Supplant",
-        "Pluck the Heartstrings: Defense",
-        "Pluck the Heartstrings: Offense",
-        "Stir the Bones"
+        "Circle Spell: Supplant"
       ],
       "spells": [
         [

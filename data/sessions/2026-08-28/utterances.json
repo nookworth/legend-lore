@@ -1,0 +1,7856 @@
+[
+  {
+    "speaker": "5-nostromo82",
+    "text": "Pretty close.",
+    "start": 2000,
+    "end": 2480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Thank you, chris.",
+    "start": 2320,
+    "end": 3120
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Man, shut the up, Craig.",
+    "start": 2400,
+    "end": 4080
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 7360,
+    "end": 7920
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Would you rather let Craig just say nothing? I guess he's still not either. Mind. It would probably.",
+    "start": 9360,
+    "end": 15360
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Once the map's up, I will explain for those who weren't here last time, what's going down.",
+    "start": 14480,
+    "end": 20240
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, yes. Please explain. I'm gonna add cold in the map and now just call to the map.",
+    "start": 19120,
+    "end": 27530
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "This is much different than the last I saw.",
+    "start": 28250,
+    "end": 30890
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, I know.",
+    "start": 31370,
+    "end": 32330
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. So, as you can see, we have a nice aura of. Roll your 1D6 +8.",
+    "start": 34090,
+    "end": 44330
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "26%.",
+    "start": 42890,
+    "end": 43770
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "To get your bonus hit points. The.",
+    "start": 45530,
+    "end": 51210
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 51300,
+    "end": 51540
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "The Treant is.",
+    "start": 55150,
+    "end": 56510
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It.",
+    "start": 55380,
+    "end": 55620
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Kind of just there. We talked to it first, and it was like, I don't give a about anything. Leave me alone. And we're like, okay, we'll just walk past you. And we started a fight with the Marid and who immediately summoned a water elemental, Although we didn't know the Marid was there at first. Some water magic to bring it out of the water. It has a really strong blast. Was it 10ft wide or 15?",
+    "start": 57390,
+    "end": 92680
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, the. The water elemental or the. The marid. Let me look at. It's.",
+    "start": 94910,
+    "end": 99550
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I thought it was the Marad. Yeah.",
+    "start": 99480,
+    "end": 105490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "10 foot wide, 60ft long.",
+    "start": 105080,
+    "end": 106920
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. And it doesn't have a recharge on that. So scatter.",
+    "start": 107970,
+    "end": 113330
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God, I forgot. It doesn't have a recharge on it.",
+    "start": 113960,
+    "end": 116600
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. So I'm the only one who moved out of its line, out of the. The group. And, yeah, did a ton of damage. Lauren went to half help immediately. Or Lillian. And, yeah, we just need the new people added. Or Cole added to the initiative order, I think.",
+    "start": 117810,
+    "end": 146520
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "And currently the mard and the water elemental are stunned because I did hypnotic pattern and it worked on both of them. So.",
+    "start": 147650,
+    "end": 158960
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 158690,
+    "end": 159090
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "The attack one at a time.",
+    "start": 159600,
+    "end": 161120
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And, yeah, my corn dolly is the retribution one. So I will occasionally be interjecting that I'm adding fire damage to an attack.",
+    "start": 167090,
+    "end": 178370
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay.",
+    "start": 182230,
+    "end": 182710
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "We do not know if the Treant is going to continue to just sit there trying to ignore us while we're next to them. And I think that's it for the battle. We had initially been trying to get into the temple when we came across all these enemies.",
+    "start": 182380,
+    "end": 208560
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "And I do have a question for you, Cole. Do you.",
+    "start": 208340,
+    "end": 212820
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yes.",
+    "start": 212400,
+    "end": 212720
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Remember when we fought that dude with a spear? Did we ever pickpocket that spear? I feel like we were not a very loot heavy group.",
+    "start": 213620,
+    "end": 226820
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "A guy with the spear. Sa.",
+    "start": 228720,
+    "end": 230790
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 231930,
+    "end": 232170
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Or like a lance. Maddie like dropped a hint that. That we can. That there's like some special weapon. And I don't think any of us wrote it down that we looted it. So I was just wondering if you remember looting anything of some importance.",
+    "start": 232590,
+    "end": 259000
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Was a weapon of the palette. That had to do.",
+    "start": 257780,
+    "end": 259780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm going to.",
+    "start": 261780,
+    "end": 262420
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah, the ghostly Paladin. Dude.",
+    "start": 261960,
+    "end": 264760
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, that was.",
+    "start": 267140,
+    "end": 269780
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I thought somebody did pick that up. I thought we about, like, the weird special. Not special. I should have felt special. I thought somebody did pick it up because it was, like, funky.",
+    "start": 268640,
+    "end": 284410
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm gonna backtrace this lance thing because we need to determine if you guys, like, actually got it or.",
+    "start": 285150,
+    "end": 294110
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah, I think.",
+    "start": 295410,
+    "end": 295970
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. I was like, I don't know why I would have it, and it doesn't look like I do.",
+    "start": 295230,
+    "end": 299149
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "I did fight. I just don't think. Yeah.",
+    "start": 296930,
+    "end": 300370
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 307140,
+    "end": 307380
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Because it was like.",
+    "start": 307090,
+    "end": 308050
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 308520,
+    "end": 308760
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That, like dark palace.",
+    "start": 310940,
+    "end": 312380
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's star lemire's lance.",
+    "start": 311000,
+    "end": 313480
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That like they had all those soldiers outside the palace. And then we like went in and they were ghostly. And then we went to the basement and then there were like the dragon ruins and then there was this like paladin that we like, smote.",
+    "start": 315820,
+    "end": 337190
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 339250,
+    "end": 339730
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "But I don't like. It's not written down on my sheet. I couldn't see it on anyone else's. So I was just wondering if you remembered it.",
+    "start": 341990,
+    "end": 351190
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Not very well, unfortunately. No.",
+    "start": 356670,
+    "end": 358420
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Or if it's on. On your.",
+    "start": 358710,
+    "end": 360230
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It's the one where we were chasing. Basically chasing SA through the undercroft. Right.",
+    "start": 361380,
+    "end": 368980
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah.",
+    "start": 369510,
+    "end": 370150
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 371820,
+    "end": 372220
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And that guy popped out of the. The coffin at the end.",
+    "start": 370740,
+    "end": 373700
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Ye.",
+    "start": 374070,
+    "end": 374710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "With the. With the weird gooey things that turn people into frogs.",
+    "start": 375900,
+    "end": 379500
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "No.",
+    "start": 380710,
+    "end": 381110
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No, I. There was.",
+    "start": 381620,
+    "end": 384180
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "No, that was.",
+    "start": 383420,
+    "end": 384220
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "No. The weird things that turn things into farts.",
+    "start": 383270,
+    "end": 385670
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "There was none of that.",
+    "start": 384870,
+    "end": 385750
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That was one of the underground dungeons you were in, though.",
+    "start": 386790,
+    "end": 389270
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yes. I don't think it was that one.",
+    "start": 389870,
+    "end": 392830
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That was the one. Was that the one where we were just like, hey, let's not bother all the sacred stuff here.",
+    "start": 395830,
+    "end": 402230
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah.",
+    "start": 402750,
+    "end": 403310
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 405190,
+    "end": 405670
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah, we. We basically.",
+    "start": 406590,
+    "end": 408270
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Maddie was like, there's so much stuff that could have happened, but none of you with it.",
+    "start": 406470,
+    "end": 410150
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Is that what I told you? Okay.",
+    "start": 410880,
+    "end": 412560
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah, we basically bypass. Yeah, we basically bypassed the entire dungeon. Fought the boss. He was a lot easier than expected. And then we. I think we just biggity bounced. Like, I don't think we loot. I don't think. I mean.",
+    "start": 410510,
+    "end": 425500
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. We were like, well, we found out something cool.",
+    "start": 423040,
+    "end": 426240
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "I mean, unless your death rigger picked something up from him.",
+    "start": 427420,
+    "end": 430620
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No, he. He did not.",
+    "start": 431840,
+    "end": 435280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Trying to find the.",
+    "start": 436170,
+    "end": 436810
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And I was playing sister at that point.",
+    "start": 436050,
+    "end": 438290
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh, you were okay.",
+    "start": 438790,
+    "end": 440070
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. Which is one of the reasons why we didn't fuck with ships.",
+    "start": 440130,
+    "end": 443010
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Ah.",
+    "start": 443670,
+    "end": 444070
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yep.",
+    "start": 444410,
+    "end": 444810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Was this.",
+    "start": 445930,
+    "end": 446570
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Okay.",
+    "start": 446150,
+    "end": 446790
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Before the waist or during?",
+    "start": 447130,
+    "end": 450010
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Before the wastes.",
+    "start": 449590,
+    "end": 450870
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "This is when we got the skeleton horses.",
+    "start": 449810,
+    "end": 451890
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah. So.",
+    "start": 458070,
+    "end": 459030
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, okay, I found the.",
+    "start": 458490,
+    "end": 460010
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 461340,
+    "end": 461580
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Gonna go out on a limb and say we didn't do the thing.",
+    "start": 461590,
+    "end": 463910
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, we definitely. I don't remember anything about this. I feel.",
+    "start": 464900,
+    "end": 468180
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I found. I found. I found the action. Just.",
+    "start": 468730,
+    "end": 472090
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Or we did the thing, but we didn't do the thing. 100%.",
+    "start": 471650,
+    "end": 474130
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "We were like, hey, he's dead now. Let's not loot his thing. That could have been useful here because we're respecting the dead. We just left.",
+    "start": 476740,
+    "end": 484100
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Like our groove is proof.",
+    "start": 484920,
+    "end": 487150
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You left his. You left his op. Dragon lints in his coffin.",
+    "start": 486180,
+    "end": 493460
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 489900,
+    "end": 490140
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay, first of all, Maddie, there was. I don't know if it was just because the fight was so short, but there was nothing about his weapon that appeared special. There was, like, no mention of, like, this thing.",
+    "start": 493270,
+    "end": 511990
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's true.",
+    "start": 511470,
+    "end": 512030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "You up?",
+    "start": 514700,
+    "end": 515100
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, no, no. So he. He has two weapons. He has the weapon that he's using during the fight, which is a sword, inside of his tomb is the dragon lance.",
+    "start": 512510,
+    "end": 524350
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "We didn't even look in the tomb. I think.",
+    "start": 525800,
+    "end": 527480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You didn't.",
+    "start": 527950,
+    "end": 528670
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, we definitely didn't. Look in the tomb.",
+    "start": 527960,
+    "end": 529800
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah, because we're gonna desecrate it. Yep. Okay. So.",
+    "start": 527910,
+    "end": 531990
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah.",
+    "start": 530700,
+    "end": 531180
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So you. Yeah.",
+    "start": 530990,
+    "end": 535630
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That's what we get for being good human beings. Guys, next time I expect.",
+    "start": 532790,
+    "end": 538470
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah.",
+    "start": 539030,
+    "end": 539430
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Murder Hobo. Murder Hobo and looters. It.",
+    "start": 539270,
+    "end": 543340
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "More. More loot, gobb.",
+    "start": 542290,
+    "end": 543810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well.",
+    "start": 545400,
+    "end": 545640
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We already got the murder hobo thing down. Dude, we brute forcing everything.",
+    "start": 545650,
+    "end": 549170
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, you do, but. Yeah. So Sarlamir's tomb. You did not go back. Yeah, you didn't check the tomb. You guys kind of just, like, rushed through that section into the next chapter, which was getting you guys set up in the wastes, right?",
+    "start": 548040,
+    "end": 568940
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah.",
+    "start": 569430,
+    "end": 569910
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Whoa, whoa. Hold up, hold up. And just because we didn't with doesn't mean we rushed through it.",
+    "start": 569120,
+    "end": 574480
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, we kind of rush to that.",
+    "start": 575180,
+    "end": 576380
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. We just walked past it. We didn't run through it. We just leisurely walked through.",
+    "start": 575740,
+    "end": 581340
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "We just.",
+    "start": 582480,
+    "end": 583120
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Nothing was attacking us or do anything else.",
+    "start": 582060,
+    "end": 584780
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "We just. We just left it alone.",
+    "start": 584160,
+    "end": 587040
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "We're like, oh, we need to get through here to catch up to that guy. And then all the things nearby were like, hey, we're kind of Tempting. And we're like, no, we got a thing at the end. And they're like, oh, we can't do anything.",
+    "start": 589510,
+    "end": 600950
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "All right, well, that's settled. Tony.",
+    "start": 604640,
+    "end": 606800
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yes.",
+    "start": 608150,
+    "end": 608470
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "You're up.",
+    "start": 609600,
+    "end": 610239
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Is your turn.",
+    "start": 610070,
+    "end": 610950
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "All right. Let's see. Well.",
+    "start": 613040,
+    "end": 616160
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Maybe stunned.",
+    "start": 618720,
+    "end": 619680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, they're stunned. Okay.",
+    "start": 620080,
+    "end": 621760
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So you'll have advantage.",
+    "start": 622320,
+    "end": 623840
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Who's stunned? Oh, they're stunned because I put purple on them. Thank you. And then the red is the bleed.",
+    "start": 624400,
+    "end": 629680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I'm gonna.",
+    "start": 631760,
+    "end": 636880
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That's it. Oh, no, it's not bleed. The red is a new feature that the VTT does if they're knocked below half health, I believe.",
+    "start": 631840,
+    "end": 641760
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh, being bloodied. Interesting.",
+    "start": 641930,
+    "end": 644090
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Ah.",
+    "start": 645290,
+    "end": 645530
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "They've been bloodied. Okay. I'm gonna aim my short bow at the merid.",
+    "start": 645290,
+    "end": 651130
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 652310,
+    "end": 652790
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That roll.",
+    "start": 656250,
+    "end": 657130
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 658229,
+    "end": 658790
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I have a 20.",
+    "start": 658970,
+    "end": 660170
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That hits.",
+    "start": 660870,
+    "end": 661670
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay. 6 damage, I guess if the. Is. If the dancing long sword is there, does that qualify for me for a sneak attack?",
+    "start": 661930,
+    "end": 674020
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, it does not.",
+    "start": 674880,
+    "end": 675760
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Now.",
+    "start": 675140,
+    "end": 675380
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, we ruled that it gets advantage from other people.",
+    "start": 674660,
+    "end": 677700
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 678400,
+    "end": 678880
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It does not give advantage to us.",
+    "start": 678420,
+    "end": 680500
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 681280,
+    "end": 681840
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "You still get your sneaker.",
+    "start": 681560,
+    "end": 682760
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, it's not a creature.",
+    "start": 681300,
+    "end": 683220
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Tony. You still get your sneak attack because they were stunned and you had advantage.",
+    "start": 683880,
+    "end": 687400
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 688820,
+    "end": 689380
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Fine. Add your sneak attack.",
+    "start": 691200,
+    "end": 692400
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Maybe.",
+    "start": 693780,
+    "end": 694100
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Maddie hates to see the sneak attack coming.",
+    "start": 695950,
+    "end": 698190
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I mean, she hates cold in general more.",
+    "start": 700030,
+    "end": 701950
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Suffering from success.",
+    "start": 700340,
+    "end": 701380
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Thank you.",
+    "start": 703480,
+    "end": 703960
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "12. So that's total. 18.",
+    "start": 702420,
+    "end": 704740
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm gonna become the most annoying min. Max player the next campaign when I play next campaign.",
+    "start": 703450,
+    "end": 708810
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "What's funny is funny.",
+    "start": 710270,
+    "end": 714850
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So does that mean that we're gonna have two? Because Cole's also going to be doing that again. Or is Cole going to be dming?",
+    "start": 710190,
+    "end": 716270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I don't know. John's dming next. Next campaign. I think so.",
+    "start": 716570,
+    "end": 722460
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay, sorry, John. You got to deal with Cole and sick.",
+    "start": 721480,
+    "end": 724680
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh, that's fine. I had to deal with Cole and Esteban.",
+    "start": 724690,
+    "end": 728210
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, yeah, yeah.",
+    "start": 729320,
+    "end": 730600
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, thanks. Thanks, John. Thanks for trying to put me on that level. Holy.",
+    "start": 730860,
+    "end": 736220
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I've heard the horror stories, man.",
+    "start": 736200,
+    "end": 737960
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Cole. Cole is a. Is more respectful of a player than Esteban.",
+    "start": 738700,
+    "end": 744620
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "No, I mean, you try having Esteban and his brother Santiago on a team together. Good lord.",
+    "start": 743010,
+    "end": 749780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, what happened?",
+    "start": 749370,
+    "end": 751690
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Auntie is actually pretty.",
+    "start": 751010,
+    "end": 752770
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, my. I actually did that, John. I actually did that.",
+    "start": 750870,
+    "end": 753910
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "He's a diabolical min max.",
+    "start": 754770,
+    "end": 756530
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Sti is such a good mid max builder. Like, it's insane.",
+    "start": 753140,
+    "end": 758980
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "He is. But the thing is, as a dm, you can always just throw more monsters like you. Really? It's not that hard to deal with min Maxers.",
+    "start": 762290,
+    "end": 770510
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That's true. Like, no.",
+    "start": 767060,
+    "end": 771540
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. You can always just pull a second revenant out of the woods.",
+    "start": 771180,
+    "end": 774460
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 773950,
+    "end": 774510
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh. Oops.",
+    "start": 775550,
+    "end": 777230
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, my gosh. Yeah, you can just.",
+    "start": 777120,
+    "end": 779760
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh. Oh, Mr. Green.",
+    "start": 779070,
+    "end": 781230
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "You can just negate everything the fighter did and just. But make him still use up all of his resources that he used to do the thing that was annoying.",
+    "start": 780320,
+    "end": 788960
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Endless string just gets me.",
+    "start": 792180,
+    "end": 793460
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, my gosh. I'm still just pulling on the string and my turn.",
+    "start": 795110,
+    "end": 801750
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That sounds a goober.",
+    "start": 805800,
+    "end": 806920
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Okey dokey. Aria.",
+    "start": 806360,
+    "end": 809320
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm like, what do you. What the. Do you expect the DM to do? You know? Like, what?",
+    "start": 808990,
+    "end": 814510
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I remember. I remember, John, you were like, there is. You don't see an end. He's like. He's like, I want to see if there's an end to this. You're just, like, playing out like, there is no end. It's just endless string. It's like. But I want to see if there's an end. Like.",
+    "start": 813130,
+    "end": 827410
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That.",
+    "start": 825730,
+    "end": 825970
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I just told you, there is no end.",
+    "start": 828050,
+    "end": 829970
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "All right, roll a new character, because that guy is now. Is now fake hers to be pulling the string for the rest of eternity.",
+    "start": 834880,
+    "end": 841120
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, that's the thing about Estevan is he also doesn't listen half the time.",
+    "start": 843250,
+    "end": 846770
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, I know. I know.",
+    "start": 847330,
+    "end": 849650
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Mm.",
+    "start": 849450,
+    "end": 849930
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 851380,
+    "end": 851620
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "It's just really just in one out there.",
+    "start": 852960,
+    "end": 854880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Why did the dragon attack me after three whole rounds of it, asking me why I'm standing there invisibly.",
+    "start": 853530,
+    "end": 858650
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Remember how he, like, almost got us all killed by that ain't, like, angel thing that was gonna just murder all of us because he wouldn't shut the up.",
+    "start": 862610,
+    "end": 875110
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 877380,
+    "end": 877860
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I thought we were gonna die for.",
+    "start": 881270,
+    "end": 882710
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Anyway. Aria. Bonus action movement.",
+    "start": 886590,
+    "end": 888910
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, I should. I should.",
+    "start": 891610,
+    "end": 892810
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Invisible. The merit is.",
+    "start": 892100,
+    "end": 896910
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Well, I can't. I can't. I can't move because I use steady aim.",
+    "start": 895300,
+    "end": 898180
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You didn't use steady aim because it was stunned, so you already had advantage.",
+    "start": 900190,
+    "end": 904510
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, that's right. That's right. Thank you for reminding me. Bonus action. I think I'm gonna use shifter. Well, I still have 10 temporary hit points, so that would override it. I should move out of the way. Huh? Are they gonna get unsunned the next turn?",
+    "start": 905060,
+    "end": 921700
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "They Are unstunned upon being struck.",
+    "start": 922520,
+    "end": 926360
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So you have unstunned them.",
+    "start": 927450,
+    "end": 928730
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Ah, the merit. I did.",
+    "start": 929150,
+    "end": 930670
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Also.",
+    "start": 932970,
+    "end": 933210
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Incapacitated.",
+    "start": 933090,
+    "end": 934290
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "So I'm gonna. I'm gonna. I'm gonna see if I can run up to the tree.",
+    "start": 932350,
+    "end": 935630
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 934330,
+    "end": 934890
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "At 10, 15, 20. I want.",
+    "start": 936670,
+    "end": 941550
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Done is a different effect.",
+    "start": 940610,
+    "end": 942210
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I want to run behind the tree.",
+    "start": 943070,
+    "end": 944590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I was incapacitated.",
+    "start": 944170,
+    "end": 945610
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yes.",
+    "start": 946290,
+    "end": 946770
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Tony.",
+    "start": 946650,
+    "end": 947370
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And.",
+    "start": 947780,
+    "end": 948020
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yes.",
+    "start": 949400,
+    "end": 949800
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Just so you are aware, if you already have temporary HP and another source would give you temporary hp, you could still see if you could get more temporary HP because it always changes the higher value. So if you can.",
+    "start": 950820,
+    "end": 967860
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh. So with my bonus act. Yeah.",
+    "start": 966520,
+    "end": 969000
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That's true. It doesn't. It doesn't automatically replace it. It just does if it's higher.",
+    "start": 966580,
+    "end": 972100
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yes.",
+    "start": 973060,
+    "end": 973540
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. With her Vegas shifter. When she transforms, it's just a guaranteed six temporary hp. So, like, it wouldn't override the.",
+    "start": 973570,
+    "end": 981410
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay, but why not. Why not try and get 14?",
+    "start": 980510,
+    "end": 986270
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Well, I don't roll as a thing when I'm shifting, though.",
+    "start": 988930,
+    "end": 991890
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yes, but you have it right.",
+    "start": 992590,
+    "end": 995070
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 995970,
+    "end": 998470
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And then at the end of the turn, you get to roll. And if you roll higher than 10, you can take it.",
+    "start": 995710,
+    "end": 1002270
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, I see what you mean.",
+    "start": 999340,
+    "end": 1002540
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "If you roll lower than your 10, you keep your 10.",
+    "start": 1002830,
+    "end": 1006350
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. Okay.",
+    "start": 1005180,
+    "end": 1008620
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yes. So roll the 1v6 plus 8.",
+    "start": 1008280,
+    "end": 1011160
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It just doesn't add, doesn't compound on top of each other. You just choose.",
+    "start": 1009070,
+    "end": 1013710
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. Which one I want?",
+    "start": 1014460,
+    "end": 1015740
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Which one is higher. Yeah.",
+    "start": 1015550,
+    "end": 1028050
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay.",
+    "start": 1018460,
+    "end": 1019100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And now as you end your turn, roll the D6 plus 8.",
+    "start": 1021960,
+    "end": 1024520
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. D6 plus 8. Let's see. A1. Yeah.",
+    "start": 1025510,
+    "end": 1033590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You'll keep your 10 then.",
+    "start": 1033069,
+    "end": 1034429
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. I keep my 10. Cool. All right. I'm done.",
+    "start": 1034870,
+    "end": 1038470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 1040770,
+    "end": 1041250
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Soreness.",
+    "start": 1041469,
+    "end": 1050129
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Recklessly attack maritime.",
+    "start": 1047440,
+    "end": 1049100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I'm sorry, I did lose my concentration on your. No, wait. No, concentration was on the moon beam. So you still have the magical weapon.",
+    "start": 1050920,
+    "end": 1060280
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "23 hits. And then that.",
+    "start": 1065980,
+    "end": 1071900
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wait, so you were. I don't think you can concentrate on both Moonbeam and Magic Weapon.",
+    "start": 1077770,
+    "end": 1082650
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, the magical weapon is just a duration. It is not concentration.",
+    "start": 1081570,
+    "end": 1086130
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "D. And D Beyond says it is concentration. Maybe I'm looking at the wrong version.",
+    "start": 1087130,
+    "end": 1093850
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Magical.",
+    "start": 1096470,
+    "end": 1097590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Double check.",
+    "start": 1097730,
+    "end": 1098610
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Weapon.",
+    "start": 1098150,
+    "end": 1098870
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well, it's elemental weapon.",
+    "start": 1099650,
+    "end": 1101170
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Andy.",
+    "start": 1100080,
+    "end": 1100640
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, okay. Elemental weapon.",
+    "start": 1102420,
+    "end": 1104100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That does say concentration.",
+    "start": 1102780,
+    "end": 1103900
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It.",
+    "start": 1103440,
+    "end": 1103680
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Now that does say concentration.",
+    "start": 1105260,
+    "end": 1106780
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Okay, then. Not that one.",
+    "start": 1108000,
+    "end": 1109440
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well.",
+    "start": 1110300,
+    "end": 1110700
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It's fine. 11 plus 2 from rage. So 13 and then I cleave onto the water elemental. Sorry. It's okay. It misses. I think question mark. Does 15 hit?",
+    "start": 1111760,
+    "end": 1135210
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "The marid. No.",
+    "start": 1139290,
+    "end": 1141290
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, the elemental.",
+    "start": 1141370,
+    "end": 1142810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 1145450,
+    "end": 1145930
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, okay, never mind then. Oh, my God. What is this? Ass roll. And then plus 2 for 11 on that guy. And then I attack the merid again. Oh, my God. One, two, three. What the fuck is this bullshit? And then that's another 13 onto the merid. That is it for my turn.",
+    "start": 1146410,
+    "end": 1176370
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, now the merid is not happy.",
+    "start": 1180910,
+    "end": 1185710
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It also can submerge again because the water is back.",
+    "start": 1187690,
+    "end": 1191690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, you did 13 on the elemental. And you. You did 13 on the merit.",
+    "start": 1192670,
+    "end": 1205410
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, no, no. I did 13 on the married. 11 to the elemental and another 13 on the merit.",
+    "start": 1197740,
+    "end": 1203700
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 1203540,
+    "end": 1203780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, hold on. Let me look at the mirror and stat bar. I have to look at this spell. Hold on. That's not going to help. Sa.",
+    "start": 1206920,
+    "end": 1256940
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That's right. The water element is not going to go away if we fill a marriage, because that would require it to keep concentration. And becoming capacitated makes a drop. Concentration.",
+    "start": 1257640,
+    "end": 1275720
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Trying to think of the right thing to do here. I can't find a way out of. Okay, We're gonna do 10ft long or 10ft wide. 60ft.",
+    "start": 1282470,
+    "end": 1326160
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Let's just imagine the merit. Like drawing. Drawing rectangles in the air for like two minutes.",
+    "start": 1340830,
+    "end": 1346350
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "This. This is where you.",
+    "start": 1346470,
+    "end": 1348230
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I will shoot.",
+    "start": 1351870,
+    "end": 1352830
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I wish it would let me increase, like, the width.",
+    "start": 1357210,
+    "end": 1359290
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Where.",
+    "start": 1358960,
+    "end": 1359200
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You know?",
+    "start": 1360510,
+    "end": 1360990
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah, that'll be helpful.",
+    "start": 1362520,
+    "end": 1364280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So I got, like, this weird setup here where it's like, who's gonna get hit? You know? And then it's like, well, you're going back and forth on it because you can't keep it straight. And it's like, God damn.",
+    "start": 1364750,
+    "end": 1377870
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's too long. So put.",
+    "start": 1384010,
+    "end": 1385450
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Or you could just.",
+    "start": 1384370,
+    "end": 1385010
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Put this one at the corner there. And then take like this one that someone's working on and put it on the other side.",
+    "start": 1387210,
+    "end": 1393690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So it's supposed to be 10ft wide, 60ft long.",
+    "start": 1394920,
+    "end": 1397560
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Oh. Two right. Each other.",
+    "start": 1399590,
+    "end": 1402470
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, so we got five feet wide. We just need another one on the other.",
+    "start": 1399290,
+    "end": 1403690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. So it's just two block.",
+    "start": 1405880,
+    "end": 1407320
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Fire in my laser.",
+    "start": 1406710,
+    "end": 1408310
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 1408500,
+    "end": 1408820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Thank you. All right, Everyone has to make a dexterity saving throw.",
+    "start": 1412930,
+    "end": 1423490
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Does that include his water elemental?",
+    "start": 1424880,
+    "end": 1426800
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah. Includes his water elemental.",
+    "start": 1428690,
+    "end": 1431010
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Good thing I have advantage on that.",
+    "start": 1435060,
+    "end": 1436580
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, the check is 18.",
+    "start": 1452700,
+    "end": 1454860
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "If it meets it beats the baby.",
+    "start": 1457780,
+    "end": 1459620
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So those of you.",
+    "start": 1458220,
+    "end": 1459180
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. My 5 does not pass.",
+    "start": 1458350,
+    "end": 1459870
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So those of you who did not get 18 take full 29 damage and get knocked up to 20ft away from your current position backwards and are now prone. If you got 18, which is only Soarin, you are not prone. You do not get knocked back. You take half of 29 damage.",
+    "start": 1461020,
+    "end": 1489430
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 1489630,
+    "end": 1489870
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I need to roll for the water elemental.",
+    "start": 1493110,
+    "end": 1494870
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, I forgot my one D6 plus eight. Sick.",
+    "start": 1493840,
+    "end": 1502640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "What are you. What are you doing? You already passed. You're fine.",
+    "start": 1502470,
+    "end": 1505190
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "All right, I was just thinking. It's my temp HP, but I was just wondering.",
+    "start": 1506400,
+    "end": 1510880
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, okay.",
+    "start": 1511990,
+    "end": 1512790
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I also take 7 damage. Anyway, doesn't matter.",
+    "start": 1511810,
+    "end": 1514290
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I was like, what? I'm like, dude, you're good. You.",
+    "start": 1516030,
+    "end": 1518830
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Now I'm good. But also I took seven damage.",
+    "start": 1518770,
+    "end": 1521650
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, so they take 29, and so here we go. And they're prone, and they got knocked back.",
+    "start": 1524110,
+    "end": 1539560
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "So do you get knocked back 20ft or is it. How much do we get knocked back?",
+    "start": 1543070,
+    "end": 1547550
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "20ft.",
+    "start": 1547880,
+    "end": 1548680
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 1549150,
+    "end": 1549710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And you're prone. Except Soren.",
+    "start": 1555240,
+    "end": 1557800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 1562120,
+    "end": 1562360
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, it is Lillian's turn.",
+    "start": 1569890,
+    "end": 1572210
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Sorry.",
+    "start": 1572300,
+    "end": 1572620
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Is going to stand up. Then she's going to heal herself because she is at 9 GP. And she doesn't like that.",
+    "start": 1575100,
+    "end": 1592230
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "She wants to be a healthy queen.",
+    "start": 1597730,
+    "end": 1599170
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Hey, look, I gained back exactly what I just lost.",
+    "start": 1599750,
+    "end": 1602230
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my gosh.",
+    "start": 1602940,
+    "end": 1603660
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Except for it's not all. It's not a good chunk. Temp HP.",
+    "start": 1607750,
+    "end": 1611910
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 1613180,
+    "end": 1613420
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Time. All right, then. Yeah. Got hit. So I am going to do a fancy thing. Where I use two sorcery Points. Two quick casts to turn healing Word into a bonus action. And cast not healing Word, cure wounds, and then cast it at level one on Kwibdo.",
+    "start": 1613760,
+    "end": 1664250
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Nice.",
+    "start": 1666320,
+    "end": 1666640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It.",
+    "start": 1668490,
+    "end": 1668730
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Thank you.",
+    "start": 1672240,
+    "end": 1672880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And then I'll use the rest of my movement just to move out a little bit, and I'll roll my B6. That ends my turn.",
+    "start": 1672820,
+    "end": 1691710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, Sister superior.",
+    "start": 1694420,
+    "end": 1698900
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay, I am going to go.",
+    "start": 1702460,
+    "end": 1705020
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That water element tool.",
+    "start": 1710430,
+    "end": 1711950
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Into this tree, then I am going to bonus action. Cast Veil of the Reaper. Which I wrap myself in shadows. And at the end of any turn in which I hit a creature with an attack roll, I gain the invisible condition until the start of my next turn. Concentration up to one minute.",
+    "start": 1721250,
+    "end": 1749590
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God.",
+    "start": 1750680,
+    "end": 1751560
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And then.",
+    "start": 1753430,
+    "end": 1754070
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That's pretty cool, actually.",
+    "start": 1753550,
+    "end": 1754510
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And then I am. I'm going to give myself advantage through my Choir of Salamia feature. And I'm going to shoot at the Merid.",
+    "start": 1758390,
+    "end": 1774480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 1775970,
+    "end": 1776370
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "See, this is why I like Cole's characters. They're mid max, but they're not as max as they could be because it gives them so many utility. Things like that.",
+    "start": 1776220,
+    "end": 1784140
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Utility things. Yeah. Well.",
+    "start": 1785490,
+    "end": 1787490
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I'm gonna be able to turn invisible, and you skid my soul.",
+    "start": 1788940,
+    "end": 1791980
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 1797340,
+    "end": 1797660
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "All right, which. Who are you calling? Whose name are you calling upon? You didn't do it. That's why you rolled low.",
+    "start": 1798550,
+    "end": 1804390
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "That is why I rolled. Roll. Six piercing damage.",
+    "start": 1805370,
+    "end": 1808330
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "To the water elemental.",
+    "start": 1808860,
+    "end": 1810140
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No, the mirrored.",
+    "start": 1812570,
+    "end": 1813530
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, thank you.",
+    "start": 1813980,
+    "end": 1815340
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And then I'm going to shoot him again. But I don't have advantage this time.",
+    "start": 1816650,
+    "end": 1822250
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 1824550,
+    "end": 1825030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "That's only a 14.",
+    "start": 1828020,
+    "end": 1828820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That does not hit.",
+    "start": 1829750,
+    "end": 1830710
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "But I am now invisible.",
+    "start": 1831460,
+    "end": 1832820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 1835990,
+    "end": 1836470
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's true.",
+    "start": 1836240,
+    "end": 1836880
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And that is my turn.",
+    "start": 1836100,
+    "end": 1837060
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And the corn dolly is going to shoot a little flame and hit the merit. Oh, nice. So that's 11 fire damage to the mirrored.",
+    "start": 1838000,
+    "end": 1848810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "The merit is dead.",
+    "start": 1849440,
+    "end": 1850880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, nice.",
+    "start": 1852010,
+    "end": 1852810
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Word corn dolly win. Kp. The kda go up. Dude.",
+    "start": 1852420,
+    "end": 1857780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm so glad that they changed this feature so I don't have to delete them off the board. We, like, know where their body is.",
+    "start": 1858320,
+    "end": 1866240
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, that was nice.",
+    "start": 1865290,
+    "end": 1866410
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 1866880,
+    "end": 1867360
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Red exon.",
+    "start": 1870110,
+    "end": 1870830
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 1871850,
+    "end": 1872250
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That.",
+    "start": 1872500,
+    "end": 1872740
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Are you. Are you done with your turn, sir?",
+    "start": 1875130,
+    "end": 1880170
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm gonna take. I'm gonna use my last five feet to move there.",
+    "start": 1880760,
+    "end": 1884760
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Does that give it an opportunity attack?",
+    "start": 1887300,
+    "end": 1889540
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "No, because he's invisible.",
+    "start": 1892560,
+    "end": 1893600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, the water elemental.",
+    "start": 1892650,
+    "end": 1894090
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Does it? Yeah.",
+    "start": 1893320,
+    "end": 1899340
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I don't know. I don't think you're close enough.",
+    "start": 1896980,
+    "end": 1898980
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, okay. So I was here.",
+    "start": 1901730,
+    "end": 1903090
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 1904430,
+    "end": 1904830
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "In my square. The water elemental isn't. Doesn't fit neatly in a square. So is he here or Z here? Because he's kind of like this.",
+    "start": 1904370,
+    "end": 1917170
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I thought it. I thought it was like. Like in this square. I don't care.",
+    "start": 1917620,
+    "end": 1924750
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay.",
+    "start": 1926220,
+    "end": 1926700
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I won't make you. I won't do an attack of opportunity. You can just.",
+    "start": 1926110,
+    "end": 1929150
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "He's still prone anyways, so.",
+    "start": 1930040,
+    "end": 1932360
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, it doesn't matter.",
+    "start": 1932430,
+    "end": 1933710
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, yeah.",
+    "start": 1934220,
+    "end": 1935260
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I mean, I think he can still attack from pone, but it's disadvantage. But we'll say that he can.",
+    "start": 1937880,
+    "end": 1944360
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It was disadvantaged anyways because I'm invisible.",
+    "start": 1942940,
+    "end": 1945180
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, yeah. He doesn't know if you're even there to walk away.",
+    "start": 1946370,
+    "end": 1949730
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "But that's. Yeah, that's the inverter.",
+    "start": 1953990,
+    "end": 1955510
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "My turn. 5, 10, 15. 20, 25. Stand. Stand up. 5, 10, 15. Wait. Yeah. 5, 10, 15. Does this put me in attack range or do I need to go one closer?",
+    "start": 1959930,
+    "end": 1984660
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'll just say that's good enough.",
+    "start": 1986290,
+    "end": 1987490
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay, then I'm gonna go here. So I'm flanking. So long sword will swing. Wait, where's my. That's a 21 to hit. I'm assuming that hits.",
+    "start": 1989140,
+    "end": 2027640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes. 10 damage.",
+    "start": 2027990,
+    "end": 2029430
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay. Yeah. 10 slashing.",
+    "start": 2028920,
+    "end": 2031480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "They are dead.",
+    "start": 2032070,
+    "end": 2032950
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 2033480,
+    "end": 2034120
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You are no longer in combat.",
+    "start": 2038870,
+    "end": 2040550
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I thought they had a lot more help than that. Huzzah. All right, guys, let's take a short rest.",
+    "start": 2046880,
+    "end": 2055710
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, I think it's a good idea.",
+    "start": 2057830,
+    "end": 2059190
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Pull the marriage body out of the water. I'm like dragging it. The. The Mara's body.",
+    "start": 2057780,
+    "end": 2066020
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "She's like, I want this. This is my prize.",
+    "start": 2066670,
+    "end": 2069070
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, we gotta like, take a tooth.",
+    "start": 2069860,
+    "end": 2071380
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Pretty sure the water elemental does disappear because it turns into water. Normal water.",
+    "start": 2070830,
+    "end": 2075420
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, that would.",
+    "start": 2076170,
+    "end": 2077130
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, but we gotta. We gotta take like the marriage tooth or something.",
+    "start": 2076510,
+    "end": 2079070
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "What the.",
+    "start": 2081050,
+    "end": 2081690
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Soren's like dragging the campfire.",
+    "start": 2080910,
+    "end": 2082750
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "You're just dragging this large creature.",
+    "start": 2081100,
+    "end": 2083260
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Does it have anything on it?",
+    "start": 2084019,
+    "end": 2085539
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "She's like, I want this. Grabs the entire thing and pulls it in.",
+    "start": 2085660,
+    "end": 2088940
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, it's a marriage. It's just this thing.",
+    "start": 2087050,
+    "end": 2090889
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "This water Genie. Does it have anything on it?",
+    "start": 2092099,
+    "end": 2095859
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my gosh.",
+    "start": 2096570,
+    "end": 2097610
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I'm sure it has some teeth that I can steal.",
+    "start": 2097870,
+    "end": 2099950
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Scales or T30 take its eyeball?",
+    "start": 2099500,
+    "end": 2105820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I think it's eyeball.",
+    "start": 2107220,
+    "end": 2108420
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I have no use for the eyeball, but I do break a tooth off.",
+    "start": 2106990,
+    "end": 2109470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Let me look at the book. Hold on.",
+    "start": 2110660,
+    "end": 2112500
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "This isn't the elemental plane of water, is it?",
+    "start": 2143400,
+    "end": 2145720
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No.",
+    "start": 2146750,
+    "end": 2146990
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "No.",
+    "start": 2147670,
+    "end": 2147910
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Okay, never mind. There is no body. It's. It dissolved into the water.",
+    "start": 2147400,
+    "end": 2150600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm just really confused. I'm just really confused about me reading something.",
+    "start": 2148590,
+    "end": 2153320
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Significant.",
+    "start": 2153410,
+    "end": 2153650
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I looked at this. The. The thing, it dissolves into water. If it's not the elemental plane, it's gone now. No teeth for me to steal.",
+    "start": 2155330,
+    "end": 2162530
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Both.",
+    "start": 2162400,
+    "end": 2162640
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah.",
+    "start": 2164770,
+    "end": 2165250
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It just dissolves.",
+    "start": 2164830,
+    "end": 2165710
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah. It says it dissolves into brine. Oh, no teeth for me.",
+    "start": 2166210,
+    "end": 2169730
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Boo.",
+    "start": 2168590,
+    "end": 2169230
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "So Sa.",
+    "start": 2171970,
+    "end": 2172530
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Why the. Why the. Okay.",
+    "start": 2172120,
+    "end": 2174440
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Where's.",
+    "start": 2177030,
+    "end": 2177510
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 2177610,
+    "end": 2177850
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Book. Whatever, dude. All right.",
+    "start": 2177330,
+    "end": 2179650
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Party.",
+    "start": 2179020,
+    "end": 2179260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, they're gone. Okay.",
+    "start": 2183730,
+    "end": 2189010
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Search? Can I search its last place of rest?",
+    "start": 2189440,
+    "end": 2191680
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It doesn't say it has any loot on it at all.",
+    "start": 2194290,
+    "end": 2196450
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 2198610,
+    "end": 2198850
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Not looting it. I'm looting it's where it was.",
+    "start": 2197920,
+    "end": 2200320
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It's lair.",
+    "start": 2200780,
+    "end": 2201740
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Where it was sleeping to where it last was.",
+    "start": 2201200,
+    "end": 2203760
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "The lake.",
+    "start": 2204860,
+    "end": 2205420
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yep.",
+    "start": 2206980,
+    "end": 2207380
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sure.",
+    "start": 2207210,
+    "end": 2207450
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's just spawned out of the water.",
+    "start": 2207900,
+    "end": 2209820
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm not letting. Hey, I'm a loot goblin now, Maddie. I'm a loot gob.",
+    "start": 2208250,
+    "end": 2212010
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We learned our lesson.",
+    "start": 2213190,
+    "end": 2214390
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's a little too late. You needed, like, the special. You needed the special, Lance, like, three chapters ago.",
+    "start": 2212620,
+    "end": 2218140
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Addie. He's not specifically. He's not specifically trying to loot it. He's just looting the water where it be.",
+    "start": 2216100,
+    "end": 2223540
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 2224700,
+    "end": 2225340
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Does he find anything other than pebbles?",
+    "start": 2224900,
+    "end": 2226900
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No.",
+    "start": 2227740,
+    "end": 2228140
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, I am going to do my.",
+    "start": 2231480,
+    "end": 2232840
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "There's a fish.",
+    "start": 2232110,
+    "end": 2232750
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I'm gonna do my. My Moses act so we might find something in the temple.",
+    "start": 2234200,
+    "end": 2238360
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You might find something in the temple. True.",
+    "start": 2239120,
+    "end": 2241040
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So anyone taking the short rest with me.",
+    "start": 2245550,
+    "end": 2248830
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, yeah.",
+    "start": 2250200,
+    "end": 2251000
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Who's recovering help I prepare food.",
+    "start": 2249710,
+    "end": 2251870
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yes. Nice.",
+    "start": 2253430,
+    "end": 2257030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 2256990,
+    "end": 2257230
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And that. Gives them an extra D8 to heal.",
+    "start": 2258840,
+    "end": 2270440
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Thank you. Oops. I didn't mean to roll that. I'm just gonna.",
+    "start": 2271910,
+    "end": 2285840
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "That's a lot of.",
+    "start": 2285320,
+    "end": 2286280
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's a lot. I'm just gonna. I got. I rolled one D8, so it's a 2, so I'm just gonna.",
+    "start": 2286640,
+    "end": 2300500
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, you guys tell me when you're done. Long resting. Because. I don't know. Talk to each other.",
+    "start": 2305550,
+    "end": 2314670
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Short resting.",
+    "start": 2313850,
+    "end": 2314570
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sorry, short resting. I don't know. If you want to talk to each other, come up with a plan. You know, whatever you so wish during your short rest, it.",
+    "start": 2315550,
+    "end": 2331240
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 2332200,
+    "end": 2332440
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I mean.",
+    "start": 2333040,
+    "end": 2333440
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Lauren's sitting there sad because there's no soils of war.",
+    "start": 2344120,
+    "end": 2346680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "She doesn't get to keep a tooth Ball or.",
+    "start": 2350820,
+    "end": 2353600
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No teeth are my. My enemy. Tooth necklace.",
+    "start": 2353160,
+    "end": 2356600
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Well. There's a whole bunch of teeth in the tree. There's a whole bunch of dead bodies in there.",
+    "start": 2358370,
+    "end": 2364050
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, but I didn't kill him, so.",
+    "start": 2365300,
+    "end": 2366900
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Does it count?",
+    "start": 2367680,
+    "end": 2368400
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "No honor. I gotcha.",
+    "start": 2368930,
+    "end": 2370690
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No, there's no stolen valor.",
+    "start": 2370260,
+    "end": 2372820
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Can I fly across the lake to these doors?",
+    "start": 2375650,
+    "end": 2378130
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 2378250,
+    "end": 2378490
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 2379140,
+    "end": 2379380
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, you can.",
+    "start": 2379090,
+    "end": 2379730
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Are. Is. Are the doors submerged? Or are they like raised so they're easy to open?",
+    "start": 2385180,
+    "end": 2391100
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "They are submerged and require a strength check.",
+    "start": 2391820,
+    "end": 2395180
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Damn. Okay. Well, I will let the strong woman know. I need help.",
+    "start": 2397500,
+    "end": 2409100
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "She stands up, pats herself up for with what.",
+    "start": 2413080,
+    "end": 2415800
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "I need you to open the door over there.",
+    "start": 2416710,
+    "end": 2421350
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Strength you parted the sea Like Moses, right?",
+    "start": 2429320,
+    "end": 2432920
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yes, I am going to cast.",
+    "start": 2433800,
+    "end": 2435400
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, yeah. I can just walk there. Strength check.",
+    "start": 2434850,
+    "end": 2440290
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Strength check.",
+    "start": 2441200,
+    "end": 2441920
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Wow. I'm dog. Rolling.",
+    "start": 2445730,
+    "end": 2447410
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God. You passed it.",
+    "start": 2448160,
+    "end": 2449760
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, my God.",
+    "start": 2450130,
+    "end": 2451010
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It worked.",
+    "start": 2451470,
+    "end": 2452350
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Like.",
+    "start": 2452350,
+    "end": 2452590
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It doesn't matter, baby.",
+    "start": 2453150,
+    "end": 2454590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I'm not feeling it, but that thing.",
+    "start": 2453310,
+    "end": 2454910
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 2457280,
+    "end": 2457840
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Even on a bad day.",
+    "start": 2457510,
+    "end": 2458710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You open that and you go into what's called the nave. Murky water covers a triangular chamber. To the east, the large hall narrows to a raised area with an altar. The north side of the building is a tangle of fallen stone and beams. The south side holds two doors. The ceiling here is 20ft high. Tall windows admit.",
+    "start": 2462520,
+    "end": 2488050
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "What?",
+    "start": 2486580,
+    "end": 2486820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Light from outside. Let me. I need to pay attention to this. Okay. Okay. All right. What are you gonna.",
+    "start": 2489090,
+    "end": 2514220
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "So is there murky water or. I mean, because the. The Moses part, the control water affects like a 100. A cube that's 100ft on a side. So would. Would this water still be there?",
+    "start": 2519270,
+    "end": 2534090
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Where did you put the cube? Like, when you. When you did the part water, like.",
+    "start": 2536310,
+    "end": 2542630
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, let's see.",
+    "start": 2544810,
+    "end": 2545610
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Because, like, I don't know. Does the building interfere with it, is what we're really asking.",
+    "start": 2546550,
+    "end": 2550710
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "The cube goes all the way from the bank to the steps of the temple.",
+    "start": 2551850,
+    "end": 2558490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 2561760,
+    "end": 2562160
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "The intersteps.",
+    "start": 2562910,
+    "end": 2563870
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Because of that, I need to draw something.",
+    "start": 2562960,
+    "end": 2568960
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And I would think that it would. The building wouldn't affect it because the water comes in through. It's all connected. One body of water.",
+    "start": 2568000,
+    "end": 2575280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, no, I get that. I'm. I'm gonna be okay with that. I just need to now add stuff because you parted the ocean.",
+    "start": 2574640,
+    "end": 2585860
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "This. And then it's also up to.",
+    "start": 2584780,
+    "end": 2587980
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "How many. How many squares in the middle? Like.",
+    "start": 2587210,
+    "end": 2590730
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Like, how many squares tall? So it would be.",
+    "start": 2592060,
+    "end": 2594300
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's 100ft.",
+    "start": 2592970,
+    "end": 2593930
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "It would be 50. 50 up north and 50 south. So it would be to. Here. I'll just draw. Yeah. Or I'll let you Dr.",
+    "start": 2594940,
+    "end": 2602220
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, if it's all of this, then all of these mummies appear.",
+    "start": 2602490,
+    "end": 2611130
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 2611620,
+    "end": 2611860
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "It's like this.",
+    "start": 2613350,
+    "end": 2614070
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, we're good. I don't need to. I don't need to see that anymore. We're good. Yeah.",
+    "start": 2613410,
+    "end": 2618370
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay. It's for me. Now.",
+    "start": 2616710,
+    "end": 2618630
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Because there are hidden. There are pits in there, and the water has exposed the pits that the mummies are in.",
+    "start": 2619330,
+    "end": 2631490
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Nice mummy pits. Just going to keep this here for reference, just in case.",
+    "start": 2633030,
+    "end": 2642800
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Saved.",
+    "start": 2642880,
+    "end": 2643280
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "What does the book say about the mummies doing things? Maddie? Is it when they are disturbed? Sa.",
+    "start": 2657550,
+    "end": 2663550
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Disturbed dead. If creature falls into one of the pits, it disturbs the dead buried in the vault below. One round later, four slimy mummies emerge from the three pits. These lawful, neutral undead seek to defend the temple. They will not converse with characters, but they will return to their soggy tombs if a character brandishes a symbol of paladin towards them. So basically, you can see them in their pits. They're in their pits. They're hanging out it.",
+    "start": 2665750,
+    "end": 2689230
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay. Shouldn't be too hard to deal with.",
+    "start": 2690820,
+    "end": 2693140
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Like, ah, don't step there.",
+    "start": 2693800,
+    "end": 2695800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yep.",
+    "start": 2697620,
+    "end": 2698180
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well, shall we go in and investigate, see if there's anything of use in there?",
+    "start": 2711000,
+    "end": 2717570
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, Go look. Go look around, see what's going on. There's multiple rooms.",
+    "start": 2718920,
+    "end": 2724520
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "How does holding actions work? Like, how long can I hold an action for?",
+    "start": 2726590,
+    "end": 2730910
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I think it depends on the action.",
+    "start": 2733800,
+    "end": 2735240
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's held for one pound. It's held for one round or until it's activated. However, you can just on the next round, technically start a new held action of the same thing.",
+    "start": 2734210,
+    "end": 2746760
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "My other question is, what's the light Level, like, in this inside of here.",
+    "start": 2749160,
+    "end": 2752520
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well, part of the wall is destroyed, so I assume there's light in.",
+    "start": 2760130,
+    "end": 2762930
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 2763970,
+    "end": 2764450
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. I think you described that there was sunlight Coming in.",
+    "start": 2763640,
+    "end": 2766040
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 2767170,
+    "end": 2767410
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, there's tall windows emitting light. Inside. You can see.",
+    "start": 2767180,
+    "end": 2770940
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay, sounds good. Then I'm gonna hold an action while we're exploring this. I'm gonna hold an action to cast my. Or to activate my twilight san.",
+    "start": 2771650,
+    "end": 2781730
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sweet.",
+    "start": 2787950,
+    "end": 2788430
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 2789500,
+    "end": 2790060
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 2791800,
+    "end": 2792040
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So claims to be entering that room. A large stone table rises from the dirty water in this round, windowless chamber. Along the wall, shelves hold assorted bottles and vials, most of which have been cracked and stained the walls with their Dr.",
+    "start": 2793590,
+    "end": 2809510
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I am going to search the room.",
+    "start": 2814000,
+    "end": 2815840
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Any.",
+    "start": 2818470,
+    "end": 2818710
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And I will assist.",
+    "start": 2818290,
+    "end": 2819170
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Or.",
+    "start": 2818810,
+    "end": 2819050
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Can you do an intelligence check?",
+    "start": 2818000,
+    "end": 2820720
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Intelligence check. Just like a flat intelligence check or like, is there, like a.",
+    "start": 2822330,
+    "end": 2826250
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Investigation?",
+    "start": 2827520,
+    "end": 2828400
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Destination? Okay.",
+    "start": 2829130,
+    "end": 2830410
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. Okay. I can assist with investigation.",
+    "start": 2830050,
+    "end": 2833090
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "You want to. You can or can't?",
+    "start": 2831290,
+    "end": 2834970
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Can. Good.",
+    "start": 2835970,
+    "end": 2837730
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Can't. Cool. I'm going to guide myself.",
+    "start": 2837290,
+    "end": 2840090
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 2842170,
+    "end": 2842410
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 2843680,
+    "end": 2843920
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "You're like, I am. I am the greatest, and I know it.",
+    "start": 2845600,
+    "end": 2848640
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You will spot this because you are the greatest archer.",
+    "start": 2852460,
+    "end": 2854700
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I am. My God's favorite. Guidance is in the D4.",
+    "start": 2855620,
+    "end": 2866100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Wow. Way to use my help.",
+    "start": 2866140,
+    "end": 2868140
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Plus 2.",
+    "start": 2871630,
+    "end": 2872270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You don't pass.",
+    "start": 2876340,
+    "end": 2877060
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So 13. Maddie.",
+    "start": 2876380,
+    "end": 2877580
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, that doesn't pass.",
+    "start": 2878100,
+    "end": 2879140
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I guess. I cast guidance.",
+    "start": 2881150,
+    "end": 2882910
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay. Lillian's gonna try.",
+    "start": 2881180,
+    "end": 2882940
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my goodness. Okay.",
+    "start": 2888100,
+    "end": 2889780
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I also assist, so you get advantage.",
+    "start": 2898200,
+    "end": 2900120
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I. Okay, well, I'm just gonna roll twice because. Oh, natural 20.",
+    "start": 2903270,
+    "end": 2908390
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. The. It was 15 passed the first time. Anyway, you find three intact spell scrolls of gentle repose.",
+    "start": 2910910,
+    "end": 2922370
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, nice. Spell scrolls. Here you can use these. Gentle repose. So we could put. Potentially put these mummies.",
+    "start": 2925200,
+    "end": 2942320
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, three of them.",
+    "start": 2944930,
+    "end": 2946050
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "But seeing as how they seem to just be sitting in their holes, I think we'll just keep these.",
+    "start": 2944970,
+    "end": 2951770
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "See, you were supposed to get near them because they're underwater. Supposed to go ooga booga, but someone got rid of all the water, So. Okay, anywhere else you want to look? Oh, my gosh. You open a door. This small living area was flooded like the rest of the temple, with moldering vestments hanging in the wardrobe and a bed blanketed in fungus.",
+    "start": 2953740,
+    "end": 2994950
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Ew. Black mold. Okay, I'm gonna. I'm gonna search this room, too.",
+    "start": 2999950,
+    "end": 3008270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 3009440,
+    "end": 3009920
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, Guidance.",
+    "start": 3010670,
+    "end": 3011710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You. Okay.",
+    "start": 3016320,
+    "end": 3017440
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I would also. Well.",
+    "start": 3016990,
+    "end": 3019230
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So you look under the bed, and you find a rusty.",
+    "start": 3020480,
+    "end": 3025030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "20.",
+    "start": 3024200,
+    "end": 3024440
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You look under the bed and you find a rusty chest. Are you gonna pull it out from under the bed and try to see?",
+    "start": 3025590,
+    "end": 3035510
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yes.",
+    "start": 3035880,
+    "end": 3036440
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, so.",
+    "start": 3037030,
+    "end": 3038870
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm not going to open it. I'm going to vect it for traps.",
+    "start": 3039480,
+    "end": 3042600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It is okay?",
+    "start": 3043510,
+    "end": 3048730
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Is that investigation as well?",
+    "start": 3048290,
+    "end": 3049730
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 3050240,
+    "end": 3050560
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Else.",
+    "start": 3050800,
+    "end": 3051200
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay, I'm going to guide it myself. Definitely no traps on this one.",
+    "start": 3051570,
+    "end": 3062930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's not. It's not trap trapped at all. And you notice that the lock is rusted and cannot be picked. But it looks like. But if someone's strong enough, they might be able to break the lock.",
+    "start": 3063120,
+    "end": 3078860
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm going to carry it out to Soren. Say, hey, Soren, can you break this open?",
+    "start": 3081100,
+    "end": 3091660
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wait, do I hear them say that?",
+    "start": 3093050,
+    "end": 3094490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, you are in the same vicinity.",
+    "start": 3095820,
+    "end": 3098060
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Do I remember the lightning chest incident?",
+    "start": 3098660,
+    "end": 3100820
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Sa.",
+    "start": 3100230,
+    "end": 3100470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Was Cole there for that?",
+    "start": 3103510,
+    "end": 3104710
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "What?",
+    "start": 3105750,
+    "end": 3105990
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I don't. Don't think he was here, but maybe.",
+    "start": 3105700,
+    "end": 3109140
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, he wasn't here. So tell him what happened back at the last location with the lightning chest.",
+    "start": 3109750,
+    "end": 3116550
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. So we found a chest that was super shiny, and I can't remember if we tried to pick it. Yeah, we tried to pick it because Arya got. Yeah, we got. We had an electrified kitty after Arya tried to pick it. Right?",
+    "start": 3119300,
+    "end": 3137420
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Y' all didn't check for traps first.",
+    "start": 3136800,
+    "end": 3138480
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 3139500,
+    "end": 3140060
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "When do we ever.",
+    "start": 3140240,
+    "end": 3141120
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And you gotta. You got a toasty cat as a result.",
+    "start": 3142080,
+    "end": 3146000
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "There.",
+    "start": 3145730,
+    "end": 3145970
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. And inside of it, there were.",
+    "start": 3145820,
+    "end": 3148380
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Hi, tom and jerry.",
+    "start": 3147280,
+    "end": 3148720
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Tom and Jerry moment, and there were lightning javelins inside of it. So with.",
+    "start": 3149690,
+    "end": 3154730
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yes, I guess. Like.",
+    "start": 3154000,
+    "end": 3155120
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "With. With that memory, I'm actually going to move a little bit away so that I don't. Because I'm. I'm. I'm kind of worried about losing concentration and all the water comes back, so I'm going to move away.",
+    "start": 3156650,
+    "end": 3167130
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, you know what? That would be very funny. Good point.",
+    "start": 3166410,
+    "end": 3169450
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Yeah.",
+    "start": 3169290,
+    "end": 3170410
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 3169980,
+    "end": 3170220
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Didn't think about that. But that's a problem.",
+    "start": 3171530,
+    "end": 3174090
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 3176100,
+    "end": 3176340
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "It is a potential problem. In fact, I'm just going to go up here. We're here.",
+    "start": 3176260,
+    "end": 3181700
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Hey, but smart. Smart thought process, because if you did get hit by something, it broke concentration. And then we'd have to calculate the water flood and what that would do. So.",
+    "start": 3184980,
+    "end": 3198100
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. I'll watch from a safe distance.",
+    "start": 3200590,
+    "end": 3202270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, so, Saurin, are you gonna try to break the lock on that?",
+    "start": 3203790,
+    "end": 3209150
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Am I guys? Was your guys.",
+    "start": 3211060,
+    "end": 3213300
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Bridge brood force it.",
+    "start": 3213670,
+    "end": 3214950
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Do it.",
+    "start": 3215420,
+    "end": 3215980
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well, Cole brought it over to you asking and asked you to break it open.",
+    "start": 3215550,
+    "end": 3220510
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 3221040,
+    "end": 3221280
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, I'm saying team. Are we doing it? Cole is one person team. Okay.",
+    "start": 3221220,
+    "end": 3225860
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 3223950,
+    "end": 3227650
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah. Do.",
+    "start": 3223980,
+    "end": 3226020
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "What am I rolling.",
+    "start": 3227610,
+    "end": 3228330
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Dr.",
+    "start": 3230080,
+    "end": 3230320
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You are going to roll a strength check.",
+    "start": 3231080,
+    "end": 3234280
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Straight? Strength check. Today's a bad day. No, like, can I get mad and do it again? As in rage.",
+    "start": 3236490,
+    "end": 3251850
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "She's like. This is.",
+    "start": 3254010,
+    "end": 3254810
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "This is.",
+    "start": 3255880,
+    "end": 3256280
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm going to pat you on my shoulder and just give you some soft encouragement, like. You got it? You got it? Got it. And I'm going to catch that.",
+    "start": 3256010,
+    "end": 3262810
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Because if I. If I rage, I get advantage on strength checks.",
+    "start": 3262440,
+    "end": 3266520
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well, cold cast guidance on you now. Right? So give another try.",
+    "start": 3267170,
+    "end": 3273250
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Okay. Wow. That guidance was dog.",
+    "start": 3274200,
+    "end": 3278520
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And we'll roll a D4.",
+    "start": 3279940,
+    "end": 3281540
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Do it again.",
+    "start": 3284580,
+    "end": 3285220
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Even if my max roll is still lower than.",
+    "start": 3283970,
+    "end": 3286050
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It doesn't matter what she rolls.",
+    "start": 3284380,
+    "end": 3286300
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, that's what it does.",
+    "start": 3285180,
+    "end": 3286540
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Do it again.",
+    "start": 3287300,
+    "end": 3288020
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay. Okay. I'm just saying. You didn't roll the guidance.",
+    "start": 3286260,
+    "end": 3303880
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It doesn't matter if she rolls a D4. She still won't pass.",
+    "start": 3287340,
+    "end": 3290380
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Even if I roll max, it's.",
+    "start": 3291730,
+    "end": 3304630
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. Well, it's not the. It's not the guidance that's at fault now, is it? She doesn't use it.",
+    "start": 3292220,
+    "end": 3298540
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, even if she got max guidance, she will not be able to pass the check because she rolled so low.",
+    "start": 3298780,
+    "end": 3304300
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, I know. It's just. Nothing.",
+    "start": 3305110,
+    "end": 3307110
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Maybe just throw it against the wall. Sa.",
+    "start": 3305310,
+    "end": 3329880
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, do it.",
+    "start": 3308730,
+    "end": 3310170
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Hey guys, there's some stairs.",
+    "start": 3309190,
+    "end": 3311030
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I will expend one of my rages and just like, try to bash the out of this chest.",
+    "start": 3311820,
+    "end": 3319260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Do an attack.",
+    "start": 3319850,
+    "end": 3320970
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, an attack.",
+    "start": 3322860,
+    "end": 3323660
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, it has an ac. Buddy, do an attack.",
+    "start": 3324650,
+    "end": 3327130
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, God. All right.",
+    "start": 3326780,
+    "end": 3328300
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "As ac oh, no.",
+    "start": 3331240,
+    "end": 3334120
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, good. It has hit points.",
+    "start": 3336980,
+    "end": 3340500
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay. You hit it.",
+    "start": 3339760,
+    "end": 3340800
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So roll for damage.",
+    "start": 3341220,
+    "end": 3342500
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Whatever is in this is going to break. Goodbye. Oh, maybe not.",
+    "start": 3343990,
+    "end": 3349110
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 3350240,
+    "end": 3350800
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's still together.",
+    "start": 3350100,
+    "end": 3351460
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Plus plus two from rage. That's 11.",
+    "start": 3351350,
+    "end": 3355430
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Still together.",
+    "start": 3354980,
+    "end": 3355700
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I do it again because I can double attack, bro. Oh, my God, guys, the rolls are so bad today.",
+    "start": 3356800,
+    "end": 3364560
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That misses.",
+    "start": 3364850,
+    "end": 3365730
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "What? You.",
+    "start": 3367410,
+    "end": 3368050
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "What? On a stationary chest? Guys? Well, it doesn't miss.",
+    "start": 3366320,
+    "end": 3370720
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "You guys definitely see Goybnu laughing very hard while watching this.",
+    "start": 3369610,
+    "end": 3375290
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Dude, today's rolls are bad.",
+    "start": 3374720,
+    "end": 3377520
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I.",
+    "start": 3379380,
+    "end": 3379620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Had a little too much to dream.",
+    "start": 3379180,
+    "end": 3381020
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I think you have to stop and let someone else do something because you've gotten Two. You've gotten two attacks and two strength checks.",
+    "start": 3378770,
+    "end": 3386050
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I can't do it.",
+    "start": 3386570,
+    "end": 3387450
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah. Someone else has to mess with.",
+    "start": 3387970,
+    "end": 3389450
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well.",
+    "start": 3395940,
+    "end": 3396340
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Aria, do you have a. A pry bar?",
+    "start": 3395700,
+    "end": 3399060
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I do not have a five bar.",
+    "start": 3400310,
+    "end": 3401750
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Dang.",
+    "start": 3403300,
+    "end": 3403860
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wait, would.",
+    "start": 3403620,
+    "end": 3404420
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I might have a trouble.",
+    "start": 3403900,
+    "end": 3404940
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Did take some damage. It does have a certain amount of hit points, guys.",
+    "start": 3403690,
+    "end": 3407570
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That is included in most crowbars are included in most thieves tools. So I'm surprised.",
+    "start": 3405470,
+    "end": 3413950
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Short bow. I have.",
+    "start": 3417110,
+    "end": 3418630
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I'm. I think I'm.",
+    "start": 3418020,
+    "end": 3419220
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, I do have a crowbar. You're right.",
+    "start": 3420390,
+    "end": 3422070
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Ah.",
+    "start": 3422910,
+    "end": 3423310
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It has six hit points left.",
+    "start": 3423900,
+    "end": 3425580
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I played enough rogues. I know this.",
+    "start": 3424110,
+    "end": 3425870
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Do you want me to just attempt doing, like, what.",
+    "start": 3429360,
+    "end": 3431040
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 3431760,
+    "end": 3432000
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "What action would I use to pry this thing open?",
+    "start": 3433040,
+    "end": 3435280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "A strength check.",
+    "start": 3436310,
+    "end": 3437190
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Just a strength check. Okay. Let's see. See?",
+    "start": 3437600,
+    "end": 3443440
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Guidance.",
+    "start": 3443320,
+    "end": 3443800
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Thoughts and prayers. Let's see. Thanks for the guidance. Much appreciated. What does guidance give again? It's just an advantage, isn't it? Or is it?",
+    "start": 3446240,
+    "end": 3475200
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "The D4.",
+    "start": 3475040,
+    "end": 3475680
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It's a d4.",
+    "start": 3475290,
+    "end": 3476330
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 3477250,
+    "end": 3477650
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It's a puzzle.",
+    "start": 3476960,
+    "end": 3477920
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You roll and then you roll. You roll normally and then you roll a D4.",
+    "start": 3477280,
+    "end": 3480640
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Got it. Okay, I'm rolling normally.",
+    "start": 3481530,
+    "end": 3484490
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Waterfall.",
+    "start": 3486260,
+    "end": 3486980
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "A three.",
+    "start": 3486090,
+    "end": 3486810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God.",
+    "start": 3488970,
+    "end": 3489610
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I'm not. I. I could do a D4. Let's. Maybe it'll.",
+    "start": 3490650,
+    "end": 3494730
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It doesn't matter now.",
+    "start": 3493930,
+    "end": 3495050
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 3495450,
+    "end": 3495930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I need you guys to understand.",
+    "start": 3499610,
+    "end": 3500810
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "She's slopping wet from the last fight still. She's just like. I can't handle.",
+    "start": 3499770,
+    "end": 3503770
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I am. I'm sitting here face palming right now.",
+    "start": 3504250,
+    "end": 3508970
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "This is the most like.",
+    "start": 3510780,
+    "end": 3511900
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "We, the destroyer of Gods.",
+    "start": 3510750,
+    "end": 3513070
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay. Lillian's like, guys. Okay, I'm gonna just shoot at it with my crossbow. Does a 15 hit?",
+    "start": 3511990,
+    "end": 3520790
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "No.",
+    "start": 3520940,
+    "end": 3521340
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No.",
+    "start": 3521860,
+    "end": 3522100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Nope.",
+    "start": 3523110,
+    "end": 3523670
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I'm gonna cast guiding.",
+    "start": 3523100,
+    "end": 3524780
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I can't do anything either.",
+    "start": 3525350,
+    "end": 3527110
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Guiding bolts. I'm gonna cast guided bolts.",
+    "start": 3525420,
+    "end": 3527820
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 3528580,
+    "end": 3529220
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "A team of dragon slayers versus a wooden box. Who would win?",
+    "start": 3530460,
+    "end": 3535720
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 3533880,
+    "end": 3534120
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That hits.",
+    "start": 3535380,
+    "end": 3536180
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "One. This is first level.",
+    "start": 3535670,
+    "end": 3539670
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 3543680,
+    "end": 3544000
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Does 16 radiant damage.",
+    "start": 3543110,
+    "end": 3545590
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, you busted it open.",
+    "start": 3546080,
+    "end": 3547280
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Nice.",
+    "start": 3547910,
+    "end": 3548390
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It just took a spell. Sl.",
+    "start": 3549320,
+    "end": 3550600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah. The chest holds 400 hp.",
+    "start": 3551680,
+    "end": 3554880
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Yeah, no big deal.",
+    "start": 3551910,
+    "end": 3553270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "A platinum necklace featuring paladine symbol worth 150 hp, two potions of superior. Of healing. Superior. Superior healing. And a parapat of proof against poison. So 400 hp platinum necklace with paladine symbol worth 150 hp, two potions of superior healing, and a pear pap of proof against poison.",
+    "start": 3555680,
+    "end": 3587050
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Is it metagaming if I go. If I go take the necklace and go and go hold it up to all of the mummies.",
+    "start": 3594090,
+    "end": 3599690
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "As you step on them.",
+    "start": 3603020,
+    "end": 3604540
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I don't care. It doesn't really matter. They're stuck in their pits, dude. Like, the. Like the. You taking away the water has, like, kept them in their pits. They can't swim up and get you.",
+    "start": 3601860,
+    "end": 3611860
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 3609380,
+    "end": 3609620
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "So they're still gonna sit there. Now they just won't attack you.",
+    "start": 3616990,
+    "end": 3620190
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. It's just don't. Don't walk over them.",
+    "start": 3621470,
+    "end": 3624350
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You can hold up the symbol. They just won't attack.",
+    "start": 3628030,
+    "end": 3630910
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "They will sit there and then you'll hold up the symbol and they'll be like, hey, I will continuous there.",
+    "start": 3633550,
+    "end": 3637800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "But now they won't attack us even if.",
+    "start": 3639710,
+    "end": 3641390
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "If they got out.",
+    "start": 3642520,
+    "end": 3643320
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "We bring them out of their pits on purpose.",
+    "start": 3642270,
+    "end": 3644670
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, it's true.",
+    "start": 3645080,
+    "end": 3646120
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I'll just do it because I like religious rituals.",
+    "start": 3650669,
+    "end": 3652990
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sister Superior, how do you feel about this?",
+    "start": 3657560,
+    "end": 3659560
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 3660440,
+    "end": 3660680
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "About him holding up a holy symbol.",
+    "start": 3661370,
+    "end": 3663210
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes.",
+    "start": 3664930,
+    "end": 3665330
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "He's a clericad. And. No.",
+    "start": 3668650,
+    "end": 3672570
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's Paladin's holy symbol.",
+    "start": 3671650,
+    "end": 3673730
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Paladin's a good God. Right?",
+    "start": 3675370,
+    "end": 3676810
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 3678530,
+    "end": 3678930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I hope so.",
+    "start": 3678530,
+    "end": 3679330
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "They were the God that used to be over that paladin before he betrayed everyone.",
+    "start": 3681010,
+    "end": 3684850
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wow.",
+    "start": 3689570,
+    "end": 3689890
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. Yeah. I don't. Yeah, it's a good. It's. It's a good God. I'm not. I'm not.",
+    "start": 3688260,
+    "end": 3695140
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "They're like sweet. Cool.",
+    "start": 3694460,
+    "end": 3695580
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Bother me.",
+    "start": 3694730,
+    "end": 3695290
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I.",
+    "start": 3695940,
+    "end": 3696340
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I don't give a.",
+    "start": 3696250,
+    "end": 3697130
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I don't worship the God ever.",
+    "start": 3698420,
+    "end": 3699940
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well, I mean, I guess the question is, are you so dogmatic for the God that you're devoted to that any other God pisses you off?",
+    "start": 3701020,
+    "end": 3708540
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, it's a pantheon, right? So it's like. It's like while I am devoted to my specific God.",
+    "start": 3709940,
+    "end": 3715060
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 3715590,
+    "end": 3715830
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Because there are good and bad gods, I don't. Oh, that's Paladin. That's a. It's a good God. They teach good things. Okay.",
+    "start": 3716170,
+    "end": 3725690
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That's one of my God's allies.",
+    "start": 3725590,
+    "end": 3727030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah.",
+    "start": 3727930,
+    "end": 3728410
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "They're like two good friends up there.",
+    "start": 3728260,
+    "end": 3730340
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You didn't pick the best, but you still pick good.",
+    "start": 3729349,
+    "end": 3731590
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Turns out they're besties.",
+    "start": 3734110,
+    "end": 3735150
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. At least you're on the right side. It's not tmx.",
+    "start": 3733770,
+    "end": 3741050
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Or both.",
+    "start": 3744960,
+    "end": 3745520
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Moles or.",
+    "start": 3747120,
+    "end": 3747840
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Hey, Tony, are you gonna be in?",
+    "start": 3748480,
+    "end": 3750320
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Days.",
+    "start": 3749840,
+    "end": 3750240
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay, I'm taking the parapat.",
+    "start": 3749840,
+    "end": 3752240
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "All right.",
+    "start": 3753360,
+    "end": 3753840
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Of proof against poison.",
+    "start": 3753680,
+    "end": 3755040
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. There's two potions of superior healing. And there.",
+    "start": 3755760,
+    "end": 3762080
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I think that.",
+    "start": 3761440,
+    "end": 3762720
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, since they're superior, I take them.",
+    "start": 3761440,
+    "end": 3763520
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "There's also 400 hp.",
+    "start": 3768090,
+    "end": 3769450
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Should Soren have one of those because she's always up. Up front.",
+    "start": 3768490,
+    "end": 3771530
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm joking.",
+    "start": 3772600,
+    "end": 3773400
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I. I got the joke. I thought it was funny internally. I chuckled on the ins.",
+    "start": 3773530,
+    "end": 3778090
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, it's potion of superior Superior Potion for sister superior. I mean.",
+    "start": 3776170,
+    "end": 3782970
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sister superior.",
+    "start": 3784760,
+    "end": 3785880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I think Soren should have one and sister superior or Gubno should have the other.",
+    "start": 3785130,
+    "end": 3790330
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Thanks, superior.",
+    "start": 3791260,
+    "end": 3792380
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Is Goo is on the front line. Much more than Sister Superior.",
+    "start": 3793080,
+    "end": 3797550
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, but history has shown that sister superior goes down a lot more than.",
+    "start": 3798300,
+    "end": 3804380
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay, first of all, I would like to point out that that was one night, and I wasn't even playing.",
+    "start": 3807390,
+    "end": 3815630
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 3817710,
+    "end": 3817950
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah, but maybe when the person playing your character might need it.",
+    "start": 3817030,
+    "end": 3821830
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "What has happened when I have been playing? When I have been playing? Have I gone down?",
+    "start": 3818510,
+    "end": 3825650
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yes, but maybe when your character is being played.",
+    "start": 3826470,
+    "end": 3829030
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Maybe we should give it to guys. Maybe we should give it to Arya. Because Arya is the only one here who doesn't have any healing. Aside from Soren.",
+    "start": 3827570,
+    "end": 3837810
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 3839510,
+    "end": 3839910
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "That is true.",
+    "start": 3839330,
+    "end": 3840210
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I do have feeling. It's called Lillian Brooks, Esquire.",
+    "start": 3839750,
+    "end": 3842550
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Just like. Wait a minute. No one, everyone we're talking about taking us as healing.",
+    "start": 3843420,
+    "end": 3848220
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, also, the one time that most of the times when Sister Superior has gone down is when we purposely were using her as a meat shield.",
+    "start": 3850190,
+    "end": 3857710
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's true.",
+    "start": 3858620,
+    "end": 3859500
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "So.",
+    "start": 3859550,
+    "end": 3859950
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "As a distraction.",
+    "start": 3861440,
+    "end": 3862560
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Not exactly the most balanced perspective.",
+    "start": 3860830,
+    "end": 3863790
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Just like. Well, if I bring her back up.",
+    "start": 3861580,
+    "end": 3864380
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm sure that makes Cole feel great about you guys using his character while he's gone.",
+    "start": 3863000,
+    "end": 3867000
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well.",
+    "start": 3868840,
+    "end": 3869080
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "She was a good punching bag for the enemy.",
+    "start": 3868710,
+    "end": 3870710
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "To be fair, we weren't using her as a meat shield. But she was.",
+    "start": 3868490,
+    "end": 3872090
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. When I said you guys could use my character, that is not how I meant it.",
+    "start": 3871500,
+    "end": 3875100
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "To be fair, we weren't intending to use her as a meat shield.",
+    "start": 3875370,
+    "end": 3878330
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That's true.",
+    "start": 3878680,
+    "end": 3879480
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "The dragon just like hyper targeted her. That's not our fault. It's Maddie's.",
+    "start": 3879450,
+    "end": 3893950
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, so Maddie's at all.",
+    "start": 3884260,
+    "end": 3886100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "A dragon madden.",
+    "start": 3884950,
+    "end": 3892570
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Like. Yeah. Cole.",
+    "start": 3888280,
+    "end": 3889320
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It was.",
+    "start": 3888530,
+    "end": 3889010
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 3890210,
+    "end": 3890450
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "He was like, now's my chance to get rid of.",
+    "start": 3890340,
+    "end": 3892500
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, it just conveniently was in the right spot. It, like, the dragon was, like, kiting around multiple times and then doing, like, these big, long cone attacks.",
+    "start": 3893570,
+    "end": 3904860
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 3901230,
+    "end": 3901470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And, I mean, Josh would play Sister Superior on your turn. So it wasn't like Sister Superior was stuck standing there.",
+    "start": 3905980,
+    "end": 3915740
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, she would. She would get. She would get up, and then she would immediately get downed.",
+    "start": 3917900,
+    "end": 3921340
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "She would get brought back from being unconscious. Yeah. I would have her stand up on her turn, shoot the dragon. And then she would get downed again the next round.",
+    "start": 3919290,
+    "end": 3929930
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 3930780,
+    "end": 3931260
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "But it's okay. We kept her alive.",
+    "start": 3931070,
+    "end": 3932590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Only to be revived and make another shot the next turn.",
+    "start": 3931450,
+    "end": 3935370
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It was. It was a little crazy because it was like, Josh does combat with Sister Superior and then, like, brings her back up with Lillian. It was just a loop.",
+    "start": 3935830,
+    "end": 3945910
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "A loop that the dragon could not face.",
+    "start": 3948260,
+    "end": 3950260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You were also stuck on a wall.",
+    "start": 3950880,
+    "end": 3952720
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Stop.",
+    "start": 3952200,
+    "end": 3952440
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, I didn't know how to get you Down.",
+    "start": 3953780,
+    "end": 3955460
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Was I?",
+    "start": 3954530,
+    "end": 3955010
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You. You didn't have enough help to jump down. And I wasn't going to waste the turn to climb down.",
+    "start": 3956100,
+    "end": 3960660
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "You do realize I have, like, multiple different misty steps, right?",
+    "start": 3961570,
+    "end": 3965010
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I did not know that at the time.",
+    "start": 3965860,
+    "end": 3968420
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Sa.",
+    "start": 3967450,
+    "end": 3967690
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Misty steps that give me resistance to all damage.",
+    "start": 3969890,
+    "end": 3972930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "When did you have that? I don't even know if you had that at that level, though.",
+    "start": 3969520,
+    "end": 3972720
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "He had at least one.",
+    "start": 3975230,
+    "end": 3976430
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I don't.",
+    "start": 3975690,
+    "end": 3976170
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "At that level.",
+    "start": 3977070,
+    "end": 3977870
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "He had at least one. Okay.",
+    "start": 3977290,
+    "end": 3980570
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, because he had a feat.",
+    "start": 3980750,
+    "end": 3982430
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I have a. I have a free misty step called Blessing of the Raven Queen.",
+    "start": 3981260,
+    "end": 3987260
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Blessing of the moving queen. Yep.",
+    "start": 3986590,
+    "end": 3988670
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "This was during the dragon incident.",
+    "start": 3989370,
+    "end": 3991450
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah, I've had the other Raven Queen since Sister Superior's inception. It's a racial feat.",
+    "start": 3993659,
+    "end": 3999020
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I think you used that. Actually, Cole. I think you use that to get up on the wall.",
+    "start": 3997240,
+    "end": 4003080
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Did I.",
+    "start": 4004230,
+    "end": 4004710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, yeah. That is probably what happened.",
+    "start": 4003700,
+    "end": 4005860
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Then maybe that is what happened.",
+    "start": 4005990,
+    "end": 4007430
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And then you were gone the next time. So I took over having her just constantly stand up, shoot at it, and get knocked down again.",
+    "start": 4010440,
+    "end": 4018040
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You were. You were. You were contributing.",
+    "start": 4021300,
+    "end": 4025140
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "We're doing damage. As long as I remember to invoke. Chris. Kyle.",
+    "start": 4024610,
+    "end": 4027490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, that was Important.",
+    "start": 4028590,
+    "end": 4029550
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "That was important.",
+    "start": 4030560,
+    "end": 4031360
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my gosh.",
+    "start": 4034350,
+    "end": 4035310
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "All right, so are we. Do we have anything else to investigate here? Just the pedestal.",
+    "start": 4037970,
+    "end": 4044130
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "There's an altar where you would.",
+    "start": 4044750,
+    "end": 4046430
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Party.",
+    "start": 4046200,
+    "end": 4046440
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Hold on.",
+    "start": 4047550,
+    "end": 4048190
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. The altar.",
+    "start": 4047260,
+    "end": 4048780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, no, no. Hold on. I need to do something. It.",
+    "start": 4049070,
+    "end": 4052340
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Mario, stomp his ass. So he's dead now.",
+    "start": 4055210,
+    "end": 4057130
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "We also need to figure out how the water wall works here, because the water, like, where I'm standing is right where the water is pushed up into a wall. And so we need to figure out how far back that extends. And if we have to, like, just walk through a thin wall of water or, like, swim while we're on the altar.",
+    "start": 4058590,
+    "end": 4077640
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh.",
+    "start": 4080470,
+    "end": 4080790
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Well, grab a straw. We gotta drink our way out of this one.",
+    "start": 4080240,
+    "end": 4083680
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 4085960,
+    "end": 4094140
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Hold on, guys.",
+    "start": 4089390,
+    "end": 4090110
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I am not thor.",
+    "start": 4089590,
+    "end": 4090630
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I got you.",
+    "start": 4095310,
+    "end": 4096190
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Or I could just let the water fall back once we go. Go on.",
+    "start": 4095250,
+    "end": 4097970
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well, it doesn't say that. It's like gonna. I can check the water depth for you. Just give me a second. Here you go.",
+    "start": 4098750,
+    "end": 4106060
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "And if we can drink our way out of this.",
+    "start": 4105370,
+    "end": 4106970
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "If you. God damn it.",
+    "start": 4107900,
+    "end": 4114620
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 4120469,
+    "end": 4120709
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "God damn it, tony.",
+    "start": 4121740,
+    "end": 4123100
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sorry.",
+    "start": 4126740,
+    "end": 4127140
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It.",
+    "start": 4130750,
+    "end": 4130990
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "God damn it. It's just extra funny because it's such a dumb. Yeah, we're going to drink the lake water and it's going to like. We're going to handle it by just drinking lots of lake. God damn it. Okay.",
+    "start": 4131570,
+    "end": 4169660
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I'm so glad Craig is here to record. This is so funny. Anyways.",
+    "start": 4170920,
+    "end": 4174600
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, I hope it does, like a. I hope it. Yeah. I hope it, like, draws Us drinking the lake with a straw or something.",
+    "start": 4175200,
+    "end": 4181680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It'd be so good.",
+    "start": 4181560,
+    "end": 4182760
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, that's what I was picturing, like a striped straw, you know?",
+    "start": 4182229,
+    "end": 4186069
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 4185680,
+    "end": 4186160
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It just feels like a water bloated aria. Like floating.",
+    "start": 4185979,
+    "end": 4190779
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Craig. I want. I want a swirly straw with stripes. A lot of swirls on mine.",
+    "start": 4191880,
+    "end": 4198270
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 4199109,
+    "end": 4199749
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I hope Craig picks that up. Anyways.",
+    "start": 4200270,
+    "end": 4202910
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Thanks, craig. All right, so I.",
+    "start": 4202149,
+    "end": 4204949
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Crank. Draw, draw. Arya, super fat and bloated with leaky little water pits coming out.",
+    "start": 4204139,
+    "end": 4210379
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Hello.",
+    "start": 4210860,
+    "end": 4211260
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Make. Make no mistake. Sa.",
+    "start": 4211309,
+    "end": 4221240
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, so the description for the altar.",
+    "start": 4217920,
+    "end": 4223920
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "B.",
+    "start": 4222910,
+    "end": 4223150
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Their sculpted reliefs near the alt. That depicts platinum dragons and majestic poses.",
+    "start": 4229600,
+    "end": 4236730
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 4236450,
+    "end": 4236690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I. I can't read you the rest of the. Because of this.",
+    "start": 4237610,
+    "end": 4243530
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Don't have the thing.",
+    "start": 4243890,
+    "end": 4244690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That is. That. That's your.",
+    "start": 4244650,
+    "end": 4248649
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "If I had one. It.",
+    "start": 4251410,
+    "end": 4254030
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That's my explanation for the alter right now. So. There you go.",
+    "start": 4256250,
+    "end": 4268290
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It looks like something can be placed here.",
+    "start": 4270700,
+    "end": 4272380
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 4279320,
+    "end": 4279560
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, wait, is it. Does it look like a lance should go there? Or does. What does it look like?",
+    "start": 4285000,
+    "end": 4290760
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It looks like it's a really specific place to restore a dragonlance.",
+    "start": 4292460,
+    "end": 4296460
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 4298040,
+    "end": 4298600
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Damn. Can't. I don't know which one is that one, though.",
+    "start": 4300310,
+    "end": 4304070
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, if we find one, we know where to put it.",
+    "start": 4306950,
+    "end": 4308710
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "There's kind of one Dragon Land.",
+    "start": 4310300,
+    "end": 4312300
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yep.",
+    "start": 4311090,
+    "end": 4311490
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Damn. If only we know where to go for the. Oh, man.",
+    "start": 4315750,
+    "end": 4318790
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Man's like, I think I remember something about that. Let me just historically, think about this. Nope. No, I don't remember. Sorry, guys.",
+    "start": 4320610,
+    "end": 4328450
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Actually.",
+    "start": 4330960,
+    "end": 4331200
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We're so.",
+    "start": 4332320,
+    "end": 4332880
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Can I. Can I roll a history?",
+    "start": 4334560,
+    "end": 4336560
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "A history or a religion. It's literally part of your religion.",
+    "start": 4338080,
+    "end": 4342640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Feel free.",
+    "start": 4344180,
+    "end": 4344660
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Which one would you prefer me to roll? History of religion.",
+    "start": 4346650,
+    "end": 4349050
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I think you'll probably roll higher, higher on religion, won't you?",
+    "start": 4350020,
+    "end": 4352820
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I will roll higher on religion.",
+    "start": 4353690,
+    "end": 4355770
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 4356090,
+    "end": 4356330
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. You do that.",
+    "start": 4356340,
+    "end": 4357940
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I cast guidance on.",
+    "start": 4358650,
+    "end": 4360010
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Okay.",
+    "start": 4363060,
+    "end": 4369610
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "A dirty 20.",
+    "start": 4370820,
+    "end": 4371700
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You realize that the solar's dragon lance, which you really need for this altar you left behind in his tomb.",
+    "start": 4373610,
+    "end": 4388090
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Kim at butthole.",
+    "start": 4391310,
+    "end": 4392670
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "What? You left it in someone's butthole.",
+    "start": 4395620,
+    "end": 4399780
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No, no. I know where to find a dragonlance to place here.",
+    "start": 4401470,
+    "end": 4406670
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh.",
+    "start": 4406260,
+    "end": 4406740
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Remember when we were chasing.",
+    "start": 4408350,
+    "end": 4409870
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Son of a. Why did you say that earlier?",
+    "start": 4408910,
+    "end": 4410510
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Remember when we were chasing that guy through the.",
+    "start": 4413630,
+    "end": 4415470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 4415070,
+    "end": 4415310
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Through the Crips and we had to fight that Skeleton knight?",
+    "start": 4416490,
+    "end": 4421290
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That weak being.",
+    "start": 4423100,
+    "end": 4423820
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 4425240,
+    "end": 4425480
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That weak guy. Yeah.",
+    "start": 4427740,
+    "end": 4428940
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah, that really, really weak dude. Apparently, he's in possession of the dragon.",
+    "start": 4430330,
+    "end": 4436410
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, well, I guess we can do that after we deal with everything here, because we don't got time for that.",
+    "start": 4438230,
+    "end": 4445430
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No.",
+    "start": 4450020,
+    "end": 4450260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You would literally have to cross with a boat back to Calaman and.",
+    "start": 4452440,
+    "end": 4463080
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Can we have one of those like a cartoon like, timescape? Go back.",
+    "start": 4462320,
+    "end": 4467520
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 4467330,
+    "end": 4467650
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 4467490,
+    "end": 4467890
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Three months later.",
+    "start": 4470190,
+    "end": 4471070
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, that. That's what you'd literally have to do.",
+    "start": 4473970,
+    "end": 4475890
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 4476300,
+    "end": 4476540
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 4477820,
+    "end": 4478060
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And it would take you like a week at minimum.",
+    "start": 4477970,
+    "end": 4483570
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "So no on the cartoon time skip.",
+    "start": 4482890,
+    "end": 4484890
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Now on the cartoon time skip, you're kind of here with. For. If you. If you forget you're kind of surrounded by the enemy. You're sneaking around in this. In this town.",
+    "start": 4485890,
+    "end": 4503250
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sneaking around in this town.",
+    "start": 4507110,
+    "end": 4508710
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I feel like we weren't very sneaky, but yeah.",
+    "start": 4509540,
+    "end": 4511620
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You dressed up in outfits.",
+    "start": 4513730,
+    "end": 4515090
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We did. And then we just killed them anyway.",
+    "start": 4515780,
+    "end": 4517780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "This is true.",
+    "start": 4520300,
+    "end": 4521020
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "What do we do? Well, I guess we said we should start tracking or doing the track.",
+    "start": 4526310,
+    "end": 4532010
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "With the party.",
+    "start": 4531360,
+    "end": 4532000
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "What do you.",
+    "start": 4539100,
+    "end": 4539740
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Party. Oh, boy.",
+    "start": 4540030,
+    "end": 4542350
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "What do you want to do? Is the real question. Right. Cuz. The next place to go is the threshold of the heavens.",
+    "start": 4543020,
+    "end": 4563110
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. The central building.",
+    "start": 4564040,
+    "end": 4565160
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Where you got real big boss fights.",
+    "start": 4565990,
+    "end": 4569590
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Hell yeah.",
+    "start": 4571360,
+    "end": 4572080
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And no dragon lands.",
+    "start": 4583680,
+    "end": 4585040
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Hey, good new. Can you, like, call on your God and see if you can just pull a Hail Mary out, have it delivered to us?",
+    "start": 4586770,
+    "end": 4593970
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Grab me.",
+    "start": 4609420,
+    "end": 4609980
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wait, sorry, what?",
+    "start": 4610750,
+    "end": 4611550
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Says no.",
+    "start": 4611180,
+    "end": 4611900
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I was wondering if you could call on your deity for the divine intervention and see if they can have an angel deliver the lance here. Just a Hail Mary.",
+    "start": 4614060,
+    "end": 4623180
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Hey, can we get like a. Can we get like a doordash? Uber Eats.",
+    "start": 4622120,
+    "end": 4626920
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You've never tried to use your divine intervention before, so I'm just like, well, might as well try it now.",
+    "start": 4627340,
+    "end": 4637660
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I don't know if I even have the ability to do that.",
+    "start": 4641000,
+    "end": 4643320
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Are we level 10? No.",
+    "start": 4645630,
+    "end": 4648510
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Level 8.",
+    "start": 4649010,
+    "end": 4649650
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yeah.",
+    "start": 4650350,
+    "end": 4650910
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That's right. You don't get it till 10.",
+    "start": 4653400,
+    "end": 4654920
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We. We need to go find that.",
+    "start": 4654550,
+    "end": 4656790
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "We still have a far gab.",
+    "start": 4658840,
+    "end": 4660280
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Can it reach?",
+    "start": 4662060,
+    "end": 4662700
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You know what's funny.",
+    "start": 4662510,
+    "end": 4663390
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We need to go find that bronze dragon and then ask her to fly us there.",
+    "start": 4662400,
+    "end": 4666320
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Is you killed the thing that had wish.",
+    "start": 4664110,
+    "end": 4667070
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "The. The Marid.",
+    "start": 4669680,
+    "end": 4671200
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 4671950,
+    "end": 4672430
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah.",
+    "start": 4673360,
+    "end": 4673920
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Nothing new. Wish.",
+    "start": 4674450,
+    "end": 4675410
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah. Merits. They're genius.",
+    "start": 4676160,
+    "end": 4685380
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "What were we. What were we going to do, Maddie? Just keep it stunned until it finally agreed?",
+    "start": 4675650,
+    "end": 4681730
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "What?",
+    "start": 4678930,
+    "end": 4679330
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 4682370,
+    "end": 4682610
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You could have asked it nicely.",
+    "start": 4682520,
+    "end": 4684200
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Why didn't it wish us all to die?",
+    "start": 4684940,
+    "end": 4686700
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. What?",
+    "start": 4687950,
+    "end": 4688990
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Because it has a 30% chance of having wish work or of knowing wish.",
+    "start": 4687800,
+    "end": 4692520
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Ah.",
+    "start": 4691500,
+    "end": 4691900
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Then the. But it doesn't take the. The bad effects from it.",
+    "start": 4693240,
+    "end": 4697320
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 4696680,
+    "end": 4696920
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Well, dang. What a shame.",
+    "start": 4701030,
+    "end": 4703430
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Well, it looks like dragonlance ends here. Time for the Olympus.",
+    "start": 4704250,
+    "end": 4707450
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 4706400,
+    "end": 4706640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, you can still keep going. You just have to. It's not the end of the campaign. You're just going to go into the fights without the dragon lands.",
+    "start": 4708610,
+    "end": 4716770
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Which is fine. We can take them. We took on a dragon without the dragon lance.",
+    "start": 4717740,
+    "end": 4721980
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 4719810,
+    "end": 4720450
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. We still have a sister superior. Alice Dominica.",
+    "start": 4722470,
+    "end": 4725270
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "We got this plus civil war incitement. Let's do it.",
+    "start": 4726780,
+    "end": 4732860
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. Espionage.",
+    "start": 4733970,
+    "end": 4735410
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, yeah. We're gonna go around and.",
+    "start": 4734150,
+    "end": 4736150
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Right. Let's see.",
+    "start": 4734890,
+    "end": 4735850
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "And spread chaos.",
+    "start": 4737350,
+    "end": 4738710
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sabotage.",
+    "start": 4737889,
+    "end": 4738770
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Or we could go grind to level 10.",
+    "start": 4740160,
+    "end": 4742000
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "D.",
+    "start": 4741120,
+    "end": 4741360
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Then I could ask my God to deliver it.",
+    "start": 4742720,
+    "end": 4746320
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 4747740,
+    "end": 4747980
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Let me. You're level eight right now.",
+    "start": 4749260,
+    "end": 4752540
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Addie needs to check on. Yeah. What we would need to do to get there.",
+    "start": 4751920,
+    "end": 4755600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I can allow you to get to level nine right now.",
+    "start": 4764140,
+    "end": 4766700
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 4766010,
+    "end": 4766250
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "But you're not allowed to get to level 10 after until you go through the threshold of the Heavens.",
+    "start": 4768540,
+    "end": 4773500
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "That's fine.",
+    "start": 4777130,
+    "end": 4777770
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Level 9 it is.",
+    "start": 4779220,
+    "end": 4780180
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "We did it, guys. We're almost there. We're almost at the final boss gauntlet.",
+    "start": 4789380,
+    "end": 4794580
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 4800020,
+    "end": 4800420
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Where are we? Hitting level 9.",
+    "start": 4799760,
+    "end": 4800960
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah.",
+    "start": 4803280,
+    "end": 4803600
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Before I start making changes.",
+    "start": 4804160,
+    "end": 4805680
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yes, you can beat level nine.",
+    "start": 4806800,
+    "end": 4808240
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Just making sure.",
+    "start": 4810800,
+    "end": 4811600
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Ah, you're good. Nine it is.",
+    "start": 4812080,
+    "end": 4815120
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Holy. Everyone in this world is on roll 20 right now. Site's so slow. Oh, level nine. I get brutal critical. I never quit. But, like, it's still.",
+    "start": 4816220,
+    "end": 4829340
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "But it'll be brutal.",
+    "start": 4830590,
+    "end": 4831870
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "The bill is coming together.",
+    "start": 4830540,
+    "end": 4831740
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Why do you use roll 20 for your character sheet again?",
+    "start": 4835160,
+    "end": 4837880
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I don't. I was. Was. I just looked at level nine barbarian.",
+    "start": 4837900,
+    "end": 4842220
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, okay.",
+    "start": 4843000,
+    "end": 4843800
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Excuse me?",
+    "start": 4850300,
+    "end": 4851020
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I could give Lillian more healing if I picked the divine soul sorcerer for my third sorcery class.",
+    "start": 4881490,
+    "end": 4888770
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 4886300,
+    "end": 4886540
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "But that's not really the way I'm going with her.",
+    "start": 4889730,
+    "end": 4892130
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Damn. If only we were level nine before we fought the gin. Then I could have used planar binding. Ooh. I can take teleportation circle. Guys.",
+    "start": 4896300,
+    "end": 4913420
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh.",
+    "start": 4915200,
+    "end": 4915600
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh.",
+    "start": 4915580,
+    "end": 4915900
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, nice.",
+    "start": 4915670,
+    "end": 4916710
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, solution.",
+    "start": 4916650,
+    "end": 4917610
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yo.",
+    "start": 4917760,
+    "end": 4918080
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So we'll just teleport back and grab the lands.",
+    "start": 4917980,
+    "end": 4921740
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, that's crazy.",
+    "start": 4922650,
+    "end": 4924090
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Wait, what?",
+    "start": 4925800,
+    "end": 4926360
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Wait, what?",
+    "start": 4928130,
+    "end": 4928690
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 4930720,
+    "end": 4931200
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Excuse me.",
+    "start": 4931250,
+    "end": 4932050
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "I can can cast teleportation circ.",
+    "start": 4931790,
+    "end": 4935550
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "How does that work? Can you link me that.",
+    "start": 4939090,
+    "end": 4941650
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "See, as you cast the spell, you draw a five foot radius circle on the ground with sigils that link your location to a permanent teleportation circle of your choice. The sigil sequence. You know. And that is on the same plane of existence as. A shimmering portal appears. Yeah. So if I know of the teleportation circle, then I can cast it and then jump there. Any major temple, guildhall or important place has a permanent circle. Each circle includes the unique sigil sequence. So if we far gabbed it and then asked like if there's a teleportation circle near the capital city where we were flunking in the catacombs, we might be able to make that work.",
+    "start": 4943880,
+    "end": 5013740
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You actually might.",
+    "start": 5014880,
+    "end": 5016000
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 5018960,
+    "end": 5019360
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "But I feel like that's a lot of metagaming at this point, so I'd rather just cut our losses.",
+    "start": 5018550,
+    "end": 5025030
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I mean, is it though your character knows that we. If we had that thing and where it is, and now you're like.",
+    "start": 5025610,
+    "end": 5032090
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Well.",
+    "start": 5031930,
+    "end": 5032170
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I can learn.",
+    "start": 5032650,
+    "end": 5033530
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sister Superior realized through a religion check that you guys had missed the lance.",
+    "start": 5032810,
+    "end": 5037610
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. And she said that.",
+    "start": 5038570,
+    "end": 5042410
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "And also scry for it.",
+    "start": 5043200,
+    "end": 5044960
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, you are correct. There is metagaming going on. I think it would be interesting for you to go in without the lance. I'm down to do that. I'm down for us to figure out a creative solution to your situation as well. I am going to go get a snack.",
+    "start": 5048890,
+    "end": 5076340
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "We.",
+    "start": 5076950,
+    "end": 5077190
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And you guys can argue with each other about what you're going to do as a team. And if you're going to go in without the lance or try to find a way to get the lance, And I will be back with my snack, and then we can sort out what's going to happen. How does that sound?",
+    "start": 5078180,
+    "end": 5103070
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Fine. Okay.",
+    "start": 5105160,
+    "end": 5106840
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "That sounds good.",
+    "start": 5105880,
+    "end": 5106920
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God. I'm gonna be gone like a minute.",
+    "start": 5109560,
+    "end": 5116360
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "I'm also going to get a snack.",
+    "start": 5119680,
+    "end": 5121120
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "So.",
+    "start": 5123000,
+    "end": 5123400
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Look, did a lot of crying today and not enough eating. I. I need a snack. That's just where I'm at right now.",
+    "start": 5122520,
+    "end": 5129640
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Go get a snack.",
+    "start": 5129080,
+    "end": 5130120
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Working on it.",
+    "start": 5131080,
+    "end": 5131960
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I'm busy deciding how I'm going to upset you next.",
+    "start": 5132450,
+    "end": 5135410
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah. He's got a lot of options on how he can level up to make this more agonizing for you. So I don't think that we actually. I think we could complete the quest without it.",
+    "start": 5137410,
+    "end": 5154690
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 5156330,
+    "end": 5156730
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I just also have.",
+    "start": 5157250,
+    "end": 5158370
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It is not. It is not a necessary item.",
+    "start": 5156860,
+    "end": 5159740
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Rad.",
+    "start": 5160620,
+    "end": 5161020
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I just also have the completionist, where I'm like, I want to go get that and do the thing.",
+    "start": 5160610,
+    "end": 5164610
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Do your white robes have like a special thing about being a Paladin worshiper?",
+    "start": 5170210,
+    "end": 5184210
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "No.",
+    "start": 5186060,
+    "end": 5186300
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Now. They're. I believe they're tied to the moons, actually.",
+    "start": 5188710,
+    "end": 5190950
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Spool.",
+    "start": 5203510,
+    "end": 5203990
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Do I take an extra level in Ranger, where I get to add 10ft to my movement as long as I'm not wearing heavy armor and I get a climbing and swimming speed equal to my normal speed, a little extra quick. Do I take an extra level in Cleric.",
+    "start": 5203910,
+    "end": 5228230
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 5229120,
+    "end": 5229360
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Where I get an ability score increase, I get to prepare an additional spell, and I get an additional spell slot.",
+    "start": 5228950,
+    "end": 5236310
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Weekly.",
+    "start": 5236810,
+    "end": 5237370
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Or last but not least, do I take a level into Rogue and get expertise in Sneak. Sneak Attack.",
+    "start": 5240160,
+    "end": 5247920
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "It.",
+    "start": 5247200,
+    "end": 5247440
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Wait, so it was Ranger. What was the feature you get from cleric.",
+    "start": 5257720,
+    "end": 5260680
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I get an ability score increase from Cleric because I get. I get. It's. It would be Cleric Level 4. So I get the ability score increase. The. I get to get an additional cantrip. I get to prepare an additional spell, and then if I was just a Cleric, I would also get the additional spell slot.",
+    "start": 5262250,
+    "end": 5282570
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "And then expertise in sneak Attack. What does expertise in that give you?",
+    "start": 5285570,
+    "end": 5289330
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Expertise just gives me expertise and 2 skill proficiencies of my choice.",
+    "start": 5290900,
+    "end": 5294740
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 5296019,
+    "end": 5296339
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh.",
+    "start": 5297260,
+    "end": 5297580
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "And then Sneak Attack give me kind of.",
+    "start": 5296420,
+    "end": 5299220
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It just means that he gets to do more with the two things.",
+    "start": 5298260,
+    "end": 5302900
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 5302910,
+    "end": 5303389
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. And then Sneak Attack would give me an extra 1d6 weapon damage once per turn.",
+    "start": 5303220,
+    "end": 5311220
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "I feel like that might be your best bet, but because you have. You kind of have a lot of spells already, given that you're already kind of a Marshall character, But. And then Ranger, this. Climbing and swimming speeds don't seem all that. I mean, they seem cool, they seem nice, but they're kind of situational.",
+    "start": 5311660,
+    "end": 5332470
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "But the 10ft extra movement, though.",
+    "start": 5334190,
+    "end": 5335870
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. I mean, that's good. Yeah.",
+    "start": 5336390,
+    "end": 5338470
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "But you've got misty steps already. Do you really need more movement?",
+    "start": 5339800,
+    "end": 5342760
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Thomas would agree.",
+    "start": 5345000,
+    "end": 5345880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well, you see.",
+    "start": 5352440,
+    "end": 5353320
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Can. Can someone.",
+    "start": 5354289,
+    "end": 5355330
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Also.",
+    "start": 5354920,
+    "end": 5355320
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "One can never have too many misty steps.",
+    "start": 5354680,
+    "end": 5357000
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Can someone other than Cole have detect magic so you have a backup in case Cole dies?",
+    "start": 5357570,
+    "end": 5365170
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 5364450,
+    "end": 5364690
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Detect magic.",
+    "start": 5368080,
+    "end": 5369040
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, we. You've ended up in like 2 or 3 pinches already where you've needed something like that.",
+    "start": 5370760,
+    "end": 5375240
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Okay.",
+    "start": 5373730,
+    "end": 5374130
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 5378330,
+    "end": 5378810
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Let me see. I have it.",
+    "start": 5378960,
+    "end": 5380800
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. I don't know if that's a spell I can.",
+    "start": 5381530,
+    "end": 5383130
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "I can prepare it.",
+    "start": 5383890,
+    "end": 5385170
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Prepare.",
+    "start": 5384330,
+    "end": 5385130
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I can prepare it. I just never have because he already had it.",
+    "start": 5386890,
+    "end": 5390890
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, well.",
+    "start": 5391970,
+    "end": 5394210
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah, I can too.",
+    "start": 5394170,
+    "end": 5395690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Then maybe we do arrest in that situation, and then you can prepare it and be okay.",
+    "start": 5395010,
+    "end": 5399650
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "There's.",
+    "start": 5399500,
+    "end": 5414780
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Also, Chris, the extra level gets me an ability score increase or a feat like Elven accuracy.",
+    "start": 5407420,
+    "end": 5417350
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. I mean, that is good.",
+    "start": 5416100,
+    "end": 5417220
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "To give myself double advantage.",
+    "start": 5417910,
+    "end": 5419430
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Double advantage, meaning that.",
+    "start": 5421940,
+    "end": 5423460
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Why the am I gonna let you get to level 10? Double advantage. What the hell?",
+    "start": 5423180,
+    "end": 5429340
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "No, you say I can get that now.",
+    "start": 5429190,
+    "end": 5431750
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, my God.",
+    "start": 5432459,
+    "end": 5433580
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "If I take a level in Cleric.",
+    "start": 5432710,
+    "end": 5434310
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Who said I was gonna get it? Level 10.",
+    "start": 5436760,
+    "end": 5438680
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "What the heck? Well, okay.",
+    "start": 5438860,
+    "end": 5442460
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah. Because I'm.",
+    "start": 5442000,
+    "end": 5442880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "This is something he has been talking about for the past three levels. Maddie.",
+    "start": 5442370,
+    "end": 5445970
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I. Okay.",
+    "start": 5446700,
+    "end": 5448700
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "This has been a goal. Not the end goal because there are further goals, but a goal along.",
+    "start": 5450369,
+    "end": 5456290
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "The roadmap.",
+    "start": 5456050,
+    "end": 5456850
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 5458940,
+    "end": 5459580
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "An Ellen. Advantage only works when I have advantage.",
+    "start": 5461200,
+    "end": 5464320
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "What is.",
+    "start": 5467070,
+    "end": 5467470
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Oh, Double advantage only works of advantage. I've just never played a game where someone has had that before.",
+    "start": 5466380,
+    "end": 5471420
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "It's very situational.",
+    "start": 5472620,
+    "end": 5475260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 5476780,
+    "end": 5477260
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Does that just mean that it can't be nullified by a single disadvantage? Or what does it actually do?",
+    "start": 5479400,
+    "end": 5485480
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "It can be. It can be nullified by a single disadvantage. Because Element actually just says, like the wording on it says whenever you have advantage, you can roll one of those dice an additional time.",
+    "start": 5484970,
+    "end": 5500670
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh. Oh, okay.",
+    "start": 5501650,
+    "end": 5503890
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "So it. It's not actual, like double advantage. It just alters your advantage to be more advantageous.",
+    "start": 5503630,
+    "end": 5510990
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Okay.",
+    "start": 5512290,
+    "end": 5512930
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "But.",
+    "start": 5513150,
+    "end": 5513550
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Just the closest thing that is actually possible to double advantage.",
+    "start": 5512800,
+    "end": 5517040
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah.",
+    "start": 5517790,
+    "end": 5518270
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Okay.",
+    "start": 5520450,
+    "end": 5521490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "That doesn't sound too bad.",
+    "start": 5521830,
+    "end": 5522870
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That's.",
+    "start": 5522290,
+    "end": 5522850
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "So if I have disadvantage indicates the advantage, which negates Elven accuracy.",
+    "start": 5522440,
+    "end": 5526520
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, that is good. Yeah. Maybe I would go with cleric, then. It seems like that might be your best value.",
+    "start": 5528380,
+    "end": 5532460
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Then also.",
+    "start": 5533960,
+    "end": 5534680
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Let's.",
+    "start": 5534380,
+    "end": 5534940
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sneak Attack.",
+    "start": 5535800,
+    "end": 5536600
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Then also adding sneak attack damage.",
+    "start": 5536240,
+    "end": 5538560
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sneak attack.",
+    "start": 5540550,
+    "end": 5541190
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Which deals my weapon damage, which I can change to fire damage, which I can also make people vulnerable to fire damage.",
+    "start": 5540920,
+    "end": 5547480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I know.",
+    "start": 5547910,
+    "end": 5548550
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, it's.",
+    "start": 5548790,
+    "end": 5550070
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You have kind of a crazy build going. It's pretty fun. I know I still give you guys shit for the bit, but you guys have some pretty fun builds.",
+    "start": 5549650,
+    "end": 5558610
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It's okay, Maddie. I'll keep it simple for you. I click the hit, but.",
+    "start": 5560270,
+    "end": 5563150
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Thanks.",
+    "start": 5562450,
+    "end": 5564530
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I get to get steady aim now without having to stand still.",
+    "start": 5566010,
+    "end": 5569610
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "So. Maddie, you know how you hate it. You know how you hate it when people use that room night feed to make it so an enemy hits its ally instead of one of us?",
+    "start": 5566480,
+    "end": 5581360
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Marin. Karen. And like Persona.",
+    "start": 5581900,
+    "end": 5584380
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Not true.",
+    "start": 5586360,
+    "end": 5587000
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Oh, number Ajax from.",
+    "start": 5585890,
+    "end": 5587890
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well, I don't have that, but I do have the ability to say, actually, they don't have advantage on us, or actually, we don't have disadvantage.",
+    "start": 5586800,
+    "end": 5593880
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "J.",
+    "start": 5594290,
+    "end": 5594530
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's crazy. You just negate that.",
+    "start": 5595460,
+    "end": 5597220
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "I can do it twice.",
+    "start": 5598280,
+    "end": 5599400
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Twice per episode.",
+    "start": 5601470,
+    "end": 5602590
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah.",
+    "start": 5603480,
+    "end": 5604040
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Actually.",
+    "start": 5604220,
+    "end": 5604460
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I love how I couldn't name it in dnd, but I knew the exact spell in Persona and Chin. Megami Tensei.",
+    "start": 5603830,
+    "end": 5609110
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Imarn kern.",
+    "start": 5611890,
+    "end": 5613010
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I got it right though. It is marin karen. Marin karen, Right?",
+    "start": 5614470,
+    "end": 5623030
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 5624550,
+    "end": 5624790
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, maybe. I have no idea.",
+    "start": 5626210,
+    "end": 5628130
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Aaron. The status move that afflicts charm.",
+    "start": 5626120,
+    "end": 5628760
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "If you're charmed, you. You attack your teammate.",
+    "start": 5634880,
+    "end": 5637040
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, I think we've decided that we're not going to do the teleportation for the lance.",
+    "start": 5635250,
+    "end": 5641490
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, you guys need to figure that out. What do you want to.",
+    "start": 5642560,
+    "end": 5645360
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Let's go get the lance Completion. Assuming he feels bothered that we were going to finish a campaign without it.",
+    "start": 5649480,
+    "end": 5655800
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm totally okay with you guys not getting it. I think it provides an interesting situation at the same time. You guys can go try to figure out how to get it too, but.",
+    "start": 5657610,
+    "end": 5671770
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Well, before we decide to go get it, who's going to use it? Because I'm not going to use.",
+    "start": 5672080,
+    "end": 5677920
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. I can't use it. I can't use it.",
+    "start": 5677170,
+    "end": 5679650
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "But that's dragon lance. I got the step block.",
+    "start": 5682950,
+    "end": 5688230
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Is it a martial weapon or. Why? Yeah, is it a martial weapon?",
+    "start": 5688680,
+    "end": 5693720
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Sa.",
+    "start": 5693010,
+    "end": 5693250
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Is a. It is a lan.",
+    "start": 5693160,
+    "end": 5694480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "After. Thank you, Cole. After it's restored.",
+    "start": 5695460,
+    "end": 5698500
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 5702700,
+    "end": 5702940
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Here.",
+    "start": 5703390,
+    "end": 5703630
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It's a dragon slaying lance. It's kind of fire. Soren would love that. But also, it doesn't give me good crit.",
+    "start": 5706630,
+    "end": 5711910
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. Lance is kind of an awkward weapon, is it not?",
+    "start": 5715170,
+    "end": 5717490
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It's specifically really bad for my build because I. I'm an all in on crit build.",
+    "start": 5720810,
+    "end": 5725610
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Sa.",
+    "start": 5727960,
+    "end": 5728200
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Like, if I crit, I get so much. Now, do I crit?",
+    "start": 5728090,
+    "end": 5732250
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "But when it does. Oh, baby. Oh, baby.",
+    "start": 5735350,
+    "end": 5738710
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, baby.",
+    "start": 5737290,
+    "end": 5738570
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "It's also a Marshall weapon, so you have to make sure you have martial weapon proficiency, I believe.",
+    "start": 5741580,
+    "end": 5745900
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It.",
+    "start": 5753680,
+    "end": 5753920
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yeah. Marshall. Simple. I can do it all.",
+    "start": 5753850,
+    "end": 5756490
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Unsurprisingly, Lillian cannot use it.",
+    "start": 5755430,
+    "end": 5758230
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I would think that the like the campaign usually with how they write these things.",
+    "start": 5760850,
+    "end": 5765090
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "It.",
+    "start": 5764340,
+    "end": 5764580
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Wouldn't let you get this far if something like that was ultimately required. It might make lives easier. But I still think you can complete the campaign without it.",
+    "start": 5767610,
+    "end": 5777730
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah. I mean, hopefully.",
+    "start": 5781520,
+    "end": 5782480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "We'll find out.",
+    "start": 5784540,
+    "end": 5785260
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Kind of depends on what it says, though. Like, how hard of.",
+    "start": 5784800,
+    "end": 5788000
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Tpk. This is awesome.",
+    "start": 5787930,
+    "end": 5790490
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "If it's just about how.",
+    "start": 5791840,
+    "end": 5793440
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "You don't have the lance. Well, you. You're dead.",
+    "start": 5792320,
+    "end": 5794320
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Yeah.",
+    "start": 5794960,
+    "end": 5795520
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I mean, if you want, I can, I can research that and see if it's required or not for you to have a win condition.",
+    "start": 5801020,
+    "end": 5815990
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That.",
+    "start": 5821290,
+    "end": 5821530
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "And next time I can tell you if it's required or not.",
+    "start": 5820550,
+    "end": 5823830
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "That would be good to.",
+    "start": 5826970,
+    "end": 5828010
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Would that.",
+    "start": 5828950,
+    "end": 5829910
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sorry.",
+    "start": 5830300,
+    "end": 5830620
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Go ahead?",
+    "start": 5831490,
+    "end": 5831890
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Go ahead. I interrupted. Go ahead.",
+    "start": 5833260,
+    "end": 5835100
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "No, I just was saying I'm not under the impression you need it to win. To be able to win. Have a win condition in this campaign. How? Because in my mind, why would you write the campaign with something completely missable like that?",
+    "start": 5835730,
+    "end": 5855170
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sa.",
+    "start": 5854710,
+    "end": 5854950
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "At the same time, I can just do some research and next time we play, I can have the answer to if you need the lance or not. If that's something you guys are worried about and don't want to make a decision on right now because you're not sure.",
+    "start": 5858780,
+    "end": 5879900
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, that's fine.",
+    "start": 5885650,
+    "end": 5886530
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 5887510,
+    "end": 5887910
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "But a question for you, Madden. Sa.",
+    "start": 5891120,
+    "end": 5906010
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Because I think John's idea of going without it is cool because you might have to do some creative problem solving to figure out whatever predicament you're in in the future because you don't have it.",
+    "start": 5890790,
+    "end": 5907510
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 5906940,
+    "end": 5907180
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Which.",
+    "start": 5909330,
+    "end": 5909570
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Well, I guess it's kind of up to you. Like, if you're willing to tell us, like, if there's a hard block. Like, if we're hard blocked on not having this item, if you're willing to let us around that.",
+    "start": 5909090,
+    "end": 5918690
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I would, to be honest with you, if we, if we got to the end of the campaign and it was like, you have to have the lands, I'd be like, that's. And I would just, I would change it myself, personally.",
+    "start": 5919330,
+    "end": 5929490
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah, I'm fine with that.",
+    "start": 5931140,
+    "end": 5932340
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yes.",
+    "start": 5933430,
+    "end": 5933750
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "I didn't either. Which way. It's just. I'm on the same page with Chris. If it is a hard block, I would like some leeway on that.",
+    "start": 5933540,
+    "end": 5943140
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah. I have no issue with giving you leeway on that because. I can't think of. Yeah, I mean, it might just make you have to fight a dragon in the end. And I mean, we all know that's probably what will happen, right? But.",
+    "start": 5943820,
+    "end": 5968880
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Oh, no. Not another dragon.",
+    "start": 5968230,
+    "end": 5969750
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "It's like a campaign about dragons or something. I, I, I. It would just be like to me, if you didn't have it, it'd be like, okay, this is just gonna be an extra tough fight. Can you guys hold out or not? Right. So I'm okay with, with.",
+    "start": 5970880,
+    "end": 5996650
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Yeah, I found that.",
+    "start": 5996520,
+    "end": 5997640
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Bending the rules a little bit if need be. Because I think it's more interesting if you go on without.",
+    "start": 5997610,
+    "end": 6006170
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Realistically, how many levels are we looking at getting?",
+    "start": 6008770,
+    "end": 6014930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Hold on. By the end of the campaign.",
+    "start": 6018580,
+    "end": 6034820
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Like, is that like leveling up after the game? Is over. Or like for the final boss fight will be 11.",
+    "start": 6044380,
+    "end": 6051900
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I'm looking. I need to find where a certain section ends. You will. You will have it for the final boss fight.",
+    "start": 6055070,
+    "end": 6081800
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Okay. Actually helps me choose my destiny.",
+    "start": 6083430,
+    "end": 6086480
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 6087240,
+    "end": 6087800
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "All right, cool.",
+    "start": 6095400,
+    "end": 6098280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay. Have you all gotten to level nine?",
+    "start": 6110130,
+    "end": 6116130
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 6117180,
+    "end": 6117580
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Yes.",
+    "start": 6117350,
+    "end": 6117670
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Sorry. No, I have not.",
+    "start": 6118730,
+    "end": 6119770
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Yep.",
+    "start": 6120100,
+    "end": 6120500
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay.",
+    "start": 6120310,
+    "end": 6120790
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Oh, are we leveling up and then continuing tonight?",
+    "start": 6126450,
+    "end": 6129570
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Cold.",
+    "start": 6127500,
+    "end": 6127980
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We're just doing it. Yeah.",
+    "start": 6129020,
+    "end": 6136780
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "We can't. Well, it is 9:30, so maybe we should call it. If you guys just level up tonight and then we pick up again tomorrow, like next time. I'm okay with that.",
+    "start": 6131270,
+    "end": 6142800
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's what I'm thinking.",
+    "start": 6145040,
+    "end": 6146080
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Otherwise you would just, you would really just make it to the threshold of the heavens tonight. And then you probably immediately end up in combat. And then we would pause combat and end for the night.",
+    "start": 6146880,
+    "end": 6167200
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Well, we didn't want to go around and spread misinformation about a civil war.",
+    "start": 6168710,
+    "end": 6172390
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "You did. Do you want to do that as well?",
+    "start": 6173610,
+    "end": 6175370
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Do we want to see if we can go and just plant evidence about the Civil war? Sneak around, leave it where patrols will find it?",
+    "start": 6182240,
+    "end": 6191920
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sure. I mean, I'm down.",
+    "start": 6196880,
+    "end": 6198160
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Yeah, you can do that.",
+    "start": 6199300,
+    "end": 6200100
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Okay.",
+    "start": 6212250,
+    "end": 6212810
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Maybe you need to.",
+    "start": 6212660,
+    "end": 6214740
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Next.",
+    "start": 6218870,
+    "end": 6219110
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Roll some checks to see how successful you'd be. I mean, what would we use for that.",
+    "start": 6218100,
+    "end": 6223190
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Yeah, I imagine be some checks and maybe. As we don't even need the.",
+    "start": 6227770,
+    "end": 6239120
+  },
+  {
+    "speaker": "4-lisztopher",
+    "text": "Sa.",
+    "start": 6240980,
+    "end": 6241220
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Any specific map for that either, because it's just finding different groups to leave information for. See how effective we are at making them believe that they found this conspiracy or whatever.",
+    "start": 6239920,
+    "end": 6255280
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Right?",
+    "start": 6257360,
+    "end": 6257600
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Of the Civil war.",
+    "start": 6257210,
+    "end": 6258250
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "But is that persuasion? Intimidation? You're Dr. You're dropping pamphlets somewhere. It's a sleight of hand.",
+    "start": 6259200,
+    "end": 6266800
+  },
+  {
+    "speaker": "5-nostromo82",
+    "text": "Deception.",
+    "start": 6269130,
+    "end": 6269930
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Deception. Yes.",
+    "start": 6270560,
+    "end": 6272970
+  },
+  {
+    "speaker": "7-combattoast",
+    "text": "Reception.",
+    "start": 6272950,
+    "end": 6273670
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "Okay, Let's have all of you roll a deception check. And then based on cumulatively how high you guys get together.",
+    "start": 6274570,
+    "end": 6287450
+  },
+  {
+    "speaker": "1-jeptefer",
+    "text": "Oh, boy.",
+    "start": 6288620,
+    "end": 6289260
+  },
+  {
+    "speaker": "2-cutiepiy5",
+    "text": "I will figure out on the spot how successful you.",
+    "start": 6288890,
+    "end": 6295610
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Hey, 19. Let's go.",
+    "start": 6295180,
+    "end": 6297420
+  },
+  {
+    "speaker": "6-mekjonesy",
+    "text": "Makes up for mine a little bit. Sorens.",
+    "start": 6300260,
+    "end": 6302980
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 6304540,
+    "end": 6305180
+  }
+]

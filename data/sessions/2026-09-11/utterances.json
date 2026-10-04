@@ -1,0 +1,3806 @@
+[
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, so now that you have finished the outside, are you wanting to go inside the tower?",
+    "start": 2320,
+    "end": 11040
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Might as well.",
+    "start": 13120,
+    "end": 13680
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay. Okay. Let me remove the fog of war here. Okay. As you step into the entry.",
+    "start": 15520,
+    "end": 50090
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 51300,
+    "end": 51540
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Murals of idyllic life in the flying city adorns grand foyers. Gray stone walls on one west wall depicts a handsome long haired man in flowing robes. Radiant golden light and fountains bubble to the north and south. The east wall holds a single door to the north and a double door to the south. Let me get this wall. There we go. Okay. There is a guardian here. The guardian is a Bozick Draconian and seems to have a bone devil with him.",
+    "start": 51450,
+    "end": 108540
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "One.",
+    "start": 112120,
+    "end": 112360
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "He looks over at you and is surprised to see you enter.",
+    "start": 117310,
+    "end": 120990
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Does he look friendly?",
+    "start": 122360,
+    "end": 123480
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "He demands that you state your business.",
+    "start": 122910,
+    "end": 126830
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, no, the PR. Friendly person is also gone. We're so.",
+    "start": 130930,
+    "end": 134130
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "What? I'm right here.",
+    "start": 136450,
+    "end": 137730
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I feel like. I feel like. No, you're. You're good at, like, being the face. Right. But you're also a little bit not evil.",
+    "start": 139010,
+    "end": 148210
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "He's the one with the highest charisma. Stat.",
+    "start": 147160,
+    "end": 148680
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No, I'm not talking about, like, the stat wise. Right. It's more so morally. The moral compass is.",
+    "start": 148850,
+    "end": 153890
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh.",
+    "start": 154600,
+    "end": 155160
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Questionable.",
+    "start": 156460,
+    "end": 157100
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Our. The moral compass of our party is gone, and we're kind of just murder hobos without her.",
+    "start": 155920,
+    "end": 161680
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Your murder hobos without your Jiminy Cricket right now.",
+    "start": 162690,
+    "end": 165650
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "For real. Lazlo does great work, but also he's going to do great work towards, like, murder hoboing them, and then he's going to take their corpse to be another zombie.",
+    "start": 166000,
+    "end": 177600
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "True.",
+    "start": 179440,
+    "end": 179920
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, well.",
+    "start": 181610,
+    "end": 182090
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You're so real for that.",
+    "start": 181840,
+    "end": 183200
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Well, what are you gonna.",
+    "start": 183370,
+    "end": 205870
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "What are the captain's names again?",
+    "start": 187990,
+    "end": 189830
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Lorehead and bow. Lorzette and. Belpheon.",
+    "start": 194060,
+    "end": 214390
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And which one's the mage doorsack?",
+    "start": 218480,
+    "end": 223840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yes.",
+    "start": 230390,
+    "end": 230870
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay.",
+    "start": 231690,
+    "end": 232170
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Lords. That's the. The mage Belpheon is like the priest.",
+    "start": 232870,
+    "end": 236070
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Gotcha. Okay, so we're here on business to have an audience with Lor said we were able to recover a poison that we believe he might be interested in. So we. If I can deliver that.",
+    "start": 236730,
+    "end": 257960
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "He looks at you and says, oh, I serve lore that. Tell me, did he. He tell you to have an audience with him in this?",
+    "start": 261520,
+    "end": 278749
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "We were told that this is where he likes to reside.",
+    "start": 284050,
+    "end": 288290
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Roll a deception check for me.",
+    "start": 293240,
+    "end": 294680
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "So we were just hoping that he was available as this find was very recent and. And we're just so excited to find him. Be the great lords.",
+    "start": 293570,
+    "end": 307740
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I see. Roll a deception check.",
+    "start": 309880,
+    "end": 312440
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "24.",
+    "start": 322860,
+    "end": 323580
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, so you pass.",
+    "start": 324650,
+    "end": 325690
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Yay.",
+    "start": 326620,
+    "end": 327180
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So he's like, okay, great. He introduces himself as Orm. He serves L'. Zte. And. He warns you that as you go up the tower, there are things that are increasingly more dangerous and have more dangerous energy. But in order to climb up the tower to get to Lorzette, you just need to pass safely by using the histarian word. Seth. C E C E T T E H Setith.",
+    "start": 328250,
+    "end": 378080
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "C e t t e h.",
+    "start": 386550,
+    "end": 387830
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh eth.",
+    "start": 388640,
+    "end": 389840
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "O.",
+    "start": 390550,
+    "end": 390950
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "There.",
+    "start": 392970,
+    "end": 393210
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "That is our safe word. Lovely.",
+    "start": 393050,
+    "end": 398650
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. And he says, hey, just feel free to go in, you know, let me move this. He wishes you goodwill and is like, all right. I'm sure that my master will enjoy the poisons that you've brought him. He seems to be fairly interested in such things.",
+    "start": 401450,
+    "end": 440440
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "How did you get a devil such as that in your service?",
+    "start": 445790,
+    "end": 452270
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, wow. My master Larza gave him to me as a gift.",
+    "start": 455010,
+    "end": 463170
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "A gift, you said?",
+    "start": 465800,
+    "end": 466840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "His name is. His name is Ghoul Frost. And Ghoul Frost is the best bone devil anyone could hope for. I mean, look at him. You just gotta love that face.",
+    "start": 465650,
+    "end": 480860
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Yes, it's very symmetrical. Very important. Okay. Well, good day, sir.",
+    "start": 484520,
+    "end": 496770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Good day. As you go into the next room.",
+    "start": 498150,
+    "end": 501430
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Did we find a teleportation circle?",
+    "start": 503730,
+    "end": 506290
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Two long consoles jut from the walls of the this room, covered in letters, colored stones and dull glass hemispheres. Etched into the floor between the consoles is an elaborate symbol radiating orange light.",
+    "start": 513510,
+    "end": 530740
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Are the symbols like unintelligible? Are they like. This one goes up, this one goes down in a language.",
+    "start": 540150,
+    "end": 551110
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Use a perception check.",
+    "start": 553150,
+    "end": 555550
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "People came here? Hell yeah. 19.",
+    "start": 557350,
+    "end": 562790
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Break.",
+    "start": 562540,
+    "end": 562780
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "The symbol on the floor sheds dim orange light out five feet. You realize it looks like an aerial view of the tower and its exterior buttresses. You did. You did find map?",
+    "start": 565790,
+    "end": 591400
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And I don't need the map to try to orient us in our ascent and see if there's anything like useful on the map.",
+    "start": 592330,
+    "end": 607370
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah, sure.",
+    "start": 608770,
+    "end": 609330
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Is there anything you would like to roll for that?",
+    "start": 614980,
+    "end": 617300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Rolling arcana check.",
+    "start": 620370,
+    "end": 621890
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Oh, and my life has run out.",
+    "start": 626260,
+    "end": 628100
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, well, you're just like, ooh, shiny floor map.",
+    "start": 630620,
+    "end": 635260
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Lillian's like, oh, history something. Perhaps I could try.",
+    "start": 636020,
+    "end": 639940
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "It.",
+    "start": 640420,
+    "end": 640660
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "You know, can l try an akronic check?",
+    "start": 644910,
+    "end": 648270
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah, let me find.",
+    "start": 649270,
+    "end": 650150
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "She's a plus four. I can roll it. I feel like this is great.",
+    "start": 650910,
+    "end": 658990
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, man, she failed.",
+    "start": 658230,
+    "end": 660550
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 661290,
+    "end": 661690
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You want to roll for her and see?",
+    "start": 661190,
+    "end": 662950
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 664740,
+    "end": 664980
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, I'm going to roll a D20.",
+    "start": 664270,
+    "end": 665870
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Sa.",
+    "start": 666030,
+    "end": 666270
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then add four.",
+    "start": 666610,
+    "end": 667410
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, she passed. Lillian realizes that the consoles in the room monitor a powerful source of magic elsewhere in the tower. They also determine that even though the magic is currently active, the controls indicate something is malfunctioning. And then you realize that that's somehow connected to the symbols on the floor that are a map of an aerial view of the tower.",
+    "start": 672150,
+    "end": 704830
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Wow.",
+    "start": 709870,
+    "end": 710190
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Is someone gonna touch the console?",
+    "start": 712410,
+    "end": 714330
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "I would like to touch the path.",
+    "start": 715560,
+    "end": 717570
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Touch the butt?",
+    "start": 719610,
+    "end": 720570
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Nemo, don't touch the butt.",
+    "start": 724470,
+    "end": 726150
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You pull one of the levers, and suddenly all of you plummet 10ft.",
+    "start": 727370,
+    "end": 732470
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Off.",
+    "start": 733800,
+    "end": 734040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "The whole island and tower plummets 10ft, and then immediately stop because a fail safe kicks into place. The symbol that's orange turns bright red, and then things immediately stabilize, and you realize that the console make sure that the island stays floating, and whatever the thing on the floor is is some sort of fail safe to keep y' all from falling out of the sky.",
+    "start": 733030,
+    "end": 769710
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Interesting.",
+    "start": 773270,
+    "end": 774150
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Lovely.",
+    "start": 773320,
+    "end": 773800
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Now, the problem now is, is that because you dropped the tower that way, it is obviously set off an alarm.",
+    "start": 779150,
+    "end": 793000
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We.",
+    "start": 793890,
+    "end": 794130
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Great.",
+    "start": 795060,
+    "end": 795300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "An alarm that has summoned several flame skulls who have been called to investigate. Get them over here. Who have been called to investigate the cause.",
+    "start": 795320,
+    "end": 816730
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Sa.",
+    "start": 819210,
+    "end": 819450
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Of dropping 10ft and then coming back up to its normal location.",
+    "start": 817690,
+    "end": 821770
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Use the safe word. Use the safe word.",
+    "start": 822270,
+    "end": 823950
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So the flame skulls are sent to do a maintenance check and see that you have around with the controls. And because of that.",
+    "start": 831610,
+    "end": 840500
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 843510,
+    "end": 843750
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "They immediately start to attack you. So let me add them to combat.",
+    "start": 841300,
+    "end": 846820
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Saying the safe word didn't help.",
+    "start": 849640,
+    "end": 850840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "No, they. They started attacking you before you could say the safe word, cuz you. You dropped. You dropped him out of the.",
+    "start": 852340,
+    "end": 858900
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, well, whoever gets the first time say the safe word.",
+    "start": 861620,
+    "end": 865300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I'm gonna. Well, Arya gets the first turn.",
+    "start": 868350,
+    "end": 872670
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 874000,
+    "end": 874320
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, we're not.",
+    "start": 875010,
+    "end": 875650
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Let me get to Aria. Unless you guys actually. Do you guys all want to roll initiative again or do you want to keep the same initiative?",
+    "start": 874910,
+    "end": 883310
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sure.",
+    "start": 882400,
+    "end": 882800
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It's up to you what you want to do.",
+    "start": 887150,
+    "end": 888910
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I was just assuming we would roll. I rolled, but I don't care either.",
+    "start": 889170,
+    "end": 892530
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. I'm close.",
+    "start": 893200,
+    "end": 894320
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, I'll restart.",
+    "start": 893560,
+    "end": 894600
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It.",
+    "start": 895410,
+    "end": 895650
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Let me restart the combat then. Hold on. Don't roll.",
+    "start": 896280,
+    "end": 900760
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, I hope, anyway.",
+    "start": 901500,
+    "end": 903580
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, now roll initiative.",
+    "start": 923650,
+    "end": 940150
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "22.",
+    "start": 930780,
+    "end": 931340
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then billions is a plus six. That's crazy.",
+    "start": 937989,
+    "end": 943910
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That goes hard, I'm afraid.",
+    "start": 946950,
+    "end": 948150
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Got 18. Lillian has 18.",
+    "start": 949520,
+    "end": 951280
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, Aria is first.",
+    "start": 955660,
+    "end": 960620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Steady aim. Flame School A.",
+    "start": 963030,
+    "end": 965110
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 967590,
+    "end": 968070
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "See? Steady aim. I get to roll with advantage. 20.",
+    "start": 968870,
+    "end": 977060
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That hits.",
+    "start": 979190,
+    "end": 979990
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay.",
+    "start": 980340,
+    "end": 980900
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Aria said the safe word.",
+    "start": 982650,
+    "end": 984410
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Eight. Goy new. Does that count? As for sneak attack, goy new looks close enough to Flame School A.",
+    "start": 986420,
+    "end": 994740
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "No, he's. He's five feet away.",
+    "start": 995840,
+    "end": 997680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I. Well, I did eight damage in my turn.",
+    "start": 999220,
+    "end": 1002090
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Go look up how close you have to be for sneak attack to be in effect.",
+    "start": 1004240,
+    "end": 1007840
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Someone has to be within range. But he was asking if, like, koibunu is, like, in the middle tile, if it counts or not. Because this flame, you know.",
+    "start": 1009380,
+    "end": 1015620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 1016570,
+    "end": 1017050
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Anyway.",
+    "start": 1016660,
+    "end": 1017300
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I know. It's five.",
+    "start": 1017930,
+    "end": 1018810
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah, but there's in between them. So I'm. What I'm asking is, does sneak attack state how close the ally is in feet from the enemy to count a sneak attack.",
+    "start": 1018010,
+    "end": 1028170
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Five feet.",
+    "start": 1027300,
+    "end": 1027940
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "I'm pretty sure you have to be like in melee range. I could be wrong though.",
+    "start": 1029040,
+    "end": 1032320
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, it says 5ft of the target.",
+    "start": 1032660,
+    "end": 1034500
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, melee range is 5ft.",
+    "start": 1033550,
+    "end": 1035230
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay. Yeah, because there's, like, a whole tile there. Right? So.",
+    "start": 1036010,
+    "end": 1039290
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah. If there's a whole tile, I don't think it would count, but if I'm technically within the lower tile, then I think it would count. So I think that's the. That's the question.",
+    "start": 1040400,
+    "end": 1052920
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I think.",
+    "start": 1053940,
+    "end": 1054420
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay.",
+    "start": 1054280,
+    "end": 1054680
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I mean, that's fine. It's dm's call.",
+    "start": 1054030,
+    "end": 1056110
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I think I threw up here, to be honest. Yeah.",
+    "start": 1055380,
+    "end": 1062020
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, that's what it looks like.",
+    "start": 1060360,
+    "end": 1062440
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah.",
+    "start": 1063140,
+    "end": 1063620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's fine.",
+    "start": 1064830,
+    "end": 1065630
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "All right. So William's like. She tries saying the safe word.",
+    "start": 1067880,
+    "end": 1074040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Doesn't do anything.",
+    "start": 1075150,
+    "end": 1076430
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then she says darn, because that's what Josh would say. And then she hops back a little bit away out of range because that's what Josh would do.",
+    "start": 1077890,
+    "end": 1086450
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Darned.",
+    "start": 1084200,
+    "end": 1084680
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then is speaking is a free action or what's going on? Or is it an action?",
+    "start": 1088210,
+    "end": 1098530
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Isn't your. Isn't the corn dolly a bonus action?",
+    "start": 1097480,
+    "end": 1099800
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I. I don't know. I was just gonna star your wisple.",
+    "start": 1101100,
+    "end": 1103420
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "It.",
+    "start": 1104600,
+    "end": 1104840
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Just going to start blasting.",
+    "start": 1106370,
+    "end": 1107650
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I was gonna use a cantrip.",
+    "start": 1106220,
+    "end": 1107660
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. Okay, do an attack.",
+    "start": 1106680,
+    "end": 1108280
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay, there's flame skull A. She's gonna starry wisp, which is plus eight. That's a 20. Unnatural 20 hit.",
+    "start": 1108780,
+    "end": 1123420
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "20 hits.",
+    "start": 1123890,
+    "end": 1124610
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "All right, 2D8.",
+    "start": 1125100,
+    "end": 1126220
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You can't click on her character sheet and it will roll.",
+    "start": 1126850,
+    "end": 1129410
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No.",
+    "start": 1130290,
+    "end": 1130530
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay. I just want to make sure.",
+    "start": 1131730,
+    "end": 1134050
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I do nine damage to flame skully.",
+    "start": 1133330,
+    "end": 1135410
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1135890,
+    "end": 1136450
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And she. She hides behind.",
+    "start": 1136690,
+    "end": 1137970
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, cool. Flame skull A.",
+    "start": 1139090,
+    "end": 1145010
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Uses disintegrating. Forecast. Fireball. Fireball. Fireball.",
+    "start": 1150940,
+    "end": 1162540
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It can make two fire ray attacks. It can cast mage, hand, magic missile, or fireball, Requiring no somatic or material components and using ll. Wow.",
+    "start": 1160750,
+    "end": 1181800
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Bro, these things are gonna blow.",
+    "start": 1186230,
+    "end": 1187510
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Bright streak flashes the point you choose in range, 20 foot radius spear. 86 fire damage. Okay, so let's do. Oh, my God. All right.",
+    "start": 1189720,
+    "end": 1210810
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I should have rolled better on initiative, Bug.",
+    "start": 1209920,
+    "end": 1212000
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "All right. We're gonna fireball it. This is gonna. I never get to use fireball. This is great.",
+    "start": 1215130,
+    "end": 1227460
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And I know these chuds are immune to their own fire.",
+    "start": 1229370,
+    "end": 1231850
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. They're immune to fire.",
+    "start": 1238260,
+    "end": 1239540
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I mean, yeah, they're flame skulls. They better be. It wouldn't make sense if they weren't. But.",
+    "start": 1241130,
+    "end": 1244809
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Being immune means they take half damage, right?",
+    "start": 1245300,
+    "end": 1247620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "No, it means complete unity.",
+    "start": 1248180,
+    "end": 1250180
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No immune is immune. Resistance is half.",
+    "start": 1248650,
+    "end": 1250890
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Resistance.",
+    "start": 1250740,
+    "end": 1251620
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, no.",
+    "start": 1252430,
+    "end": 1253150
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I take no damage.",
+    "start": 1254580,
+    "end": 1255700
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, let me roll 86 real quick so we know what the damage will be. 27 damage if you. If you do not.",
+    "start": 1254350,
+    "end": 1272350
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "What's the. What's the saving throw?",
+    "start": 1276750,
+    "end": 1278670
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "It.",
+    "start": 1279070,
+    "end": 1279310
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It's a Dex save for 13.",
+    "start": 1280360,
+    "end": 1283720
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "All right.",
+    "start": 1285190,
+    "end": 1285670
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, yeah. Lilian passes by 50 million miles.",
+    "start": 1287950,
+    "end": 1292110
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Arya, eat.",
+    "start": 1292790,
+    "end": 1293990
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Damn.",
+    "start": 1295640,
+    "end": 1296280
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Use your heroic inspiration. I don't know if you still have It.",
+    "start": 1295549,
+    "end": 1300110
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yes. I will use heroic inspiration.",
+    "start": 1298550,
+    "end": 1300790
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Anyway, lillian gets a nat20 and then. You guys won't believe this.",
+    "start": 1301070,
+    "end": 1309320
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "12. 20.",
+    "start": 1310640,
+    "end": 1312000
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "So also get a nat 20.",
+    "start": 1310120,
+    "end": 1312120
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Dude. Okay. Does heroka expression mean I just have to roll again?",
+    "start": 1313600,
+    "end": 1317440
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yes.",
+    "start": 1318050,
+    "end": 1318370
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay.",
+    "start": 1319040,
+    "end": 1319680
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So if you pass the deck save, you get half damage. Right? So.",
+    "start": 1321250,
+    "end": 1324610
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, it's half. Okay, 19. Oh, half.",
+    "start": 1324400,
+    "end": 1329600
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I can't edit Lillian's thing, but she takes half.",
+    "start": 1329000,
+    "end": 1331880
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1333020,
+    "end": 1333500
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Half of 27.",
+    "start": 1332970,
+    "end": 1334170
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Nat 20.",
+    "start": 1333110,
+    "end": 1333750
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I can adjust her hp.",
+    "start": 1336060,
+    "end": 1337580
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We round up, around, down.",
+    "start": 1339530,
+    "end": 1340890
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You round down.",
+    "start": 1341260,
+    "end": 1342140
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay. Thirteen.",
+    "start": 1342730,
+    "end": 1343690
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "On damage.",
+    "start": 1342940,
+    "end": 1343820
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Owie.",
+    "start": 1344330,
+    "end": 1344970
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "1 in 400 chance of rolling 2 NAT 20s and once. I'm crazy.",
+    "start": 1345750,
+    "end": 1349830
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay. Let me.",
+    "start": 1350140,
+    "end": 1351020
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Crazy crack.",
+    "start": 1350570,
+    "end": 1351610
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Let me do 13 damage to Lillian. That didn't do anything. Oh, because of the temp hp, which still counts. You guys still have it, right?",
+    "start": 1352770,
+    "end": 1372050
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 1373459,
+    "end": 1373860
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, we, like, immediately came in and immediately went out, I think.",
+    "start": 1374320,
+    "end": 1377440
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. Okay, so that saves Lillian's bacon. Okay. Everyone else takes their damage.",
+    "start": 1377420,
+    "end": 1384140
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Howie.",
+    "start": 1386830,
+    "end": 1387230
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Flames. Flameskull B will cast Fireball.",
+    "start": 1386940,
+    "end": 1390300
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Sorry. How much. How much damage was the first fireball?",
+    "start": 1389850,
+    "end": 1392330
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "27 damage if you don't pass a 13 deck save. Otherwise you take 13 damage.",
+    "start": 1393340,
+    "end": 1400700
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay.",
+    "start": 1401290,
+    "end": 1401850
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I'm gonna roll another 8. D6.",
+    "start": 1413750,
+    "end": 1415430
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 1424600,
+    "end": 1425000
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "31 flames. Flame School B launches their fireball.",
+    "start": 1423590,
+    "end": 1428230
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Why do these skulls cast so much fire?",
+    "start": 1429480,
+    "end": 1431640
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Lazo passes.",
+    "start": 1434390,
+    "end": 1435590
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay, I got 19.",
+    "start": 1437570,
+    "end": 1439250
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Arya passes.",
+    "start": 1438310,
+    "end": 1439590
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Hold on. Her thing is plus two, so that is. That's a really bad roll.",
+    "start": 1438030,
+    "end": 1445710
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, goy venue.",
+    "start": 1446710,
+    "end": 1447910
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Should I heroic inspiration this? Probably. I'm going to heroic inspiration for Lillian.",
+    "start": 1446830,
+    "end": 1456990
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 1459740,
+    "end": 1459980
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, I'm going to do the same actually for me.",
+    "start": 1460200,
+    "end": 1461960
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And she passes.",
+    "start": 1461880,
+    "end": 1462760
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1463920,
+    "end": 1464320
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then Soren Dex save passes.",
+    "start": 1464680,
+    "end": 1469400
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, so those of you who pass 15 damage, I will add 15 damage. Lillian.",
+    "start": 1472080,
+    "end": 1476480
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "31 failing.",
+    "start": 1478520,
+    "end": 1480120
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It's a 13.",
+    "start": 1481770,
+    "end": 1482410
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yes.",
+    "start": 1482120,
+    "end": 1482680
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "No, I'm saying 31 damage. I definitely failed.",
+    "start": 1484770,
+    "end": 1487250
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, you got it too.",
+    "start": 1487570,
+    "end": 1488450
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, it's 31 damage if you fail. Yes.",
+    "start": 1487610,
+    "end": 1489770
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay.",
+    "start": 1490210,
+    "end": 1490770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I'm gonna be really mean. By the way, they only get to cast fireball once a day, so once we're done with the fireballs, we're done. Okay.",
+    "start": 1497290,
+    "end": 1503770
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Once a day. Once per episode.",
+    "start": 1503590,
+    "end": 1506310
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "The last flame school will cast fireball. Theirs is 26 damage if you do not pass the 13 deck save. Otherwise it's 13.",
+    "start": 1510820,
+    "end": 1529860
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "26. Okay.",
+    "start": 1529040,
+    "end": 1531600
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Soren passes.",
+    "start": 1532350,
+    "end": 1533310
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Lillian does not pass.",
+    "start": 1535260,
+    "end": 1536300
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, I got a 20. Oh, thank God.",
+    "start": 1535680,
+    "end": 1538170
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Lillian does not pass.",
+    "start": 1540990,
+    "end": 1542270
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, no, she's her hero. Consideration is gone.",
+    "start": 1542830,
+    "end": 1545550
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, goybanu, man.",
+    "start": 1545470,
+    "end": 1548270
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "This dude is so.",
+    "start": 1549710,
+    "end": 1550990
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "13.",
+    "start": 1552489,
+    "end": 1552890
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Normally you do pretty good.",
+    "start": 1552590,
+    "end": 1553950
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "It's okay. I'm. I'm still up. Still up.",
+    "start": 1554470,
+    "end": 1557030
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah.",
+    "start": 1557950,
+    "end": 1562050
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Survived the initial onslaught, so I should be good.",
+    "start": 1557590,
+    "end": 1561090
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, lillian now has 21 hp. Okay, soren.",
+    "start": 1564600,
+    "end": 1571320
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I'm going to kill him. Like, I just. Hello. I rage. And then I take my rage. I will recklessly attack with my grid sword. Oh, my God. Scared me for a moment. Saw the number one.",
+    "start": 1572760,
+    "end": 1588600
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 1587870,
+    "end": 1588110
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "24 hits, I assume.",
+    "start": 1589400,
+    "end": 1590840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yep.",
+    "start": 1591250,
+    "end": 1591570
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then that's. Why did it roll? Oh, no, it didn't roll twice. I was like, okay, no, that's plus three from rage. So that's 20.",
+    "start": 1597330,
+    "end": 1606770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1610620,
+    "end": 1611100
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then I will do it again.",
+    "start": 1612290,
+    "end": 1617010
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So the real moral of the story is if you fireball Soren three times, she's going to be really pissed off and come after you.",
+    "start": 1618700,
+    "end": 1625980
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Woman too angry to die.",
+    "start": 1626360,
+    "end": 1627880
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "For real. And then 22 hits.",
+    "start": 1628530,
+    "end": 1631730
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yep.",
+    "start": 1632220,
+    "end": 1632780
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Plus three, I assume I kill it.",
+    "start": 1636050,
+    "end": 1638370
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, yeah. They're dead.",
+    "start": 1638870,
+    "end": 1639750
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "All right. Sick.",
+    "start": 1640930,
+    "end": 1641730
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "They did.",
+    "start": 1645670,
+    "end": 1646310
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Fortunately, I do not have a bonus action because I use it to rage. Let me see. I got anything else? I don't. I'll stand for my turn.",
+    "start": 1645420,
+    "end": 1658060
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, laszlo.",
+    "start": 1658720,
+    "end": 1660640
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Sorry, I'm back. Did you do a fireball on the last one?",
+    "start": 1664740,
+    "end": 1673380
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "He sheeted three.",
+    "start": 1673910,
+    "end": 1675030
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I did three fireballs. Did you get two out of the three or three out of the three?",
+    "start": 1676640,
+    "end": 1681360
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "I got two out of three. What was the damage on the last one?",
+    "start": 1681700,
+    "end": 1688260
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "There's 26 if you didn't pass the deck save. It's 13 if you do.",
+    "start": 1688890,
+    "end": 1692970
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, I am unconscious. So I will make my death saved.",
+    "start": 1694740,
+    "end": 1699620
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1701850,
+    "end": 1702490
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And that's my turn.",
+    "start": 1708660,
+    "end": 1710340
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh.",
+    "start": 1711590,
+    "end": 1711990
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I don't think I. I think the only other person I down was Sister Superior, so.",
+    "start": 1711860,
+    "end": 1716740
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. But he's there as a Michio.",
+    "start": 1717520,
+    "end": 1719440
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Damn.",
+    "start": 1721220,
+    "end": 1721860
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That was deliberate. The. The.",
+    "start": 1722160,
+    "end": 1723920
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "All right.",
+    "start": 1726980,
+    "end": 1727620
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay, let's see. So Laszlo's down.",
+    "start": 1733870,
+    "end": 1739230
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "It.",
+    "start": 1739640,
+    "end": 1739880
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Crap. See? What can I do? I need some mass healing here, but I don't know.",
+    "start": 1741670,
+    "end": 1747270
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We gotta rely on Lillian.",
+    "start": 1749050,
+    "end": 1750170
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, wait, Lillian.",
+    "start": 1751300,
+    "end": 1752500
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You don't want Are you gonna pop your midnight sanctuary for temp H?",
+    "start": 1750830,
+    "end": 1756110
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I'm so sad. Lillian has a reaction.",
+    "start": 1755060,
+    "end": 1757060
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "I mean. Yes.",
+    "start": 1755590,
+    "end": 1756470
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "We still have it written on the side of the map, so we're good.",
+    "start": 1761000,
+    "end": 1763320
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, it fade. It faded away. So I can definitely bring it back up, but I don't know if temp HP will get Laszlo back up.",
+    "start": 1764470,
+    "end": 1770500
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It will not get Lazlo back up, but everyone's kind of low right now, including you.",
+    "start": 1770840,
+    "end": 1775800
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, okay. I'm going actually to.",
+    "start": 1776500,
+    "end": 1780420
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I think maybe you drop that and then Lillian heals Lazo.",
+    "start": 1784430,
+    "end": 1787230
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, that's true. Okay, so maybe I just heal myself. Yeah, I'll. I will get. Yeah, I will get Twilight Sanctuary. Actually, no, because we. I don't have that many left. I'm actually going to cast aura of Vitality. This is a third level spell. This is an aura radiates from you in a 30 foot emanation for one minute or up to one minute when you create the aura and at the start of each of your turns, you can restore two D6 hit points to one creature in it. So I'm going to do that. I'm going to heal myself.",
+    "start": 1789540,
+    "end": 1841540
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Him.",
+    "start": 1847110,
+    "end": 1847350
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "What's that? Okay, sorry, where did that go? Well, it's 4 hp.",
+    "start": 1851550,
+    "end": 1873390
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1878080,
+    "end": 1878560
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "And then for my bonus action. Well, for my movement, I'm going to go. Here. My bonus.",
+    "start": 1879620,
+    "end": 1894340
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "With you passing Flame school B isn't. Is that an attack of our opportunity?",
+    "start": 1893530,
+    "end": 1898410
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "No, because I. I go into its. It into its range. But I don't leave its range. I just skirt around it.",
+    "start": 1897780,
+    "end": 1903640
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah.",
+    "start": 1904400,
+    "end": 1904720
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay. And then your dancing long sword will follow suit.",
+    "start": 1904170,
+    "end": 1908090
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, and it will. So my bonus action will be to use that. 20 to hit.",
+    "start": 1908680,
+    "end": 1920600
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That hits.",
+    "start": 1921220,
+    "end": 1921860
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "It'll be six slashing and. Oops, sorry. One radiant.",
+    "start": 1923480,
+    "end": 1939490
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1949310,
+    "end": 1949790
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "That'll be my term.",
+    "start": 1953420,
+    "end": 1954140
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okie dokie, arya.",
+    "start": 1956350,
+    "end": 1961150
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You son of a. I'm running up steady aiming up to this flame skull. Actually, this flame skull B.",
+    "start": 1963370,
+    "end": 1970650
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 1971480,
+    "end": 1971880
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "And then, let's see. 26.",
+    "start": 1972540,
+    "end": 1986300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That hits. Yeah.",
+    "start": 1986760,
+    "end": 1987800
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay.",
+    "start": 1988220,
+    "end": 1988780
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Their ac is 13. So.",
+    "start": 1988440,
+    "end": 1990360
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, perfect. Eight damage, plus sneak attack bonus.",
+    "start": 1990860,
+    "end": 1996380
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Rolled the sneak attack.",
+    "start": 1998210,
+    "end": 1999330
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "With the sneak attack.",
+    "start": 2000280,
+    "end": 2001240
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Kill him. Oh, my God. There's no way.",
+    "start": 2001640,
+    "end": 2003880
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "What the.",
+    "start": 2004290,
+    "end": 2004930
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Ones. Thirteen. What the.",
+    "start": 2004680,
+    "end": 2007720
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "What are the odds of rolling?",
+    "start": 2008280,
+    "end": 2009720
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "All ones. That is crazy.",
+    "start": 2010370,
+    "end": 2013970
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's insane. That's up. That's so up.",
+    "start": 2013320,
+    "end": 2018280
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "How many dice is it five or six?",
+    "start": 2017400,
+    "end": 2019000
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Do this.",
+    "start": 2018460,
+    "end": 2018860
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "How many dice was that? Five or six.",
+    "start": 2021320,
+    "end": 2022840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Five.",
+    "start": 2023260,
+    "end": 2023660
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That was five.",
+    "start": 2023170,
+    "end": 2023890
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay, let me see.",
+    "start": 2024360,
+    "end": 2025560
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, she's crunching the numbers. Not the numbers.",
+    "start": 2025810,
+    "end": 2028770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Could do the probability on that.",
+    "start": 2026300,
+    "end": 2028460
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "She's not the calcs.",
+    "start": 2030850,
+    "end": 2032290
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Bruh. 1 in 7776.",
+    "start": 2031890,
+    "end": 2035490
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's almost as much as the shiny Pokemon.",
+    "start": 2036050,
+    "end": 2038530
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "No, no. Why did you do the math on that?",
+    "start": 2037820,
+    "end": 2041500
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Google odds of ruling all ones with five six sided dice in a row.",
+    "start": 2042290,
+    "end": 2049010
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, fair.",
+    "start": 2051930,
+    "end": 2052570
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Because that's what happened. It's in a row.",
+    "start": 2053900,
+    "end": 2055740
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's almost as much as a shiny bro. That's crazy.",
+    "start": 2054140,
+    "end": 2057260
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "It's different from, like, you know, rolling, but in a row the odds of doing it's multiplicative anyway. It's pretty. Pretty horrible and abysmal. Roll right there.",
+    "start": 2057420,
+    "end": 2065180
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Well, I remember in like.",
+    "start": 2065370,
+    "end": 2066650
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It's, like, amazingly horrible.",
+    "start": 2065580,
+    "end": 2067500
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I remember when they taught us probability, they didn't make us do extra stuff for in a row. So it would be like.",
+    "start": 2067940,
+    "end": 2073060
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. No, this is like in a row.",
+    "start": 2073660,
+    "end": 2077840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It'd be like six times five, which would be one. It'd be five out of 30, right? No. What is the way? It's the frat. It's fractions. Why do I want to know how the math of this is done? It's not relevant right now. Vishu, tell me how the math is done so I can move on with my life.",
+    "start": 2074980,
+    "end": 2105070
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Chicken rust.",
+    "start": 2104880,
+    "end": 2105680
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "It's 16 times 16 times 16 times 1. Like 6, 5 times.",
+    "start": 2104160,
+    "end": 2108240
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Thank you. It's the multiplication. That's where I was. Addition is not right. It's the multiplication. Thank you.",
+    "start": 2108670,
+    "end": 2114350
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, it's the multiplication one, so that's why it becomes 1 out of like 7k. Truly the most abysmal rule. 2, 2 like 2 20s I rolled has got nothing on Tony's 5 ones. Holy.",
+    "start": 2113760,
+    "end": 2129040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Dude, that's amazing.",
+    "start": 2128920,
+    "end": 2130120
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Straight up.",
+    "start": 2131660,
+    "end": 2132300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So, Tony, if we were playing in person, this is when we say, put your dice in dice jail.",
+    "start": 2132120,
+    "end": 2142840
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "So true.",
+    "start": 2143660,
+    "end": 2144460
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, because it's just. It's bad. That was really bad.",
+    "start": 2144570,
+    "end": 2149770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I did make you a dice jail, though.",
+    "start": 2149010,
+    "end": 2150770
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You did. I. I left it in my work office. I brought it to work.",
+    "start": 2151300,
+    "end": 2154820
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, nice.",
+    "start": 2155250,
+    "end": 2156130
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It just sits there.",
+    "start": 2155460,
+    "end": 2156500
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "But this is when we go, dude, put those dice in dice, Joe. Man.",
+    "start": 2159330,
+    "end": 2163330
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It's nice. Joker. It's been misbehaving.",
+    "start": 2163380,
+    "end": 2166260
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That's crazy. Okay.",
+    "start": 2165650,
+    "end": 2169730
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. I. Yeah. Never rolled out poorly.",
+    "start": 2169220,
+    "end": 2172260
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay, who has corn dollies?",
+    "start": 2173990,
+    "end": 2175590
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Lillian.",
+    "start": 2176520,
+    "end": 2176920
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Lillian.",
+    "start": 2177070,
+    "end": 2177470
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Doesn't she pass them out in like the beginning of a Session. Like, oh, we're like in the beginning of like a day.",
+    "start": 2177990,
+    "end": 2183090
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Corn doll is a summon thing, isn't it?",
+    "start": 2181950,
+    "end": 2183870
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It's like a bonus action or something.",
+    "start": 2182760,
+    "end": 2184680
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Is it.",
+    "start": 2185330,
+    "end": 2185970
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "No, I think she just has one that she summons. Pretty sure.",
+    "start": 2185750,
+    "end": 2190390
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "But isn't it summoned as a bonus action?",
+    "start": 2189640,
+    "end": 2191800
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay? Oh no. I'm thinking about wicker tokens. I'm thinking about wicker tokens, not corn dollies. Who has the wicker tokens? I know Soren has one.",
+    "start": 2189970,
+    "end": 2197730
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah, like the. Yeah, yeah. The correct.",
+    "start": 2193790,
+    "end": 2201170
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Who has the rest?",
+    "start": 2199010,
+    "end": 2199970
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "I don't. I've never heard of a wicker token in this game.",
+    "start": 2198950,
+    "end": 2202630
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "She.",
+    "start": 2203970,
+    "end": 2204210
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "It. It's the thing she uses to cast the touch spells from long range.",
+    "start": 2203650,
+    "end": 2207330
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Oh, okay.",
+    "start": 2208080,
+    "end": 2209280
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "She. She just says tokens. She's not telling you they're made out of W.",
+    "start": 2209090,
+    "end": 2212690
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah.",
+    "start": 2212280,
+    "end": 2212680
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, so I know Soren like perpetually has one. That's how she casts all the spells on me. I mean, she has four. Can I just assume that all four of us have it? I mean, it doesn't really matter in the scope of this because I can just hip hop move. L. Hippity hoppity moves to the Lazlo.",
+    "start": 2213750,
+    "end": 2231430
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Happy, happy.",
+    "start": 2232050,
+    "end": 2233010
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Normally she would be using a wick wicker token for this, but because she forgot about them.",
+    "start": 2231990,
+    "end": 2236550
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Team.",
+    "start": 2237890,
+    "end": 2238290
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "She's got a little lapse in her memory today. She's going to touch cast it normally. Haha. And then she's going to use.",
+    "start": 2237530,
+    "end": 2244730
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "But here's the thing. Lillian redistributes the tokens a lot. And I don't know what the.",
+    "start": 2246540,
+    "end": 2251020
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 2252460,
+    "end": 2252700
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "The cadences on when they need to be redistributed. So.",
+    "start": 2251810,
+    "end": 2255010
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I thought it was like in the beginning of the day because that's what the suggestion of the. Like, that's what the text of the token suggests. It says create wicker token. When you finish a long rest, you can up to four tokens. Tokens are tiny, blah blah blah, and vanish when you. So it's like at our last long rest. And then she distributes them right after probably. And like.",
+    "start": 2255770,
+    "end": 2277570
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Did she distribute you? Your last long rest was right before you came to the tower. Did she distribute tokens before you guys came to this tower?",
+    "start": 2276610,
+    "end": 2285400
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "She must have, because that's how she was casting range spells on me.",
+    "start": 2285890,
+    "end": 2288770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Really?",
+    "start": 2291000,
+    "end": 2291400
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "True.",
+    "start": 2291030,
+    "end": 2291430
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Because there's only one corn dolly.",
+    "start": 2290700,
+    "end": 2292220
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, so you have a wicker token.",
+    "start": 2295480,
+    "end": 2297400
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, I know for sure Soren has one. I don't know about the other three. That's what I'm asking. But there's also only three other people. But it doesn't matter. So she's going to cast pro because Lazo is down. Probably it's going to be Kun's. And she. She touches him and she's like, hey Oslo, get up. It's dangerous here. Or whatever she would say.",
+    "start": 2297180,
+    "end": 2331280
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Hmm.",
+    "start": 2331850,
+    "end": 2332330
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then I roll.",
+    "start": 2334800,
+    "end": 2336320
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "There's no time to play dead.",
+    "start": 2335390,
+    "end": 2337230
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I roll a 48. One two, three, four plus three. So you restore 26 and you're up. Then she Hippity hoppity's back.",
+    "start": 2337920,
+    "end": 2357070
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Happy, happy.",
+    "start": 2358420,
+    "end": 2359380
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Let me see. Let me see if she has any bonus actions that she can do. What the is innate social sorcery. Twice per long rest. You can take a bonus action to unleash the simmering magic within you. This mean? Oh.",
+    "start": 2358590,
+    "end": 2383470
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I mean, she's been hiding from us that she's not using.",
+    "start": 2383040,
+    "end": 2385280
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Well, no, it's an. It's an attack thing. So that's why she hasn't been using it. She's too busy keeping everyone else alive. Specifically me. All right.",
+    "start": 2385470,
+    "end": 2399000
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Is that it for Lillian?",
+    "start": 2403280,
+    "end": 2404400
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. Because I don't know what else she can do during a bonus action.",
+    "start": 2406120,
+    "end": 2409080
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, lame school b. Can make two Fire Ray attacks.",
+    "start": 2410170,
+    "end": 2430330
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Great.",
+    "start": 2429990,
+    "end": 2430230
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Unless we want to do magic missile, but we'll do fire Ray. We'll do fire ray. On.",
+    "start": 2435540,
+    "end": 2444340
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Is this a ranged spell attack?",
+    "start": 2450250,
+    "end": 2452250
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It is ranged and melee.",
+    "start": 2452900,
+    "end": 2454500
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Oh, okay. Interest.",
+    "start": 2455450,
+    "end": 2456570
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "This is fire Ray melee or ranged attack, roll, reach 5ft or range 60ft.",
+    "start": 2457620,
+    "end": 2465270
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Cool.",
+    "start": 2468180,
+    "end": 2468500
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I'm assuming because it says it's melee and ranged or ranged. That it is not disadvantage at melee.",
+    "start": 2468150,
+    "end": 2475270
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, that's what I was wondering. But it sounds like it wouldn't be.",
+    "start": 2478340,
+    "end": 2481460
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "60.",
+    "start": 2480570,
+    "end": 2480810
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Doesn't matter, though, because they missed their first one, They hit their second one, and they do 14 fire damage. I need to add something to the chat for this moment. Hold on.",
+    "start": 2483670,
+    "end": 2518230
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "How come we don't have Fireball?",
+    "start": 2521600,
+    "end": 2523040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Well, Tony's had it for, like, the last several games. He just.",
+    "start": 2524630,
+    "end": 2529750
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I'm a rogue. Maddie.",
+    "start": 2529120,
+    "end": 2533060
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No, she's talking about like the last like campaigns.",
+    "start": 2531450,
+    "end": 2533850
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, yes. I wish I could cast fireballs. A rogue. That'd be nice.",
+    "start": 2534250,
+    "end": 2539290
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "You could. You just gotta. You gotta subclass.",
+    "start": 2540250,
+    "end": 2543050
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I just gotta think really hard.",
+    "start": 2542010,
+    "end": 2543690
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah, you gotta think really hard about it.",
+    "start": 2544010,
+    "end": 2546250
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I just gotta think really hard. Think about my previous life, you know?",
+    "start": 2546250,
+    "end": 2551050
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, here we go. You can listen to that while we play. I feel like I need that on my soundboard. Oh, no, Josh is still paying attention on his. On his own.",
+    "start": 2555040,
+    "end": 2600100
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, he's watching. He's like. He's like.",
+    "start": 2601470,
+    "end": 2603870
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah, he's. He's paying attention to the chat.",
+    "start": 2602980,
+    "end": 2605940
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, my God.",
+    "start": 2606750,
+    "end": 2608030
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, God.",
+    "start": 2611940,
+    "end": 2612820
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "What's he doing? He should be enjoying his anniversary with his wife.",
+    "start": 2612120,
+    "end": 2614840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. Stop looking at your phone.",
+    "start": 2615630,
+    "end": 2617390
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Stop looking at your phone and focus on your wife.",
+    "start": 2617800,
+    "end": 2619960
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Anyway.",
+    "start": 2621470,
+    "end": 2622110
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You'll jingle.",
+    "start": 2623000,
+    "end": 2623960
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That's that one. Flame Skull C is going to fire at Soren. First one hits. 15 damage. Second one does not hit. Oh, no. It's okay. I've been dogging my. Oh, boy.",
+    "start": 2623150,
+    "end": 2662200
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "The Kingdom hearts. This is. Oh, God. All right, so the first one hits. You said.",
+    "start": 2670700,
+    "end": 2676220
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. For 15.",
+    "start": 2676770,
+    "end": 2677730
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "All right for 15, which means seven.",
+    "start": 2678380,
+    "end": 2680780
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Which is halved for you. I know.",
+    "start": 2679570,
+    "end": 2682050
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay.",
+    "start": 2684440,
+    "end": 2684920
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Thank you.",
+    "start": 2685810,
+    "end": 2686450
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "That's it.",
+    "start": 2687000,
+    "end": 2687720
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That's it. Now's your turn.",
+    "start": 2688290,
+    "end": 2689650
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I'm going to kill him. I'm going to maneuver myself over here to get advantage. Haha. Because I can't. And then. Oops. I double rolled. But it's the same thing either way. It hits.",
+    "start": 2690120,
+    "end": 2705960
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It hits either way. Yeah. Roll damage. If you double roll damage, we'd have a.",
+    "start": 2706220,
+    "end": 2710460
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. And then plus three from rage. So 18.",
+    "start": 2711410,
+    "end": 2718290
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Seventeen.",
+    "start": 2717910,
+    "end": 2718150
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, 18. Yeah.",
+    "start": 2719170,
+    "end": 2723170
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Eighteen. I'm losing it. Thank you.",
+    "start": 2721590,
+    "end": 2723670
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Don't worry, we're all are still alive.",
+    "start": 2723890,
+    "end": 2727490
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Barely.",
+    "start": 2729190,
+    "end": 2729750
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I do it again. Oh my God.",
+    "start": 2730130,
+    "end": 2734620
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "What the.",
+    "start": 2735830,
+    "end": 2736470
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh my God.",
+    "start": 2737740,
+    "end": 2738620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Oh, my God.",
+    "start": 2739850,
+    "end": 2740650
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Then. Oh my God.",
+    "start": 2740220,
+    "end": 2741980
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, they're so dead. What the.",
+    "start": 2740710,
+    "end": 2743070
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And then plus three, Whatever. I kill it. I move on.",
+    "start": 2742620,
+    "end": 2745260
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That was overkill. They had 2 hp left, dude.",
+    "start": 2744430,
+    "end": 2747630
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Then I move over here and I do it again because I have a bonus action. This turn to spare. Yippee. I do it recklessly this time because I don't have advantage.",
+    "start": 2747820,
+    "end": 2755420
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 2753150,
+    "end": 2753790
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "To get advantage.",
+    "start": 2756940,
+    "end": 2758220
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Well, you would have. Well, well, hold on. Stop.",
+    "start": 2757070,
+    "end": 2760750
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. Okay.",
+    "start": 2761410,
+    "end": 2762370
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You would have gotten advantage anyway because Gou was flanking.",
+    "start": 2764350,
+    "end": 2768270
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No.",
+    "start": 2769330,
+    "end": 2769730
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So you didn't need to recklessly attack.",
+    "start": 2768950,
+    "end": 2770630
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "No. For this one.",
+    "start": 2770930,
+    "end": 2772050
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "For this one. You're using recklessly.",
+    "start": 2772870,
+    "end": 2774790
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "The. The new flame scope. Yes. This one. I'm doing it.",
+    "start": 2772690,
+    "end": 2776370
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, okay, okay.",
+    "start": 2776390,
+    "end": 2777510
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "27 hits. I do my silly little damage, which is plus three. So it's 22.",
+    "start": 2778130,
+    "end": 2787100
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "With.",
+    "start": 2787010,
+    "end": 2787250
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 2788230,
+    "end": 2788870
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Then I have my turn. Maybe this is the third crit of the session.",
+    "start": 2789420,
+    "end": 2793980
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "All right, Laszlo.",
+    "start": 2792790,
+    "end": 2793830
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Wait, wait. I lied. No, I didn't lie. It doesn't matter. It was orkill. I could have rolled it for fun, but I'm not going to waste time.",
+    "start": 2795100,
+    "end": 2801020
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I'm just gonna go find some Kingdom Hearts battle music, because for some reason, that seems like what I need right now.",
+    "start": 2806960,
+    "end": 2815040
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You should blast Traverse Town.",
+    "start": 2818280,
+    "end": 2819960
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "No, thanks, though. That's my. You have to understand Traverse Town with, like, bass boosted really annoying loud saxophone for some reason is like. Yeah, Is like the thing that loops in my head of the song I can't get out of my head when I'm bored. I'm not joking.",
+    "start": 2822730,
+    "end": 2849560
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Just to know that your idol music It's a good to know that your idol music is just Traverse Town. Bass booster.",
+    "start": 2848250,
+    "end": 2853690
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It is.",
+    "start": 2854600,
+    "end": 2855240
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "It's a good song to choose. Good choice.",
+    "start": 2858410,
+    "end": 2861050
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Sa.",
+    "start": 2860890,
+    "end": 2861130
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yokoshima. Mura is the goat.",
+    "start": 2862170,
+    "end": 2863930
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "That.",
+    "start": 2863520,
+    "end": 2863760
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "That's my goat. How does she do it?",
+    "start": 2864490,
+    "end": 2868330
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Start a watch together for the music. There we go. I'm not echoing the music, right.",
+    "start": 2873650,
+    "end": 2897570
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "I think you're fine.",
+    "start": 2900980,
+    "end": 2901860
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "All right, john.",
+    "start": 2905240,
+    "end": 2905880
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, so I will rise up in a angry little rage of my own and then I will cast toll the dead. And it needs to make a wisdom save.",
+    "start": 2907050,
+    "end": 2927300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, man. They get.",
+    "start": 2925250,
+    "end": 2929970
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Vengeance shall be min.",
+    "start": 2928980,
+    "end": 2930900
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "They get advantage on saving throws against spells and other magical effects.",
+    "start": 2931730,
+    "end": 2935730
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And there it is. That's of course.",
+    "start": 2943630,
+    "end": 2945790
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "20.",
+    "start": 2944850,
+    "end": 2945250
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, so Laszlo, seeing that this has no effect will be a coward and hide under of a console.",
+    "start": 2949390,
+    "end": 2956910
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "You're a chat.",
+    "start": 2958440,
+    "end": 2959320
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, my God.",
+    "start": 2959180,
+    "end": 2959900
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Good shot.",
+    "start": 2960600,
+    "end": 2961320
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Bro. Bro. Blows up the entire thing and.",
+    "start": 2960920,
+    "end": 2964750
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And Diane, my friend.",
+    "start": 2964110,
+    "end": 2965390
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 2968050,
+    "end": 2968290
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Grab a new time.",
+    "start": 2972270,
+    "end": 2973230
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, I like this one. This is, like, one of my favorite battle themes. This is what I think of when I think of Kingdom Hearts battle music, but okay.",
+    "start": 2972380,
+    "end": 2990630
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "All right.",
+    "start": 2999190,
+    "end": 2999670
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Blink them and kill this.",
+    "start": 3004600,
+    "end": 3005640
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay, first, at the start of my turn, I'm going to use my aura vitality to heal myself because I made my Con save. So that's nine healing. And then. Yeah, I'll just move this over here. You know what? Actually, I'll move myself over here. And this. Can I have this right on top of myself?",
+    "start": 3009990,
+    "end": 3035040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Dude, you're basically having Alucard sword, and you're short. It can be above you.",
+    "start": 3036010,
+    "end": 3040330
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "And you're short.",
+    "start": 3041100,
+    "end": 3041900
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "That's true, that's true. I'm like five. Two, I think.",
+    "start": 3041200,
+    "end": 3045280
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Damn shouty.",
+    "start": 3046640,
+    "end": 3047600
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Which is tall for a dwarf. And then I will, yeah, use my bonus action to attack. I'll be at 26 for minimum slashing, and then 6. So 4 slashing. 6 radiant. And then I actually haven't used my action, so I will do. Oh, damn. Oh, that's okay. I'll just do a sword attack. Normal long sword. Nineteen.",
+    "start": 3046400,
+    "end": 3100740
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yep.",
+    "start": 3101630,
+    "end": 3101950
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Four. Nice. Five slashing.",
+    "start": 3103100,
+    "end": 3105980
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Five slashing. It is.",
+    "start": 3107880,
+    "end": 3108920
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay, that'll be my turn.",
+    "start": 3112860,
+    "end": 3114300
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Aria.",
+    "start": 3116440,
+    "end": 3117080
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay, let's see. All right, let's see if I can get a better roll this time. Steady. Aim at that damn last flame skull.",
+    "start": 3119540,
+    "end": 3128870
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That hits.",
+    "start": 3134130,
+    "end": 3134770
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "25. 7 damage.",
+    "start": 3132470,
+    "end": 3137430
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "They are dead.",
+    "start": 3137970,
+    "end": 3139010
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Thank God. Ah. How. How many are still left? Is that the last one?",
+    "start": 3139910,
+    "end": 3148230
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yep.",
+    "start": 3149460,
+    "end": 3149860
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "That's the last one. Combat is done.",
+    "start": 3148930,
+    "end": 3151010
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Thank God. Ari. Smells like burnt toast.",
+    "start": 3151630,
+    "end": 3157870
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Soren is wiping off like char. Like charcoal dust off of her.",
+    "start": 3159380,
+    "end": 3165060
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Yeah. Y' all got toasted.",
+    "start": 3169020,
+    "end": 3171180
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Looks in this direction.",
+    "start": 3174750,
+    "end": 3175870
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Hmm.",
+    "start": 3178040,
+    "end": 3178440
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "What? It's not even that bad. Did anyone die? I don't think so.",
+    "start": 3178980,
+    "end": 3184180
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You almost did.",
+    "start": 3184950,
+    "end": 3185750
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, almost only counts in horseshoes and hand grenades. So we're fine.",
+    "start": 3186420,
+    "end": 3191700
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Lillian's like.",
+    "start": 3188670,
+    "end": 3189630
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, my God.",
+    "start": 3190950,
+    "end": 3192150
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Lillian's like actually. Lillian's like. Actually. You came quite close. Viva the nerd. L actually.",
+    "start": 3190750,
+    "end": 3200840
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Horseshoes and hand grenades. I mean, you're not wrong, but.",
+    "start": 3199270,
+    "end": 3204390
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay. So my aura vitality lasts for one minute, and I think it was up for like, two combat rounds. So that means it should theoretically have like, 48 seconds left.",
+    "start": 3209140,
+    "end": 3218420
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay.",
+    "start": 3219460,
+    "end": 3219940
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Or basically, like eight.",
+    "start": 3218980,
+    "end": 3220580
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Sa.",
+    "start": 3221160,
+    "end": 3221400
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, eight combat rounds left. So that would be eight, like eight healing instances, if you're okay with that.",
+    "start": 3221940,
+    "end": 3232590
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "D.",
+    "start": 3234350,
+    "end": 3234590
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay, so who is damaged?",
+    "start": 3235870,
+    "end": 3238590
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Hi, everyone. I'm at 35 out of 95.",
+    "start": 3239570,
+    "end": 3242690
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Who's gravely wounded? I'm 27.",
+    "start": 3241500,
+    "end": 3244860
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "I don't know what. I don't know what Lillian's at because her. Oh. Lillian's at 21 out of the 63, so she needs it.",
+    "start": 3243890,
+    "end": 3252040
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. I think she needs the most.",
+    "start": 3251510,
+    "end": 3255270
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Maybe distribute it evenly. Oh.",
+    "start": 3254120,
+    "end": 3260200
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "I probably need it the most because I'm at 15. So I'll give myself, like, I'm going to give myself two Lillian. Two Laszlo probably is pretty low. Right?",
+    "start": 3257000,
+    "end": 3266760
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "He got healed by Lillian.",
+    "start": 3267000,
+    "end": 3268440
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Yeah. I'm 26 out of 66. We can also take a short rest and then I can re.",
+    "start": 3267570,
+    "end": 3273060
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. Sa.",
+    "start": 3274230,
+    "end": 3276480
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Proc everyone's heroic inspiration with my.",
+    "start": 3274900,
+    "end": 3278020
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Okay.",
+    "start": 3279160,
+    "end": 3279800
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Encouraging song beat.",
+    "start": 3280740,
+    "end": 3282740
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yeah, let's. Let's do both. So I'll give 2D6 healing to Willian, 2D6 to Laszlo.",
+    "start": 3282610,
+    "end": 3288450
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "So just in time.",
+    "start": 3286900,
+    "end": 3290340
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "Well.",
+    "start": 3294090,
+    "end": 3294330
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "And. Yeah, just in time. We just got kind of up, but we're okay. So, yeah, 2d6 for Lillian.",
+    "start": 3293650,
+    "end": 3300690
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Five healing to Lillian.",
+    "start": 3299420,
+    "end": 3300700
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "2d6 for Laszlo, 2d6 for myself, and then 1d6 for Arya and Saurin.",
+    "start": 3301250,
+    "end": 3306980
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Okay.",
+    "start": 3307820,
+    "end": 3308460
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I will add sister superior to the board.",
+    "start": 3308060,
+    "end": 3310540
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Or no, I'm sorry, 4d6. Sorry. 2d6 for Soren and Arya, 46 for the other three.",
+    "start": 3310900,
+    "end": 3316900
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay. 46.",
+    "start": 3317930,
+    "end": 3318970
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yes.",
+    "start": 3319620,
+    "end": 3320100
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Wow. What is this ass roll?",
+    "start": 3322070,
+    "end": 3323510
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "It.",
+    "start": 3323800,
+    "end": 3324040
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "I would strongly, strongly suggest that you all take a short rest.",
+    "start": 3324060,
+    "end": 3329180
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Yes.",
+    "start": 3330340,
+    "end": 3330820
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Yeah. Eleven. Okay.",
+    "start": 3330100,
+    "end": 3332100
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Definitely need to.",
+    "start": 3331870,
+    "end": 3332830
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, my God. I rolled two and three. Three times in a row. What are the odds of that? That's crazy. The same as what Tony did with the thing, but probably half of that.",
+    "start": 3330630,
+    "end": 3341910
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "But, like, less severe.",
+    "start": 3340660,
+    "end": 3342340
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Anyway. Lillian heals 10 from that. And then we're taking a short rest and I'm gonna use up all the heel dice I got. Dude.",
+    "start": 3343590,
+    "end": 3373060
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Okay, so everyone gather round.",
+    "start": 3354450,
+    "end": 3357090
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Gather.",
+    "start": 3358320,
+    "end": 3358640
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Gonna play my little pan flute and we're gonna be inspired.",
+    "start": 3357970,
+    "end": 3361250
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Round.",
+    "start": 3359360,
+    "end": 3359760
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "We're gonna be inspired. Okay.",
+    "start": 3362350,
+    "end": 3365790
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Yep. So everyone can check the heroic inspiration sun thing.",
+    "start": 3366610,
+    "end": 3371490
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "28 +3. 9. 10. 11K held. 11.",
+    "start": 3372910,
+    "end": 3376430
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Four grass.",
+    "start": 3375810,
+    "end": 3376610
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Okay.",
+    "start": 3382040,
+    "end": 3382520
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Thank you.",
+    "start": 3384290,
+    "end": 3384610
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "So.",
+    "start": 3392010,
+    "end": 3392250
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "And hit dice on a short rest. It's half regained. Right?",
+    "start": 3391330,
+    "end": 3396610
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Half regained.",
+    "start": 3399810,
+    "end": 3400770
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Will you roll your your dice?",
+    "start": 3400010,
+    "end": 3402170
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "On a.",
+    "start": 3401980,
+    "end": 3402460
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Kind of fun.",
+    "start": 3403210,
+    "end": 3403850
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Like you regain half of your spent hit dice on a long rest when you use them on short rests. Right? That's how that works. Of just trying to ration it out.",
+    "start": 3403260,
+    "end": 3413740
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "I don't know what those are.",
+    "start": 3417660,
+    "end": 3419420
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh, I thought you got all your hit dice. Your heel dice back on a long rest.",
+    "start": 3417460,
+    "end": 3421620
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Now we know you.",
+    "start": 3423330,
+    "end": 3424450
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "You don't.",
+    "start": 3424580,
+    "end": 3425299
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "No.",
+    "start": 3426150,
+    "end": 3426390
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "It's been so long.",
+    "start": 3427540,
+    "end": 3428580
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Sa.",
+    "start": 3429420,
+    "end": 3429660
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Or at least it hasn't been that way. Anyway, we'll just roll this.",
+    "start": 3427590,
+    "end": 3432470
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Okay, Well, while you guys are long resting. Hi, Cole.",
+    "start": 3431060,
+    "end": 3453630
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "Oh, hello.",
+    "start": 3455910,
+    "end": 3456790
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "You made it.",
+    "start": 3458390,
+    "end": 3459030
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Superior missed out on three. Fireballs.",
+    "start": 3459080,
+    "end": 3462040
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "I'm so sorry.",
+    "start": 3463110,
+    "end": 3464230
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "In a row.",
+    "start": 3463560,
+    "end": 3464200
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "Like, shot at us.",
+    "start": 3463910,
+    "end": 3465110
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Yeah. Shot at us.",
+    "start": 3465400,
+    "end": 3466520
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "I, I. At 11:50, 11:16 got a phone call asking me to drive a soldier.",
+    "start": 3466230,
+    "end": 3475760
+  },
+  {
+    "speaker": "4-nostromo82",
+    "text": "Yeah.",
+    "start": 3477210,
+    "end": 3477530
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "Onto base so they could speak with the Criminal Investigation Division.",
+    "start": 3477600,
+    "end": 3481680
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Oh.",
+    "start": 3482680,
+    "end": 3483160
+  },
+  {
+    "speaker": "3-tsunau",
+    "text": "For what?",
+    "start": 3482800,
+    "end": 3483280
+  },
+  {
+    "speaker": "2-jeptefer",
+    "text": "Oh, to get Craig out of here. Get Craig out of here.",
+    "start": 3484530,
+    "end": 3487250
+  },
+  {
+    "speaker": "1-cutiepiy5",
+    "text": "Hey, craig. Get craig out. Pause. Craig.",
+    "start": 3486520,
+    "end": 3489160
+  },
+  {
+    "speaker": "6-combattoast",
+    "text": "Or. Sorry.",
+    "start": 3487680,
+    "end": 3488720
+  },
+  {
+    "speaker": "5-lisztopher",
+    "text": "Oh, yeah.",
+    "start": 3489760,
+    "end": 3490320
+  }
+]

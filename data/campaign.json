@@ -8,7 +8,7 @@
       "classes": [
         {
           "name": "Cleric",
-          "level": 8,
+          "level": 10,
           "subclassName": "Twilight Domain (TCoE)",
           "subclassDescription": "<p>The twilit transition from light into darkness often brings calm and even joy, as the day’s labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.</p>"
         }
@@ -58,6 +58,9 @@
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Channel Divinity: Sear Undead",
+        "Eyes of Night",
+        "Vigilant Blessing",
+        "Channel Divinity: Twilight Sanctuary",
         "Steps of Night",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
@@ -66,9 +69,6 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Eyes of Night",
-        "Vigilant Blessing",
-        "Channel Divinity: Twilight Sanctuary",
         "Divine Strike"
       ],
       "spells": [
@@ -81,13 +81,16 @@
           "Bless",
           "Aid",
           "Speak with Dead",
-          "Curse of Fastidious Pride",
           "Holy Word",
           "Healing Word",
           "Spiritual Weapon",
           "Lesser Restoration",
           "Scarlet Dawn",
-          "Aura of Desecration"
+          "Dispel Magic",
+          "Control Water",
+          "Remove Curse",
+          "Flame Strike",
+          "Detect Magic"
         ]
       ],
       "equipment": [
@@ -97,11 +100,11 @@
         },
         {
           "name": "Shield",
-          "type": "Shield"
+          "type": ""
         },
         {
           "name": "Chain Shirt",
-          "type": ""
+          "type": "Medium Armor"
         },
         {
           "name": "Longsword",
@@ -126,7 +129,7 @@
       "classes": [
         {
           "name": "Rogue",
-          "level": 8,
+          "level": 10,
           "subclassName": "Assassin",
           "subclassDescription": "<p><em>Practice the Grim Art of Death</em></p>\r\n<p>An Assassin’s training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency.</p>"
         }
@@ -178,7 +181,9 @@
         "Sneak Attack: Trip (Cost: 1d6)",
         "Sneak Attack: Withdraw (Cost: 1d6)",
         "Uncanny Dodge",
-        "Sneak Attack: Assassinate"
+        "Sneak Attack: Assassinate",
+        "Masterful Mimicry",
+        "Steady Aim: Roving Aim"
       ],
       "spells": [
         []
@@ -186,7 +191,7 @@
       "equipment": [
         {
           "name": "Leather",
-          "type": "Light Armor"
+          "type": ""
         },
         {
           "name": "Dagger",
@@ -231,15 +236,15 @@
       "classes": [
         {
           "name": "Druid",
-          "level": 6,
+          "level": 7,
           "subclassName": "Circle of Wicker",
           "subclassDescription": "<p><em>Craft Effigies of Sacrifice and Protection</em></p>\r\n<p>Cunning in their ancient art, Druids of the Circle of Wicker fashion twig dolls and effigies, binding their magic into these crude forms. These creations often resemble animals, rune shapes, natural symbols, or people.</p>\r\n<p>Protective tokens and promises of retribution against trespassers are these Druids’ stock in trade. You can weave the magic of the land through your wicker creations as boons to your friends and banes to your foes.</p>"
         },
         {
           "name": "Sorcerer",
-          "level": 2,
-          "subclassName": null,
-          "subclassDescription": null
+          "level": 3,
+          "subclassName": "Clockwork Sorcery",
+          "subclassDescription": "<p><em>Channel Cosmic Forces of Order</em></p>\r\n<p>The cosmic force of order has suffused you with magic. Whatever its origin within you, the power of order can seem strange to others, but for you, it’s part of a vast and glorious system.</p>"
         }
       ],
       "alignmentId": 2,
@@ -289,6 +294,12 @@
         "Wild Shape",
         "Wild Resurgence: Regain Wild Shape",
         "Wild Resurgence: Regain Spell Slot",
+        "Innate Sorcery",
+        "Font of Magic: Sorcery Points",
+        "Font of Magic: Convert Spell Slots",
+        "Font of Magic: Create Spell Slot Level 1",
+        "Font of Magic: Create Spell Slot Level 2",
+        "Restore Balance",
         "Create Wicker Token",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
@@ -297,10 +308,6 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Innate Sorcery",
-        "Font of Magic: Sorcery Points",
-        "Font of Magic: Convert Spell Slots",
-        "Font of Magic: Create Spell Slot Level 1",
         "Initiate a Circle Spell",
         "Circle Spell: Augment",
         "Circle Spell: Distribute",
@@ -310,7 +317,7 @@
         "Circle Spell: Supplant",
         "Metamagic: Quickened Spell",
         "Metamagic: Distant Spell",
-        "Sacrifice: Reaction"
+        "Soothe: Bonus Action"
       ],
       "spells": [
         [
@@ -321,12 +328,13 @@
           "Assisted Aim",
           "Aura of Vitality",
           "Thorn Armor",
-          "Lesser Restoration",
-          "Elemental Weapon",
-          "Harvest Moonglow",
           "Moonbeam",
           "Purify Food and Drink",
-          "Protection from Energy"
+          "Dispel Magic",
+          "Creeping Rot",
+          "Bloat",
+          "Healing Spirit",
+          "Elemental Bane"
         ],
         [
           "Blood Bolt",
@@ -336,13 +344,23 @@
           "Silvery Barbs",
           "Light",
           "Ancestral Communion",
-          "Shield"
+          "Shield",
+          "Darkvision",
+          "Magic Weapon"
         ]
       ],
       "equipment": [
         {
+          "name": "Periapt of Proof against Poison",
+          "type": "Wondrous item"
+        },
+        {
           "name": "Wand of the War Mage, +1",
           "type": "Wand"
+        },
+        {
+          "name": "Gem of Brightness",
+          "type": "Wondrous item"
         },
         {
           "name": "Shield",
@@ -350,7 +368,7 @@
         },
         {
           "name": "Leather",
-          "type": "Light Armor"
+          "type": ""
         },
         {
           "name": "Crossbow, Light",
@@ -396,6 +414,12 @@
           "level": 3,
           "subclassName": "Purification Domain",
           "subclassDescription": "<p><em>Purge Sickness with Suffering</em></p>\r\n<p>The Purification Domain believes sickness, mutation, and other forms of bodily corruption are signs of a corresponding spiritual malady. Virtue can’t exist alongside impurity. The wickedness of humanity and other mortal, sentient creatures is a contagion that manifests plagues such as the Weeping Pox. When there’s a risk of such corruption spreading, there’s only one surefire way to contain the rot and atone for the sins that led to this point: Burn it out.</p>"
+        },
+        {
+          "name": "Rogue",
+          "level": 2,
+          "subclassName": null,
+          "subclassDescription": null
         }
       ],
       "alignmentId": null,
@@ -437,13 +461,20 @@
         "Ability Score Improvement",
         "Archery",
         "Weapon Mastery",
-        "Dark Bargain"
+        "Weapon Mastery",
+        "Dark Bargain",
+        "Character Threads",
+        "Runestones"
       ],
       "actions": [
+        "Sneak Attack",
+        "Cunning Action",
         "Channel Divinity",
         "Channel Divinity: Divine Spark",
         "Channel Divinity: Turn Undead",
         "Hunter’s Mark",
+        "Cleanse With Fire",
+        "Unclean Brand",
         "Elemental Arrows: Imbue Element",
         "Bonus Action: Stabilize",
         "Initiate a Circle Spell",
@@ -460,8 +491,6 @@
         "Circle Spell: Prolong",
         "Circle Spell: Safeguard",
         "Circle Spell: Supplant",
-        "Cleanse With Fire",
-        "Unclean Brand",
         "Elemental Arrows: Fire"
       ],
       "spells": [
@@ -483,7 +512,8 @@
           "Bless",
           "Hold Person",
           "Cure Wounds"
-        ]
+        ],
+        []
       ],
       "equipment": [
         {
@@ -529,9 +559,15 @@
       "classes": [
         {
           "name": "Barbarian",
-          "level": 8,
+          "level": 9,
           "subclassName": "Path of the Totem Warrior",
           "subclassDescription": "<p class=\"Core-Styles_Core-Body\">The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your ba<span class=\"No-Break\">rbarian rage.</span></p>\r\n<p class=\"Core-Styles_Core-Body\">In some barbarians’ tribes, a totem animal is considered to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exce<span class=\"No-Break\">ptions exist.</span></p>"
+        },
+        {
+          "name": "Fighter",
+          "level": 1,
+          "subclassName": null,
+          "subclassDescription": null
         }
       ],
       "alignmentId": 4,
@@ -575,15 +611,22 @@
       ],
       "actions": [
         "Rage",
-        "Instinctive Pounce"
+        "Instinctive Pounce",
+        "Second Wind",
+        "Fighting Style: Interception"
       ],
       "spells": [
+        [],
         []
       ],
       "equipment": [
         {
           "name": "Cloak of Protection",
           "type": "Wondrous item"
+        },
+        {
+          "name": "Javelin of Lightning",
+          "type": "Javelin"
         },
         {
           "name": "Scale Mail",
@@ -616,7 +659,7 @@
       "classes": [
         {
           "name": "Bard",
-          "level": 8,
+          "level": 10,
           "subclassName": "College of Requiems",
           "subclassDescription": "<p><em>Sing the Songs of the Dead</em></p>\r\n<p>Performing macabre melodies filled with grief-stricken chords and mournful refrains, the College of Requiems stirs the very bones of the dead. Requiem Bards weave necromantic magic into their funerary songs to control and empower a host of Undead minions.</p>"
         }
@@ -687,7 +730,6 @@
           "Cure Wounds",
           "Harrowing Ballad",
           "Invisibility",
-          "Aid",
           "Call the Rabid Beast",
           "Dispel Magic",
           "Mending",
@@ -695,7 +737,12 @@
           "Hypnotic Pattern",
           "Polymorph",
           "Greater Invisibility",
-          "Silence"
+          "Silence",
+          "Synaptic Static",
+          "Mirrored Agony",
+          "Feather Fall",
+          "Greater Animate Dead",
+          "Blood Bolt"
         ]
       ],
       "equipment": [

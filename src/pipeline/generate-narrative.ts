@@ -63,7 +63,7 @@ Narration style rules — follow these strictly:
 - Be specific. Reference the actual character names, player decisions, and events from the transcript — not generic fantasy filler.
 - Write like a knowledgeable friend recapping the session: vivid and grounded, not grandiose.
 - Avoid "LinkedIn-core" rhetoric: punchy antithesis ("Not a retreat, but a reckoning."), dramatic one-word sentences ("Courage."), and forced epiphanies ("That was the moment everything changed.").
-- Vary sentence length. Short sentences land harder.
+- Vary sentence length with a bias for brevity. Short sentences land harder.
 - Use third person throughout — he, she, they, their. Never address the party or any character as "you" or "your". This must be consistent across every segment.
 - Do not reference portraits, reference images, or the fact that character images were provided. Write as if you simply know what the characters look like.
 - If you quote a player or character directly, you must attribute the quote to the correct speaker using the Attributions provided for that moment. Never attribute a quote to the wrong person.
@@ -71,20 +71,18 @@ Narration style rules — follow these strictly:
 Use the following excerpts as models for tone and style:
 
 EXAMPLE 1:
-Upon arriving they found the town in a very dark emotional place: zombie giants roving the streets as controlled centurions, a number of the individuals in the town feeling unrest. So they decided to build a revolt. Percy helming the de Rolo crest, Vox Machina went around inciting the thoughts of rebellion within the city—not the first, but apparently the one with the most chance of succeeding they've had to this date. After some infiltrations and sizeable victories, cutting down some of the underlings of the Briarwoods within the city, the people began to arm themselves, rise up—fire, blade, and screaming took the city as the denizens began to fight back. In this chaos, Vox Machina made their way underneath the castle Whitestone, where the Lord and Lady Briarwood currently reside, seeking some sort of project called a Ziggurat.
+A couple known as the Briarwoods that took over the city of Whitestone five years before, murdering most of the ruling family of Percy– other than himself, escaping– have recently been doing political discussions with the home city of Emon. Vox Machina, our troop of intrepid adventurers, upon discovering this, battled them at Emon. They fled to Whitestone, and the party has then gone after to seek to destroy them and free the town, the once-home to Percival. In the process, it appears that there have been a number of warnings set, and the entire town has been long held under this dark, ominous rule that they have kept at bay.
 
 EXAMPLE 2:
 In Halandil Fang's home, Thaisha Lloy has remembered the silver box she brought with her that Thjazi told her to retrieve from Venatus to give to Bolaire Lathalia, and taken Hal with her upstairs to get it. However, when Thimble's name was mentioned downstairs, the box flew open and shattered black ceramic began moving together into the shape of a mask. Thaisha nudges one of the fragments and a roiling mist swallows both the fragments and Thaisha, sending her unconscious to the ground. Hal immediately casts Healing Word on her. Vaelus, Bolaire, and Murray Mag'Nesson rush in along with Shadia. When Bolaire inspects the box, the fragments are gone and the box holds only a thick fog. He notes that it bears writing in a halfling language interspersed with Celestial glyphs, including a word for the Tenebral Reaches, and realizes the box is a coffin for a halfling.
 
 EXAMPLE 3:
-The party, having found their way back to the city of Westruun, which had been overrun by the herd of roving nomadic tribal barbarians and other such brigands that wander the landscape of Tal'Dorei—that Grog once belonged to—had swooped in and taken Westruun after the Chroma Conclave dragon attack across this countryside. The party have devised a plan to find their way into the town—or at least one of them would—distract a cluster of these individuals, these goliaths, pulling them out of the city into a large pit that had been hidden after being carved by the druid Keyleth.
+the party has been sent to the city of Kraghammer, through a friend of theirs named Arcanist Allura Vysoren. A good friend of hers and a folk hero throughout the land known as Lady Kima of Vord, who's the halfling paladin of Bahamut, has gone missing. She went on a vision quest as part of a pilgrimage she's been on for the past year, and sensed a dark evil brewing far beneath the city of Kraghammer. Disappeared into the city and hasn't been seen for weeks. So Arcanist Allura asked the party, hired them essentially, to go and see her whereabouts. Upon getting to Kraghammer, they interacted with some of the local characters, eventually found theirself talking to Lord Nostoc Greyspine, who owns the mines at the very bottom of Kraghammer proper. After a brief encounter with a mutated abomination of a Naga creature, they were then hired by lord Nostoc to go into the mines, find whatever's creating these abominations, destroy whatever is the source of them, and he will pay well and also pay for each creature head that is brought to him individually.
 `;
 
 const ILLUSTRATION_STYLE =
   "a fantasy illustration (hand-drawn style, Dragonlance aesthetic, dramatic lighting, wide landscape 16:9 format)";
 
-// Per-image rules — apply to every illustration regardless of generation mode
-// (single combined prompt or per-segment calls).
 const ILLUSTRATION_RULES = `- Text may be part of the image if it makes sense in-universe, e.g. a map with writing on it. Let the image and the narration do the talking; there is no need for text overlays.
 - Never show the same party member twice in a single illustration. The only exception is an in-game effect that deliberately duplicates a character (e.g. Mirror Image), where multiple copies are the point.
 - In calm "at rest" scenes — the party gathered at camp, traveling together, or deliberating — depict every party member featured in this session (the characters shown in the reference portraits), even those not individually named in this segment.

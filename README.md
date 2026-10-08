@@ -2,7 +2,7 @@
 
 Automated D&D session recap generator. Feeds raw session audio through a 10-step pipeline to produce a narrated, illustrated video recap delivered to Discord.
 
-**Hackathon category**: Creative Storyteller — uses `gemini-3.1-flash-image-preview` with interleaved `TEXT` + `IMAGE` output modalities to generate narration and illustrated title cards in a single model call.
+**Hackathon category**: Creative Storyteller — uses `gemini-3.1-flash-lite-image` with interleaved `TEXT` + `IMAGE` output modalities to generate narration and illustrated title cards in a single model call.
 
 ---
 

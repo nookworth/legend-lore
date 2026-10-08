@@ -6,7 +6,7 @@ import { config, requireConfig } from '../shared/config.js';
 import { uploadPortrait, downloadPortrait } from '../shared/storage.js';
 import type { CharacterAvatar } from './generate-narrative.js';
 
-const MODEL = 'gemini-3.1-flash-image-preview';
+const MODEL = 'gemini-3.1-flash-lite-image';
 const PORTRAITS_CACHE_DIR = path.join('data', 'portraits');
 
 const ALIGNMENT_MAP: Record<number, string> = {

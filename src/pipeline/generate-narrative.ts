@@ -7,7 +7,7 @@ import type {
   Narrative,
   NarrativeSegment,
 } from "../shared/types.js";
-const MODEL = "gemini-3.1-flash-image-preview";
+const MODEL = "gemini-3.1-flash-lite-image";
 const MAX_ATTEMPTS = 3;
 
 export interface CharacterAvatar {

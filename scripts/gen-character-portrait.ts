@@ -124,7 +124,7 @@ async function main() {
   }
 
   const response = await ai.models.generateContent({
-    model: 'gemini-3.1-flash-image-preview',
+    model: 'gemini-3.1-flash-lite-image',
     contents: parts,
     config: {
       responseModalities: ['TEXT', 'IMAGE'],
